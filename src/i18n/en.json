@@ -1,0 +1,35 @@
+{
+    "header":{
+        "home":"HOME",
+        "how.we.do.it":"HOW WE DO IT",
+        "projects":"PROJECTS",
+        "about.us":"ABOUT US",
+        "contact.us":"CONTACT US",
+        "blog":"BLOG",
+        "our.lab":"OUR LAB"
+    },
+    "technologies-changes":{
+        "title":"Technology changes constantly, So do we!",
+        "subtitle":"We are a software and app development company keen on pixel perfect solutions that bring your ideas to life!"
+    },
+    "what-is-cavepot":{
+        "title":"What is CavePot",
+        "text1":{
+            "part.1":"We are a",
+            "part.2":"software",
+            "part.3":"and app development company keen on pixel perfect solutions that bring your",
+            "part.4":"ideas to life!"
+        },
+        "text2":{
+            "part.1":"We are",
+            "part.2":"curious",
+            "part.3":"about the world, that’s why we also call ourselves",
+            "part.4":"developers of ideas."
+        },
+        "text3":{
+            "part.1":" We work hand by hand with our clients, with an open minded attitude towards creativity and innovation,",
+            "part.2":"this is the compass that guides us."
+        }
+    }
+}
+

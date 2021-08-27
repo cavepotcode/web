@@ -1,0 +1,15 @@
+{
+    "header":{
+        "home":"HOME",
+        "how.we.do.it":"HOW WE DO IT",
+        "projects":"PROJECTS",
+        "about.us":"ABOUT US",
+        "contact.us":"CONTACT US",
+        "blog":"BLOG",
+        "our.lab":"OUR LAB"
+    },
+    "technologies-changes":{
+        "title":"Technology changes constantly, So do we!",
+        "subtitle":"We are a software and app development company keen on pixel perfect solutions that bring your ideas to life!"
+    }
+}

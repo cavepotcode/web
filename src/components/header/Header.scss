@@ -1,0 +1,20 @@
+@import '../../styles/mixin';
+.header {
+    display: flex;
+    align-items: center;
+    grid-column: 1 / span 4;
+    
+    .img-wrapper {
+        flex: 1;
+        padding-left: 7.125em;
+    }
+    .header-options {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(7, auto);
+        a {
+            @include textBasis(1.125rem);
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import "../../styles/mixin";
+
+.what-is-cavepot {
+    background-color: cadetblue;
+    grid-column: 1 / span 4;
+    @include textBasis(1.719rem);
+    display: grid;
+    grid-template: 253px 336px 148px / repeat(3, 1fr);
+    .title-wrapper {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        padding-bottom: 1.188em;
+        align-self: flex-end;
+        justify-self: center;
+        .title {
+            @include textBasis(3.844rem);
+        }
+    }
+}
