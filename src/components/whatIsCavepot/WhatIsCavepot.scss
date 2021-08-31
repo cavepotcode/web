@@ -1,19 +1,51 @@
 @import "../../styles/mixin";
+@import "../../styles/variables";
 
 .what-is-cavepot {
-    background-color: cadetblue;
     grid-column: 1 / span 4;
     @include textBasis(1.719rem);
     display: grid;
     grid-template: 253px 336px 148px / repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
     .title-wrapper {
-        grid-column-start: 2;
-        grid-row-start: 1;
+        grid-column: 1 / span 4;
         padding-bottom: 1.188em;
         align-self: flex-end;
-        justify-self: center;
         .title {
             @include textBasis(3.844rem);
         }
+    }
+    label {
+        @include textBasis(1.689rem);
+        text-align: center;
+        span {
+            font-weight: 600;
+        }
+    }
+    :nth-child(2) {
+        width: 515px;
+        height: 118px;
+    }
+    label:nth-child(3) {
+        width: 436px;
+        height: 91px;
+    }
+    label:nth-child(4) {
+        width: 513px;
+        height: 123px;
+    }
+    .message {
+        grid-column: 2;
+        width: 675px;
+        height: 77px;
+        opacity: 0.79;
+        border-radius: 10px;
+        background-color: $CeriseRed;
+        @include textBasis(1.813rem);
+        color: $White;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

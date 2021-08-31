@@ -15,21 +15,23 @@
     "what-is-cavepot":{
         "title":"What is CavePot",
         "text1":{
-            "part.1":"We are a",
-            "part.2":"software",
-            "part.3":"and app development company keen on pixel perfect solutions that bring your",
-            "part.4":"ideas to life!"
+            "part.1":"We are a ",
+            "part.2":"software ",
+            "part.3":"and app development company keen on pixel perfect solutions that bring your ",
+            "part.4":"ideas ",
+            "part.5":"to life!"
         },
         "text2":{
-            "part.1":"We are",
-            "part.2":"curious",
-            "part.3":"about the world, that’s why we also call ourselves",
+            "part.1":"We are ",
+            "part.2":"curious ",
+            "part.3":"about the world, that’s why we also call ourselves ",
             "part.4":"developers of ideas."
         },
         "text3":{
-            "part.1":" We work hand by hand with our clients, with an open minded attitude towards creativity and innovation,",
+            "part.1":"We work hand by hand with our clients, with an open minded attitude towards creativity and innovation, ",
             "part.2":"this is the compass that guides us."
-        }
+        },
+        "message":"What's the idea you want to bring to life?"
     }
 }
 
