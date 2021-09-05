@@ -2,24 +2,26 @@
 .technologies-changes {
     grid-column: 1 / span 4;
     display: grid;
-    grid-template-columns: 56% 54%;
-    align-items: center;
-    justify-items: center;
+    grid-template-columns: 43% 57%;
+  
     .textwrapper {
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 635px;
+        justify-content: center;
+        justify-self: center;
+        width: 414px;
         .title{
-            @include textBasis(3.7rem);
+            @include textBasis(2.5rem);
             padding-bottom: 18px
         }
         .subtitle{
-            @include textBasis(1.844rem);
+            @include textBasis(1.188rem);
         }
     }
     img {
-        width: 1038px;
-        height: 754px;
+        width: 781px;
+        height: auto;
+        justify-self: center;
     }
 }

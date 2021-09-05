@@ -1,12 +1,16 @@
 @import "./styles/variables";
 
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .app {
   height: 100%;
   background-color: $White;
   .grid {
     display: grid;
     overflow-x: hidden;
-    max-width: 1920px;
-    grid-template: 173px 754px 773px 821px 689px 764px 650px 871px 574px/ 25% 25% 27.4% 22.6%;
+    grid-template: 93px 568px 412px 821px 689px 764px 650px 871px 574px/ 25% 25% 27.4% 22.6%;
   }
 }

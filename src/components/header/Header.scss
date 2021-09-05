@@ -6,14 +6,20 @@
     
     .img-wrapper {
         flex: 1;
-        padding-left: 7.125em;
+        padding-left: 46px;
+        img{
+            width: 341px;
+            height: 37px;
+        }
     }
     .header-options {
-        flex: 1;
         display: grid;
         grid-template-columns: repeat(7, auto);
+        width: 593px;
+        text-align: left;
+        margin-right: 61px;
         a {
-            @include textBasis(1.125rem);
+            @include textBasis(0.719rem);
             text-decoration: none;
         }
     }
