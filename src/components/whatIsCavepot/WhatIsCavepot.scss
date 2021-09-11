@@ -3,77 +3,79 @@
 
 .what-is-cavepot {
     grid-column: 1 / span 4;
-    @include textBasis(1.719rem);
+    @include textBasis(1.125rem);
     display: grid;
-    grid-template: 253px 340px 180px/32% 36% 32%;
+    grid-template: 34px 58px 233px 180px/34% 32% 34%;
     align-items: center;
     justify-items: center;
     position: relative;
     .title-wrapper {
         grid-column: 1 / span 4;
-        grid-row: 1;
-        padding-bottom: 19px;
+        grid-row: 2;
         align-self: flex-end;
         .title {
-            @include textBasis(3.844rem);
+            @include textBasis(2.5rem);
         }
     }
     label {
-        @include textBasis(1.689rem);
+        @include textBasis(1.125rem);
         text-align: center;
         span {
             font-weight: 600;
         }
     }
+    
     label:nth-child(3) {
-        width: 83.8%;
-        height: 118px;
-        grid-row: 2;
+        width: 73.9%;
+        // height: 118px;
+        grid-row: 3;
         grid-column: 1;
+        justify-self: flex-end;
     }
     label:nth-child(4) {
-        width: 63%;
-        height: 91px;
-        grid-row: 2;
+        width: 66%;
+        // height: 91px;
+        grid-row: 3;
         grid-column: 2;
     }
     label:nth-child(5) {
-        width: 83.5%;
-        height: 123px;
-        grid-row: 2;
+        justify-self: flex-start;
+        width: 74%;
+        // height: 123px;
+        grid-row: 3;
         grid-column: 3;
     }
     .message {
         grid-column: 2;
-        grid-row: 2/span 4;
-        width: 53%;
-        height: 77px;
+        grid-row: 5/span 5;
+        padding: 18px 24px 13px 25px;
         opacity: 0.79;
         border-radius: 10px;
         background-color: $CeriseRed;
-        @include textBasis(1.813rem);
+        @include textBasis(1.188rem);
         color: $White;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        bottom: 150px;
+        bottom: 161px;
         left: 0;
+        width: 48.7%;
     }
     #short-blue-line{
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 3;
         width: 90%;
-        height: 12px;
+        height: 7px;
         justify-self: flex-start;
         align-self: flex-end;
     }
     #blue-line{
         grid-column: 1 /span 3;
-        grid-row: 2;
-        width: 65.8%;
-        height: 12px;
-        align-self: flex-start;
+        grid-row: 1;
+        width: 60.0%;
+        height: 8px;
+        align-self: flex-end;
         justify-self: flex-start;
     }
 }
