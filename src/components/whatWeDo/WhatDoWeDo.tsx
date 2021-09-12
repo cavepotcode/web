@@ -8,7 +8,7 @@ export const WhatDoWeDo = () => {
                 <label>We build custom software solutions to help our clients create awesome products </label>
             </div>
             <div className="cards-wrapper">
-                <div>
+                <div className="first-element">
                     <label>I need an app for my business.</label>
                     <button>Tell us more</button>
                 </div>
