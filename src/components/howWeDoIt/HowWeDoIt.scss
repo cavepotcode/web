@@ -1,6 +1,37 @@
+@import "../../styles/mixin";
+@import "../../styles/variables";
 
-.how-we-do-it{
-    grid-column: 1 / span 3;
+.how-we-do-it {
+    grid-column: 1;
     background-image: url(../../assets/img/rectangulo-violeta.png);
-    background-size: 1486px 689px;
+    background-size: 100% 500px;
+    width: 73.7%;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 170px 249px 81px;
+    .title {
+        align-self: center;
+        justify-self: center;
+        @include textBasis(2.5rem);
+    }
+    .text-wrapper {
+        display: grid;
+        grid-template: 77px 97px / 338px 352px;
+        column-gap: 135px;
+        row-gap: 75px;
+        justify-content: center;
+        text-align: center;
+        label{
+        @include textBasis(1.063rem);
+
+        }
+        span{
+            font-weight: bold;
+        }
+        :last-child{
+            align-self: center;
+            width: 319px;
+            justify-self: center;
+        }
+    }
 }

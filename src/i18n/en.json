@@ -32,6 +32,27 @@
             "part.2":"this is the compass that guides us."
         },
         "message":"What's the idea you want to bring to life?"
+    },
+    "what-do-we-do":{
+        "title":"What do we do?",
+        "sub-title":"We build custom software solutions to help our clients create awesome products",
+        "card1":{
+            "title":"I need an app for my business.",
+            "button":"Tell us more"
+        },
+        "card2":{
+            "title":"I need a landing website for my company",
+            "button":"Tell us more"
+        },
+        "card3":{
+            "title":"I need costume software  to improve comunication and conection within my company",
+            "button":"Tell us more"
+        },
+        "card4":{
+            "title":"I need to track my products in real time ",
+            "button":"Tell us more"
+        }
     }
+
 }
 

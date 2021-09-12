@@ -1,28 +1,31 @@
+import { useTranslation } from 'react-i18next';
 import './WhatDoWeDo.scss';
 
 export const WhatDoWeDo = () => {
+    const [t] = useTranslation("global");
+
     return (
         <div className="what-do-we-do">
             <div className="header">
-                <label>What do we do?</label>
-                <label>We build custom software solutions to help our clients create awesome products </label>
+                <label>{t("what-do-we-do.title")}</label>
+                <label>{t("what-do-we-do.sub-title")}</label>
             </div>
             <div className="cards-wrapper">
                 <div className="first-element">
-                    <label>I need an app for my business.</label>
-                    <button>Tell us more</button>
+                    <label>{t("what-do-we-do.card1.title")}</label>
+                    <button>{t("what-do-we-do.card1.button")}</button>
                 </div>
                 <div>
-                    <label>I need a landing website for my company</label>
-                    <button>Tell us more</button>
+                <label>{t("what-do-we-do.card2.title")}</label>
+                    <button>{t("what-do-we-do.card2.button")}</button>
                 </div>
                 <div>
-                    <label>I need costume software  to improve comunication and conection within my company</label>
-                    <button>Tell us more</button>
+                <label>{t("what-do-we-do.card3.title")}</label>
+                    <button>{t("what-do-we-do.card3.button")}</button>
                 </div>
                 <div>
-                    <label>I need to track my products in real time </label>
-                    <button>Tell us more</button>
+                <label>{t("what-do-we-do.card4.title")}</label>
+                    <button>{t("what-do-we-do.card4.button")}</button>
                 </div>
             </div>
         </div>
