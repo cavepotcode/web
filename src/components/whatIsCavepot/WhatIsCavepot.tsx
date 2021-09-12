@@ -10,7 +10,7 @@ export default function WhatIsCavepot() {
             <div className="title-wrapper">
                 <label className="title">{t("what-is-cavepot.title")}</label>
             </div>
-            <img id="blue-line" src={AllImages.Shortblueline} alt="BlueLine" />
+            <div id="blue-line"></div>
             <label>{t("what-is-cavepot.text1.part.1")}
                 <span>{t("what-is-cavepot.text1.part.2")}</span>
                 {t("what-is-cavepot.text1.part.3")}
@@ -25,7 +25,7 @@ export default function WhatIsCavepot() {
             <label>{t("what-is-cavepot.text3.part.1")}
                 <span>{t("what-is-cavepot.text3.part.2")}</span>
             </label>
-            <img id="short-blue-line" src={AllImages.Shortblueline} alt="shortBlueLine" />
+            <div id="short-blue-line"></div>
             <div className="message">{t("what-is-cavepot.message")}</div>
         </div>
     )

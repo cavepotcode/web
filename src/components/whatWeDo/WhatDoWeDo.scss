@@ -1,7 +1,62 @@
+@import "../../styles/mixin";
+@import "../../styles/variables";
 
-.what-do-we-do{
-    background-image: url(../../assets/img/yellow-back.png);
-    background-size: 100% 587px;
-    background-repeat: no-repeat;
+.what-do-we-do {
     grid-column: 1 / span 4;
+    background-image: url(../../assets/img/yellow-back.png);
+    background-size: 100% 381px;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template: 124px 292px 79px/repeat(4,auto);
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        @include textBasis(1.156rem);
+        :first-child {
+            margin-bottom: 22px;
+            @include textBasis(2.5rem);
+        }
+    }
+    .cards-wrapper {
+        
+        display: grid;
+        // grid-template-columns: repeat(4,275px);
+        :first-child{
+            grid-column: 1;
+        }
+        :nth-child(2){
+            grid-column: 2;
+            
+        }
+        :nth-child(3){
+            grid-column: 3;
+        }
+        :nth-child(4){
+            grid-column: 4;
+        }
+        > div {
+            // margin-right: 39px;
+            width: 274px;
+            background-color: #ffffff;
+            box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 83px;
+            padding-bottom: 41px;
+            button {
+                background-color: $SeaSerpent;
+                @include textBasis(1.188rem);
+                color: $White;
+                border:none;
+                border-radius: 10px;
+                padding: 17px 44px 18px 48px;
+            }
+        }
+     
+    }
 }
