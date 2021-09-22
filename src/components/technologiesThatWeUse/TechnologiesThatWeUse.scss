@@ -1,5 +1,44 @@
+@import "../../styles/mixin";
 
-.technologies-that-we-use{
-    background-color: lightblue;
+.technologies-that-we-use {
+    // background-color: lightblue;
     grid-column: 1 / span 4;
+    display: grid;
+    grid-template-rows: 126px 186px 145px 47px;
+    .title {
+        @include textBasis(2.656rem);
+        align-self: flex-end;
+        justify-self: center;
+    }
+    .img-wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 150px);
+        column-gap: 42px;
+        justify-content: center;
+        img {
+            align-self: flex-end;
+            justify-self: center;
+        }
+    }
+    .blue-line-wrapper {
+        width: 64.9%;
+        align-self: flex-end;
+        justify-self: flex-end;
+
+        #blue-line {
+            grid-row: 3;
+            height: 8px;
+            background-color: $SeaSerpent;
+            opacity: 0.6;
+            border-top-left-radius: 10px 10px;
+            border-bottom-left-radius: 10px 10px;
+        }
+        label {
+            margin-left: 26px;
+            @include textBasis(1.25rem);
+            span{
+                font-weight: bold
+            };
+        }
+    }
 }

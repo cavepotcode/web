@@ -3,7 +3,7 @@ import { AllImages } from '../../helpers';
 import './WhatIsCavepot.scss'
 
 export default function WhatIsCavepot() {
-    const [t, i18n] = useTranslation("global");
+    const [t] = useTranslation("global");
 
     return (
         <div className="what-is-cavepot">

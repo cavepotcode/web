@@ -52,6 +52,32 @@
             "title":"I need to track my products in real time ",
             "button":"Tell us more"
         }
+    },
+    "how-we-do-it":{
+        "title":"How we do it",
+        "text1":{
+            "part.1":"Every project we work on is like ",
+            "part.2":"entering a cave. ",
+            "part.3":"Curious and willing to do our best, we ask ourselves: ",
+            "part.4":"what amazing things lie underground?"
+        },
+        "text2":{
+            "part.1":"Elements of nature create phenomenons when they are together, ",
+            "part.2":"merging to create something great, ",
+            "part.3":"such as your needs combined ",
+            "part.4":"with our skills."
+        },
+        "text3":{
+            "part.1":"Your needs work as a compass for us, in a map that guide us into what we will create, pouring all of that into our pot and finally cooking something great for you."
+        },
+        "text4":{
+            "part.1":"Let us explore your idea, finding the perfect elements for it so we can bring it to life."
+        }
+    },
+    "technologies-that-we-use":{
+        "title":"Technologies that we use",
+        "text.part.1":"Over 50 startups trusted us to build their ideas. ",
+        "text.part.2":" Want to be the next one?"
     }
 
 }

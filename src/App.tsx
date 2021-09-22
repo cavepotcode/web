@@ -19,9 +19,9 @@ function App() {
         <WhatIsCavepot />
          <WhatDoWeDo />
         <HowWeDoIt/>
-        {/*<TechnologiesThatWeUse/>
+        <TechnologiesThatWeUse/>
         <ClientSay/>
-        <Investigation/>
+        {/*<Investigation/>
         <div>1</div>
         <Footer/> */}
       </div>
