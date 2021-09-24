@@ -9,3 +9,5 @@ export const MicrosoftNetLogo = require('../assets/img/microsoft-net-logo.png').
 export const ReactLogo = require('../assets/img/react-logo.png').default;
 export const NodeLogo = require('../assets/img/node-logo.png').default;
 export const NetCoreLogo = require('../assets/img/net-logo.png').default;
+export const RightArrow = require('../assets/img/right-arrow.png').default;
+export const LeftArrow = require('../assets/img/left-arrow.png').default;
