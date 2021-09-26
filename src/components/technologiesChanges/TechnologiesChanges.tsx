@@ -3,7 +3,7 @@ import { AllImages } from '../../helpers';
 import './TechnologiesChanges.scss';
 
 export const TechnologiesChanges = () => {
-    const [t, i18n] = useTranslation("global");
+    const [t] = useTranslation("global");
 
     return (
         <div className="technologies-changes">

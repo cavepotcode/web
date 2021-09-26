@@ -83,6 +83,13 @@
         "title":"This is what our clients say",
         "text":"Cavepot has made significant contributions to the client's app launches. They assisted in taking the app from ideation to full development. The workflow was extremely effective, as they're good listeners who aren't afraid to share their insights. They're an energetic team that's eager to help",
         "firm":"Fincloud CEO"
+    },
+    "investigation":{
+        "title":"INVESTIGATION & TRAINING",
+        "text.1":"INVESTIGATION & TRAINING esto que nos lleve a cavepot lab Passionate about what we do and willing to learn, we created CavepotLab.",
+        "text.2":"We are keen on helping our team members constantly so they can grow technically and professionally. O: so they can grow both technical and professionally",
+        "button":"Visit the CavePot lab"
+        
     }
 
 }

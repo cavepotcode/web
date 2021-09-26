@@ -1,9 +1,45 @@
+@import "../../styles/mixin";
+@import "../../styles/variables";
 
-.investigation{
-    background-color: lightsteelblue;
-    grid-column: 1 / span 4;
-    img{
-        width: 828px;
-        height: 636px;
+.investigation {
+    display: grid;
+    grid-template-columns: 628px 738px;
+    justify-content: center;
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: end;
+        padding-bottom: 15px;
+        @include textBasis(1.063rem);
+
+        .title {
+            @include textBasis(2.5rem);
+            font-weight: 500;
+            width: 354px;
+            align-self: center;
+        }
+        .main-text-wrapper{
+            margin-top: 39px;
+            margin-bottom: 40px;
+            width: 549px;
+            align-self: center;
+            :first-child{
+                display: block;
+                margin-bottom: 25px;
+            }
+        }
+
+
+        button {
+            border-radius: 10px;
+            background-color: $MinionYellow;
+            border: none;
+            width: 212px;
+            height: 49px;
+            align-self: center;
+            @include textBasis(1.063rem);
+            cursor: pointer;
+        }
     }
 }
