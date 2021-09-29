@@ -14,8 +14,15 @@
     .img-wrapper {
         width: 526px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         padding-left: 35px;
+        padding-bottom: 45px;
+        flex-direction: column;
+        justify-content: flex-end;
+        :nth-child(2){
+            margin-top: 54px;
+            margin-left: 18px;
+        }
     }
     .text-wrapper {
         display: grid;

@@ -12,5 +12,6 @@ export const RightArrow = require('../assets/img/right-arrow.png').default;
 export const LeftArrow = require('../assets/img/left-arrow.png').default;
 export const Redes = require('../assets/img/redessociales.png').default;
 export const PhytonLogo = require('../assets/img/phytonlogo.png').default;
+export const CavepotLabLogo = require('../assets/img/cavepot-lab-logo.png').default;
 
 

@@ -9,6 +9,8 @@ export const Footer = () => {
         <div className="footer">
             <div className="img-wrapper">
                 <img src={AllImages.LogoFooter} alt="cavepot-footer-logo" />
+                <img src={AllImages.CavepotLabLogo} alt="cavepot-lab-logo" />
+                
             </div>
             <div className="text-wrapper">
                 <div className="column">
