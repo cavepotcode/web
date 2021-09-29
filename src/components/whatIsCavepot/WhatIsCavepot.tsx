@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import { AllImages } from '../../helpers';
 import './WhatIsCavepot.scss'
 
 export default function WhatIsCavepot() {
@@ -10,7 +9,7 @@ export default function WhatIsCavepot() {
             <div className="title-wrapper">
                 <label className="title">{t("what-is-cavepot.title")}</label>
             </div>
-            <div id="blue-line"></div>
+            {/* <div  id="blue-line"></div> */}
             <label>{t("what-is-cavepot.text1.part.1")}
                 <span>{t("what-is-cavepot.text1.part.2")}</span>
                 {t("what-is-cavepot.text1.part.3")}
@@ -25,7 +24,7 @@ export default function WhatIsCavepot() {
             <label>{t("what-is-cavepot.text3.part.1")}
                 <span>{t("what-is-cavepot.text3.part.2")}</span>
             </label>
-            <div id="short-blue-line"></div>
+            {/* <div id="short-blue-line"></div> */}
             <div className="message">{t("what-is-cavepot.message")}</div>
         </div>
     )

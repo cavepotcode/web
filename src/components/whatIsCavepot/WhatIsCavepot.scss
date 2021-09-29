@@ -25,20 +25,20 @@
         }
     }
 
-    label:nth-child(3) {
+    label:nth-child(2) {
         width: 73.9%;
         // height: 118px;
         grid-row: 3;
         grid-column: 1;
         justify-self: flex-end;
     }
-    label:nth-child(4) {
+    label:nth-child(3) {
         width: 66%;
         // height: 91px;
         grid-row: 3;
         grid-column: 2;
     }
-    label:nth-child(5) {
+    label:nth-child(4) {
         justify-self: flex-start;
         width: 74%;
         // height: 123px;

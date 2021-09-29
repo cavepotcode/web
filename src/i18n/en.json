@@ -89,7 +89,39 @@
         "text.1":"INVESTIGATION & TRAINING esto que nos lleve a cavepot lab Passionate about what we do and willing to learn, we created CavepotLab.",
         "text.2":"We are keen on helping our team members constantly so they can grow technically and professionally. O: so they can grow both technical and professionally",
         "button":"Visit the CavePot lab"
-        
+    },
+    "footer":{
+        "column.1":{
+            "title":"COMPANY",
+            "text.1":"Home",
+            "text.2":"What is Cavepot",
+            "text.3":"What do we do",
+            "text.4":"How we do it",
+            "text.5":"What our clints say"
+        },
+        "column.2":{
+            "title":"Experiences",
+            "text.1":"Planet01",
+            "text.2":"Zanahorario",
+            "text.3":"Fillment",
+            "text.4":"LearnCloud",
+            "text.5":"NOM",
+            "text.6":"UCM"
+        },
+        "column.3":{
+            "title":"Connect with us",
+            "text.1":"Instagram",
+            "text.2":"Facebook",
+            "text.3":"Twitter",
+            "text.4":"Linkedin",
+            "text.5":"Github"
+        },
+        "column.4":{
+            "title":"Locate us",
+            "text.1":"Pablo de Maria 1122,",
+            "text.2":"Montevideo, Uruguay",
+            "text.3":"info@cavepot.com"
+        }
     }
 
 }

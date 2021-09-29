@@ -9,7 +9,7 @@ export const TechnologiesThatWeUse = () => {
         <div className="technologies-that-we-use">
             <label className="title">{t("technologies-that-we-use.title")}</label>
             <div className="img-wrapper">
-                <img src={AllImages.AngularLogo} alt="angular-logo" />
+                <img src={AllImages.PhytonLogo} alt="angular-logo" />
                 <img src={AllImages.AngularLogo} alt="angular-logo" />
                 <img src={AllImages.MicrosoftNetLogo} alt="microsoft-net-logo" />
                 <img src={AllImages.ReactLogo} alt="react-logo" />

@@ -3,7 +3,7 @@ import { AllImages } from '../../helpers';
 import './Header.scss';
 
 export const Header = () => {
-    const [t, i18n] = useTranslation("global");
+    const [t] = useTranslation("global");
     return (
         <div id="header" className="header">
             <div className="img-wrapper">

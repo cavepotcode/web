@@ -10,3 +10,7 @@ export const NodeLogo = require('../assets/img/node-logo.png').default;
 export const NetCoreLogo = require('../assets/img/net-logo.png').default;
 export const RightArrow = require('../assets/img/right-arrow.png').default;
 export const LeftArrow = require('../assets/img/left-arrow.png').default;
+export const Redes = require('../assets/img/redessociales.png').default;
+export const PhytonLogo = require('../assets/img/phytonlogo.png').default;
+
+

@@ -22,8 +22,7 @@ function App() {
         <TechnologiesThatWeUse/>
         <ClientSay/>
         <Investigation/>
-        {/*<div>1</div>
-        <Footer/> */}
+        <Footer/>
       </div>
     </div>
   );

@@ -1,5 +1,50 @@
-@import '../../styles/variables';
-.footer{
+@import "../../styles/variables";
+@import "../../styles/mixin";
+
+.footer {
     background-color: $DarkLavender;
-    grid-column: 1 / span 4;
+    grid-row: 10;
+    justify-content: center;
+    display: flex;
+    @include textBasis(0.906rem);
+    color: $White;
+    font-weight: 300;
+    line-height: 1.62;
+
+    .img-wrapper {
+        width: 526px;
+        display: flex;
+        align-items: center;
+        padding-left: 35px;
+    }
+    .text-wrapper {
+        display: grid;
+        grid-template-columns: 139px 107px 149px 157px;
+        column-gap: 60px;
+        padding-bottom: 75px;
+        align-items: flex-end;
+        div:first-child {
+            line-height: 1.9;
+        }
+        div:nth-child(2) {
+            line-height: 1.9;
+        }
+        div:nth-child(3) {
+            line-height: 1.62;
+        }
+        div:nth-child(4) {
+            line-height: 1.66;
+            img{
+                margin-top: 25px;
+            }
+        }
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+        height: 151px;
+    }
+    .title {
+        font-weight: bold;
+    }
 }
