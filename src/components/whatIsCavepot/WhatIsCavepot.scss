@@ -2,17 +2,11 @@
 @import "../../styles/variables";
 
 .what-is-cavepot {
-    grid-column: 1 / span 4;
+    margin-top: 62px;
     @include textBasis(1.125rem);
-    display: grid;
-    grid-template: 34px 58px 233px 87px/34% 32% 34%;
-    align-items: center;
-    justify-items: center;
-    position: relative;
     .title-wrapper {
-        grid-column: 1 / span 4;
-        grid-row: 2;
-        align-self: flex-end;
+        display: flex;
+        justify-content: center;
         .title {
             @include textBasis(2.5rem);
         }
@@ -24,43 +18,18 @@
             font-weight: 600;
         }
     }
-
-    label:nth-child(2) {
-        width: 73.9%;
-        // height: 118px;
-        grid-row: 3;
-        grid-column: 1;
-        justify-self: flex-end;
-    }
-    label:nth-child(3) {
-        width: 66%;
-        // height: 91px;
-        grid-row: 3;
-        grid-column: 2;
-    }
-    label:nth-child(4) {
-        justify-self: flex-start;
-        width: 74%;
-        // height: 123px;
-        grid-row: 3;
-        grid-column: 3;
-    }
-    .message {
-        grid-column: 2;
-        grid-row: 5 / span 5;
-        padding: 18px 24px 13px 25px;
-        opacity: 0.79;
-        border-radius: 10px;
-        background-color: $CeriseRed;
-        @include textBasis(1.188rem);
-        color: $White;
+    .message-container {
         display: flex;
         justify-content: center;
-        align-items: center;
-        position: absolute;
-        bottom: 69px;
-        left: 0;
-        width: 48.7%;
+        .message {
+            padding: 18px 24px 13px 25px;
+            opacity: 0.79;
+            border-radius: 10px;
+            background-color: $CeriseRed;
+            @include textBasis(1.188rem);
+            color: $White;
+            width: 439px;
+        }
     }
     #short-blue-line {
         grid-column: 1;
@@ -85,5 +54,25 @@
         opacity: 0.6;
         border-top-right-radius: 10px 10px;
         border-bottom-right-radius: 10px 10px;
+    }
+
+    .wrapper {
+        width: 100%;
+        display: inline-flex;
+        gap: 79px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 81px;
+        margin-bottom: 47px;
+        label:nth-child(1) {
+            width: 343px;
+        }
+        label:nth-child(2) {
+            width: 288px;
+            align-self: center;
+        }
+        label:nth-child(3) {
+            width: 341px;
+        }
     }
 }

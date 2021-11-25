@@ -17,12 +17,12 @@ function App() {
         <Header />
         <TechnologiesChanges />
         <WhatIsCavepot />
-         <WhatDoWeDo />
+        {/*  <WhatDoWeDo />
         <HowWeDoIt/>
         <TechnologiesThatWeUse/>
         <ClientSay/>
         <Investigation/>
-        <Footer/>
+        <Footer/> */}
       </div>
     </div>
   );
