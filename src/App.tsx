@@ -13,10 +13,10 @@ import { WhatDoWeDo } from './components/whatWeDo/WhatDoWeDo';
 function App() {
   return (
     <div className="app">
-      <div className="grid">
         <Header />
-        <TechnologiesChanges />
-        <WhatIsCavepot />
+      <div className="grid">
+         <TechnologiesChanges />
+        {/*<WhatIsCavepot /> */}
         {/*  <WhatDoWeDo />
         <HowWeDoIt/>
         <TechnologiesThatWeUse/>

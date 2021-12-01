@@ -9,3 +9,39 @@
     letter-spacing: normal;
     color: $PineTree;
 }
+@mixin transition-ease {
+    transition:all 0.5s ease-in-out;
+}
+@mixin transition-ease-2s {
+    transition:all 0.2s ease-in-out;
+}
+@function set-text-color($color){
+    @if (lightness($color)>40%){
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+}
+
+@mixin media-sm{
+    @media screen and (max-width:480px){
+        @content;
+    }
+}
+
+@mixin media-md{
+    @media screen and (min-width:768px){
+        @content;
+    }
+}
+@mixin media-lg{
+    @media screen and (min-width:1024px){
+        @content;
+    }
+}
+@mixin media-xl{
+    @media screen and (min-width:1600px){
+        @content;
+    }
+}
