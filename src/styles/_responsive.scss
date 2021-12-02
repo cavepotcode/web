@@ -1,7 +1,6 @@
 @include media-sm {
     #header {
         .img-wrapper {
-           
             padding-left: 36px;
             img {
                 width: 150px;
@@ -13,39 +12,43 @@
         // background-color: rgb(244, 253, 117) !important;
         background: none;
     }
-   
 }
-@include media-md {
-    .technologies-changes {
-        // background-color: rgb(210, 30, 30) !important;
-        background: none;
-    }
-}
-
+// @include media-md {
+//     .technologies-changes {
+//         // background-color: rgb(210, 30, 30) !important;
+//         background: none;
+//     }
+// }
+// maximo 1024px
 @include media-lg {
     #header {
         .menu-btn {
-            visibility: hidden;
+            display: block;
         }
-
         .nav {
             visibility: visible;
 
             .menu-nav {
-                display: block;
-                transform: translateY(0);
-                height: 100%;
-                background: transparent;
-                text-align: right;
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                overflow: hidden;
+                background-color: rgb(224, 220, 220);
+                list-style-type: none;
+                padding-right: 1rem;
+                transform: translateY(-100%);
+                opacity: 0.9;
+                @include transition-ease;
 
-                &__item {
-                    display: inline;
-                    padding-right: 1.5rem;
+                &.open {
+                    transform: translateY(0);
                 }
             }
         }
-        .img-wrapper{
-            z-index: 1;
+        .img-wrapper {
+            z-index: 0;
         }
     }
     .technologies-changes {
@@ -53,15 +56,15 @@
         grid-template-columns: 43% 57%;
         gap: 16px;
         background-image: none !important;
-        
-        .textwrapper{
+
+        .textwrapper {
             grid-column: 1;
             border-radius: none !important;
             box-shadow: none !important;
-            transition: left 0.5s; 
+            transition: left 0.5s;
         }
-        img{
-            display: block !important; 
+        img {
+            display: block !important;
             visibility: visible;
         }
     }
@@ -70,9 +73,13 @@
         background: none;
     }
 }
-@include media-xl {
-    .technologies-changes {
-        // background-color: rgb(66, 210, 30) !important;
-        background: none;
+@include media-min-lg {
+    #header {
+        .nav {
+            background-color: white;
+            opacity: 0.9;
+        }
     }
+}
+@include media-xl {
 }
