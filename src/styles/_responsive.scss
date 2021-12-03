@@ -9,7 +9,6 @@
         }
     }
     .technologies-changes {
-        // background-color: rgb(244, 253, 117) !important;
         background: none;
     }
 }
@@ -29,7 +28,7 @@
     }
     .what-is-cavepot {
         .wrapper {
-             display: grid !important;
+            display: grid !important;
         }
     }
 }
@@ -42,7 +41,6 @@
         }
         .nav {
             visibility: hidden;
-
 
             .menu-nav {
                 display: flex;
@@ -62,38 +60,20 @@
                     transform: translateY(0);
                 }
             }
-            &.open{
+            &.open {
                 visibility: visible;
+                position: fixed;
             }
         }
         .img-wrapper {
             z-index: 0;
         }
     }
-    .technologies-changes {
-        // .textwrapper {
-        //     grid-column: 1;
-        //     border-radius: none !important;
-        //     box-shadow: none !important;
-        //     transition: left 0.5s;
-        // }
-        // img {
-        //     display: block !important;
-        //     visibility: visible;
-        // }
-    }
-    // .technologies-changes {
-    //     // background-color: rgb(33, 30, 210) !important;
-    //     background: none;
-    // }
+  
+    
 }
 @include media-min-lg {
-    #header {
-        .nav {
-            background-color: white;
-            opacity: 0.9;
-        }
-    }
+   
 }
 @include media-xl {
 }
