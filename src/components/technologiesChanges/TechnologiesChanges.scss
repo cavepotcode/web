@@ -1,20 +1,21 @@
 @import "../../styles/main";
 .technologies-changes {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-image: url("../../assets/img/banner.png");
+    display: grid;
+    grid-template-columns: 43% 57%;
+    gap: 16px;
+    
+
     .textwrapper {
-        padding: 69px 89px 51px 73px;
+        grid-column: 1;
+        transition: left 0.5s;
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
         justify-self: center;
-        width: 582px;
-        border-radius: 20px;
-        box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
-        background-color: #fff;
+        padding: 69px 89px 51px 73px;
+        
+        
         .title {
             @include textBasis(2.5rem);
             padding-bottom: 18px;
@@ -24,10 +25,10 @@
         }
         transition-delay: 15s;
     }
-    img {
-        display: none;
-        width: 781px;
-        height: auto;
-        justify-self: center;
+    .img-technologies {
+        grid-column: 2;
+        background-image: url("../../assets/img/banner.png") ;
+        background-repeat: no-repeat;
+        
     }
 }

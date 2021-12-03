@@ -13,17 +13,34 @@
         background: none;
     }
 }
-// @include media-md {
-//     .technologies-changes {
-//         // background-color: rgb(210, 30, 30) !important;
-//         background: none;
-//     }
-// }
+@include media-md {
+    .technologies-changes {
+        // background-color: rgb(210, 30, 30) !important;
+        // background-color: red;
+        display: flex !important;
+        gap: 0 !important;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../assets/img/banner.png");
+        .textwrapper {
+            
+            width: 582px;
+            border-radius: 20px;
+            box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
+            background-color: #fff;
+        }
+    }
+    .what-is-cavepot{
+        .wrapper{
+        }
+    }
+}
 // maximo 1024px
 @include media-lg {
     #header {
         .menu-btn {
             display: block;
+            @include transition-ease;
         }
         .nav {
             visibility: visible;
@@ -52,26 +69,21 @@
         }
     }
     .technologies-changes {
-        display: grid;
-        grid-template-columns: 43% 57%;
-        gap: 16px;
-        background-image: none !important;
-
-        .textwrapper {
-            grid-column: 1;
-            border-radius: none !important;
-            box-shadow: none !important;
-            transition: left 0.5s;
-        }
-        img {
-            display: block !important;
-            visibility: visible;
-        }
+        // .textwrapper {
+        //     grid-column: 1;
+        //     border-radius: none !important;
+        //     box-shadow: none !important;
+        //     transition: left 0.5s;
+        // }
+        // img {
+        //     display: block !important;
+        //     visibility: visible;
+        // }
     }
-    .technologies-changes {
-        // background-color: rgb(33, 30, 210) !important;
-        background: none;
-    }
+    // .technologies-changes {
+    //     // background-color: rgb(33, 30, 210) !important;
+    //     background: none;
+    // }
 }
 @include media-min-lg {
     #header {

@@ -11,7 +11,10 @@ export const TechnologiesChanges = () => {
                 <label className="title">{t("technologies-changes.title")}</label>
                 <label className="subtitle">{t("technologies-changes.subtitle")}</label>
             </div>
-            <img src={AllImages.Banner} alt="banner" />
+            <div className="img-technologies">
+
+            </div>
+            {/* <img src={AllImages.Banner} alt="banner" /> */}
         </div>
     )
 }
