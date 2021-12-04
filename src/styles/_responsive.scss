@@ -30,6 +30,28 @@
         .wrapper {
             display: grid !important;
         }
+        .message-container{
+            margin-top: 118px;
+        }
+    }
+    .what-do-we-do {
+        background-image: none !important;
+        .title{
+            :nth-child(2){
+                width: 624px;
+                align-self: center;
+            }
+        }
+        .cards-wrapper {
+            flex-direction: column;
+            align-items: center;
+            background-image: url("../assets/img/yellow-back.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            padding-top: 83px;
+            padding-bottom: 61px;
+            width: 100%;
+        }
     }
 }
 // maximo 1024px
@@ -69,11 +91,8 @@
             z-index: 0;
         }
     }
-  
-    
 }
 @include media-min-lg {
-   
 }
 @include media-xl {
 }

@@ -15,8 +15,8 @@ function App() {
     <div className="app">
       <Header />
       <div className="grid">
-        {/* <TechnologiesChanges /> */}
-        {/* <WhatIsCavepot /> */}
+        <TechnologiesChanges />
+        <WhatIsCavepot />
         <WhatDoWeDo />
         {/* <HowWeDoIt/>
         <TechnologiesThatWeUse/>

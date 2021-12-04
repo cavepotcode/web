@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 43% 57%;
     gap: 16px;
-    
+    grid-row: 1;
 
     .textwrapper {
         grid-column: 1;

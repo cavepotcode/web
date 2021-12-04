@@ -5,7 +5,7 @@ export const WhatDoWeDo = () => {
     const [t] = useTranslation("global");
 
     return (
-        <div id="what-do-we-do">
+        <div className="what-do-we-do">
             <div className="title">
                 <label>{t("what-do-we-do.title")}</label>
                 <label>{t("what-do-we-do.sub-title")}</label>

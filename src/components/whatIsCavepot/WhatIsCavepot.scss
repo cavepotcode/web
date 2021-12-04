@@ -3,6 +3,7 @@
 
 .what-is-cavepot {
     margin-top: 62px;
+    grid-row: 2;
     @include textBasis(1.125rem);
     .title-wrapper {
         display: flex;
