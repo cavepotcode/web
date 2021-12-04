@@ -15,14 +15,14 @@ function App() {
     <div className="app">
       <Header />
       <div className="grid">
-        <TechnologiesChanges />
-        <WhatIsCavepot />
-        {/*  <WhatDoWeDo />
-        <HowWeDoIt/>
+        {/* <TechnologiesChanges /> */}
+        {/* <WhatIsCavepot /> */}
+        <WhatDoWeDo />
+        {/* <HowWeDoIt/>
         <TechnologiesThatWeUse/>
         <ClientSay/>
         <Investigation/>
-        <Footer/> */}
+        <Footer/>  */}
       </div>
     </div>
   );
