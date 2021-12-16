@@ -29,15 +29,30 @@
     .what-is-cavepot {
         .wrapper {
             display: grid !important;
+            label {
+                font-size: 1.438rem !important ;
+            }
+            label:nth-child(1) {
+                width: 375px !important;
+            }
+            label:nth-child(2) {
+                width: 371px !important;
+            }
+            label:nth-child(3) {
+                width: 371px !important;
+            }
         }
-        .message-container{
+        .message-container {
             margin-top: 118px;
+            .message {
+                font-size: 1.313rem !important;
+            }
         }
     }
     .what-do-we-do {
         background-image: none !important;
-        .title{
-            :nth-child(2){
+        .title {
+            :nth-child(2) {
                 width: 624px;
                 align-self: center;
             }
@@ -51,6 +66,35 @@
             padding-top: 83px;
             padding-bottom: 61px;
             width: 100%;
+            > div {
+                width: 382px !important;
+                height: 350px !important;
+                padding-top: 108px !important;
+                label {
+                    width: 295px !important;
+
+                    font-size: 1.5rem !important;
+                }
+                button {
+                    font-size: 1.625rem !important;
+                    width: 295px !important;
+                    height: 69px !important;
+                }
+            }
+            :nth-child(1) {
+                label {
+                    font-size: 1.813rem !important;
+                }
+            }
+            :nth-child(3){
+                padding-top: 54px !important;
+                label{
+                    width: 305px !important;
+                }
+            }
+            :nth-child(4){
+                padding-top: 95px !important;
+            }
         }
     }
 }
