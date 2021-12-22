@@ -122,6 +122,25 @@
             "text.2":"Montevideo, Uruguay",
             "text.3":"info@cavepot.com"
         }
+    },
+    "contact":{
+        "title":"How can we help you?",
+        "sub-title":"Let us know what you are looking foor so that we can help you find it",
+        "option1":{
+            "title":"A new Landing"
+        },
+        "option2":{
+            "title":" A new  App"
+        },
+        "option3":{
+            "title":"Re-desing Re-Think my product"
+        },
+        "option4":{
+            "title":"General information"
+        },
+        "option5":{
+            "title":"Staff Augmentation"
+        }
     }
 
 }

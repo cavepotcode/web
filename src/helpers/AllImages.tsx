@@ -13,5 +13,11 @@ export const LeftArrow = require('../assets/img/left-arrow.png').default;
 export const Redes = require('../assets/img/redessociales.png').default;
 export const PhytonLogo = require('../assets/img/phytonlogo.png').default;
 export const CavepotLabLogo = require('../assets/img/cavepot-lab-logo.png').default;
+//
+export const ANewLanding = require('../assets/img/a-new-landing-icon.png').default;
+export const Redesign = require('../assets/img/redesign.png').default;
+export const ANewApp = require('../assets/img/a-new-appicon.png').default;
+export const GeneralInfo = require('../assets/img/general-info.png').default;
+export const StaffAugmentation = require('../assets/img/staff-augmentation.png').default;
 
 

@@ -7,6 +7,7 @@ import { Investigation } from './components/investigation/Investigation';
 import { TechnologiesChanges } from './components/technologiesChanges/TechnologiesChanges';
 import { TechnologiesThatWeUse } from './components/technologiesThatWeUse/TechnologiesThatWeUse';
 import WhatIsCavepot from './components/whatIsCavepot/WhatIsCavepot';
+import { Contact } from './components/contact/Contact';
 import { WhatDoWeDo } from './components/whatWeDo/WhatDoWeDo';
 
 
@@ -18,6 +19,7 @@ function App() {
         <TechnologiesChanges />
         <WhatIsCavepot />
         <WhatDoWeDo />
+        <Contact />
         {/* <HowWeDoIt/>
         <TechnologiesThatWeUse/>
         <ClientSay/>

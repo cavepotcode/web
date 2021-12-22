@@ -1,0 +1,80 @@
+@import "../../styles/mixin";
+@import "../../styles/variables";
+
+.contact {
+    
+    background-size: 100% 91%;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-row: 4;
+    margin-top: 65px;
+    gap: 34px;
+    .title {
+        grid-column: 1 / span 4;
+        display: flex;
+        flex-direction: column;
+        padding-top: 17px;
+        text-align: center;
+        @include textBasis(1.156rem);
+        :first-child {
+            text-align: center;
+            margin-bottom: 12px;
+            @include textBasis(2.5rem);
+        }
+    }
+
+    .contact-options-wrapper{
+        display: grid;
+        justify-self: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        grid-column: 1 / span 4;
+        gap: 30px;
+        display: flex;
+        .contact-option-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 7px;
+            height: 221px;
+            width: 207px;
+            background-color: $HCWHY-red;
+            border-radius: 8px;
+            .contact-option-title{
+                label {  
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #2d2829;
+                }
+            }
+            &.selected{
+                margin-top: 50px;
+                background-color: $HCWHY-yellow;
+            }
+        }
+        
+    .contact-form{
+        margin-top: -40px;
+        display: grid;
+        justify-self: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-column: 1 / span 4;
+        gap: 30px;
+        display: flex;
+        height: 200px;
+        width: 100%;
+        background-color: $HCWHY-yellow;
+        border-radius: 8px;
+    }
+    }
+}
