@@ -20,7 +20,7 @@ export const Header = () => {
     }, [showMenu])
 
     return (
-        <div id="header" className="header">
+        <div id="header" className={showMenu ? 'header open' : 'header'}>
             <div className="img-wrapper">
                 <img src={AllImages.LogoHeader} alt="" />
             </div>

@@ -1,5 +1,9 @@
 @import "../../styles/main";
+@import "../../styles/variables";
 .header {
+    &.open{
+        opacity: 1;
+    }
     display: flex;
     align-items: center;
     padding-bottom: 6px;
@@ -7,6 +11,7 @@
     position: fixed;
     background-color: white;
     opacity: 0.9;
+    z-index: 1;
     .img-wrapper {
         position: fixed;
         padding-left: 46px;
@@ -82,7 +87,20 @@
         opacity: 0.98;
         visibility: visible;
         &.open {
+            background-color: $White;
             visibility: hidden;
+            .menu-nav {
+                &__item{
+                    a{
+                        font-size: 23px;
+                    }
+                    display: inline;
+                    padding-right: 1.5rem;
+                }
+                &.open{
+                    padding: 0 !important;
+                }
+            }
         }
         .menu-nav {
             display: block;
