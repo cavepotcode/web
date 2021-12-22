@@ -6,21 +6,23 @@ import React, { useState } from "react";
 import './Contact.scss';
 
 export const Contact = () => {
-    const options = {
-        landing: false,
-        newApp: false,
-        reDesign: false,
+    const options: any = {
+        aNewLanding: true,
+        aNewApp: false,
+        redesign: false,
         generalInfo: false,
-        staff: false
+        staffAugmentation: false
     }
-    const [activeClasses, setActiveClasses] = useState(options);
-
+    const [activeClasses, setActiveClasses] = useState<any>(options);
 
     const [t] = useTranslation("global");
 
     const toggleClass = (option: any) => {
-        let optionToChange = option
-        setActiveClasses(activeClasses[indice] = !activeClasses[indice]);
+
+        setActiveClasses({
+            options,
+            [option]: true
+        });
     };
     return (
         <div className="contact">
@@ -29,7 +31,7 @@ export const Contact = () => {
                 <label>{t("contact.sub-title")}</label>
             </div>
             <div className="contact-options-wrapper">
-                <div className={activeClasses.landing ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("landing")}>
+                <div className={activeClasses.aNewLanding ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("aNewLanding")}>
                     <div className='contact-option-img'>
                         <img src={AllImages.ANewLanding} alt="a-new-landing-icon" />
                     </div>
@@ -38,7 +40,7 @@ export const Contact = () => {
                     </div>
                 </div>
 
-                {/* <div className={activeClasses[1] ? 'contact-option-card selected' : 'contact-option-card'} onClick={toggleClass}>
+                <div className={activeClasses.aNewApp ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("aNewApp")}>
                     <div className='contact-option-img'>
 
                         <img src={AllImages.ANewApp} alt="a-new-appicon" />
@@ -48,7 +50,7 @@ export const Contact = () => {
                     </div>
                 </div>
 
-                <div className={activeClasses[2] ? 'contact-option-card selected' : 'contact-option-card'} onClick={toggleClass}>
+                <div className={activeClasses.redesign ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("redesign")}>
                     <div className='contact-option-img'>
                 <img src={AllImages.Redesign} alt="redesign" />
                     </div>
@@ -57,7 +59,7 @@ export const Contact = () => {
                     </div>
                 </div>
 
-                <div className={activeClasses[3] ? 'contact-option-card selected' : 'contact-option-card'} onClick={toggleClass}>
+                <div className={activeClasses.generalInfo ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("generalInfo")}>
                     <div className='contact-option-img'>
                 <img src={AllImages.GeneralInfo} alt="general-info" />
                     </div>
@@ -66,14 +68,14 @@ export const Contact = () => {
                     </div>
                 </div>
 
-                <div className={activeClasses[4] ? 'contact-option-card selected' : 'contact-option-card'} onClick={toggleClass}>
+                <div className={activeClasses.staffAugmentation ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("staffAugmentation")}>
                     <div className='contact-option-img'>
                 <img src={AllImages.StaffAugmentation} alt="staff-augmentation" />
                     </div>
                     <div className='contact-option-title'>
                         <label>{t("contact.option5.title")}</label>
                     </div>
-                </div> */}
+                </div>
                 <div className='contact-form'>
                     {/* <FrmContact /> */}
                 </div>
