@@ -13,6 +13,7 @@ export const HowWeDoIt = () => {
                     {t("how-we-do-it.text1.part.3")}
                     <span>{t("how-we-do-it.text1.part.4")}</span>
                 </label>
+
                 <label>
                     {t("how-we-do-it.text2.part.1")}
                     <span>{t("how-we-do-it.text2.part.2")}</span>{t("how-we-do-it.text2.part.3")}<span>{t("how-we-do-it.text2.part.4")}</span>

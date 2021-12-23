@@ -1,3 +1,5 @@
+@import "../styles/variables";
+
 @include media-sm {
     #header {
         .img-wrapper {
@@ -12,6 +14,7 @@
         background: none;
     }
 }
+//max-width:768px
 @include media-md {
     .technologies-changes {
         display: flex !important;
@@ -86,15 +89,67 @@
                     font-size: 1.813rem !important;
                 }
             }
-            :nth-child(3){
+            :nth-child(3) {
                 padding-top: 54px !important;
-                label{
+                label {
                     width: 305px !important;
                 }
             }
-            :nth-child(4){
+            :nth-child(4) {
                 padding-top: 95px !important;
             }
+        }
+    }
+    .how-we-do-it {
+        justify-content: center;
+        width: 100%;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        .text-wrapper {
+            position:relative;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-top: 45px;
+            padding-top: 59px;
+            padding-bottom: 60px;
+            
+            label {
+                width: 576px !important;
+                height: 181px;
+                padding: 34px 53px 32px 59px;
+                background-color: $White;
+                box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
+                border-radius: 20px;
+                @include textBasis(1.406rem);
+                z-index: 1;
+            }
+            :nth-child(1) {
+                order: 0;
+            }
+            :nth-child(2) {
+                order: 3;
+                padding-right: 52px;
+            }
+            :nth-child(3) {
+                order: 2;
+                padding-left: 50px;
+            }
+            :nth-child(4) {
+                order: 4;
+                padding: 58px 89px 46px 94px;
+            }
+        }
+        .text-wrapper::before {
+            content:'\A';
+            position:absolute;
+            background:#b3a9ce;
+            top:0; bottom:0;
+            left:37%; 
+            width:63%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
         }
     }
 }
