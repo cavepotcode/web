@@ -1,12 +1,16 @@
 import { useTranslation } from 'react-i18next';
 import { AllImages } from '../../helpers';
-import { FrmContact } from './frmContact/FrmContact';
+import { FrmNewLanding } from './frmContact/FrmNewLanding';
+import { FrmNewApp } from './frmContact/FrmNewApp';
+import { FrmReRe } from './frmContact/FrmReRe';
+import { FrmGeneralInfo } from './frmContact/FrmGeneralInfo';
+import { FrmStaffAugmentation } from './frmContact/FrmStaffAugmentation';
 import React, { useState } from "react";
 
 import './Contact.scss';
 
 export const Contact = () => {
-    const options: any = {
+    var options: any = {
         aNewLanding: true,
         aNewApp: false,
         redesign: false,
@@ -24,6 +28,7 @@ export const Contact = () => {
             [option]: true
         });
     };
+    
     return (
         <div className="contact">
             <div className="title">
@@ -80,7 +85,21 @@ export const Contact = () => {
                 </div>
 
                 <div className='contact-form'>
-                    {/* <FrmContact /> */}
+
+                    {activeClasses.aNewLanding && <FrmNewLanding />}
+                    {activeClasses.aNewApp && <FrmNewApp />}
+                    {activeClasses.redesign && <FrmReRe />}
+                    {activeClasses.generalInfo && <FrmGeneralInfo />}
+                    {activeClasses.staffAugmentation && <FrmStaffAugmentation />}
+
+
+                    {/* {(function() {
+                    if (options.aNewLanding) {
+                        return <FrmNewApp />;
+                    } else {
+                        return <FrmNewLanding />;
+                    }
+                    })()} */}
                 </div>
             </div>
 

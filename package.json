@@ -1,5 +1,5 @@
 {
-  "homepage":"http://pabloferrari1789.github.io/web",
+  "homepage": "http://pabloferrari1789.github.io/web",
   "name": "web",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +11,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "formik": "^2.2.9",
     "gh-pages": "^3.2.3",
     "i18next": "^20.4.0",
     "react": "^17.0.2",
@@ -22,8 +23,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "predeploy":"yarn run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
