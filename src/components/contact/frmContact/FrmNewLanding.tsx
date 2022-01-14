@@ -13,20 +13,20 @@ export const FrmNewLanding = () => {
                 validate={values => {
                     const errors = { name: '', email: '', phone: '', budget: '', subject: '', message: '' };
 
-                    if (!values.name) 
+                    if (!values.name)
                         errors.name = 'Required';
 
-                    if (!values.email) 
+                    if (!values.email)
                         errors.email = 'Required';
-                    else if ( !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) 
+                    else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email))
                         errors.email = 'Invalid email address';
-                    
-                    if (!values.subject) 
+
+                    if (!values.subject)
                         errors.subject = 'Required';
-                    
-                    if (!values.message) 
+
+                    if (!values.message)
                         errors.message = 'Required';
-                    
+
                     return errors;
                 }}
                 onSubmit={(values, { setSubmitting }) => {
@@ -131,7 +131,7 @@ export const FrmNewLanding = () => {
 
                         </div>
                         <button type="submit" disabled={isSubmitting}>
-                            Submit
+                            Send
                         </button>
                     </form>
                 )}

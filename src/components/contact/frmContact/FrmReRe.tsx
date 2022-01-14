@@ -1,7 +1,9 @@
 import { useTranslation } from 'react-i18next';
-import { Formik } from "formik";
+import { Formik, Field } from "formik";
 import { AllImages } from '../../../helpers';
 import './Frm.scss';
+import { MultipleFileUploadField } from '../../dragNDrop/MultipleFileUploadField';
+//import { array, object, string } from 'yup';
 
 export const FrmReRe = () => {
     const [t] = useTranslation("global");
@@ -9,9 +11,16 @@ export const FrmReRe = () => {
     return (
         <div className="Frm">
             <Formik
-                initialValues={{ name: '', email: '', phone: '', budget: '', subject: '', message: '' }}
+                initialValues={{ name: '', email: '', phone: '', budget: '', designer: '', files: [], subject: '', message: '' }}
+                // validationSchema={ object({
+                //     files: array(
+                //         object({
+                //             url: string().required(),
+                //         })
+                //     ),
+                // })}
                 validate={values => {
-                    const errors = { name: '', email: '', phone: '', budget: '', subject: '', message: '' };
+                    const errors = { name: '', email: '', phone: '', budget: '', designer: '', files: [], subject: '', message: '' };
 
                     if (!values.name)
                         errors.name = 'Required';
@@ -104,6 +113,33 @@ export const FrmReRe = () => {
 
                         </div>
                         <div className='option-wrapper'>
+                            <label> I nee </label>
+
+                            <div className='error-wrapper'>
+                                <div className='radiobutton-group' role="group" aria-labelledby="my-radio-group">
+                                    <label>
+                                        <Field className='radiobutton' type="radio" name="picked" value="1" />
+                                        Yes
+                                    </label>
+                                    <label>
+                                        <Field className='radiobutton' type="radio" name="picked" value="0" />
+                                        No
+                                    </label>
+                                </div>
+                                {errors.budget && touched.budget}
+                            </div>
+
+                        </div>
+                        <div className='option-wrapper'>
+                            <label> Ref </label>
+
+                            <div className='error-wrapper'>
+                                <MultipleFileUploadField name='files' />
+                                {errors.budget && touched.budget}
+                            </div>
+
+                        </div>
+                        <div className='option-wrapper'>
                             <label> Subjet </label>
 
                             <div className='error-wrapper'>
@@ -131,8 +167,9 @@ export const FrmReRe = () => {
 
                         </div>
                         <button type="submit" disabled={isSubmitting}>
-                            Submit
+                            Send
                         </button>
+                        {/* {JSON.stringify({values,errors})} */}
                     </form>
                 )}
             </Formik>

@@ -123,7 +123,7 @@ export const FrmStaffAugmentation = () => {
 
                         </div>
                         <button type="submit" disabled={isSubmitting}>
-                            Submit
+                            Send
                         </button>
                     </form>
                 )}

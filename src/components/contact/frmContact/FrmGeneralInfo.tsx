@@ -131,7 +131,7 @@ export const FrmGeneralInfo = () => {
 
                         </div>
                         <button type="submit" disabled={isSubmitting}>
-                            Submit
+                            Send
                         </button>
                     </form>
                 )}

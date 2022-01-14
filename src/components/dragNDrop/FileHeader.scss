@@ -1,0 +1,55 @@
+@import "../../styles/variables";
+
+.drag-zone{
+    height: 55px;
+    border-radius: $borderRadiusMain;
+    border: black;
+    border-style: dashed;
+    border-width: 2px;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+
+    
+    .icons-wrapper{
+        button{
+            height: 25px;
+            width: 25px;
+            border-radius: $borderRadiusCircle-25;
+            color: $White;
+            background-color: $Red;
+            font-size: 15px;
+            margin-left: 15px;
+        }
+        
+        .load-wait{
+            color: $Orange;
+        }
+
+        .load-done{
+            color: $Green;
+        }
+
+        .load-error{
+            color: $Red;
+        }
+
+        align-items: center;
+        display: flex;
+    }
+}
+
+
+    .error-detail{
+        margin-top: -7px;
+        margin-bottom: 7px;
+        color: $Red;
+    }
