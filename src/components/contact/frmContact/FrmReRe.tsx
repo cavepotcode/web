@@ -118,11 +118,11 @@ export const FrmReRe = () => {
                             <div className='error-wrapper'>
                                 <div className='radiobutton-group' role="group" aria-labelledby="my-radio-group">
                                     <label>
-                                        <Field className='radiobutton' type="radio" name="picked" value="1" />
+                                        <Field className='radiobutton' type="radio" name="designer" value="1" />
                                         Yes
                                     </label>
                                     <label>
-                                        <Field className='radiobutton' type="radio" name="picked" value="0" />
+                                        <Field className='radiobutton' type="radio" name="designer" value="0" />
                                         No
                                     </label>
                                 </div>

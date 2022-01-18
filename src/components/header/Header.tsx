@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { AllImages } from '../../helpers';
+import { NavLink } from 'react-router-dom';
+
 import './Header.scss';
 
 export const Header = () => {
@@ -11,10 +13,10 @@ export const Header = () => {
     useEffect(() => {
         const navItems = document.querySelectorAll('.menu-nav__item');
         if (showMenu) {
-            navItems.forEach(item=> item.classList.add('open'))
+            navItems.forEach(item => item.classList.add('open'))
         }
-        else{
-            navItems.forEach(item=> item.classList.remove('open'))
+        else {
+            navItems.forEach(item => item.classList.remove('open'))
         }
 
     }, [showMenu])
@@ -28,40 +30,40 @@ export const Header = () => {
                 <span className={showMenu ? 'menu-btn__burger open' : 'menu-btn__burger'}></span>
             </div>
             <nav className={showMenu ? 'nav open' : 'nav'}>
-                <ul className={showMenu?'menu-nav open':'menu-nav'}>
+                <ul className={showMenu ? 'menu-nav open' : 'menu-nav'}>
                     <li className="menu-nav__item active">
-                        <a href="index.html" className="menu-nav__link">
-                        {t("header.home")}
-                        </a>
+                        <NavLink to="/" className="menu-nav__link">
+                            {t("header.home")}
+                        </NavLink>
                     </li>
                     <li className="menu-nav__item">
                         <a href="about.html" className="menu-nav__link">
-                        {t("header.how.we.do.it")}
+                            {t("header.how.we.do.it")}
                         </a>
                     </li>
                     <li className="menu-nav__item">
                         <a href="projects.html" className="menu-nav__link">
-                        {t("header.projects")}
+                            {t("header.projects")}
                         </a>
                     </li>
                     <li className="menu-nav__item">
                         <a href="contact.html" className="menu-nav__link">
-                        {t("header.about.us")}
+                            {t("header.about.us")}
+                        </a>
+                    </li>
+                    <li className="menu-nav__item">
+                        <NavLink to="/contact" className="menu-nav__link">
+                            {t("header.contact.us")}
+                        </NavLink>
+                    </li>
+                    <li className="menu-nav__item">
+                        <a href="contact.html" className="menu-nav__link">
+                            {t("header.blog")}
                         </a>
                     </li>
                     <li className="menu-nav__item">
                         <a href="contact.html" className="menu-nav__link">
-                        {t("header.contact.us")}
-                        </a>
-                    </li>
-                    <li className="menu-nav__item">
-                        <a href="contact.html" className="menu-nav__link">
-                        {t("header.blog")}
-                        </a>
-                    </li>
-                    <li className="menu-nav__item">
-                        <a href="contact.html" className="menu-nav__link">
-                        {t("header.our.lab")}
+                            {t("header.our.lab")}
                         </a>
                     </li>
                 </ul>

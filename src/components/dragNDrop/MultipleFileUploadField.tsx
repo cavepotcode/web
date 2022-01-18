@@ -16,10 +16,12 @@ export function MultipleFileUploadField({ name }: { name: string }) {
     const [_, __, helpers] = useField(name);
 
     const [files, setFiles] = useState<UpleadableFile[]>([]);
+
     const onDrop = useCallback((accfiles: File[], rejFiles: FileRejection[]) => {
-        const mappedAcc = accfiles.map(file => ({ file, errors: [] }));
-        setFiles(curr => [...curr, ...mappedAcc, ...rejFiles]);
-    }, [])
+        const mappedAcc = accfiles.map((file) => ({ file, errors: [] }));
+        setFiles((curr) => [...curr, ...mappedAcc, ...rejFiles]);
+    }, []);
+    
     const { getRootProps, getInputProps } = useDropzone({ 
         onDrop, 
         accept: 'image/*',

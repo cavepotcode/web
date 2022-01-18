@@ -1,19 +1,26 @@
-import React, { useState } from "react";
+import { useField } from "formik";
+import React, { useEffect, useState } from "react";
 import './TechSelectos.scss';
 
 export interface TechSelectosPorps {
     name: string;
-    techs: any[];
+    techs: any;
 }
 
 export function TechSelector({ name, techs }: TechSelectosPorps) {
+    const [_,__,helpers] = useField(name);
     const [activeClasses, setActiveClasses] = useState(techs);
 
     const toggleClass = (option: any) => {
+        activeClasses[option] = !activeClasses[option];
         const newArray = {...activeClasses}
-        newArray[option] = !newArray[option];
         setActiveClasses(newArray);
     };
+
+    useEffect( () => {
+        helpers.setValue(activeClasses);
+    },[activeClasses]);
+
     return (
         <div className="img-wrapper">
             {

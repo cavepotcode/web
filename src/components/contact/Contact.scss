@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     display: grid;
     grid-row: 4;
-    margin-top: 65px;
+    margin-top: $spaceBetween;;
     gap: 34px;
     .title {
         grid-column: 1 / span 4;

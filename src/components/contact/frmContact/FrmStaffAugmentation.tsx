@@ -52,7 +52,7 @@ export const FrmStaffAugmentation = () => {
                             <div className='error-wrapper'>
                                 <input
                                     name="name"
-                                    placeholder="STAFF"
+                                    placeholder="Full name"
                                     value={values.name}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
@@ -104,7 +104,7 @@ export const FrmStaffAugmentation = () => {
                             <div className='error-wrapper'>
                                 <input
                                     name="talents"
-                                    placeholder="1"
+                                    placeholder="#"
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                 />
@@ -117,7 +117,7 @@ export const FrmStaffAugmentation = () => {
                             <div className='error-wrapper'>
                                 <input
                                     name="month"
-                                    placeholder="month"
+                                    placeholder="#"
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                 />

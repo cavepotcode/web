@@ -10,9 +10,8 @@
   background-color: $White;
   
   .grid {
-    padding-top: 93px;
+    //padding-top: 93px;
     display: grid;
     overflow-x: hidden;
-    grid-template: 568px auto auto 500px 504px 347px 482px 103px 391px/ 1fr;
   }
 }

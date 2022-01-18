@@ -9,22 +9,28 @@ import { TechnologiesThatWeUse } from './components/technologiesThatWeUse/Techno
 import WhatIsCavepot from './components/whatIsCavepot/WhatIsCavepot';
 import { Contact } from './components/contact/Contact';
 import { WhatDoWeDo } from './components/whatWeDo/WhatDoWeDo';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import { HomePage } from './pages/HomePage/HomePage';
+import { ContactPage } from './pages/ContactPage/ContactPage';
+import { NotFoundPage } from './pages/NotFound/NotFound';
 
 
 function App() {
   return (
     <div className="app">
-      <Header />
+
       <div className="grid">
-        <TechnologiesChanges />
-        <WhatIsCavepot />
-        <WhatDoWeDo />
-        <Contact />
-        {/* <HowWeDoIt/>
-        <TechnologiesThatWeUse/>
-        <ClientSay/>
-        <Investigation/>
-        <Footer/>  */}
+
+        <Router>
+          <Header />
+
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="*" element={<NotFoundPage/>} />
+          </Routes>
+          <Footer />
+        </Router>
       </div>
     </div>
   );
