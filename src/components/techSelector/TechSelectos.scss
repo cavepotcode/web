@@ -1,0 +1,20 @@
+.img-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .no-selected{
+        width: 10%;
+        margin: 17px;
+        img{
+            width: 100%;
+            filter: grayscale(100%);
+        }
+    }
+    .selected{
+        width: 10%;
+        margin: 17px;
+        img{
+            width: 100%;
+        }
+    }
+}

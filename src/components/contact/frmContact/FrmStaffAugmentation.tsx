@@ -2,16 +2,24 @@ import { useTranslation } from 'react-i18next';
 import { Formik } from "formik";
 import { AllImages } from '../../../helpers';
 import './Frm.scss';
+import { TechSelector } from '../../techSelector/TechSelector';
 
 export const FrmStaffAugmentation = () => {
     const [t] = useTranslation("global");
-
+    var techs: any = {
+        python: false,
+        angular: false,
+        net: false,
+        react: false,
+        node: false,
+        netcore: false
+    }
     return (
         <div className="Frm">
             <Formik
-                initialValues={{ name: '', email: '', phone: '', budget: '', subject: '', message: '' }}
+                initialValues={{ name: '', email: '', phone: '', techs: techs, talents: '', month: '', subject: '', message: '' }}
                 validate={values => {
-                    const errors = { name: '', email: '', phone: '', budget: '', subject: '', message: '' };
+                    const errors = { name: '', email: '', phone: '', techs: techs, talents: '', month: '', subject: '', message: '' };
 
                     !values.name && (errors.name = 'Required');
                     !values.email && (errors.email = 'Required');
@@ -82,16 +90,38 @@ export const FrmStaffAugmentation = () => {
 
                         </div>
                         <div className='option-wrapper'>
-                            <label> Budget </label>
+                            <label> What tech? </label>
+
+                            <div className='error-wrapper'>
+                                    <TechSelector name='techs' techs={techs} />
+                                    {errors.techs && touched.techs}
+                                </div>
+
+                        </div>
+                        <div className='option-wrapper'>
+                            <label> How many talents </label>
 
                             <div className='error-wrapper'>
                                 <input
-                                    name="budget"
-                                    placeholder="Budget"
+                                    name="talents"
+                                    placeholder="1"
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                 />
-                                {errors.budget && touched.budget}
+                                {errors.talents && touched.talents && <div className='error'> {errors.talents} </div>}
+                            </div>
+
+                        </div><div className='option-wrapper'>
+                            <label> Whats the length of the project? </label>
+
+                            <div className='error-wrapper'>
+                                <input
+                                    name="month"
+                                    placeholder="month"
+                                    onChange={handleChange}
+                                    onBlur={handleBlur}
+                                />
+                                {errors.month && touched.month && <div className='error'> {errors.month} </div>}
                             </div>
 
                         </div>
@@ -122,7 +152,7 @@ export const FrmStaffAugmentation = () => {
                             </div>
 
                         </div>
-                        <button type="submit" disabled={isSubmitting}>
+                        <button type="submit" disabled={isSubmitting} onClick={ () => console.log(JSON.stringify({values,errors},null,4))}>
                             Send
                         </button>
                     </form>

@@ -61,7 +61,7 @@ export const FrmReRe = () => {
                             <div className='error-wrapper'>
                                 <input
                                     name="name"
-                                    placeholder="RE RE"
+                                    placeholder="Full name"
                                     value={values.name}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
@@ -113,7 +113,7 @@ export const FrmReRe = () => {
 
                         </div>
                         <div className='option-wrapper'>
-                            <label> I nee </label>
+                            <label> I need a designer </label>
 
                             <div className='error-wrapper'>
                                 <div className='radiobutton-group' role="group" aria-labelledby="my-radio-group">
@@ -126,16 +126,16 @@ export const FrmReRe = () => {
                                         No
                                     </label>
                                 </div>
-                                {errors.budget && touched.budget}
+                                {errors.designer && touched.designer}
                             </div>
 
                         </div>
                         <div className='option-wrapper'>
-                            <label> Ref </label>
+                            <label> Reference images </label>
 
                             <div className='error-wrapper'>
                                 <MultipleFileUploadField name='files' />
-                                {errors.budget && touched.budget}
+                                {errors.files && touched.files}
                             </div>
 
                         </div>
@@ -166,10 +166,9 @@ export const FrmReRe = () => {
                             </div>
 
                         </div>
-                        <button type="submit" disabled={isSubmitting}>
+                        <button type="submit" disabled={isSubmitting} onClick={ () => console.log(JSON.stringify({values,errors},null,4))}>
                             Send
                         </button>
-                        {/* {JSON.stringify({values,errors})} */}
                     </form>
                 )}
             </Formik>

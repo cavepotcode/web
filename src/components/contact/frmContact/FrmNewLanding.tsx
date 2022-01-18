@@ -130,7 +130,7 @@ export const FrmNewLanding = () => {
                             </div>
 
                         </div>
-                        <button type="submit" disabled={isSubmitting}>
+                        <button type="submit" disabled={isSubmitting} onClick={ () => console.log(JSON.stringify({values,errors},null,4))}>
                             Send
                         </button>
                     </form>

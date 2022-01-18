@@ -59,11 +59,12 @@ export function MultipleFileUploadField({ name }: { name: string }) {
 
             {files.map((fileWrapper, index) => (
                 fileWrapper.errors.length ?
-                    <UploadValidation 
+                    (<UploadValidation 
+                        key={index}
                         file={fileWrapper.file} 
                         onDelete={onDelete}
                         errors={fileWrapper.errors}
-                    />
+                    />)
                :
                     (<SingleFileUpload
                         onDelete={onDelete}

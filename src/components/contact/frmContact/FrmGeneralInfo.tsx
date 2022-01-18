@@ -9,9 +9,9 @@ export const FrmGeneralInfo = () => {
     return (
         <div className="Frm">
             <Formik
-                initialValues={{ name: '', email: '', phone: '', budget: '', subject: '', message: '' }}
+                initialValues={{ name: '', email: '', phone: '', subject: '', message: '' }}
                 validate={values => {
-                    const errors = { name: '', email: '', phone: '', budget: '', subject: '', message: '' };
+                    const errors = { name: '', email: '', phone: '', subject: '', message: '' };
 
                     if (!values.name)
                         errors.name = 'Required';
@@ -52,7 +52,7 @@ export const FrmGeneralInfo = () => {
                             <div className='error-wrapper'>
                                 <input
                                     name="name"
-                                    placeholder="GENERAL INFO"
+                                    placeholder="Full name"
                                     value={values.name}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
@@ -90,20 +90,6 @@ export const FrmGeneralInfo = () => {
 
                         </div>
                         <div className='option-wrapper'>
-                            <label> Budget </label>
-
-                            <div className='error-wrapper'>
-                                <input
-                                    name="budget"
-                                    placeholder="Budget"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                />
-                                {errors.budget && touched.budget}
-                            </div>
-
-                        </div>
-                        <div className='option-wrapper'>
                             <label> Subjet </label>
 
                             <div className='error-wrapper'>
@@ -130,7 +116,7 @@ export const FrmGeneralInfo = () => {
                             </div>
 
                         </div>
-                        <button type="submit" disabled={isSubmitting}>
+                        <button type="submit" disabled={isSubmitting} onClick={ () => console.log(JSON.stringify({values,errors},null,4))}>
                             Send
                         </button>
                     </form>
