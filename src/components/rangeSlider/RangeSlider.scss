@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+.slider-wrapper{
+    .slider-value{
+    }
+    .slider-field{
+        input[type=range] {
+            border:none;
+        height: 25px;
+        -webkit-appearance: none;
+        margin: 10px 0;
+        width: 100%;
+        }
+        //La barrita
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 2px;
+            cursor: pointer;
+            background: $Black;
+            border-radius: 5px;
+        }
+        //La Pelotita
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            border: 1px solid $Black;
+            height: 18px;
+            width: 18px;
+            border-radius: 25px;
+            background: $HCWHY-red;
+            cursor: pointer;
+            margin-top: -9px;
+        }
+       
+    }
+}

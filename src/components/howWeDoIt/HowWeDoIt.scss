@@ -2,11 +2,11 @@
 @import "../../styles/variables";
 
 .how-we-do-it {
-    grid-column: 1;
     background-image: url(../../assets/img/rectangulo-violeta.png);
     background-size: 100% 500px;
     width: 73.7%;
     background-repeat: no-repeat;
+    grid-row: 5;
     display: grid;
     grid-template-rows: 170px 249px 81px;
     .title {

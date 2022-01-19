@@ -3,6 +3,7 @@ import { Formik, Field } from "formik";
 import { AllImages } from '../../../helpers';
 import './Frm.scss';
 import { MultipleFileUploadField } from '../../dragNDrop/MultipleFileUploadField';
+import { RangeSlider } from '../../rangeSlider/RangeSlider';
 //import { array, object, string } from 'yup';
 
 export const FrmReRe = () => {
@@ -102,12 +103,7 @@ export const FrmReRe = () => {
                             <label> Budget </label>
 
                             <div className='error-wrapper'>
-                                <input
-                                    name="budget"
-                                    placeholder="Budget"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                />
+                                <RangeSlider />
                                 {errors.budget && touched.budget}
                             </div>
 

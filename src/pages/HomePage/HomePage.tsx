@@ -1,6 +1,6 @@
 import { TechnologiesChanges } from "../../components/technologiesChanges/TechnologiesChanges";
+import { WhatDoWeDo } from "../../components/whatDoWeDo/WhatDoWeDo";
 import WhatIsCavepot from "../../components/whatIsCavepot/WhatIsCavepot";
-import { WhatDoWeDo } from "../../components/whatWeDo/WhatDoWeDo";
 
 import './HomePage.scss';
 export function HomePage() {

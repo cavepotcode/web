@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Formik } from "formik";
 import { AllImages } from '../../../helpers';
 import './Frm.scss';
+import { RangeSlider } from '../../rangeSlider/RangeSlider';
 
 export const FrmNewLanding = () => {
     const [t] = useTranslation("global");
@@ -93,12 +94,8 @@ export const FrmNewLanding = () => {
                             <label> Budget </label>
 
                             <div className='error-wrapper'>
-                                <input
-                                    name="budget"
-                                    placeholder="Budget"
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                />
+
+                                <RangeSlider />
                                 {errors.budget && touched.budget}
                             </div>
 
@@ -130,7 +127,7 @@ export const FrmNewLanding = () => {
                             </div>
 
                         </div>
-                        <button type="submit" disabled={isSubmitting} onClick={ () => console.log(JSON.stringify({values,errors},null,4))}>
+                        <button type="submit" disabled={isSubmitting} onClick={() => console.log(JSON.stringify({ values, errors }, null, 4))}>
                             Send
                         </button>
                     </form>
