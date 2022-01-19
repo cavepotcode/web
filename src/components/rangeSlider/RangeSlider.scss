@@ -1,14 +1,21 @@
 @import "../../styles/variables";
 .slider-wrapper{
-    .slider-value{
-    }
+
     .slider-field{
+        .slider-value{
+            width: 65px;
+        }
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
         input[type=range] {
             border:none;
-        height: 25px;
-        -webkit-appearance: none;
-        margin: 10px 0;
-        width: 100%;
+            height: 25px;
+            -webkit-appearance: none;
+            margin: 10px 0;
+            width: 100%;
+            padding: 0;
         }
         //La barrita
         input[type=range]::-webkit-slider-runnable-track {

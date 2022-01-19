@@ -1,22 +1,36 @@
-import { useState } from "react";
+import { useField } from "formik";
+import { useEffect, useState } from "react";
 import "./RangeSlider.scss";
 
-export function RangeSlider() {
-    const [rangeval, setRangeval] = useState("1000");
 
+export interface RangeSliderPorps {
+    name: string;
+    minValue: number;
+    maxValue: number;
+    stepValue: number;
+}
+
+export function RangeSlider( { name, minValue, maxValue, stepValue }: RangeSliderPorps) {
+    
+    const [_,__,helpers] = useField(name);
+    const [rangeval, setRangeval] = useState(minValue);
+
+    useEffect( () => {
+        helpers.setValue(rangeval);
+    },[rangeval]);
+    
     return (
         <div className="slider-wrapper">
-            <div className="slider-value">
-                <span>{rangeval}</span>
-            </div>
             <div className="slider-field">
+                <span>USD</span>
                 <input name="budget" 
                     type='range' 
-                    min={1000} 
-                    max={100000}
-                    step="500"
+                    min={minValue} 
+                    max={maxValue}
+                    step={stepValue}
                     value={rangeval}
-                    onChange={(event) => setRangeval(event.target.value)} />
+                    onChange={(event) => setRangeval(event.target.valueAsNumber)} />
+                <span className="slider-value">{rangeval}</span>
             </div>
         </div>
     );

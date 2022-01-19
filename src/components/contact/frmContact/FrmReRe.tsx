@@ -103,7 +103,7 @@ export const FrmReRe = () => {
                             <label> Budget </label>
 
                             <div className='error-wrapper'>
-                                <RangeSlider />
+                                <RangeSlider name="budget" minValue={0} maxValue={1000} stepValue={10}/>
                                 {errors.budget && touched.budget}
                             </div>
 
