@@ -77,7 +77,6 @@
                 font-weight: normal;
                 font-stretch: normal;
                 font-style: normal;
-                line-height: 1.32;
                 letter-spacing: normal;
                 text-align: left;
                 padding-left: 28px;
@@ -124,5 +123,47 @@
 
         align-self: center;
         color: $White;
+    }
+}
+
+@include media-md{
+    .Frm {
+        width: 100%;
+        margin: 20px 20px 23px 22px;
+        padding: 21px 27px 16px 34px;
+        .option-wrapper{
+            .error-wrapper{
+                input{
+                    height: 35px;
+                    margin: 0 0 10px 0;
+        
+                    font-size: 17px;
+                    font-weight: lighter;
+                    font-stretch: lighter;
+                    font-style: lighter;
+                    letter-spacing: lighter;
+                    text-align: left;
+                    padding-left: 18px;
+                }
+            }
+        }
+    }
+}
+
+
+@include media-sm{
+    .Frm {
+        .option-wrapper{
+            .error-wrapper{
+                input{
+                    height: 25px;
+                    margin: 0 0 10px 0;
+                    border: solid 2px #181718;
+        
+                    font-size: 11px;
+                    padding-left: 10px;
+                }
+            }
+        }
     }
 }

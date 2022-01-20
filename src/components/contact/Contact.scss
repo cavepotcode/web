@@ -2,12 +2,11 @@
 @import "../../styles/variables";
 
 .contact {
-    
-    background-size: 100% 91%;
-    background-repeat: no-repeat;
-    display: grid;
-    grid-row: 4;
-    margin-top: $spaceBetween;;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: $spaceBetween;
     gap: 34px;
     .title {
         grid-column: 1 / span 4;
@@ -28,8 +27,6 @@
         .contact-options-wrapper{
             gap: 30px;
             display: flex;
-            grid-gap: 30px;
-            gap: 30px;
             display: flex;
             padding-bottom: 45px;
             align-items: end;
@@ -82,4 +79,86 @@
         }
     }
    
+}
+
+@include media-md{
+    .contact{
+        width: calc(parent);
+
+        .form-wrapper{
+            width: 100%;
+            .contact-form{
+                .option-wrapper{
+                    label{
+                        width: 0px;
+                        min-width: 0;
+                        margin-right: 0;
+                        visibility: hidden;
+                        position: absolute;
+                    }
+                }
+            }
+
+            .contact-options-wrapper{
+                gap:15px;
+                padding-bottom: 23px;
+                .contact-option-card{
+                    height: 176px;
+                    .contact-option-img{
+                        img{
+                            width: 90%;
+                            height: 90%;
+                        }
+                    }
+                    .contact-option-title{
+                        label{
+                            font-size: 14px;
+                        }
+                    }
+                    
+                
+                &.selected{
+                    margin-bottom: -27px;
+                }
+                }
+            }
+        }
+    }
+}
+
+@include media-sm{
+    .contact{
+        width: calc(parent);
+
+        .form-wrapper{
+            .contact-options-wrapper{
+                gap:15px;
+                padding-bottom: 23px;
+                .contact-option-card{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 85px;
+                    .contact-option-img{
+                        img{
+                            width: 0px;
+                            min-width: 0;
+                            margin-right: 0;
+                            visibility: hidden;
+                            position: absolute;
+                        }
+                    }
+                    .contact-option-title{
+                        label{
+                            font-size: 65%;
+                            font-weight: bold;
+                        }
+                    }
+                    &.selected{
+                        margin-bottom: -27px;
+                    }
+                }
+            }
+        }
+    }
 }

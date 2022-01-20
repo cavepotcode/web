@@ -1,3 +1,5 @@
+@import "../../styles/mixin";
+
 .img-wrapper{
     width: 100%;
     display: flex;
@@ -15,6 +17,32 @@
         margin: 17px;
         img{
             width: 100%;
+        }
+    }
+}
+
+@include media-md{
+    .img-wrapper{
+        .no-selected{
+            width: 17%;
+            margin: 8px;
+        }
+        .selected{
+            width: 17%;
+            margin: 8px;
+        }
+    }
+}
+
+@include media-sm{
+    .img-wrapper{
+        .no-selected{
+            width: 20%;
+            margin: 8px;
+        }
+        .selected{
+            width: 20%;
+            margin: 8px;
         }
     }
 }
