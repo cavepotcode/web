@@ -10,25 +10,9 @@
             }
         }
     }
-    .technologies-changes {
-        background: none;
-    }
 }
 //max-width:768px
 @include media-md {
-    .technologies-changes {
-        display: flex !important;
-        gap: 0 !important;
-        justify-content: center;
-        align-items: center;
-        background-image: url("../assets/img/banner.png");
-        .textwrapper {
-            width: 582px;
-            border-radius: 20px;
-            box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
-            background-color: #fff;
-        }
-    }
     .what-is-cavepot {
         .wrapper {
             display: grid !important;
