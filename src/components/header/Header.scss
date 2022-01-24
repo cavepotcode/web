@@ -1,5 +1,7 @@
 @import "../../styles/main";
 @import "../../styles/variables";
+@import "../../styles/mixin";
+
 .header {
     &.open{
         opacity: 1;
@@ -15,8 +17,8 @@
         position: fixed;
         padding-left: 46px; 
         img {
-            width: 341px;
-            height: 37px;
+            width: 267px;
+            height: 52px;
         }
     }
 
@@ -91,6 +93,7 @@
                 &__item{
                     a{
                         font-size: 23px;
+                        font-weight: 600;
                     }
                     display: inline;
                     padding-right: 1.5rem;
@@ -125,7 +128,7 @@
                 }
                 &.active > a {
                     color: black;
-                    font-weight: 800;
+                    font-weight: 900;
                 }
             }
             &__link {
@@ -147,6 +150,56 @@
     @for $i from 1 through 7 {
         .menu-nav__item:nth-child(#{$i}) {
             transition-delay: ($i * 0.1s)+0.15s;
+        }
+    }
+}
+
+@include media-sm {
+    .header {
+        .img-wrapper {
+            padding-left: 36px;
+            img {
+                width: 150px;
+                height: 30px;
+            }
+        }
+    }
+}
+// maximo 1024px
+@include media-lg {
+    .header {
+        .menu-btn {
+            display: block;
+            @include transition-ease;
+        }
+        .nav {
+            visibility: hidden;
+
+            .menu-nav {
+                display: flex;
+                flex-flow: column wrap;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                overflow: hidden;
+                background-color: rgb(224, 220, 220);
+                list-style-type: none;
+                padding-right: 1rem;
+                transform: translateY(-100%);
+                opacity: 0.9;
+                @include transition-ease;
+
+                &.open {
+                    transform: translateY(0);
+                }
+            }
+            &.open {
+                visibility: visible;
+                position: fixed;
+            }
+        }
+        .img-wrapper {
+            z-index: 0;
         }
     }
 }

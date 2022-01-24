@@ -2,17 +2,22 @@
 @import "../../styles/variables";
 
 .how-we-do-it {
-    background-image: url(../../assets/img/rectangulo-violeta.png);
-    background-size: 100% 500px;
+    // background-image: url(../../assets/img/rectangulo-violeta.png);
+    // background-size: 100% 500px;
+    // background-repeat: no-repeat;
+    background-color: $LilaBanner;
+    color:$White;
     width: 73.7%;
-    background-repeat: no-repeat;
     grid-row: 5;
     display: grid;
     grid-template-rows: 170px 249px 81px;
+    border-bottom-right-radius: $borderRadiusMain;
+    border-top-right-radius: $borderRadiusMain;
     .title {
         align-self: center;
         justify-self: center;
         @include textBasis(2.5rem);
+        color: $White;
     }
     .text-wrapper {
         display: grid;
@@ -22,16 +27,75 @@
         justify-content: center;
         text-align: center;
         label{
-        @include textBasis(1.063rem);
+            color: $White !important;
+            font-weight: 100 !important;
+            @include textBasis(1.063rem);
 
         }
         span{
+            color: $White;
             font-weight: bold;
         }
         :last-child{
             align-self: center;
             width: 319px;
             justify-self: center;
+        }
+    }
+}
+
+
+@include media-md {
+    .how-we-do-it {
+        justify-content: center;
+        width: 100%;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        .text-wrapper {
+            position:relative;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-top: 45px;
+            padding-top: 59px;
+            padding-bottom: 60px;
+            
+            label {
+                width: 576px !important;
+                height: 181px;
+                padding: 34px 53px 32px 59px;
+                //background-color: $White;
+                box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
+                border-radius: 20px;
+                @include textBasis(1.406rem);
+                z-index: 1;
+            }
+            :nth-child(1) {
+                order: 0;
+            }
+            :nth-child(2) {
+                order: 3;
+                padding-right: 52px;
+            }
+            :nth-child(3) {
+                order: 2;
+                padding-left: 50px;
+            }
+            :nth-child(4) {
+                order: 4;
+                padding: 58px 89px 46px 94px;
+            }
+        }
+        .text-wrapper::before {
+            content:'\A';
+            position:absolute;
+            background:#b3a9ce;
+            top:0; bottom:0;
+            left:37%; 
+            width:63%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
         }
     }
 }

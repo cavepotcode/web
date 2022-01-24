@@ -1,6 +1,20 @@
 import { useTranslation } from 'react-i18next';
 import { AllImages } from '../../helpers';
+import { NavLink } from 'react-router-dom';
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faTwitter,faInstagram,faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
+
 import './Footer.scss';
+import { useHref } from 'react-router-dom';
+
+library.add(faFacebook);
+library.add(faTwitter);
+library.add(faInstagram);
+library.add(faLinkedin);
+
 
 export const Footer = () => {
     const [t] = useTranslation("global");
@@ -43,12 +57,18 @@ export const Footer = () => {
                     <label>{t("footer.column.4.text.1")}</label>
                     <label>{t("footer.column.4.text.2")}</label>
                     <label>{t("footer.column.4.text.3")}</label>
-                    <img src={AllImages.Redes} alt="social-media" />
+                    <div className='social-media'>
+                        <a href="https://www.facebook.com/Cavepot" target="_blank"><FontAwesomeIcon icon={['fab', 'facebook']} /></a>
+                        <a href="https://twitter.com/Cavepot" target="_blank"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
+                        <a href="https://www.instagram.com/cavepotuy" target="_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
+                        <a href="https://www.linkedin.com/company/3561578" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
+                    </div>
                 </div>
             </div>
         </div>
     )
 }
+
 
 
 

@@ -2,9 +2,10 @@
 @import "../../styles/variables";
 
 .what-do-we-do {
-    background-image: url(../../assets/img/yellow-back.png);
-    background-size: 100% 91%;
-    background-repeat: no-repeat;
+    // background-image: url(../../assets/img/yellow-back.png);
+    // background-size: 100% 91%;
+    // background-repeat: no-repeat;
+    background-color: $AmarilloBanner;
     display: grid;
     grid-row: 3;
     gap: 34px;
@@ -28,7 +29,8 @@
         justify-content: center;
         grid-column: 1 / span 4;
         gap: 30px;
-        display: flex;
+        display: flex;    
+        height: 250px;
         > div {
             height: 292px;
             width: 275px;
@@ -55,6 +57,58 @@
             label {
                 width: 216px;
                 @include textBasis(1.063rem);
+            }
+        }
+    }
+}
+@include media-md {
+    
+    .what-do-we-do {
+        background-image: none !important;
+        .title {
+            :nth-child(2) {
+                width: 624px;
+                align-self: center;
+            }
+        }
+        .cards-wrapper {
+            flex-direction: column;
+            align-items: center;
+            // background-image: url("../assets/img/yellow-back.png");
+            // background-size: 100% 100%;
+            // background-repeat: no-repeat;
+            background-color: $AmarilloBanner;
+            padding-top: 83px;
+            padding-bottom: 61px;
+            width: 100%;
+            > div {
+                width: 382px !important;
+                height: 350px !important;
+                padding-top: 108px !important;
+                label {
+                    width: 295px !important;
+
+                    font-size: 1.5rem !important;
+                }
+                button {
+                    font-size: 1.625rem !important;
+                    width: 295px !important;
+                    height: 69px !important;
+                }
+            }
+            :nth-child(1) {
+                label {
+                    font-size: 1.813rem !important;
+                }
+            }
+            :nth-child(3) {
+                padding-top: 54px !important;
+                label {
+                    width: 305px !important;
+                }
+            }
+            :nth-child(4) {
+                padding-top: 95px !important;
             }
         }
     }

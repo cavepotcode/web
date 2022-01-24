@@ -11,12 +11,12 @@
         justify-self: center;
     }
     .img-wrapper {
-        display: grid;
-        grid-template-columns: repeat(6, 150px);
+        display: flex;
+        flex-direction: row;
         column-gap: 42px;
         justify-content: center;
         img {
-            align-self: flex-end;
+            width: 10%;
             justify-self: center;
         }
     }
