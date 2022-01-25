@@ -7,21 +7,19 @@ export const ClientSay = () => {
 
     return (
         <div className="client-say">
-            <div className="text-wrapper">
-                <div className="label-wrapper">
-                    <label>{t("clients-says.title")}</label>
-                </div>
-                <div className="right-container">
-                    <img src={AllImages.LeftArrow} alt="left-arrow" />
-                    <div className="card">
-                        <label className="text-say">"{t("clients-says.text")}"
-                        </label>
-                        <div className="firm">
-                            <label>{t("clients-says.firm")}</label>
-                        </div>
+            <div className="label-wrapper">
+                <label>{t("clients-says.title")}</label>
+            </div>
+            <div className="right-container">
+                <img src={AllImages.LeftArrow} alt="left-arrow" />
+                <div className="card">
+                    <label className="text-say">"{t("clients-says.text")}"
+                    </label>
+                    <div className="firm">
+                        <label>{t("clients-says.firm")}</label>
                     </div>
-                    <img src={AllImages.RightArrow} alt="right-arrow" />
                 </div>
+                <img src={AllImages.RightArrow} alt="right-arrow" />
             </div>
         </div>
     )

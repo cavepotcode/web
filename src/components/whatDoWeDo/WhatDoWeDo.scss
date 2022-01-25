@@ -2,13 +2,12 @@
 @import "../../styles/variables";
 
 .what-do-we-do {
-    // background-image: url(../../assets/img/yellow-back.png);
-    // background-size: 100% 91%;
-    // background-repeat: no-repeat;
     background-color: $AmarilloBanner;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-row: 3;
     gap: 34px;
+    margin-bottom: $spaceBetween45;
     .title {
         grid-column: 1 / span 4;
         display: flex;
@@ -64,7 +63,7 @@
 @include media-md {
     
     .what-do-we-do {
-        background-image: none !important;
+        background-color: $White;
         .title {
             :nth-child(2) {
                 width: 624px;
@@ -72,15 +71,14 @@
             }
         }
         .cards-wrapper {
-            flex-direction: column;
+            background-color: $AmarilloBanner;
+            flex-direction: row;
             align-items: center;
-            // background-image: url("../assets/img/yellow-back.png");
-            // background-size: 100% 100%;
-            // background-repeat: no-repeat;
             background-color: $AmarilloBanner;
             padding-top: 83px;
             padding-bottom: 61px;
             width: 100%;
+            height: 100%;
             > div {
                 width: 382px !important;
                 height: 350px !important;

@@ -2,10 +2,8 @@
 //@import "../../styles/mixin";
 
 .technologies-changes {
-    display: grid;
-    grid-template-columns: 43% 57%;
+    display: flex;
     gap: 16px;
-    grid-row: 1;
 
     .textwrapper {
         grid-column: 1;
@@ -14,8 +12,7 @@
         flex-direction: column;
         text-align: center;
         justify-content: center;
-        justify-self: center;
-        padding: 69px 89px 51px 73px;
+        padding: 0 30px 0 30px;
         
         
         .title {
@@ -39,17 +36,21 @@
 //max-width:768px
 @include media-md {
     .technologies-changes {
-        display: flex !important;
-        gap: 0 !important;
-        justify-content: center;
-        align-items: center;
-        background-image: url("../../assets/img/banner.png");
+        background-image: url("../../assets/img/banner.png");    
+        background-repeat: no-repeat;
         .textwrapper {
-            margin:22px 0 22px 0;
-            width: 582px;
-            border-radius: 20px;
+            background-color: white;
+            height: 100%;
+            margin: 30px 30px 30px 30px;
+            padding: 30px 30px 30px 30px;
+            align-self: center;
+            border-radius: $borderRadiusMain;
             box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
-            background-color: #fff;
+        }
+
+        .img-technologies{
+            width: 0;
+            visibility: hidden;
         }
     }
 }

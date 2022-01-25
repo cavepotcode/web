@@ -1,14 +1,14 @@
-@import "../../styles/mixin";
+@import "../../styles/_mixin";
+@import "../../styles/_variables";
 
 .technologies-that-we-use {
-    // background-color: lightblue;
-    grid-column: 1 / span 4;
-    display: grid;
-    grid-template-rows: 126px 186px 145px 47px;
+    display: flex;
+    flex-direction: column;
+    gap: $spaceBetween45;
+    align-items: center;
+    justify-content: center;
     .title {
         @include textBasis(2.656rem);
-        align-self: flex-end;
-        justify-self: center;
     }
     .img-wrapper {
         display: flex;
@@ -40,5 +40,27 @@
                 font-weight: bold
             };
         }
+    }
+}
+@include media-md {
+    .technologies-that-we-use {
+        
+        .img-wrapper {
+            flex-wrap: wrap;
+            img {
+                margin: 0 25px 0 25px;
+                width: 15%;
+                justify-self: center;
+            }
+        }
+        
+        .blue-line-wrapper {
+            width: 100%;
+
+            #blue-line {
+                margin: 7px 50px 0 50px;
+            }
+        }
+
     }
 }

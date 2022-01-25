@@ -77,3 +77,29 @@
         }
     }
 }
+
+@include media-md {
+    .what-is-cavepot {
+        .wrapper {
+            display: grid !important;
+            label {
+                font-size: 1.438rem !important ;
+            }
+            label:nth-child(1) {
+                width: 375px !important;
+            }
+            label:nth-child(2) {
+                width: 371px !important;
+            }
+            label:nth-child(3) {
+                width: 371px !important;
+            }
+        }
+        .message-container {
+            margin-top: 118px;
+            .message {
+                font-size: 1.313rem !important;
+            }
+        }
+    }
+}

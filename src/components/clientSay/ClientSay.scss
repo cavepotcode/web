@@ -2,56 +2,71 @@
 @import "../../styles/mixin";
 
 .client-say {
-    grid-column: 1 / span 4;
-    display: grid;
-    grid-template-rows: 243px 104px;
-    .text-wrapper {
-        display: grid;
-        grid-template-columns: 33.2% auto;
-        background-color: $aqua;
-        justify-content: center;
-        .label-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            label {
-                @include textBasis(2.5rem);
-                text-align: center;
-                width: 287px;
-            }
+    display: flex;
+    flex-direction: row;
+    background-color: $aqua;
+    justify-content: center;
+    align-items: center;
+    gap: $spaceBetween45;
+    height: 250px;
+    margin-bottom: $spaceBetween;
+   
+    .label-wrapper {
+        display: flex;
+        label {
+            @include textBasis(2.5rem);
+            text-align: center;
+            width: 287px;
         }
-        .right-container {
-            padding-top: 36px;
+    }
+    .right-container {
+        padding-top: 120px;
+        display: flex;
+        align-items: center;
+        img {
+            width: 19px;
+            height: 29px;
+            cursor: pointer;
+        }
+        .card {
+            max-width: 740px;
             display: flex;
-            align-items: center;
-            img {
-                width: 19px;
-                height: 29px;
-                cursor: pointer;
-            }
-            .card {
-                background-color: $White;
-                border-radius: 20px;
-                width: 733px;
-                height: 231px;
-                padding: 48px 42px 33px 46px;
-                box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
-                @include textBasis(1.125rem);
-                font-style: italic;
-                text-align: center;
+            flex-direction: column;
+            gap: 12px;
+            background-color: $White;
+            border-radius: 20px;
+            padding: 40px 20px 40px 20px;
+            box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
+            @include textBasis(1.125rem);
+            font-style: italic;
+            text-align: center;
+            margin-left: 25.5px;
+            margin-right: 25.5px;
+            .firm {
                 display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                margin-left: 25.5px;
-                margin-right: 25.5px;
-                .text-say {
-                    width: 625px;
-                }
-                .firm {
-                    display: flex;
-                    justify-content: flex-end;
-                }
+                justify-content: flex-end;
             }
         }
     }
+}
+
+@include media-md {
+        
+    .client-say {
+        gap:30px;
+        background-color: $White;
+        height: auto;
+        flex-direction: column;
+        .right-container {
+            flex-direction: row;
+            background-color: $aqua;
+            padding-top: 0;
+            height: 225px;
+            }  
+            .card{
+                margin-top: 95px;
+                padding: 0;
+            }     
+        }
+
 }

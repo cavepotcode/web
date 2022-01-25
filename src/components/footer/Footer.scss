@@ -45,7 +45,12 @@
                 margin-top: 25px;
             }
         }
-
+        .locate{
+            .main-text{
+                display: flex;
+                flex-direction: column;
+            }
+        }
         .social-media{
             display: flex;
             gap: 7px;
@@ -63,5 +68,48 @@
     }
     .title {
         font-weight: bold;
+    }
+}
+
+@include media-md {
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .img-wrapper{
+            width: 100%;
+            padding: 0 40px 0 40px;
+            display: flex;
+            flex-direction: row;
+            gap:50px
+        }
+        .text-wrapper{
+            gap: 0;
+            .column {
+                &.company{
+                    width: 0;
+                    height: 0;
+                    visibility: hidden;
+                }
+                &.experiences{
+                    width: 0;
+                    height: 0;
+                    visibility: hidden;
+                }
+                &.connect{
+                    width: 0;
+                    height: 0;
+                    visibility: hidden;
+                }
+                &.locate{
+                    width: 100%;
+                    margin-top: 15px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+            }
+        }
     }
 }

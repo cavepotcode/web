@@ -9,12 +9,12 @@ export const Investigation = () => {
         <div className="investigation">
             <img src={AllImages.Banner2} alt="" />
             <div className="text-wrapper">
-                <label className="title">{t("investigation.title")}</label>
                 <div className="main-text-wrapper">
+                    <label className="title">{t("investigation.title")}</label>
                     <label>{t("investigation.text.1")}</label>
                     <label>{t("investigation.text.2")}</label>
                 </div>
-                <button>{t("investigation.button")}</button>
+            <button>{t("investigation.button")}</button>
             </div>
         </div>
     )
