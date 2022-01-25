@@ -2,11 +2,11 @@
 @import "../../styles/variables";
 
 .how-we-do-it {
+    padding-top: $spaceBetween45;
     background-color: $LilaBanner;
-    width: 73.7%;
-    grid-row: 5;
-    display: grid;
-    grid-template-rows: 170px 249px 81px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
     border-bottom-right-radius: $borderRadiusMain;
     border-top-right-radius: $borderRadiusMain;
     .title {
@@ -15,22 +15,21 @@
         @include textBasis(2.5rem);
         color: $White;
     }
-    .text-wrapper {
-        display: grid;
-        grid-template: 77px 97px / 338px 352px;
-        column-gap: 135px;
-        row-gap: 75px;
+    .text-wrapper{
+        margin: 45px  0 45px 0;
+        display: flex;
+        flex-direction: row;
+        gap: 65px;
+        flex-wrap: wrap;
         justify-content: center;
         text-align: center;
-        label{
+        .papa{
+            width: 360px;
             color: $White !important;
             font-weight: 100 !important;
-            @include textBasis(1.063rem);
+            @include textBasis(1.063rem); 
 
-        }
-        span{
-            color: $White;
-            font-weight: bold;
+
         }
         :last-child{
             align-self: center;
@@ -64,7 +63,7 @@
             padding-top: 59px;
             padding-bottom: 60px;
             
-            label {
+            .papa {
                 background-color: $White;
                 color: $Black !important;
                 width: 576px !important;
@@ -74,10 +73,10 @@
                 border-radius: 20px;
                 @include textBasis(1.406rem);
                 z-index: 1;
-            }
 
-            span{
-                color: $Black;
+                span{
+                    color: $Black;
+                }
             }
             :nth-child(1) {
                 order: 0;

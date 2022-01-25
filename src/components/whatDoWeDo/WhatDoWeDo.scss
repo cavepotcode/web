@@ -8,6 +8,7 @@
     grid-row: 3;
     gap: 34px;
     margin-bottom: $spaceBetween45;
+    height: calc(50%);
     .title {
         grid-column: 1 / span 4;
         display: flex;
@@ -22,14 +23,12 @@
         }
     }
     .cards-wrapper {
-        display: grid;
+        display: flex;
         justify-self: center;
         flex-wrap: wrap;
         justify-content: center;
-        grid-column: 1 / span 4;
         gap: 30px;
-        display: flex;    
-        height: 250px;
+        margin-bottom: -50px;
         > div {
             height: 292px;
             width: 275px;

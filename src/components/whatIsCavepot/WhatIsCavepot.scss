@@ -61,8 +61,8 @@
         gap: 79px;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 81px;
-        margin-bottom: 47px;
+        margin-top: $spaceBetween45;
+        margin-bottom: $spaceBetween45;
         label:nth-child(1) {
             width: 343px;
         }

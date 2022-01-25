@@ -11,7 +11,7 @@ export const WhatDoWeDo = () => {
                 <label>{t("what-do-we-do.sub-title")}</label>
             </div>
             <div className="cards-wrapper">
-                <div className="first-element">
+                <div>
                     <label>{t("what-do-we-do.card1.title")}</label>
                     <button>{t("what-do-we-do.card1.button")}</button>
                 </div>
