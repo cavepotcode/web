@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { AllImages } from '../../helpers';
+import Slider from '../slider/Slider';
 import './ClientSay.scss';
 
 export const ClientSay = () => {
@@ -11,7 +12,8 @@ export const ClientSay = () => {
                 <label>{t("clients-says.title")}</label>
             </div>
             <div className="right-container">
-                <img src={AllImages.LeftArrow} alt="left-arrow" />
+                <Slider />
+                {/* <img src={AllImages.LeftArrow} alt="left-arrow" />
                 <div className="card">
                     <label className="text-say">"{t("clients-says.text")}"
                     </label>
@@ -19,7 +21,7 @@ export const ClientSay = () => {
                         <label>{t("clients-says.firm")}</label>
                     </div>
                 </div>
-                <img src={AllImages.RightArrow} alt="right-arrow" />
+                <img src={AllImages.RightArrow} alt="right-arrow" /> */}
             </div>
         </div>
     )
