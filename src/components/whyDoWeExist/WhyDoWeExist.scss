@@ -1,0 +1,55 @@
+@import "../../styles/main";
+
+.why-do-we-exist {
+    display: flex;
+    gap: 16px;
+
+    .textwrapper {
+        grid-column: 1;
+        transition: left 0.5s;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 0 30px 0 30px;
+        
+        
+        .title {
+            @include textBasis(2.5rem);
+            padding-bottom: 18px;
+        }
+        .subtitle {
+            @include textBasis(1.188rem);
+        }
+        transition-delay: 15s;
+    }
+    .img-wrapper {
+        grid-column: 2;
+    }
+}
+@include media-sm {
+    .why-do-we-exist {
+        background: none;
+    }
+}
+//max-width:768px
+@include media-md {
+    .why-do-we-exist {
+        background-image: url("../../assets/img/banner.png");    
+        background-repeat: no-repeat;
+        .textwrapper {
+            background-color: white;
+            height: 100%;
+            margin: 30px 30px 30px 30px;
+            padding: 30px 30px 30px 30px;
+            align-self: center;
+            border-radius: $borderRadiusMain;
+            box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
+        }
+
+        .img-wrapper{
+            width: 0;
+            visibility: hidden;
+        }
+    }
+}

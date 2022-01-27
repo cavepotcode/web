@@ -32,6 +32,7 @@ export const Redes = require('../assets/img/redessociales.png').default;
 //BANNERS
 export const Banner = require('../assets/img/banner.png').default;
 export const Banner2 = require('../assets/img/banner2.png').default;
+export const AboutUsBanner = require('../assets/img/aboutUsBanner.png').default;
 
 //CONTACT
 export const ANewLanding = require('../assets/img/a-new-landing-icon.png').default;

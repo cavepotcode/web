@@ -1,0 +1,21 @@
+@import "../../styles/main";
+@import "../../styles/variables";
+
+.where-name-come-from{
+    .text-wrapper{
+        .sphere-wrapper{
+            .sphere-1{
+                width: 124px;
+                height: 124px;
+                border-radius: 50%;
+                background-color: #9e82ea;
+            }
+            .sphere-2{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: #ecde5e;
+            }
+        }
+    }
+}

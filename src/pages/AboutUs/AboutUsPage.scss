@@ -1,0 +1,7 @@
+@import "../../styles/variables";
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    gap: $spaceBetween45;
+}
