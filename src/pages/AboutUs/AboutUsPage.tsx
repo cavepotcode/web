@@ -1,3 +1,4 @@
+import { OurHistory } from "../../components/ourHistory/OurHistory";
 import { WhereNameComeFrom } from "../../components/whereNameComeFrom/WhereNameComeFrom";
 import { WhyDoWeExist } from "../../components/whyDoWeExist/WhyDoWeExist";
 import './AboutUsPage.scss'
@@ -7,6 +8,7 @@ export function AboutUsPage(){
         <div className="about-us">
             <WhyDoWeExist />
             <WhereNameComeFrom />
+            <OurHistory />
         </div>
     );
 

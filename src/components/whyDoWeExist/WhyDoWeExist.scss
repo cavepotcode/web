@@ -2,10 +2,10 @@
 
 .why-do-we-exist {
     display: flex;
+    align-self: center;
     gap: 16px;
 
     .textwrapper {
-        grid-column: 1;
         transition: left 0.5s;
         display: flex;
         flex-direction: column;
@@ -23,8 +23,8 @@
         }
         transition-delay: 15s;
     }
-    .img-wrapper {
-        grid-column: 2;
+    .img-wrapper{
+        width: unset;
     }
 }
 @include media-sm {

@@ -1,0 +1,116 @@
+@import "../../styles/variables";
+.our-history{
+    display: flex;
+    flex-direction: column;
+    gap: $spaceBetween45;
+    .title{
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #2d2829;
+    }
+    .cards-wrapper{
+        padding: 0 75px;
+        display: flex;
+        flex-wrap: wrap;
+        //align-items: center;
+        .single-card{
+            display: flex;
+            // align-items: center;
+            min-height: 290px;
+            
+            .history-point{
+                display: flex;
+                flex-direction: column;
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    width: 225px;
+                    height: 238px;
+                    box-shadow: 0px 13px 7px 9px #eaebea;
+                    border-radius: 6px;
+                    z-index: 1;
+                    .card-header{  
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: -15px;
+                        align-self: center;
+                        width: 173px;
+                        height: 41px;
+                        border-radius: 10px;
+                        background-color: #ffdd39;
+                        label{
+                            align-self: center;
+                            width: 41px;
+                            height: 13px;
+                            font-family: Montserrat;
+                            font-size: 17px;
+                            font-weight: 900;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: center;
+                            color: #2d2829;
+                            margin: 10px 0;
+                        }
+                        .sphere2{
+                            align-self: center;
+                            width: 17px;
+                            height: 17px;
+                            border-radius: 50%;
+                            background-color: #4ac1c6;
+                            margin-bottom: -8px;
+                        }
+                    }
+                    .card-text{
+                        height: 100%;
+                        display: flex;
+                        text-align: center;
+                        padding: 0 13px;
+                        label{
+                            align-self: center;
+                        }
+                        &.bold{
+                            font-weight: bold;
+                        }
+                    }
+                }
+        
+                .card-sub-conect{
+                    height: 60px;
+                    width: 10px;
+                    background-color: #f4ac40;
+                    box-shadow: 0px 13px 7px 0px #eaebea;
+                    border-radius: 5px;
+                    z-index: 2;
+                    margin: -15px 0;
+                    align-self: center;
+                }
+            }
+        }
+        
+        .card-conect{
+            height: 20px;
+            width: 35px;
+            background-color: #f4ac40;
+            box-shadow: 0px 13px 7px 0px #eaebea;
+            z-index: 2;
+            margin-top: 40%;  
+
+        }
+        .card-conect-end{
+            margin-left: 10px;
+            height: 20px;
+            width: 20px;
+            background-color: #f4ac40;
+            box-shadow: 0px 13px 7px 0px #eaebea;
+            z-index: 2;
+        }
+    }
+}
