@@ -2,20 +2,50 @@
 @import "../../styles/variables";
 
 .where-name-come-from{
+    align-self: center;
+    width: 800px;
+    padding: 45px 125px;
+    border-radius: 25px;
+    background-color: #5bd6db;
+    .sphere-wrapper{
+        .sphere-1{
+            width: 124px;
+            height: 124px;
+            border-radius: 50%;
+            background-color: #9e82ea;
+        }
+        .sphere-2{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #ecde5e;
+        }
+    }
     .text-wrapper{
-        .sphere-wrapper{
-            .sphere-1{
-                width: 124px;
-                height: 124px;
-                border-radius: 50%;
-                background-color: #9e82ea;
-            }
-            .sphere-2{
-                width: 80px;
-                height: 80px;
-                border-radius: 50%;
-                background-color: #ecde5e;
-            }
+        display: flex;
+        flex-direction: column;
+        color: $White;
+        .title{
+            font-family: Montserrat;
+            font-size: 30px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #fff;
+        }
+        .textpart{
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: #fff;
         }
     }
 }
