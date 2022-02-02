@@ -81,16 +81,20 @@
                         }
                     }
                 }
-        
-                .card-sub-conect{
-                    height: 60px;
-                    width: 10px;
-                    background-color: #f4ac40;
-                    box-shadow: 0px 13px 7px 0px #eaebea;
-                    border-radius: 5px;
-                    z-index: 2;
-                    margin: -15px 0;
-                    align-self: center;
+                .sub-card{
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 340px;
+                    .card-sub-conect{
+                        height: 60px;
+                        width: 10px;
+                        background-color: #f4ac40;
+                        box-shadow: 0px 13px 7px 0px #eaebea;
+                        border-radius: 5px;
+                        z-index: 2;
+                        margin: -8px 0;
+                        align-self: center;
+                    }
                 }
             }
         }
@@ -101,8 +105,7 @@
             background-color: #f4ac40;
             box-shadow: 0px 13px 7px 0px #eaebea;
             z-index: 2;
-            margin-top: 40%;  
-
+            margin-top: 65px;
         }
         .card-conect-end{
             margin-left: 10px;
@@ -111,6 +114,7 @@
             background-color: #f4ac40;
             box-shadow: 0px 13px 7px 0px #eaebea;
             z-index: 2;
+            margin-top: 65px;
         }
     }
 }
