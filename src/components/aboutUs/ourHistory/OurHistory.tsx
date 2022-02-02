@@ -17,7 +17,7 @@ export function OurHistory() {
                                     subTitle={obj.subTitle} 
                                     text2={obj.text2}/>
                     );
-                } )}
+                })}
 
                 <div className='card-conect-end'></div>
                 <div className='card-conect-end'></div>

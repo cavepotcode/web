@@ -1,4 +1,5 @@
-@import "../../styles/main";
+@import "./../../../styles/main";
+@import "./../../../styles/variables";
 
 .why-do-we-exist {
     display: flex;
@@ -35,7 +36,7 @@
 //max-width:768px
 @include media-md {
     .why-do-we-exist {
-        background-image: url("../../assets/img/banner.png");    
+        background-image: url("../../../assets/img/banner.png");    
         background-repeat: no-repeat;
         .textwrapper {
             background-color: white;

@@ -1,6 +1,7 @@
-import { OurHistory } from "../../components/ourHistory/OurHistory";
-import { WhereNameComeFrom } from "../../components/whereNameComeFrom/WhereNameComeFrom";
-import { WhyDoWeExist } from "../../components/whyDoWeExist/WhyDoWeExist";
+import { OurHistory } from "../../components/aboutUs/ourHistory/OurHistory";
+import { WeTags } from "../../components/aboutUs/weTags/WeTags";
+import { WhereNameComeFrom } from "../../components/aboutUs/whereNameComeFrom/WhereNameComeFrom";
+import { WhyDoWeExist } from "../../components/aboutUs/whyDoWeExist/WhyDoWeExist";
 import './AboutUsPage.scss'
 
 export function AboutUsPage(){
@@ -9,6 +10,7 @@ export function AboutUsPage(){
             <WhyDoWeExist />
             <WhereNameComeFrom />
             <OurHistory />
+            <WeTags />
         </div>
     );
 

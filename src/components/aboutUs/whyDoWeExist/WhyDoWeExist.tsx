@@ -1,5 +1,5 @@
 import { useTranslation, Trans } from 'react-i18next';
-import { AllImages } from '../../helpers';
+import { AllImages } from '../../../helpers';
 import './WhyDoWeExist.scss';
 
 export const WhyDoWeExist = () => {
