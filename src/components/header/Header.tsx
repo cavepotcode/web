@@ -31,13 +31,13 @@ export const Header = () => {
             </div>
             <nav className={showMenu ? 'nav open' : 'nav'}>
                 <ul className={showMenu ? 'menu-nav open' : 'menu-nav'}>
-                    <li className="menu-nav__item active">
+                    <li className="menu-nav__item">
                         <NavLink to="/" className="menu-nav__link">
                             {t("header.home")}
                         </NavLink>
                     </li>
                     <li className="menu-nav__item">
-                        <a href="about.html" className="menu-nav__link">
+                        <a href="/#how-we-do-it" className="menu-nav__link">
                             {t("header.how.we.do.it")}
                         </a>
                     </li>

@@ -12,7 +12,9 @@ export function HomePage() {
         <div className="home-page">
             <TechnologiesChanges />
             <WhatIsCavepot />
-            <WhatDoWeDo />
+            <section id="#how-we-do-it">
+                <WhatDoWeDo />
+            </section>
             <HowWeDoIt />
             <TechnologiesThatWeUse />
             <ClientSay />

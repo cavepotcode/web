@@ -126,10 +126,6 @@
                 &.open {
                     transform: translateX(0);
                 }
-                &.active > a {
-                    color: black;
-                    font-weight: 900;
-                }
             }
             &__link {
                 display: inline-block;
@@ -142,6 +138,10 @@
 
                 &:hover {
                     color: black;
+                }
+                &.active {
+                    color: black;
+                    font-weight: 900;
                 }
             }
         }
