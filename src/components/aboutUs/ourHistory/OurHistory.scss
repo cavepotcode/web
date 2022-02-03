@@ -13,7 +13,7 @@
         line-height: normal;
         letter-spacing: normal;
         text-align: center;
-        color: #2d2829;
+        color: $PineTree;
     }
     .cards-wrapper{
         padding: 0 75px;
@@ -31,7 +31,7 @@
                     flex-direction: column;
                     width: 225px;
                     height: 238px;
-                    box-shadow: 0px 13px 7px 9px #eaebea;
+                    box-shadow: 0px 13px 7px 9px $Shadow;
                     border-radius: 6px;
                     z-index: 1;
                     .card-header{  
@@ -42,7 +42,7 @@
                         width: 173px;
                         height: 41px;
                         border-radius: 10px;
-                        background-color: #ffdd39;
+                        background-color: $AmarilloBoton;
                         label{
                             align-self: center;
                             width: 41px;
@@ -55,7 +55,7 @@
                             line-height: normal;
                             letter-spacing: normal;
                             text-align: center;
-                            color: #2d2829;
+                            color: $PineTree;
                             margin: 10px 0;
                         }
                         .sphere2{
@@ -63,7 +63,7 @@
                             width: 17px;
                             height: 17px;
                             border-radius: 50%;
-                            background-color: #4ac1c6;
+                            background-color: $SeaSerpent;
                             margin-bottom: -8px;
                         }
                     }
@@ -88,7 +88,7 @@
                         height: 60px;
                         width: 10px;
                         background-color: $OH-orange;
-                        box-shadow: 0px 13px 7px 0px #eaebea;
+                        box-shadow: 0px 13px 7px 0px $Shadow;
                         border-radius: 5px;
                         z-index: 2;
                         margin: -8px 0;
@@ -102,7 +102,7 @@
             height: 20px;
             width: 35px;
             background-color: $OH-orange;
-            box-shadow: 0px 13px 7px 0px #eaebea;
+            box-shadow: 0px 13px 7px 0px $Shadow;
             z-index: 2;
             margin-top: 65px;
         }
@@ -111,7 +111,7 @@
             height: 20px;
             width: 20px;
             background-color: $OH-orange;
-            box-shadow: 0px 13px 7px 0px #eaebea;
+            box-shadow: 0px 13px 7px 0px $Shadow;
             z-index: 2;
             margin-top: 65px;
         }

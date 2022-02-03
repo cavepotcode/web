@@ -28,16 +28,22 @@
         width: unset;
     }
 }
-@include media-sm {
-    .why-do-we-exist {
-        background: none;
-    }
-}
+
+// @include media-lg{
+
+//     .why-do-we-exist {
+//         .textwrapper{
+//             width: 60%;
+//         }
+//     }
+
+// }
 //max-width:768px
-@include media-md {
+@include media-lg {
     .why-do-we-exist {
-        background-image: url("../../../assets/img/banner.png");    
+        background-image: url("../../../assets/img/aboutUsBanner.png");    
         background-repeat: no-repeat;
+        background-position: center;
         .textwrapper {
             background-color: white;
             height: 100%;

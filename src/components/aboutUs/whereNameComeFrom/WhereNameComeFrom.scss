@@ -49,3 +49,10 @@
         }
     }
 }
+
+@include media-md{
+    .where-name-come-from{
+        padding: 20px 20px;
+        width: 100%;
+    }
+}
