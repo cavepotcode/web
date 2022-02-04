@@ -156,7 +156,22 @@
     "we-wanna":{
         "text":"We wanna dig deeper, explore the cave, see what lies underground and bring it to life. Come dig with us! ",
         "button":"Learn More"
-    }
+    },
+    "we-tags":[
+        "We are <strong>curious</strong>",
+        "We love to <strong>develop</strong>",
+        "<strong>We care about</strong> the world",
+        "<strong>We enjoy</strong>  creating new things",
+        "<strong>We care</strong> about the world ",
+        "We love <strong>challeneges</strong>",
+        "We love to <strong>explore</strong>",
+        "We love <strong>experimenting</strong>",
+        "We are a <strong>team</strong>",
+        "We are developers of <strong>ideas</strong>",
+        "<strong>We adapt</strong> to changes",
+        "<strong>We love</strong> challenging projects"
+    ]
+
 
 }
 

@@ -5,7 +5,6 @@
     flex-direction: column;
     gap: $spaceBetween45;
     .title{
-        font-family: Montserrat;
         font-size: 40px;
         font-weight: normal;
         font-stretch: normal;
@@ -46,8 +45,7 @@
                         label{
                             align-self: center;
                             width: 41px;
-                            height: 13px;
-                            font-family: Montserrat;
+                            height: 13px;                 
                             font-size: 17px;
                             font-weight: 900;
                             font-stretch: normal;

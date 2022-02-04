@@ -1,6 +1,5 @@
 @import "./variables";
 @mixin textBasis($size) {
-    font-family: Montserrat;
     font-size: $size;
     font-weight: normal;
     font-stretch: normal;
