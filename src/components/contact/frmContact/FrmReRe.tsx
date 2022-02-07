@@ -51,7 +51,7 @@ export const FrmReRe = () => {
                     <form onSubmit={handleSubmit}>
                         <div className='option-wrapper'>
                             <label> Name </label>
-                            <div className='error-wrapper'>
+                            <div className={ !(errors.name && touched.name) ? 'wrapper' : 'wrapper error'}>
                                 <input
                                     name="name"
                                     placeholder="Full name"
@@ -66,7 +66,7 @@ export const FrmReRe = () => {
 
                             <label> e-mail </label>
 
-                            <div className='error-wrapper'>
+                            <div className={ !(errors.email && touched.email) ? 'wrapper' : 'wrapper error'}>
                                 <input
                                     type="email"
                                     name="email"
@@ -80,7 +80,7 @@ export const FrmReRe = () => {
                         <div className='option-wrapper'>
                             <label> Phone </label>
 
-                            <div className='error-wrapper'>
+                            <div className={ !(errors.phone && touched.phone) ? 'wrapper' : 'wrapper error'}>
                                 <input
                                     name="phone"
                                     placeholder="### #### ####"
@@ -94,7 +94,7 @@ export const FrmReRe = () => {
                         <div className='option-wrapper'>
                             <label> Budget </label>
 
-                            <div className='error-wrapper'>
+                            <div className={ !(errors.budget && touched.budget) ? 'wrapper' : 'wrapper error'}>
                                 <RangeSlider name="budget" minValue={0} maxValue={1000} stepValue={10}/>
                                 {errors.budget && touched.budget}
                             </div>
@@ -103,7 +103,7 @@ export const FrmReRe = () => {
                         <div className='option-wrapper'>
                             <label> I need a designer </label>
 
-                            <div className='error-wrapper'>
+                            <div className={ !(errors.designer && touched.designer) ? 'wrapper' : 'wrapper error'}>
                                 <div className='radiobutton-group' role="group" aria-labelledby="my-radio-group">
                                     <label>
                                         <Field className='radiobutton' type="radio" name="designer" value="1" />
@@ -121,7 +121,7 @@ export const FrmReRe = () => {
                         <div className='option-wrapper'>
                             <label> Reference images </label>
 
-                            <div className='error-wrapper'>
+                            <div className={ !(errors.files && touched.files) ? 'wrapper' : 'wrapper error'}>
                                 <MultipleFileUploadField name='files' />
                                 {errors.files && touched.files}
                             </div>
@@ -130,7 +130,7 @@ export const FrmReRe = () => {
                         <div className='option-wrapper'>
                             <label> Subjet </label>
 
-                            <div className='error-wrapper'>
+                            <div className={ !(errors.subject && touched.subject) ? 'wrapper' : 'wrapper error'}>
                                 <input
                                     name="subject"
                                     placeholder="Other"
@@ -144,7 +144,7 @@ export const FrmReRe = () => {
                         <div className='option-wrapper'>
                             <label> Message </label>
 
-                            <div className='error-wrapper'>
+                            <div className={ !(errors.message && touched.message) ? 'wrapper' : 'wrapper error'}>
                                 <textarea
                                     name="message"
                                     onChange={handleChange}

@@ -49,7 +49,7 @@ export const FrmNewLanding = () => {
                     <form onSubmit={handleSubmit}>
                         <div className='option-wrapper'>
                             <label> Name </label>
-                            <div className='error-wrapper'>
+                            <div className={ !(errors.name && touched.name) ? 'wrapper' : 'wrapper error'}>
                                 <input
                                     name="name"
                                     placeholder="Full name"
@@ -64,7 +64,7 @@ export const FrmNewLanding = () => {
 
                             <label> e-mail </label>
 
-                            <div className='error-wrapper'>
+                            <div className={ !(errors.email && touched.email) ? 'wrapper' : 'wrapper error'}>
                                 <input
                                     type="email"
                                     name="email"
@@ -78,7 +78,7 @@ export const FrmNewLanding = () => {
                         <div className='option-wrapper'>
                             <label> Phone </label>
 
-                            <div className='error-wrapper'>
+                            <div className={ !(errors.phone && touched.phone) ? 'wrapper' : 'wrapper error'}>
                                 <input
                                     name="phone"
                                     placeholder="### #### ####"
@@ -92,7 +92,7 @@ export const FrmNewLanding = () => {
                         <div className='option-wrapper'>
                             <label> Budget </label>
 
-                            <div className='error-wrapper'>
+                            <div className={ !(errors.budget && touched.budget) ? 'wrapper' : 'wrapper error'}>
 
                                 <RangeSlider name="budget" minValue={0} maxValue={1000} stepValue={10}/>
                                 {errors.budget && touched.budget}
@@ -102,7 +102,7 @@ export const FrmNewLanding = () => {
                         <div className='option-wrapper'>
                             <label> Subjet </label>
 
-                            <div className='error-wrapper'>
+                            <div className={ !(errors.subject && touched.subject) ? 'wrapper' : 'wrapper error'}>
                                 <input
                                     name="subject"
                                     placeholder="Other"
@@ -116,7 +116,7 @@ export const FrmNewLanding = () => {
                         <div className='option-wrapper'>
                             <label> Message </label>
 
-                            <div className='error-wrapper'>
+                            <div className={ !(errors.message && touched.message) ? 'wrapper' : 'wrapper error'}>
                                 <textarea
                                     name="message"
                                     onChange={handleChange}
