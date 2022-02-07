@@ -1,8 +1,9 @@
 import './OurHistory.scss';
-import dataHistory from './dataHistory';
 import { HistoryCard } from './HistoryCard';
+import { useTranslation,Trans } from "react-i18next";
 
 export function OurHistory() {
+    const [t] = useTranslation("global");
     return (
         <div className="our-history">
             <div className="title">
@@ -10,12 +11,9 @@ export function OurHistory() {
             </div>
             <div className="cards-wrapper">
 
-                {dataHistory.map((obj, index) => {
+                {Object.values(t('data-history', { returnObjects: true })).map((obj, index) => {
                     return(
-                        <HistoryCard id={obj.id} 
-                                    text={obj.text} 
-                                    subTitle={obj.subTitle} 
-                                    text2={obj.text2}/>
+                        <HistoryCard hitoryPoint={obj} key={index}/>
                     );
                 })}
 

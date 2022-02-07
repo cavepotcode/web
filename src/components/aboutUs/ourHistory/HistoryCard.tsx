@@ -1,41 +1,34 @@
-export interface HistoryCardProps{
-    id: number;
-    text: string;
-    subTitle: string;
-    text2: string;
 
-
-}
-
-export function HistoryCard( { id, text, subTitle,text2 } : HistoryCardProps){
+import { Trans } from "react-i18next";
+export function HistoryCard( data ){
     return(
         <div className='single-card'>
             <div className='history-point'>
                 <div className='card'>
                     <div className='card-header'>
-                        <label> {id} </label>
+                        <label> {data.hitoryPoint.id} </label>
                         <div className='sphere2'></div>
                     </div>
 
                     <div className='card-text'>
                         <label>
-                            {text}
+                            <Trans>{data.hitoryPoint.text}</Trans>
                         </label>
                     </div>
                 </div>
                 {
-                    subTitle != '' && (
+                    data.hitoryPoint.subTitle != '' && (
                         <div className='sub-card'>
                             <div className='card-sub-conect'></div>
                             <div className='card'>
                                 <div className='card-text bold'>
                                     <label>
-                                        { subTitle }
+                                        { data.hitoryPoint.subTitle }
                                     </label>
                                 </div>
                                 <div className='card-text'>
                                     <label>
-                                        { text2 }
+                                        <Trans>{ data.hitoryPoint.text2 }</Trans>
                                     </label>
                                 </div>
                             </div>

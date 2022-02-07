@@ -44,7 +44,6 @@ export const FrmGeneralInfo = () => {
                     handleBlur,
                     handleSubmit,
                     isSubmitting,
-                    /* and other goodies */
                 }) => (
                     <form onSubmit={handleSubmit}>
                         <div className='option-wrapper'>

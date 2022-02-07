@@ -76,6 +76,6 @@ export function MultipleFileUploadField({ name }: { name: string }) {
                     />)
                
             ))}
-        </React.Fragment> //nichu: que es esto
+        </React.Fragment> 
     )
 }

@@ -13,15 +13,6 @@ export const ClientSay = () => {
             </div>
             <div className="right-container">
                 <Slider />
-                {/* <img src={AllImages.LeftArrow} alt="left-arrow" />
-                <div className="card">
-                    <label className="text-say">"{t("clients-says.text")}"
-                    </label>
-                    <div className="firm">
-                        <label>{t("clients-says.firm")}</label>
-                    </div>
-                </div>
-                <img src={AllImages.RightArrow} alt="right-arrow" /> */}
             </div>
         </div>
     )

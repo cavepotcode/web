@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import './HowWeDoIt.scss';
 export const HowWeDoIt = () => {
     const [t] = useTranslation("global");
@@ -8,20 +8,16 @@ export const HowWeDoIt = () => {
             <label className="title">{t("how-we-do-it.title")}</label>
             <div className="text-wrapper">
                 <label className='papa'>
-                    {t("how-we-do-it.text1.part.1")}
-                    <b>{t("how-we-do-it.text1.part.2")}</b>
-                    {t("how-we-do-it.text1.part.3")}
-                    <b>{t("how-we-do-it.text1.part.4")}</b>
+                    <Trans>{t("how-we-do-it.text1")}</Trans>
                 </label>
                 <label  className='papa'>
-                    {t("how-we-do-it.text2.part.1")}
-                    <b>{t("how-we-do-it.text2.part.2")}</b>{t("how-we-do-it.text2.part.3")}<b>{t("how-we-do-it.text2.part.4")}</b>
+                    <Trans>{t("how-we-do-it.text2")}</Trans>
                 </label>
                 <label  className='papa'>
-                    {t("how-we-do-it.text3.part.1")}
+                    <Trans>{t("how-we-do-it.text3")}</Trans>
                 </label>
                 <label  className='papa'>
-                    <b>{t("how-we-do-it.text4.part.1")}</b>
+                    <Trans>{t("how-we-do-it.text4")}</Trans>
                 </label>
             </div>
         </div>

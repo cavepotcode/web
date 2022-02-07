@@ -14,23 +14,9 @@
     },
     "what-is-cavepot":{
         "title":"What is CavePot",
-        "text1":{
-            "part.1":"We are a ",
-            "part.2":"software ",
-            "part.3":"and app development company keen on pixel perfect solutions that bring your ",
-            "part.4":"ideas ",
-            "part.5":"to life!"
-        },
-        "text2":{
-            "part.1":"We are ",
-            "part.2":"curious ",
-            "part.3":"about the world, that’s why we also call ourselves ",
-            "part.4":"developers of ideas."
-        },
-        "text3":{
-            "part.1":"We work hand by hand with our clients, with an open minded attitude towards creativity and innovation, ",
-            "part.2":"this is the compass that guides us."
-        },
+        "text1":"We are a <strong>software</strong> and app development company keenz on pixel perfect solutions that bring your <strong> ideas </strong> to life!",
+        "text2":"We are <strong>curious</strong> about the world, that’s why we also call ourselves  <strong> developers of ideas. </strong> ",
+        "text3":"We work hand by hand with our clients, with an open minded attitude towards creativity and innovation, <strong>this is the compass that guides us.</strong>",
         "message":"What's the idea you want to bring to life?"
     },
     "what-do-we-do":{
@@ -55,29 +41,14 @@
     },
     "how-we-do-it":{
         "title":"How we do it",
-        "text1":{
-            "part.1":"Every project we work on is like ",
-            "part.2":"entering a cave. ",
-            "part.3":"Curious and willing to do our best, we ask ourselves: ",
-            "part.4":"what amazing things lie underground?"
-        },
-        "text2":{
-            "part.1":"Elements of nature create phenomenons when they are together, ",
-            "part.2":"merging to create something great, ",
-            "part.3":"such as your needs combined ",
-            "part.4":"with our skills."
-        },
-        "text3":{
-            "part.1":"Your needs work as a compass for us, in a map that guide us into what we will create, pouring all of that into our pot and finally cooking something great for you."
-        },
-        "text4":{
-            "part.1":"Let us explore your idea, finding the perfect elements for it so we can bring it to life."
-        }
+        "text1":"Every project we work on is like <strong>entering a cave. </strong>Curious and willing to do our best, we ask ourselves: <strong>what amazing things lie underground?</strong>",
+        "text2":"Elements of nature create phenomenons when they are together, <strong>merging to create something great, </strong> such as your needs combined with our skills.",
+        "text3":"Your needs work as a compass for us, in a map that guide us into what we will create, pouring all of that into our pot and finally cooking something great for you.",
+        "text4":"<strong>Let us explore your idea, finding the perfect elements for it so we can bring it to life.</strong>"
     },
     "technologies-that-we-use":{
         "title":"Technologies that we use",
-        "text.part.1":"Over 50 startups trusted us to build their ideas. ",
-        "text.part.2":" Want to be the next one?"
+        "text":"Over 50 startups trusted us to build their ideas. <strong>Want to be the next one?</strong>"
     },
     "clients-says":{
         "title":"This is what our clients say"
@@ -144,7 +115,7 @@
     "why-do-we-exist": {
         "title":"Why do we exist?",
         "text.part.1":"We had the intention to create a company that gave us the opportunity to grow as entrepreneurs. ",
-        "text.part.2":"Together we decided to enter the cave -that is now our company- full of passion and uncertainty, willing to find potential elements and transform them into something great.  ",
+        "text.part.2":"Together we decided to enter the <strong>cave</strong> -that is now our company- full of passion and uncertainty, willing to find <strong>potential elements</strong> and transform them into something great.  ",
         "text.part.3":"We digged deep and merged our materials to transform them into what we are now!"
     },
     "name-come-from": {
@@ -170,6 +141,56 @@
         "We are developers of <strong>ideas</strong>",
         "<strong>We adapt</strong> to changes",
         "<strong>We love</strong> challenging projects"
+    ],
+    "data-history":[
+        {
+            "id": 2007,
+            "text":"Two students meet at college and   discover a common passion: software development. They are both curious about the world and its challenges, so they easily became friends.",
+            "subTitle": "",
+            "text2":""
+        },
+        {
+            "id": 2013,
+            "text":"After a few years of working togather they decided to dedicate full time to their dream. This is when CavePot was born.  ",
+            "subTitle": "",
+            "text2":""
+        },
+        {
+            "id": 2015,
+            "text":"The company kept on growing and we needed a place to call the office.  We found the perfect place in carrasco cowork.",
+            "subTitle": "",
+            "text2":""
+        },
+        {
+            "id": 2017,
+            "text":"We became host and sponsor of the Uruguayan <strong>Angular Meetup</strong>. The cowork, began to feel too tight so we moved. to the place that we call home. Pablo de Maria 1122, the perfect place to set up our headquarters.",
+            "subTitle": "",
+            "text2":""
+        },
+        {
+            "id": 2019,
+            "text":"We were able to travel abroad, learn about the international market, meet our international clients, and get new ones. This allowed us to grow exponentially.",
+            "subTitle": "",
+            "text2":""
+        },
+        {
+            "id": 2020,
+            "text":"Clutch Awards the Best B2B Companies in Latin America for 2020.",
+            "subTitle": "",
+            "text2":""
+        },
+        {
+            "id": 2021,
+            "text":"When we started  we where 2 dreamers.  Now  we are a family of 25, working together sharing a common passion and an unique look towards innovation, creativity and professionalism",
+            "subTitle": "Why do we see ourselves as a family?",
+            "text2":"We see ourselves as a family, focusing on each one of us' development and professional growth, taking into account the goals and objectives both within the company and each one of us' personal lives."
+        },
+        {
+            "id": 2022,
+            "text":"We keep working on our drem daily.  “Coming together is a beginning. Staying together is progress. Working together is success.'Henry Ford' ",
+            "subTitle": "",
+            "text2":""
+        }
     ]
 
 

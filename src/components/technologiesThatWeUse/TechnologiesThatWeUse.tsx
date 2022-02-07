@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { AllImages } from '../../helpers';
 import './TechnologiesThatWeUse.scss';
 
@@ -17,7 +17,7 @@ export const TechnologiesThatWeUse = () => {
                 <img src={AllImages.NetCoreLogoColor} alt="net-core-logo" />
             </div>
             <div className="blue-line-wrapper">
-                <label>{t("technologies-that-we-use.text.part.1")}<span>{t("technologies-that-we-use.text.part.2")}</span></label>
+                <label><Trans>{t("technologies-that-we-use.text")}</Trans></label>
                 <div id="blue-line"></div>
             </div>
         </div>

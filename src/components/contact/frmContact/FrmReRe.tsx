@@ -13,13 +13,6 @@ export const FrmReRe = () => {
         <div className="Frm">
             <Formik
                 initialValues={{ name: '', email: '', phone: '', budget: '', designer: '', files: [], subject: '', message: '' }}
-                // validationSchema={ object({
-                //     files: array(
-                //         object({
-                //             url: string().required(),
-                //         })
-                //     ),
-                // })}
                 validate={values => {
                     const errors = { name: '', email: '', phone: '', budget: '', designer: '', files: [], subject: '', message: '' };
 
@@ -54,7 +47,6 @@ export const FrmReRe = () => {
                     handleBlur,
                     handleSubmit,
                     isSubmitting,
-                    /* and other goodies */
                 }) => (
                     <form onSubmit={handleSubmit}>
                         <div className='option-wrapper'>

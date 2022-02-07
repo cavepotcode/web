@@ -85,21 +85,11 @@ export const Contact = () => {
                 </div>
 
                 <div className='contact-form'>
-
                     {activeClasses.aNewLanding && <FrmNewLanding />}
                     {activeClasses.aNewApp && <FrmNewApp />}
                     {activeClasses.redesign && <FrmReRe />}
                     {activeClasses.generalInfo && <FrmGeneralInfo />}
                     {activeClasses.staffAugmentation && <FrmStaffAugmentation />}
-
-
-                    {/* {(function() {
-                    if (options.aNewLanding) {
-                        return <FrmNewApp />;
-                    } else {
-                        return <FrmNewLanding />;
-                    }
-                    })()} */}
                 </div>
             </div>
 

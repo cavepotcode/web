@@ -11,5 +11,188 @@
     "technologies-changes":{
         "title":"Technology changes constantly, So do we!",
         "subtitle":"We are a software and app development company keen on pixel perfect solutions that bring your ideas to life!"
-    }
+    },
+    "what-is-cavepot":{
+        "title":"What is CavePot",
+        "text1":"We are a <strong>software</strong> and app development company keenz on pixel perfect solutions that bring your <strong> ideas </strong> to life!",
+        "text2":"We are <strong>curious</strong> about the world, that’s why we also call ourselves  <strong> developers of ideas. </strong> ",
+        "text3":"We work hand by hand with our clients, with an open minded attitude towards creativity and innovation, <strong>this is the compass that guides us.</strong>",
+        "message":"What's the idea you want to bring to life?"
+    },
+    "what-do-we-do":{
+        "title":"What do we do?",
+        "sub-title":"We build custom software solutions to help our clients create awesome products",
+        "card1":{
+            "title":"I need an app for my business.",
+            "button":"Tell us more"
+        },
+        "card2":{
+            "title":"I need a landing website for my company",
+            "button":"Tell us more"
+        },
+        "card3":{
+            "title":"I need costume software  to improve comunication and conection within my company",
+            "button":"Tell us more"
+        },
+        "card4":{
+            "title":"I need to track my products in real time ",
+            "button":"Tell us more"
+        }
+    },
+    "how-we-do-it":{
+        "title":"How we do it",
+        "text1":"Every project we work on is like <strong>entering a cave. </strong>Curious and willing to do our best, we ask ourselves: <strong>what amazing things lie underground?</strong>",
+        "text2":"Elements of nature create phenomenons when they are together, <strong>merging to create something great, </strong> such as your needs combined with our skills.",
+        "text3":"Your needs work as a compass for us, in a map that guide us into what we will create, pouring all of that into our pot and finally cooking something great for you.",
+        "text4":"<strong>Let us explore your idea, finding the perfect elements for it so we can bring it to life.</strong>"
+    },
+    "technologies-that-we-use":{
+        "title":"Technologies that we use",
+        "text":"Over 50 startups trusted us to build their ideas. <strong>Want to be the next one?</strong>"
+    },
+    "clients-says":{
+        "title":"This is what our clients say"
+        
+    },
+    "investigation":{
+        "title":"INVESTIGATION & TRAINING",
+        "text.1":"INVESTIGATION & TRAINING esto que nos lleve a cavepot lab Passionate about what we do and willing to learn, we created CavepotLab.",
+        "text.2":"We are keen on helping our team members constantly so they can grow technically and professionally. O: so they can grow both technical and professionally",
+        "button":"Visit the CavePot lab"
+    },
+    "footer":{
+        "column.1":{
+            "title":"COMPANY",
+            "text.1":"Home",
+            "text.2":"What is Cavepot",
+            "text.3":"What do we do",
+            "text.4":"How we do it",
+            "text.5":"What our clints say"
+        },
+        "column.2":{
+            "title":"Experiences",
+            "text.1":"Planet01",
+            "text.2":"Zanahorario",
+            "text.3":"Fillment",
+            "text.4":"LearnCloud",
+            "text.5":"NOM",
+            "text.6":"UCM"
+        },
+        "column.3":{
+            "title":"Connect with us",
+            "text.1":"Instagram",
+            "text.2":"Facebook",
+            "text.3":"Twitter",
+            "text.4":"Linkedin",
+            "text.5":"Github"
+        },
+        "column.4":{
+            "title":"Locate us",
+            "text.1":"Pablo de Maria 1122,",
+            "text.2":"Montevideo, Uruguay",
+            "text.3":"info@cavepot.com"
+        }
+    },
+    "contact":{
+        "title":"How can we help you?",
+        "sub-title":"Let us know what you are looking foor so that we can help you find it",
+        "option1":{
+            "title":"A new Landing"
+        },
+        "option2":{
+            "title":" A new  App"
+        },
+        "option3":{
+            "title":"Re-desing Re-Think my product"
+        },
+        "option4":{
+            "title":"General information"
+        },
+        "option5":{
+            "title":"Staff Augmentation"
+        }
+    },
+    "why-do-we-exist": {
+        "title":"Why do we exist?",
+        "text.part.1":"We had the intention to create a company that gave us the opportunity to grow as entrepreneurs. ",
+        "text.part.2":"Together we decided to enter the <strong>cave</strong> -that is now our company- full of passion and uncertainty, willing to find <strong>potential elements</strong> and transform them into something great.  ",
+        "text.part.3":"We digged deep and merged our materials to transform them into what we are now!"
+    },
+    "name-come-from": {
+        "title.1":"Where does our name come from?",
+        "text.part.1":"Our name has its origins in our two founders' nicknames- Cuevas, which in spanish means cave, and Olla, which is pot.",
+        "title.2":"Coincidence?",
+        "text.part.2":"Not only our name comes from our two founders' nicknames but also from the idea that, in order to get results, we gotta dig deeper to find the material that works best for you. We consider ourselves a melting pot of knowledge and skills. Every project we work on is like a cave. What amazing things lie underground?"
+    },
+    "we-wanna":{
+        "text":"We wanna dig deeper, explore the cave, see what lies underground and bring it to life. Come dig with us! ",
+        "button":"Learn More"
+    },
+    "we-tags":[
+        "We are <strong>curious</strong>",
+        "We love to <strong>develop</strong>",
+        "<strong>We care about</strong> the world",
+        "<strong>We enjoy</strong>  creating new things",
+        "<strong>We care</strong> about the world ",
+        "We love <strong>challeneges</strong>",
+        "We love to <strong>explore</strong>",
+        "We love <strong>experimenting</strong>",
+        "We are a <strong>team</strong>",
+        "We are developers of <strong>ideas</strong>",
+        "<strong>We adapt</strong> to changes",
+        "<strong>We love</strong> challenging projects"
+    ],
+    "data-history":[
+        {
+            "id": 2007,
+            "text":"Two students meet at college and   discover a common passion: software development. They are both curious about the world and its challenges, so they easily became friends.",
+            "subTitle": "",
+            "text2":""
+        },
+        {
+            "id": 2013,
+            "text":"After a few years of working togather they decided to dedicate full time to their dream. This is when CavePot was born.  ",
+            "subTitle": "",
+            "text2":""
+        },
+        {
+            "id": 2015,
+            "text":"The company kept on growing and we needed a place to call the office.  We found the perfect place in carrasco cowork.",
+            "subTitle": "",
+            "text2":""
+        },
+        {
+            "id": 2017,
+            "text":"We became host and sponsor of the Uruguayan <strong>Angular Meetup</strong>. The cowork, began to feel too tight so we moved. to the place that we call home. Pablo de Maria 1122, the perfect place to set up our headquarters.",
+            "subTitle": "",
+            "text2":""
+        },
+        {
+            "id": 2019,
+            "text":"We were able to travel abroad, learn about the international market, meet our international clients, and get new ones. This allowed us to grow exponentially.",
+            "subTitle": "",
+            "text2":""
+        },
+        {
+            "id": 2020,
+            "text":"Clutch Awards the Best B2B Companies in Latin America for 2020.",
+            "subTitle": "",
+            "text2":""
+        },
+        {
+            "id": 2021,
+            "text":"When we started  we where 2 dreamers.  Now  we are a family of 25, working together sharing a common passion and an unique look towards innovation, creativity and professionalism",
+            "subTitle": "Why do we see ourselves as a family?",
+            "text2":"We see ourselves as a family, focusing on each one of us' development and professional growth, taking into account the goals and objectives both within the company and each one of us' personal lives."
+        },
+        {
+            "id": 2022,
+            "text":"We keep working on our drem daily.  “Coming together is a beginning. Staying together is progress. Working together is success.'Henry Ford' ",
+            "subTitle": "",
+            "text2":""
+        }
+    ]
+
+
 }
+

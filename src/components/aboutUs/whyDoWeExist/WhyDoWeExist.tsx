@@ -8,10 +8,12 @@ export const WhyDoWeExist = () => {
     return (
         <div className="why-do-we-exist">
             <div className="textwrapper">
-                <label className="title">{t("why-do-we-exist.title")}</label>
-                <label className="textpart">{t("why-do-we-exist.text.part.1")}</label>
-                <label className="textpart">{t("why-do-we-exist.text.part.2")}</label>
-                <label className="textpart">{t("why-do-we-exist.text.part.3")}</label>
+                <Trans>
+                    <label className="title">{t("why-do-we-exist.title")}</label>
+                    <label className="textpart">{t("why-do-we-exist.text.part.1")}</label>
+                    <label className="textpart">{t("why-do-we-exist.text.part.2")}</label>
+                    <label className="textpart">{t("why-do-we-exist.text.part.3")}</label>
+                </Trans>
             </div>
             <div className="img-wrapper">
                 <img src={AllImages.AboutUsBanner} alt="AboutUsBanner" />

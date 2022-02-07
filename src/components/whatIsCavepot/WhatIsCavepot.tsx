@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import './WhatIsCavepot.scss'
 
 export default function WhatIsCavepot() {
@@ -11,19 +11,14 @@ export default function WhatIsCavepot() {
             </div>
             {/* <div  id="blue-line"></div> */}
             <div className="wrapper">
-                <label>{t("what-is-cavepot.text1.part.1")}
-                    <span>{t("what-is-cavepot.text1.part.2")}</span>
-                    {t("what-is-cavepot.text1.part.3")}
-                    <span>{t("what-is-cavepot.text1.part.4")}</span>
-                    {t("what-is-cavepot.text1.part.5")}
+                <label>
+                    <Trans>{t("what-is-cavepot.text1")}</Trans>
                 </label>
-                <label>{t("what-is-cavepot.text2.part.1")}
-                    <span>{t("what-is-cavepot.text2.part.2")}</span>
-                    {t("what-is-cavepot.text2.part.3")}
-                    <span>{t("what-is-cavepot.text2.part.4")}</span>
+                <label>
+                    <Trans>{t("what-is-cavepot.text2")}</Trans>
                 </label>
-                <label>{t("what-is-cavepot.text3.part.1")}
-                    <span>{t("what-is-cavepot.text3.part.2")}</span>
+                <label>
+                    <Trans>{t("what-is-cavepot.text3")}</Trans>
                 </label>
             </div>
             {/* <div id="short-blue-line"></div> */}
