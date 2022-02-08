@@ -5,8 +5,10 @@
     display: flex;
     align-self: center;
     gap: 16px;
+    width: 100%;
 
     .textwrapper {
+        width: 50%;
         transition: left 0.5s;
         display: flex;
         flex-direction: column;
@@ -22,29 +24,28 @@
         .subtitle {
             @include textBasis(1.188rem);
         }
+        label{
+            align-self: center;
+            max-width: 640px;
+        }
         transition-delay: 15s;
     }
     .img-wrapper{
-        width: unset;
+        justify-content: flex-end;
+        width: 50%;
     }
 }
 
-// @include media-lg{
-
-//     .why-do-we-exist {
-//         .textwrapper{
-//             width: 60%;
-//         }
-//     }
-
-// }
-//max-width:768px
 @include media-lg {
     .why-do-we-exist {
         background-image: url("../../../assets/img/aboutUsBanner.png");    
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: right;
         .textwrapper {
+            width: unset;
+            label{
+                max-width: unset;
+            }
             background-color: white;
             height: 100%;
             margin: 30px 30px 30px 30px;
