@@ -42,7 +42,8 @@ export const Header = () => {
             <nav className={showMenu ? 'nav open' : 'nav'}>
                 <ul className={showMenu ? 'menu-nav open' : 'menu-nav'}>
                     <li className="menu-nav__item">
-                    {HeaderView() === '/' && <Link 
+                        {HeaderView() === '/' && 
+                            <Link 
                                 className="menu-nav__link"
                                 activeClass="active"
                                 to="technologies-changes"
@@ -52,7 +53,8 @@ export const Header = () => {
                                 duration={500}
                             >
                                 {t("header.home")}
-                            </Link>} 
+                            </Link>
+                        } 
                         {HeaderView() != '/' && 
                             <NavLink to="/" className="menu-nav__link">
                                 {t("header.home")}
@@ -60,7 +62,8 @@ export const Header = () => {
                         } 
                     </li>
                     <li className="menu-nav__item">
-                        {HeaderView() === '/' && <Link 
+                        {HeaderView() === '/' && 
+                            <Link 
                                 className="menu-nav__link"
                                 activeClass="active"
                                 to="how-we-do-it"
@@ -70,19 +73,13 @@ export const Header = () => {
                                 duration={500}
                             >
                                 {t("header.how.we.do.it")}
-                            </Link>} 
+                            </Link>
+                        } 
                         {HeaderView() != '/' && 
                             <NavLink to="/" className="menu-nav__link">
                                 {t("header.how.we.do.it")}
                             </NavLink>
                         } 
-                        
-                        {/* <Link to="/#how-we-do-it" className="menu-nav__link">
-                            {t("header.how.we.do.it")}
-                        </Link> */}
-                        {/* <a href="/#how-we-do-it" className="menu-nav__link">
-                            {t("header.how.we.do.it")}
-                        </a> */}
                     </li>
                     <li className="menu-nav__item">
                         <NavLink to="/projects" className="menu-nav__link">
