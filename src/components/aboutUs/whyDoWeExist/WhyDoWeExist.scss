@@ -3,9 +3,10 @@
 
 .why-do-we-exist {
     display: flex;
-    align-self: center;
+    flex-direction: row;
     gap: 16px;
     width: 100%;
+    justify-content: flex-end;
 
     .textwrapper {
         width: 50%;
@@ -31,8 +32,22 @@
         transition-delay: 15s;
     }
     .img-wrapper{
-        justify-content: flex-end;
-        width: 50%;
+    }
+}
+
+@include media-xl {
+    .why-do-we-exist {
+        width: unset;
+        .textwrapper{
+            width: auto;;
+            label{
+                align-self: unset;
+                max-width: 100%;
+            }
+        }
+        .img-wrapper{
+            width: auto;
+        }
     }
 }
 

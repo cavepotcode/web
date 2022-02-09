@@ -22,7 +22,7 @@ export function TechSelector({ name, techs }: TechSelectosPorps) {
     },[activeClasses]);
 
     return (
-        <div className="img-wrapper">
+        <div className="img-tech-wrapper">
             {
                 Object.keys(activeClasses).map((tech,index) => (
                     <div key={index} className={activeClasses[tech] ? 'selected' : 'no-selected'} onClick={() => toggleClass(tech)}>

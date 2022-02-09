@@ -4,9 +4,11 @@
 .technologies-changes {
     display: flex;
     gap: 16px;
+    width: 100%;
+    justify-content: flex-end;
 
     .textwrapper {
-        grid-column: 1;
+        width: 50%;
         transition: left 0.5s;
         display: flex;
         flex-direction: column;
@@ -22,22 +24,39 @@
         .subtitle {
             @include textBasis(1.188rem);
         }
+        label{
+            align-self: center;
+            max-width: 517px;
+        }
         transition-delay: 15s;
     }
     .img-technologies {
-        grid-column: 2;
+        justify-content: flex-end;
     }
 }
-@include media-sm {
+
+@include media-xl {
     .technologies-changes {
-        background: none;
+        width: unset;
+        .textwrapper{
+            width: auto;
+            label{
+                align-self: unset;
+                max-width: 100%;
+            }
+        }
+        .img-wrapper{
+            width: auto;
+        }
     }
 }
+
 //max-width:768px
-@include media-md {
+@include media-lg {
     .technologies-changes {
         background-image: url("../../assets/img/banner.png");    
         background-repeat: no-repeat;
+        background-position: right;
         .textwrapper {
             background-color: white;
             height: 100%;
@@ -54,3 +73,4 @@
         }
     }
 }
+
