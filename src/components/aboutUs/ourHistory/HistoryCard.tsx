@@ -1,8 +1,19 @@
 
+import './HistoryCard.scss';
 import { Trans } from "react-i18next";
+import React from "react";
+
+
+import { VisibilityContext } from "react-horizontal-scrolling-menu";
+
 export function HistoryCard( data ){
+
+  const visibility = React.useContext(VisibilityContext);
+
+  const visible = visibility.isItemVisible(data.id);
+
     return(
-        <div className='single-card'>
+        <div className='single-card no-select'>
             <div className='history-point'>
                 <div className='card'>
                     <div className='card-header'>
