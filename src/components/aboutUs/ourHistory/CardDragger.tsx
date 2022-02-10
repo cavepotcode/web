@@ -29,7 +29,7 @@ export function CardDragger() {
 
 
     return (
-        <> 
+        <div onMouseLeave={dragStop}> 
                 <ScrollMenu
                     onMouseDown={() => dragStart}
                     onMouseUp={() => dragStop}
@@ -45,6 +45,6 @@ export function CardDragger() {
                     <div className="card-conect-end" />
                 </div>
                 </ScrollMenu>
-        </>
+        </div>
     );
 }
