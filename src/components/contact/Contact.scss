@@ -84,6 +84,7 @@
 
 @include media-md{
     .contact{
+        padding: 0 $mainMDRightLeftPadding;
         .form-wrapper{
             width: 100%;
             .contact-form{
@@ -127,6 +128,7 @@
 
 @include media-sm{
     .contact{
+        padding: 0 $mainSMRightLeftPadding;
         .form-wrapper{
             .contact-options-wrapper{
                 gap:15px;
@@ -148,7 +150,6 @@
                     .contact-option-title{
                         label{
                             font-size: 65%;
-                            font-weight: bold;
                         }
                     }
                     &.selected{
