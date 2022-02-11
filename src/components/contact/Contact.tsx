@@ -7,15 +7,26 @@ import { FrmGeneralInfo } from './frmContact/FrmGeneralInfo';
 import { FrmStaffAugmentation } from './frmContact/FrmStaffAugmentation';
 import React, { useState } from "react";
 
+import { useParams } from 'react-router-dom';
+
 import './Contact.scss';
 
 export const Contact = () => {
+
+    let params = useParams();
+    let param ;
+    if(params.frm)
+        param = params.frm;
+    else
+        param = 'generalInfo';
+
+    
     var options: any = {
-        aNewLanding: true,
-        aNewApp: false,
-        redesign: false,
-        generalInfo: false,
-        staffAugmentation: false
+        aNewLanding: param === 'aNewLanding' ? true : false,
+        aNewApp: param === 'aNewApp' ? true : false,
+        redesign: param === 'redesign' ? true : false,
+        generalInfo: param === 'generalInfo' ? true : false,
+        staffAugmentation: param === 'staffAugmentation' ? true : false,
     }
     const [activeClasses, setActiveClasses] = useState<any>(options);
 
@@ -37,6 +48,15 @@ export const Contact = () => {
             </div>
             <div className='form-wrapper'>
                 <div className="contact-options-wrapper">
+                    <div className={activeClasses.generalInfo ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("generalInfo")}>
+                        <div className='contact-option-img'>
+                            <img src={AllImages.GeneralInfo} alt="general-info" />
+                        </div>
+                        <div className='contact-option-title'>
+                            <label>{t("contact.option4.title")}</label>
+                        </div>
+                    </div>
+
                     <div className={activeClasses.aNewLanding ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("aNewLanding")}>
                         <div className='contact-option-img'>
                             <img src={AllImages.ANewLanding} alt="a-new-landing-icon" />
@@ -62,15 +82,6 @@ export const Contact = () => {
                         </div>
                         <div className='contact-option-title'>
                             <label>{t("contact.option3.title")}</label>
-                        </div>
-                    </div>
-
-                    <div className={activeClasses.generalInfo ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("generalInfo")}>
-                        <div className='contact-option-img'>
-                            <img src={AllImages.GeneralInfo} alt="general-info" />
-                        </div>
-                        <div className='contact-option-title'>
-                            <label>{t("contact.option4.title")}</label>
                         </div>
                     </div>
 

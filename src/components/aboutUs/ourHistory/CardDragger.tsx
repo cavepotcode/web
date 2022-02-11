@@ -35,7 +35,7 @@ export function CardDragger() {
                     onMouseUp={() => dragStop}
                     onMouseMove={handleDrag}
                 >    
-                <div className="cards-wrapper">
+                <div className="dragg-cards-wrapper">
                     {Object.values(t('data-history', { returnObjects: true })).map((obj, index) => (
                                                         <HistoryCard hitoryPoint={obj} key={index}/>
                     ))}   
