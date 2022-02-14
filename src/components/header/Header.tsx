@@ -79,7 +79,7 @@ export const Header = () => {
                                 duration={500}
                                 onClick={onShowMenu}
                             >
-                                { size.width }
+                                {t("header.home")}
                             </Link>
                         } 
                         {HeaderView() === '/' && size.width > 1024   && 
@@ -92,17 +92,17 @@ export const Header = () => {
                                 offset={-70}
                                 duration={500}
                             >
-                                { size.width }
+                                {t("header.home")}
                             </Link>
                         } 
                         {HeaderView() != '/' && size.width <= 1024 && 
                             <NavLink to="/" className="menu-nav__link" onClick={onShowMenu}>
-                                { size.width }
+                                {t("header.home")}
                             </NavLink>
                         } 
                         {HeaderView() != '/' && size.width > 1024 && 
                             <NavLink to="/" className="menu-nav__link">
-                                { size.width }
+                                {t("header.home")}
                             </NavLink>
                         } 
                     </li>
