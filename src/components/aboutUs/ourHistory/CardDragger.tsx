@@ -3,7 +3,7 @@ import React from "react";
 
 import { HistoryCard } from './HistoryCard';
 import { useTranslation,Trans } from "react-i18next";
-import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
+import { ScrollMenu, VisibilityContext,getItemsPos } from "react-horizontal-scrolling-menu";
 
 import { LeftArrow, RightArrow } from "./Arrows";
 
@@ -40,61 +40,33 @@ export function CardDragger() {
         }
         });
 
+        const centerOnInit = ({
+            getItemById,
+            scrollToItem,
+            visibleItems
+          }: scrollVisibilityApiType) => {
+            const { center: centerItemKey } = getItemsPos(visibleItems);
+            scrollToItem(getItemById(centerItemKey), "auto", "center");
+          };
 
     return (
-        <div onMouseLeave={dragStop}> 
+        <div className="card-dragger" onMouseLeave={dragStop}> 
                 <ScrollMenu
                     LeftArrow={LeftArrow}
                     RightArrow={RightArrow}
                     onMouseDown={() => dragStart}
                     onMouseUp={() => dragStop}
                     onMouseMove={handleDrag}
+                    onInit={centerOnInit}
                 >    
-                <div className="dragg-cards-wrapper">
-                    {/* {items.map(( obj, key ) => (
+                    {items.map(( obj, key ) => (
                         <HistoryCard hitoryPoint={obj.data} itemId={obj.id} />
-                    ))}    */}
-                    <HistoryCard
-                        hitoryPoint={{
-                            id: 2017,
-                            text: "prueba",
-                            subTitle: "prueba2",
-                            text2: "prueba3"
-                        }}
-                        itemId="test1"
-                    />
-                    <HistoryCard
-                        hitoryPoint={{
-                            id: 2017,
-                            text: "prueba",
-                            subTitle: "prueba2",
-                            text2: "prueba3"
-                        }}
-                        itemId="test1"
-                    />
-                    <HistoryCard
-                        hitoryPoint={{
-                            id: 2017,
-                            text: "prueba",
-                            subTitle: "prueba2",
-                            text2: "prueba3"
-                        }}
-                        itemId="test1"
-                    />
-                    <HistoryCard
-                        hitoryPoint={{
-                            id: 2017,
-                            text: "prueba",
-                            subTitle: "prueba2",
-                            text2: "prueba3"
-                        }}
-                        itemId="test1"
-                    />
-                    <div className="card-conect-end" />
-                    <div className="card-conect-end" />
-                    <div className="card-conect-end" />
-                </div>
+                    ))}   
+
                 </ScrollMenu>
+                {/* <div className='card-conect-end'></div>
+                <div className='card-conect-end'></div>
+                <div className='card-conect-end'></div> */}
         </div>
     );
 }
