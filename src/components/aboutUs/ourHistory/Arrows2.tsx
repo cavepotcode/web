@@ -1,7 +1,11 @@
 import React from "react";
 import { AllImages } from '../../../helpers';
 
-import { VisibilityContext } from "react-horizontal-scrolling-menu";
+import {
+  getItemsPos,
+  slidingWindow,
+  VisibilityContext
+} from "react-horizontal-scrolling-menu";
 
 function Arrow({
   direction,
@@ -9,7 +13,7 @@ function Arrow({
   disabled,
   onClick
 }: {
-  direction: any;
+  direction:any,
   children: React.ReactNode;
   disabled: boolean;
   onClick: VoidFunction;
@@ -28,17 +32,17 @@ function Arrow({
       }}
     >
     <img src={direction === "next" ? AllImages.RightArrow : AllImages.LeftArrow} />
-      {/* {children} */}
     </button>
   );
 }
 
 export function LeftArrow() {
   const {
-    // getItemById,
-    getPrevItem,
+    getItemById,
     isFirstItemVisible,
+    items,
     scrollToItem,
+    visibleItems,
     visibleItemsWithoutSeparators,
     initComplete
   } = React.useContext(VisibilityContext);
@@ -53,30 +57,28 @@ export function LeftArrow() {
     }
   }, [isFirstItemVisible, visibleItemsWithoutSeparators]);
 
-  const clickHandler = () => {
-    const prevItem = getPrevItem();
-    scrollToItem(prevItem?.entry?.target, "smooth", "start");
-    // OR
-    // scrollToItem(
-    //   getItemById(visibleItemsWithoutSeparators.slice(-2)[0]),
-    //   "smooth",
-    //   "end"
-    // );
-  };
+  const prevGroupItems = slidingWindow(
+    items.toItemsKeys(),
+    visibleItems
+  ).prev();
+  const { center } = getItemsPos(prevGroupItems);
+  const scrollPrevCentered = () =>
+    scrollToItem(getItemById(center), "smooth", "center");
 
+  console.log({ prevGroupItems, center });
   return (
-    <Arrow direction="prev" disabled={disabled} onClick={clickHandler}>
-      {/* Left 'el children' */}
+    <Arrow direction="prev" disabled={disabled} onClick={scrollPrevCentered}>
     </Arrow>
   );
 }
 
 export function RightArrow() {
   const {
-    // getItemById,
-    getNextItem,
+    getItemById,
     isLastItemVisible,
+    items,
     scrollToItem,
+    visibleItems,
     visibleItemsWithoutSeparators
   } = React.useContext(VisibilityContext);
 
@@ -89,20 +91,16 @@ export function RightArrow() {
     }
   }, [isLastItemVisible, visibleItemsWithoutSeparators]);
 
-  const clickHandler = () => {
-    const nextItem = getNextItem();
-    scrollToItem(nextItem?.entry?.target, "smooth", "end");
-    // OR
-    // scrollToItem(
-    //   getItemById(visibleItemsWithoutSeparators[1]),
-    //   "smooth",
-    //   "start"
-    // );
-  };
+  const prevGroupItems = slidingWindow(
+    items.toItemsKeys(),
+    visibleItems
+  ).next();
+  const { center } = getItemsPos(prevGroupItems);
+  const scrollPrevCentered = () =>
+    scrollToItem(getItemById(center), "smooth", "center");
 
   return (
-    <Arrow direction="next" disabled={disabled} onClick={clickHandler}>
-      {/* Right - 'el children' */}
+    <Arrow direction="next" disabled={disabled} onClick={scrollPrevCentered}>
     </Arrow>
   );
 }
