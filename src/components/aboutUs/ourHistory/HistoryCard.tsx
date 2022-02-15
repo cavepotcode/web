@@ -6,40 +6,46 @@ import React from "react";
 
 import { VisibilityContext } from "react-horizontal-scrolling-menu";
 
-export function HistoryCard( data ){
+export function HistoryCard( {
+    hitoryPoint,
+    itemId
+  }: {
+    hitoryPoint: any;
+    itemId: string;
+  } ){
 
   const visibility = React.useContext(VisibilityContext);
 
-  const visible = visibility.isItemVisible(data.id);
+  const visible = visibility.isItemVisible(itemId);
 
     return(
         <div className='single-card no-select'>
             <div className='history-point'>
                 <div className='card'>
                     <div className='card-header'>
-                        <label> {data.hitoryPoint.id} </label>
+                        <label> {hitoryPoint.id} </label>
                         <div className='sphere2'></div>
                     </div>
 
                     <div className='card-text'>
                         <label>
-                            <Trans>{data.hitoryPoint.text}</Trans>
+                            <Trans>{hitoryPoint.text}</Trans>
                         </label>
                     </div>
                 </div>
                 {
-                    data.hitoryPoint.subTitle != '' && (
+                    hitoryPoint.subTitle != '' && (
                         <div className='sub-card'>
                             <div className='card-sub-conect'></div>
                             <div className='card'>
                                 <div className='card-text bold'>
                                     <label>
-                                        { data.hitoryPoint.subTitle }
+                                        { hitoryPoint.subTitle }
                                     </label>
                                 </div>
                                 <div className='card-text'>
                                     <label>
-                                        <Trans>{ data.hitoryPoint.text2 }</Trans>
+                                        <Trans>{ hitoryPoint.text2 }</Trans>
                                     </label>
                                 </div>
                             </div>
