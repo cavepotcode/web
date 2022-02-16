@@ -1,0 +1,49 @@
+@import "./../../../styles/main";
+
+.left-arrow{  
+    position: absolute;
+    width: 19px;
+    height: 29px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin-top: -45px !important;
+    right: 175px;
+    font-size: 30px;
+}
+
+.right-arrow{  
+    margin-top: -45px !important;
+    right: 150px;
+    position: absolute;
+    float: right;
+    height: 29px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+}
+
+@include media-md{
+    .left-arrow{  
+        margin-top: -35px !important;
+        right: 52%;
+    }
+    
+    .right-arrow{  
+        margin-top: -35px !important;
+        right: 48%;
+    }
+}
+
+@include media-sm{
+    .left-arrow{  
+        margin-top: -35px !important;
+        right: 53%;
+    }
+    
+    .right-arrow{  
+        margin-top: -35px !important;
+        right: 47%;
+    }
+}

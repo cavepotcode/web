@@ -1,5 +1,9 @@
 import React from "react";
-import { AllImages } from '../../../helpers';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+
+import './Arrows.scss';
+
 
 import { VisibilityContext } from "react-horizontal-scrolling-menu";
 
@@ -14,20 +18,15 @@ function Arrow({
   disabled: boolean;
   onClick: VoidFunction;
 }) {
+  const left = <FontAwesomeIcon icon={faChevronLeft} />
+  const right = <FontAwesomeIcon icon={faChevronRight} />
   return (
     <button
+      className={direction === "next" ? "right-arrow" : "left-arrow"} 
       disabled={disabled}
       onClick={onClick}
-      style={{
-        width: "19px",
-        height: "29px",
-        cursor: "pointer",
-        border: "none",
-        backgroundColor: "transparent",
-        color: "red"
-      }}
     >
-    <img src={direction === "next" ? AllImages.RightArrow : AllImages.LeftArrow} />
+    { direction === "next" ? right : left }
       {/* {children} */}
     </button>
   );
