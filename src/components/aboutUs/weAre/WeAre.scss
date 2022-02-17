@@ -1,0 +1,101 @@
+@import "./../../../styles/variables";
+@import "./../../../styles/mixin";
+
+.we-tag-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    // .tags{
+    //     display: flex;
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+    //     gap: 30px;
+    //     .tag{
+    //         //margin: 6px 15px;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         color: $White;
+    //         height: 55px;  
+    //         border-radius: $borderRadiusLabel;
+    //         background-color: $OH-orange;
+    //         label{
+    //             padding: 0 10px;
+    //             font-size: 21.5px;
+    //             font-weight: lighter;
+    //             font-stretch: normal;
+    //             font-style: normal;
+    //             line-height: normal;
+    //             letter-spacing: normal;
+    //             text-align: left;
+    //             color: $White;
+    //             strong{
+    //                 font-family: Montserrat-Black;
+    //             }
+    //         }
+    //     }
+    //}
+
+    .are{
+        height: 350px;
+        
+        background-color: $OH-orange;
+    }
+    
+    .text-wrapper{
+        margin-right: $mainLGRightLeftPadding;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-end;
+        padding: 50px 50px;
+        background-color: $CeriseRed;
+        color: $White;
+        width: 70%;
+        height: 100%;
+        border-radius: $borderRadiusLabel;
+        button{
+            margin-right: 20%;
+            align-self: flex-end;
+            width: 211px;
+            height: 49px;
+            border-radius: 10px;
+            border: 0;
+            background-color: $AmarilloBoton;
+
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $Black;
+
+        }
+        label{
+            font-size: 31.5px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #fff;
+        }
+    }
+}
+
+@include media-md{
+    .we-tag-wrapper{
+
+        .text-wrapper{
+            width: 100%;
+            button{
+                align-self: center;
+                margin-right: 0;
+            }
+        }
+    }
+}
