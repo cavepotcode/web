@@ -55,12 +55,22 @@ export function CardDragger() {
                     LeftArrow={LeftArrow}
                     RightArrow={RightArrow}
                     onMouseDown={() => dragStart}
-                    onMouseUp={() => dragStop}
+                    onMouseUp={({
+                        getItemById,
+                        scrollToItem,
+                        visibleItems
+                      }: scrollVisibilityApiType) => () => {
+                        // NOTE: for center items
+                        dragStop();
+                        const { center } = getItemsPos(visibleItems);
+                        scrollToItem(getItemById(center), "smooth", "center");
+                      }}
                     onMouseMove={handleDrag}
                     onInit={centerOnInit}
                 >    
                     {items.map(( obj, key ) => (
-                        <HistoryCard hitoryPoint={obj.data} itemId={obj.id} />
+                        <HistoryCard    hitoryPoint={obj.data} 
+                                        itemId={obj.id} />
                     ))}   
 
                 </ScrollMenu>
