@@ -35,7 +35,7 @@ export function HistoryCard( {
                 </div>
                 {
                     hitoryPoint.subTitle != '' && (
-                        <div className='sub-card'>
+                        <div className={visible ? 'sub-card' : 'sub-card-no'}>
                             <div className='card-sub-conect'></div>
                             <div className='card'>
                                 <div className='card-text bold'>
