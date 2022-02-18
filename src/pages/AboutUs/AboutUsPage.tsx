@@ -1,6 +1,5 @@
 import { OurHistory } from "../../components/aboutUs/ourHistory/OurHistory";
 import { WeAre } from "../../components/aboutUs/weAre/WeAre";
-import { WeTags } from "../../components/aboutUs/weTags/WeTags";
 import { WhereNameComeFrom } from "../../components/aboutUs/whereNameComeFrom/WhereNameComeFrom";
 import { WhyDoWeExist } from "../../components/aboutUs/whyDoWeExist/WhyDoWeExist";
 import './AboutUsPage.scss'

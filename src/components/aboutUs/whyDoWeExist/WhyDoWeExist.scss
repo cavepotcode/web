@@ -19,19 +19,18 @@
         
         
         .title {
-            @include textBasis(2.5rem);
+            font-family: Montserrat-Bold;
+            @include textBasis(3.5rem);
             padding-bottom: 18px;
         }
-        .subtitle {
-            @include textBasis(1.188rem);
+        .textpart{
+            @include textBasis(1.3rem);
         }
         label{
             align-self: center;
             max-width: 640px;
         }
         transition-delay: 15s;
-    }
-    .img-wrapper{
     }
 }
 
@@ -73,6 +72,19 @@
         .img-wrapper{
             width: 0;
             visibility: hidden;
+        }
+    }
+}
+
+@include media-md{
+    .why-do-we-exist{
+        .textwrapper{
+            .title {
+                @include textBasis(2.3rem);
+            }
+            .textpart{
+                @include textBasis(1.0rem);
+            }
         }
     }
 }

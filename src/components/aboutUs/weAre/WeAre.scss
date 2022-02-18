@@ -4,43 +4,52 @@
 .we-tag-wrapper{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    // .tags{
-    //     display: flex;
-    //     flex-direction: row;
-    //     flex-wrap: wrap;
-    //     gap: 30px;
-    //     .tag{
-    //         //margin: 6px 15px;
-    //         display: flex;
-    //         justify-content: center;
-    //         align-items: center;
-    //         color: $White;
-    //         height: 55px;  
-    //         border-radius: $borderRadiusLabel;
-    //         background-color: $OH-orange;
-    //         label{
-    //             padding: 0 10px;
-    //             font-size: 21.5px;
-    //             font-weight: lighter;
-    //             font-stretch: normal;
-    //             font-style: normal;
-    //             line-height: normal;
-    //             letter-spacing: normal;
-    //             text-align: left;
-    //             color: $White;
-    //             strong{
-    //                 font-family: Montserrat-Black;
-    //             }
-    //         }
-    //     }
-    //}
+    gap: $spaceBetween;
 
     .are{
-        height: 350px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 250px;
         
+        font-size: 250%;
         background-color: $OH-orange;
+        color: #fff;
+        box-shadow: 0px 13px 7px 9px $Shadow;
+
+        label{
+            animation: OpeningSequence 3.5s linear infinite;
+        }
     }
+
+
+@keyframes OpeningSequence {
+	0% {
+		text-shadow: 0 0 50px #fff;
+		letter-spacing:  3vw;
+		opacity: 0.2;
+	}
+	20% {
+		text-shadow: 0 0 1px #fff;
+		letter-spacing: 2vw;
+		opacity: 0.6;
+	}
+	65% {
+		text-shadow: 0 0 1vw #fff;
+		opacity: 0.7;
+	}
+	75% {
+		text-shadow: 0 0 0 #fff;
+		letter-spacing: 0;
+		opacity: 0.9;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
     
     .text-wrapper{
         margin-right: $mainLGRightLeftPadding;
@@ -91,7 +100,9 @@
     .we-tag-wrapper{
 
         .text-wrapper{
-            width: 100%;
+
+            margin-right: unset;
+            align-self: center;
             button{
                 align-self: center;
                 margin-right: 0;

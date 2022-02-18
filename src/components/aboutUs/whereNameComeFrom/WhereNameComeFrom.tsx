@@ -7,10 +7,10 @@ export function WhereNameComeFrom() {
     return (
         <div className="where-name-come-from">
             {/* VER COMO COMODAR LAS PELOTITAS */}
-            {/* <div className="sphere-wrapper">
+            <div className="sphere-wrapper">
                 <div className="sphere-1"></div>
                 <div className="sphere-2"></div>
-            </div> */}
+            </div>
             <div className="text-wrapper">
                 <label className="title">{t("name-come-from.title.1")}</label>
                 <label className="textpart">{t("name-come-from.text.part.1")}</label><br />
