@@ -23,7 +23,7 @@ export default function WhatIsCavepot() {
             </div>
             {/* <div id="short-blue-line"></div> */}
             <div className="message-container">
-                <div className="message">{t("what-is-cavepot.message")}</div>
+                <button>{t("what-is-cavepot.message")}</button>
             </div>
         </div>
     )

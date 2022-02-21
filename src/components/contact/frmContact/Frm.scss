@@ -108,26 +108,20 @@
     }
 
     button{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        background-color: $HCWHY-red;
-        width: 207px;
-        height: 59px;
-
-        border-radius: $borderRadiusMain;
+        @include textBasis($btnLgTxtSize);
+        height: $btnLgHeight;
+        text-decoration: none;
         border: none;
-
-        font-size: 27px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        letter-spacing: normal;
-
-        align-self: center;
-        color: $White;
         cursor: pointer;
+        border-radius: $btnBorderRadius;
+        color: $White;
+
+        width: 207px;
+        background-color: $HCWHY-red;
+        align-self: center;
+    }
+    button:hover{
+        background-color: darken($HCWHY-red,$darkerPorcentaje);
     }
 }
 
@@ -154,15 +148,11 @@
         }
         
         button{
+            @include textBasisLighter(19px);
+            color: $White;
             width: 103;
             height: 29px;
             border: none;
-    
-            font-size: 19px;
-            font-weight: lighter;
-            font-stretch: lighter;
-            font-style: lighter;
-            letter-spacing: lighter;
         }
     }
 }

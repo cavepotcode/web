@@ -43,15 +43,19 @@
             padding-bottom: 41px;
             text-align: center;
             button {
-                background-color: $SeaSerpent;
-                @include textBasis(1.188rem);
-                color: $White;
+                @include textBasis($btnLgTxtSize);
+                height: $btnLgHeight;
+                text-decoration: none;
                 border: none;
                 cursor: pointer;
-                border-radius: 10px;
+                border-radius: $btnBorderRadius;
+                color: $White;
+
                 width: 212px;
-                height: 50px;
-                text-decoration: none;
+                background-color: $SeaSerpent;
+            }
+            button:hover{
+                background-color: darken($SeaSerpent,$darkerPorcentaje);
             }
             label {
                 width: 216px;
@@ -89,9 +93,9 @@
                     font-size: 1.5rem !important;
                 }
                 button {
-                    font-size: 1.625rem !important;
+                    @include textBasis($btnMdTxtSize);
                     width: 295px !important;
-                    height: 69px !important;
+                    height: $btnMdHeight;
                 }
             }
             :nth-child(1) {

@@ -7,7 +7,6 @@
     gap: $spaceBetween;
 
     .are{
-        border-radius: 12px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -64,24 +63,24 @@
         color: $White;
         width: 70%;
         height: 100%;
-        border-radius: $borderRadiusLabel;
+        border-radius: $borderRadiusMain;
         button{
-            margin-right: 20%;
-            align-self: flex-end;
+            @include textBasis($btnLgTxtSize);
+            height: $btnLgHeight;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: $btnBorderRadius;
+            color: $White;
+
+
             width: 211px;
-            height: 49px;
-            border-radius: 10px;
-            border: 0;
             background-color: $AmarilloBoton;
+            align-self: flex-end;
 
-            font-size: 24px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            color: $Black;
-
+        }
+        button:hover{
+            background-color: darken($AmarilloBoton,$darkerPorcentaje);
         }
         label{
             font-size: 31.5px;
@@ -104,8 +103,11 @@
             margin-right: unset;
             align-self: center;
             button{
-                align-self: center;
-                margin-right: 0;
+                @include textBasis($btnMdTxtSize);
+                height: $btnMdHeight;
+                color: $White;
+
+                width: 195px;
             }
         }
     }

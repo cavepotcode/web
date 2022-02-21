@@ -8,16 +8,15 @@
     .text-wrapper {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
         padding-bottom: 15px;
         @include textBasis(1.063rem);
 
         .main-text-wrapper{
-            
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: flex-end;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: flex-end;
             .title {
                 @include textBasis(2.5rem);
                 font-weight: 500;
@@ -36,14 +35,20 @@
     }
     
     button {
-        border-radius: 10px;
-        background-color: $AmarilloBoton;
+        @include textBasis($btnLgTxtSize);
+        height: $btnLgHeight;
+        text-decoration: none;
         border: none;
-        width: 212px;
-        height: 49px;
-        align-self: center;
-        @include textBasis(1.063rem);
         cursor: pointer;
+        border-radius: $btnBorderRadius;
+        color: $White;
+
+
+        width: 212px;
+        background-color: $AmarilloBoton;
+    }
+    button:hover{
+        background-color: darken($AmarilloBoton,$darkerPorcentaje);
     }
 }
 
@@ -66,6 +71,14 @@
         img{
             width: 0;
             visibility: hidden;
+        }
+
+        button{
+            @include textBasis($btnMdTxtSize);
+            height: $btnMdHeight;
+            color: $White;
+
+            width: 295px;
         }
     }
 }

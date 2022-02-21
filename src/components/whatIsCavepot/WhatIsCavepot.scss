@@ -21,13 +21,20 @@
     .message-container {
         display: flex;
         justify-content: center;
-        .message {
-            padding: 18px 24px 13px 25px;
-            opacity: 0.79;
-            border-radius: 10px;
-            background-color: $CeriseRed;
-            @include textBasis(1.188rem);
+        button {
+            @include textBasis($btnLgTxtSize);
+            height: $btnLgHeight;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: $btnBorderRadius;
             color: $White;
+
+            width: 412px;
+            background-color: $CeriseRed;
+        }
+        button:hover{
+            background-color: darken($CeriseRed,$darkerPorcentaje);
         }
     }
     #short-blue-line {
@@ -97,8 +104,12 @@
         }
         .message-container {
             margin-top: 118px;
-            .message {
-                font-size: 1.313rem !important;
+            button {
+                @include textBasis($btnMdTxtSize);
+                height: $btnMdHeight;
+                color: $White;
+                
+                width: 495px;
             }
         }
     }

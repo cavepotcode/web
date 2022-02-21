@@ -19,12 +19,11 @@
         
         
         .title {
-            font-family: Montserrat-Bold;
             @include textBasis(3.5rem);
             padding-bottom: 18px;
         }
         .textpart{
-            @include textBasis(1.3rem);
+            @include textBasis(1.188rem);
         }
         label{
             align-self: center;

@@ -8,6 +8,18 @@
     letter-spacing: normal;
     color: $PineTree;
 }
+
+@mixin textBasisLighter($size) {
+    font-size: $size;
+    font-weight: lighter;
+    font-stretch: lighter;
+    font-style: lighter;
+    line-height: lighter;
+    letter-spacing: lighter;
+    color: $PineTree;
+}
+
+
 @mixin transition-ease {
     transition:all 0.5s ease-in-out;
 }
