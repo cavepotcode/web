@@ -51,8 +51,8 @@
         @content;
     }
 }
-@mixin media-min-lg{
-    @media screen and (min-width:1025px){
+@mixin media-max-lg{
+    @media screen and (max-width:1195px){
         @content;
     }
 }
