@@ -167,16 +167,6 @@ export const Header = () => {
                     </li>
                     <li className="menu-nav__item">
                         {size.width <= 1024 && 
-                            <NavLink to="/contact" className="menu-nav__link" onClick={onShowMenu}>
-                                    {  t("header.contact.us")}
-                            </NavLink> }
-                        {size.width > 1024 && 
-                            <NavLink to="/contact" className="menu-nav__link">
-                                    {  t("header.contact.us")}
-                            </NavLink> }
-                    </li>
-                    <li className="menu-nav__item">
-                        {size.width <= 1024 && 
                             <NavLink to="/blog" className="menu-nav__link" onClick={onShowMenu}>
                                     {  t("header.blog")}
                             </NavLink> }
@@ -195,6 +185,16 @@ export const Header = () => {
                                     {  t("header.our.lab")}
                             </NavLink> }
                        
+                    </li>
+                    <li className="menu-nav__item">
+                        {size.width <= 1024 && 
+                            <NavLink to="/contact" className="menu-nav__link-contact" onClick={onShowMenu}>
+                                    {  t("header.contact.us")}
+                            </NavLink> }
+                        {size.width > 1024 && 
+                            <NavLink to="/contact" className="menu-nav__link-contact">
+                                    {  t("header.contact.us")}
+                            </NavLink> }
                     </li>
                 </ul>
             </nav>
