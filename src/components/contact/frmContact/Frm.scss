@@ -108,14 +108,6 @@
     }
 
     button{
-        @include textBasis($btnLgTxtSize);
-        height: $btnLgHeight;
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-        border-radius: $btnBorderRadius;
-        color: $White;
-
         width: 207px;
         background-color: $HCWHY-red;
         align-self: center;

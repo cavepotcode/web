@@ -35,15 +35,6 @@
     }
     
     button {
-        @include textBasis($btnLgTxtSize);
-        height: $btnLgHeight;
-        text-decoration: none;
-        border: none;
-        cursor: pointer;
-        border-radius: $btnBorderRadius;
-        color: $White;
-
-
         width: 212px;
         background-color: $AmarilloBoton;
     }
@@ -74,10 +65,6 @@
         }
 
         button{
-            @include textBasis($btnMdTxtSize);
-            height: $btnMdHeight;
-            color: $White;
-
             width: 295px;
         }
     }

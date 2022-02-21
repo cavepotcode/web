@@ -22,14 +22,6 @@
         display: flex;
         justify-content: center;
         button {
-            @include textBasis($btnLgTxtSize);
-            height: $btnLgHeight;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            border-radius: $btnBorderRadius;
-            color: $White;
-
             width: 412px;
             background-color: $CeriseRed;
         }
@@ -105,10 +97,6 @@
         .message-container {
             margin-top: 118px;
             button {
-                @include textBasis($btnMdTxtSize);
-                height: $btnMdHeight;
-                color: $White;
-                
                 width: 495px;
             }
         }

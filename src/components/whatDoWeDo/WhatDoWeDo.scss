@@ -43,14 +43,6 @@
             padding-bottom: 41px;
             text-align: center;
             button {
-                @include textBasis($btnLgTxtSize);
-                height: $btnLgHeight;
-                text-decoration: none;
-                border: none;
-                cursor: pointer;
-                border-radius: $btnBorderRadius;
-                color: $White;
-
                 width: 212px;
                 background-color: $SeaSerpent;
             }
@@ -93,9 +85,7 @@
                     font-size: 1.5rem !important;
                 }
                 button {
-                    @include textBasis($btnMdTxtSize);
                     width: 295px !important;
-                    height: $btnMdHeight;
                 }
             }
             :nth-child(1) {

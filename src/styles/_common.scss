@@ -1,3 +1,22 @@
 .no-select{
     user-select: none;   
 }
+
+button {
+    @include textBasis($btnLgTxtSize);
+    height: $btnLgHeight;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: $btnBorderRadius;
+    color: $White;
+}
+
+@include media-md{
+    button{
+        @include textBasis($btnMdTxtSize);
+        height: $btnMdHeight;
+        color: $White;
+
+    }
+}
