@@ -64,9 +64,14 @@ export const Footer = () => {
                         <a href="https://twitter.com/Cavepot" target="_blank"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
                         <a href="https://www.instagram.com/cavepotuy" target="_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
                         <a href="https://www.linkedin.com/company/3561578" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
+
+                    </div>
+                    <div className="clutch-wrapper">
+                        <div className="clutch-widget" data-nofollow="true" data-url="https://widget.clutch.co" data-widget-type="1" data-darkbg="true" data-height="40" data-clutchcompany-id="592393"></div>
                     </div>
                 </div>
             </div>
+
         </div>
     )
 }
