@@ -7,6 +7,7 @@ import { ContactPage } from './pages/ContactPage/ContactPage';
 import { NotFoundPage } from './pages/NotFound/NotFound';
 import { AboutUsPage } from './pages/AboutUs/AboutUsPage';
 import { useLayoutEffect } from 'react';
+import { ProjectsPage } from './pages/Projects/ProjectsPage';
 
 const ToTop = ({children}) => {
   const location = useLocation();
@@ -32,6 +33,7 @@ function App() {
                 <Route path="/contact" element={<ContactPage />} />
                   <Route path="/contact/:frm" element={<ContactPage />} />
                 <Route path="/aboutus" element={<AboutUsPage />} />
+                <Route path="/projects" element={<ProjectsPage />} />
                 <Route path="*" element={<NotFoundPage/>} />
               </Routes>
               <Footer />
