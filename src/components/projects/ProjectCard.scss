@@ -1,0 +1,28 @@
+
+@import '../../styles/main';
+
+.project-card{
+    border-radius: $borderRadiusMain;
+    padding: 25px;
+    .title{
+        display: flex;
+        justify-content: center;
+        label{
+            font-family: Montserrat-Medium;
+            @include textBasis(30px);
+            color: white;
+            text-align: center;
+        }
+    }
+    .img-wrapper{
+        position: relative;
+    }
+    .text-wrapper{
+        position: relative;
+        text-align: center;
+        label{
+            font-family: Montserrat;
+            @include textBasis(11px);
+        }
+    }
+}
