@@ -1,8 +1,8 @@
+import { useEffect, useState } from 'react';
+import { Size } from '../header/Header';
 import './ProjectCard.scss';
 
 export interface ProjectCardProps{
-    height: number;
-    width: number;
     img: string;
     imgX: number;
     imgY: number;
@@ -15,13 +15,30 @@ export interface ProjectCardProps{
 }
 
 
-export function ProjectCard( {height,width,img,imgX,imgY,title,text,textX,textY, color, gridArea} : ProjectCardProps){
+export function ProjectCard( {img,imgX,imgY,title,text,textX,textY, color, gridArea} : ProjectCardProps){
+
+     const [size, setSize] = useState<Size>({width: window.innerWidth,height: window.innerHeight});
+
+
+    const resizeHanlder = () => {
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+
+        setSize({
+            width: width,
+            height: height,
+            });
+    };
+    
+    useEffect(() => {
+        window.onresize = resizeHanlder;
+    }, []);
+    
+
     return(
         <div className="project-card"
             style={{
-                gridArea: gridArea,
-                height: height+"px",
-                width: width+"px",
+                gridArea: size.width <= 480 && gridArea === 'auto /span 2' ? "auto /span 1" : gridArea,
                 backgroundColor: color}}
         >
             <div className='title'>

@@ -6,7 +6,7 @@ import { Link, scroll } from 'react-scroll';
 
 import './Header.scss';
 
-interface Size {
+export interface Size {
     width: number;
     height: number;
   }
@@ -25,9 +25,6 @@ export const Header = () => {
         console.log(location.pathname);
         return location.pathname
       }
-    function ToTop() {
-        scroll.scrollToTop();
-    }
     // This function updates the state thus re-render components
     const resizeHanlder = () => {
         const width = window.innerWidth;

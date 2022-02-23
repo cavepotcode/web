@@ -15,9 +15,7 @@ export function Projects(){
             <div className="project-card-wrapper">
                 {
                     projects.map((obj : ProjectCardProps,key) => (
-                        <ProjectCard height={obj.height}
-                                    width={obj.width}
-                                    img={obj.img}
+                        <ProjectCard img={obj.img}
                                     imgX={obj.imgX}
                                     imgY={obj.imgY}
                                     title={obj.title}
