@@ -7,19 +7,20 @@ export const HowWeDoIt = () => {
         <div id="how-we-do-it" className="how-we-do-it">
             <label className="title">{t("how-we-do-it.title")}</label>
             <div className="text-wrapper">
-                <label className='papa'>
+                <label className='textpart'>
                     <Trans>{t("how-we-do-it.text1")}</Trans>
                 </label>
-                <label  className='papa'>
+                <label  className='textpart'>
                     <Trans>{t("how-we-do-it.text2")}</Trans>
                 </label>
-                <label  className='papa'>
+                <label  className='textpart'>
                     <Trans>{t("how-we-do-it.text3")}</Trans>
                 </label>
-                <label  className='papa'>
+                <label  className='textpart'>
                     <Trans>{t("how-we-do-it.text4")}</Trans>
                 </label>
             </div>
+            
         </div>
     )
 }

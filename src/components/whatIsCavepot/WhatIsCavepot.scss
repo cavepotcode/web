@@ -98,6 +98,21 @@
             margin-top: 118px;
             button {
                 width: 495px;
+                padding: 0px 10px;
+                margin: 0 $mainMDRightLeftPadding;
+            }
+        }
+    }
+}
+
+
+@include media-sm {
+    .what-is-cavepot {
+        .message-container {
+            margin-top: 118px;
+            button {
+                padding: 2px 5px;
+                margin: 0 $mainSMRightLeftPadding;
             }
         }
     }

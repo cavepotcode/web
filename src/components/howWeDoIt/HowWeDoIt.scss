@@ -2,7 +2,7 @@
 @import "../../styles/variables";
 
 .how-we-do-it {
-    padding-top: $spaceBetween45;
+   // padding-top: $spaceBetween45;
     background-color: $LilaBanner;
     width: 80%;
     display: flex;
@@ -23,18 +23,11 @@
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
-        .papa{
+        .textpart{
             width: 360px;
             color: $White !important;
             font-weight: 100 !important;
             @include textBasis(1.063rem); 
-
-
-        }
-        :last-child{
-            align-self: center;
-            width: 319px;
-            justify-self: center;
         }
     }
 }
@@ -42,7 +35,6 @@
 
 @include media-md {
     .how-we-do-it {
-        
         background-color: $White;
 
         justify-content: center;
@@ -63,35 +55,19 @@
             padding-top: 59px;
             padding-bottom: 60px;
             
-            .papa {
+            .textpart {
                 background-color: $White;
                 color: $Black !important;
-                width: 576px !important;
-                height: 181px;
-                padding: 34px 53px 32px 59px;
+                width: 80%;
+                height: 100%;
+                padding: 32px;
                 box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
                 border-radius: 20px;
                 @include textBasis(1.406rem);
                 z-index: 1;
-
                 span{
                     color: $Black;
                 }
-            }
-            :nth-child(1) {
-                order: 0;
-            }
-            :nth-child(2) {
-                order: 3;
-                padding-right: 52px;
-            }
-            :nth-child(3) {
-                order: 2;
-                padding-left: 50px;
-            }
-            :nth-child(4) {
-                order: 4;
-                padding: 58px 89px 46px 94px;
             }
         }
         .text-wrapper::before {
@@ -105,4 +81,18 @@
             border-bottom-left-radius: 10px;
         }
     }
+}
+
+@include media-sm{
+    // .how-we-do-it {
+    //     .text-wrapper{
+    //         .textpart{
+    //             width: 100%;
+    //             height: 100%;
+    //             label{
+    //                 width: 100%;
+    //             }
+    //         }
+    //     }
+    // }
 }
