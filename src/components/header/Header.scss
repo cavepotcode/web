@@ -137,7 +137,8 @@
                 @include transition-ease;
 
                 &.active {
-                    font-weight: 900;
+                    font-family: Montserrat-Bold;
+                    font-weight: bolder;
                 }
             }
 
@@ -197,10 +198,16 @@
                 padding-right: 1rem;
                 transform: translateY(-100%);
                 opacity: 0.9;
+                gap: 50px;
                 @include transition-ease;
 
                 &.open {
                     transform: translateY(0);
+                }
+                &__item{
+                }
+                &__link{
+                    padding: 0;
                 }
             }
             &.open {
