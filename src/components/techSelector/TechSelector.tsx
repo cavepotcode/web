@@ -26,7 +26,7 @@ export function TechSelector({ name, techs }: TechSelectosPorps) {
             {
                 Object.keys(activeClasses).map((tech,index) => (
                     <div key={index} className={activeClasses[tech] ? 'selected' : 'no-selected'} onClick={() => toggleClass(tech)}>
-                        <img src={require(`../../assets/img/${tech}.png`).default} alt="" />
+                        <img src={require(`../../assets/img/tecs-logo/${tech}.png`).default} alt="" />
                     </div>
                 ))
             }
