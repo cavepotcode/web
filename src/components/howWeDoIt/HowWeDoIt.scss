@@ -2,22 +2,24 @@
 @import "../../styles/variables";
 
 .how-we-do-it {
-    background-image: url("../../assets/img/banner.png");    
-    background-repeat: no-repeat;
-    background-position: right;
     padding: $spaceBetween 0;
+    display: flex;
+    justify-content: flex-end;
+    .img-how-we-do-it{
+        position: relative;
+        left: 110px;
+        top:190px;   
+        
+    }
     .txt-how-we-do-it{
         padding: $spaceBetween 0;
-        border-top: solid $BorderWidth $BorderBlack;;
-        border-right: solid $BorderWidth $BorderBlack;;
-        border-bottom: solid $BorderWidth $BorderBlack;;
         // padding-top: $spaceBetween45;
+        border-bottom-left-radius: $borderRadiusMain;
+        border-top-left-radius: $borderRadiusMain;
         background-color: #b3a9ce;
         width: 80%;
         display: flex;
         flex-direction: column;
-        border-bottom-right-radius: $borderRadiusMain;
-        border-top-right-radius: $borderRadiusMain;
         .title {
             align-self: center;
             justify-self: center;
@@ -37,6 +39,7 @@
                 color: $White !important;
                 font-weight: 100 !important;
                 @include textBasis(1.063rem); 
+                
             }
         }
     }
@@ -98,6 +101,6 @@
                 border-bottom: solid $BorderWidth $BorderBlack;;
             }
         }
-        }
+    }
         
 }

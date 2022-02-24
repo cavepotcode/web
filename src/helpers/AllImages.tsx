@@ -28,6 +28,10 @@ export const Banner = require('../assets/img/banner.png').default;
 export const Banner2 = require('../assets/img/banner2.png').default;
 export const AboutUsBanner = require('../assets/img/aboutUsBanner.png').default;
 
+//IMG GENERALES
+export const Olla = require('../assets/img/olla.png').default;
+
+
 //CONTACT
 export const ANewLanding = require('../assets/img/a-new-landing-icon.png').default;
 export const Redesign = require('../assets/img/redesign.png').default;
