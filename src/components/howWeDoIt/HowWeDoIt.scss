@@ -2,85 +2,95 @@
 @import "../../styles/variables";
 
 .how-we-do-it {
-   // padding-top: $spaceBetween45;
-    background-color: $LilaBanner;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    border-bottom-right-radius: $borderRadiusMain;
-    border-top-right-radius: $borderRadiusMain;
-    .title {
-        align-self: center;
-        justify-self: center;
-        @include textBasis(2.5rem);
-        color: $White;
-    }
-    .text-wrapper{
-        margin: 45px  0 45px 0;
+    background-image: url("../../assets/img/banner.png");    
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 75px 0;
+    .txt-how-we-do-it{
+        // padding-top: $spaceBetween45;
+        background-color: $LilaBanner;
+        width: 80%;
         display: flex;
-        flex-direction: row;
-        gap: 65px;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        .textpart{
-            width: 360px;
-            color: $White !important;
-            font-weight: 100 !important;
-            @include textBasis(1.063rem); 
+        flex-direction: column;
+        border-bottom-right-radius: $borderRadiusMain;
+        border-top-right-radius: $borderRadiusMain;
+        .title {
+            align-self: center;
+            justify-self: center;
+            @include textBasis(2.5rem);
+            color: $White;
+        }
+        .text-wrapper{
+            margin: 45px  0 45px 0;
+            display: flex;
+            flex-direction: row;
+            gap: 65px;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            .textpart{
+                width: 360px;
+                color: $White !important;
+                font-weight: 100 !important;
+                @include textBasis(1.063rem); 
+            }
         }
     }
+  
 }
 
 
 @include media-md {
     .how-we-do-it {
-        background-color: $White;
+        .txt-how-we-do-it{
+            background-color: $White;
 
-        justify-content: center;
-        width: 100%;
-        background-image: none;
-        display: flex;
-        flex-direction: column;
-
-        .title{
-            color: $Black;
-        }
-        .text-wrapper {
-            position:relative;
-            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-image: none;
             display: flex;
             flex-direction: column;
-            margin-top: 45px;
-            padding-top: 59px;
-            padding-bottom: 60px;
-            
-            .textpart {
-                background-color: $White;
-                color: $Black !important;
-                width: 80%;
-                height: 100%;
-                padding: 32px;
-                box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
-                border-radius: 20px;
-                @include textBasis(1.406rem);
-                z-index: 1;
-                span{
-                    color: $Black;
+    
+            .title{
+                color: $Black;
+            }
+            .text-wrapper {
+                position:relative;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin-top: 45px;
+                padding-top: 59px;
+                padding-bottom: 60px;
+                
+                .textpart {
+                    background-color: $White;
+                    color: $Black !important;
+                    width: 80%;
+                    height: 100%;
+                    padding: 32px;
+                    box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
+                    border-radius: 20px;
+                    @include textBasis(1.406rem);
+                    z-index: 1;
+                    span{
+                        color: $Black;
+                    }
                 }
             }
+            .text-wrapper::before {
+                content:'\A';
+                position:absolute;
+                background:#b3a9ce;
+                top:0; bottom:0;
+                left:37%; 
+                width:63%;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
         }
-        .text-wrapper::before {
-            content:'\A';
-            position:absolute;
-            background:#b3a9ce;
-            top:0; bottom:0;
-            left:37%; 
-            width:63%;
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
         }
-    }
+        
 }
 
 @include media-sm{
