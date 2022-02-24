@@ -21,8 +21,10 @@
         display: grid;
         grid-template-rows:  277px 277px 277px  277px; 
         grid-template-columns: 282px 282px 282px 282px 282px; 
-        gap: 40px;
+        opacity: 0;
+        animation: AppearSequence 0.5s linear forwards;
     }
+
 }
 
 @include media-xl{
@@ -59,4 +61,16 @@
             grid-template-columns: 282px; 
         }
     }
+}
+
+
+@keyframes AppearSequence {
+    0% {
+        opacity: 0;
+        gap: 0;
+	}
+	100% {
+        opacity: 1;
+        gap: 40px;
+	}
 }

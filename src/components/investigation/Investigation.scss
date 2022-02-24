@@ -37,6 +37,7 @@
     button {
         width: 212px;
         background-color: $AmarilloBoton;
+        color: black;
     }
     button:hover{
         background-color: darken($AmarilloBoton,$darkerPorcentaje);
