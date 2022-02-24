@@ -11,6 +11,8 @@
     height: 250px;
     margin-bottom: $spaceBetween;
    
+    border-bottom: solid $BorderWidth $BorderBlack;
+    border-top: solid $BorderWidth $BorderBlack;
     .label-wrapper {
         display: flex;
         label {
@@ -27,11 +29,14 @@
 @include media-md {
         
     .client-say {
+        border: unset;
         gap:30px;
         background-color: $White;
         height: auto;
         flex-direction: column;
         .right-container {
+            border-bottom: solid $BorderWidth $BorderBlack;
+            border-top: solid $BorderWidth $BorderBlack;
             flex-direction: row;
             background-color: $aqua;
             padding: 40px 25px 0 25px;

@@ -10,6 +10,7 @@ button {
     cursor: pointer;
     border-radius: $btnBorderRadius;
     color: $White;
+    border: solid  $BorderWidth $BorderBlack;
 }
 
 @include media-md{

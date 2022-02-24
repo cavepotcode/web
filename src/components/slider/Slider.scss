@@ -8,6 +8,7 @@
     flex-direction: column;
     
     .slide {
+        border: solid  $BorderWidth $BorderBlack;
         display: flex;
         flex-direction: column;
         width: 740px;

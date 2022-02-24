@@ -9,12 +9,12 @@ export const TechnologiesThatWeUse = () => {
         <div className="technologies-that-we-use">
             <label className="title">{t("technologies-that-we-use.title")}</label>
             <div className="img-wrapper">
-                <img src={AllImages.PhytonLogoColor} alt="angular-logo" />
-                <img src={AllImages.AngularLogoColor} alt="angular-logo" />
-                <img src={AllImages.MicrosoftNetLogoColor} alt="microsoft-net-logo" />
-                <img src={AllImages.ReactLogoColor} alt="react-logo" />
-                <img src={AllImages.NodeLogoColor} alt="node-logo" />
-                <img src={AllImages.NetCoreLogoColor} alt="net-core-logo" />
+                <img src={AllImages.PhytonLogoLinea} alt="angular-logo" />
+                <img src={AllImages.AngularLogoLinea} alt="angular-logo" />
+                <img src={AllImages.MicrosoftNetLogoLinea} alt="microsoft-net-logo" />
+                <img src={AllImages.ReactLogoLinea} alt="react-logo" />
+                <img src={AllImages.NodeLogoLinea} alt="node-logo" />
+                <img src={AllImages.NetCoreLogoLinea} alt="net-core-logo" />
             </div>
             <div className="blue-line-wrapper">
                 <label><Trans>{t("technologies-that-we-use.text")}</Trans></label>
