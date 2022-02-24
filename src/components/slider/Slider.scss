@@ -83,6 +83,8 @@
         width: 100%;
         .slide{
             width: 100%;
+            height: 100%;
+            max-height: 299px;
         }
     }
     .btn-slide {
@@ -97,7 +99,8 @@
     .container-slider{
         height: 220%;
         .slide{
-            height: 100%;
+            height: auto;
+            max-height: 370px;
         }
     }
   }
