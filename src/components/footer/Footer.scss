@@ -2,6 +2,7 @@
 @import "../../styles/mixin";
 
 .footer {
+    border-top: solid $BorderWidth $BorderBlack;
     margin-top: $spaceBetween;
     padding-top: $spaceBetween;
     background-color: $DarkLavender;

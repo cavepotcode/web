@@ -7,13 +7,13 @@
     justify-content: center;
     margin-top: $spaceBetween;
     padding: 0 $mainLGRightLeftPadding;
+    gap: $spaceBetween;
     .textwrapper {
         display: flex;
         justify-content: center;
         width: 100%;
         .title {
             @include textBasis(2.5rem);
-            padding-bottom: 18px;
         }
     }
     .project-card-wrapper{

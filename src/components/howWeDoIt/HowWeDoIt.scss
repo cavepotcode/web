@@ -13,7 +13,9 @@
     }
     .txt-how-we-do-it{
         padding: $spaceBetween 0;
-        // padding-top: $spaceBetween45;
+        border-top: solid $BorderWidth $BorderBlack;
+        border-left: solid $BorderWidth $BorderBlack;
+        border-bottom: solid $BorderWidth $BorderBlack;
         border-bottom-left-radius: $borderRadiusMain;
         border-top-left-radius: $borderRadiusMain;
         background-color: #b3a9ce;

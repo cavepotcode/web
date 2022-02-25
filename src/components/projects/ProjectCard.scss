@@ -2,6 +2,7 @@
 @import '../../styles/main';
 
 .project-card{
+    border: solid $BorderWidth $BorderBlack;
     border-radius: $borderRadiusMain;
     padding: 25px;
     .title{

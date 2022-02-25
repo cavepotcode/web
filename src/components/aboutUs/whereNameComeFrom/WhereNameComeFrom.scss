@@ -2,6 +2,7 @@
 @import "./../../../styles/variables";
 
 .where-name-come-from{
+    border: solid $BorderWidth $BorderBlack;
     align-self: center;
     width: 800px;
     padding: 45px 125px;

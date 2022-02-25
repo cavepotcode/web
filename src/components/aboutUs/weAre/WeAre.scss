@@ -6,7 +6,10 @@
     flex-direction: column;
     gap: $spaceBetween;
 
+
     .are{
+        border-top: solid $BorderWidth $BorderBlack;
+        border-bottom: solid $BorderWidth $BorderBlack;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -24,6 +27,7 @@
     }
 
     .text-wrapper{
+        border: solid $BorderWidth $BorderBlack;
         margin-right: $mainLGRightLeftPadding;
         display: flex;
         flex-direction: column;
