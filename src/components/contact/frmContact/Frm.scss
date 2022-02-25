@@ -109,11 +109,11 @@
 
     button{
         width: 207px;
-        background-color: $HCWHY-red;
+        background-color: $CeriseRed;
         align-self: center;
     }
     button:hover{
-        background-color: darken($HCWHY-red,$darkerPorcentaje);
+        background-color: darken($CeriseRed,$darkerPorcentaje);
     }
 }
 

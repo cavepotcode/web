@@ -115,17 +115,17 @@
     .what-do-we-do {
 
         .cards-wrapper {
-            margin-top: 150px;
+            margin-top: 190px;
             flex-direction: row;
             align-items: center;
             background-color: $AmarilloBanner;
-            padding-top: $mainSMRightLeftPadding;
-            padding-bottom: $mainSMRightLeftPadding;
+            padding-top: $paddingCajasSM;
+            padding-bottom: $paddingCajasSM;
             width: 100%;
             .card {
                 max-width: 382px;
                 width: 100%;
-                margin:  0 $mainSMRightLeftPadding;
+                margin:  0 $paddingCajasSM;
                 height: 350px;
                 label {
                     width: 295px;
@@ -133,7 +133,7 @@
                 }
                 button {
                     width: 295px;
-                    margin:  0 $mainSMRightLeftPadding;;
+                    margin:  0 $paddingCajasSM;;
 
                 }
             }

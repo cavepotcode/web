@@ -41,7 +41,7 @@
                 padding-bottom: 7px;
                 height: 221px;
                 width: 207px;
-                background-color: $HCWHY-red;
+                background-color: $CeriseRed;
                 border-radius: $borderRadiusMain;
                 .contact-option-title{
                     label {  
@@ -59,7 +59,7 @@
                 &.selected{
                     border-radius:  $borderRadiusMain $borderRadiusMain 0 0;
                     margin-bottom: -50px;
-                    background-color: $HCWHY-yellow;
+                    background-color: $AmarilloBanner;
                     transition: all ease 0.3s;
                 }
             }
@@ -74,7 +74,7 @@
             display: flex;
             width: 100%;
             max-width: 1155px;
-            background-color: $HCWHY-yellow;
+            background-color: $AmarilloBanner;
             border-radius: $borderRadiusMain;
             margin-top: 35;
         }
