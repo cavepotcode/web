@@ -75,11 +75,14 @@
         margin-top: $spaceBetween;
         .text-wrapper{
             width: 100%;
-            padding: 0 $mainSMRightLeftPadding;
+            padding: 0 $paddingCajasSM;
             .main-text-wrapper{
                 width: 100%;
-                padding: $mainSMRightLeftPadding;
+                padding: $paddingCajasSM;
             }
+        }
+        button{
+            padding: $paddingCajasSM;
         }
     }
 }

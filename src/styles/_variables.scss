@@ -22,19 +22,23 @@ $HCWHY-red:#ec3755;
 
 $OH-orange: #f4ac40;
 
+$darkerPorcentaje: 20%;
+
 //BORDES
 $BorderBlack: #181718;
 $BorderWidth: 2.5px;
 
+$borderRadiusMain: 10px;
+$borderRadiusCircle-25: 25px;
+
+//MEDIDAS
 $mobile: 480px;
 $tablet: 780px;
 $tabletLandcape: 1024px;
 $laptop: 1600px;
 $desktop: 1600px;
 
-$borderRadiusMain: 10px;
-$borderRadiusCircle-25: 25px;
-
+//ESPACIOS
 $spaceBetween: 60px;
 $spaceBetween45: 45px;
 
@@ -42,7 +46,10 @@ $mainLGRightLeftPadding: 70px;
 $mainMDRightLeftPadding: 35px;
 $mainSMRightLeftPadding: 18px;
 
-$darkerPorcentaje: 20%;
+// - Paddins cajas
+
+$paddingCajasSM: 18px;
+
 
 //BUTTONS
 $btnBorderRadius: 10px;
