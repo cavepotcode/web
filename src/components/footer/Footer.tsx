@@ -22,8 +22,9 @@ export const Footer = () => {
     return (
         <div className="footer">
             <div className="img-wrapper">
-                <img src={AllImages.LogoFooter} alt={t("footer.alt.img.1")} />
-                <img src={AllImages.CavepotLabLogo} alt={t("footer.alt.img.2")} />
+                
+            <NavLink to="/"><img src={AllImages.LogoFooter} alt={t("footer.alt.img.1")} /></NavLink>
+            <a href="https://www.cavepotlab.com/" target="_blank"><img src={AllImages.CavepotLabLogo} alt={t("footer.alt.img.2")} /></a>
                 
             </div>
             <div className="text-wrapper">
