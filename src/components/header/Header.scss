@@ -14,8 +14,10 @@
     opacity: 0.9;
     z-index: 1000;
     .img-wrapper {
+        z-index: 1;
+        cursor: pointer;
         position: fixed;
-        padding-left: 46px; 
+        margin-left: 46px; 
         img {
             height: 42px;
         }

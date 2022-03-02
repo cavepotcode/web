@@ -22,6 +22,7 @@ export const Header = () => {
 
     function HeaderView() {
         const location = useLocation();
+        console.log(location.pathname);
         return location.pathname
       }
     // This function updates the state thus re-render components
@@ -55,9 +56,9 @@ export const Header = () => {
 
     return (
         <div id="header" className={showMenu ? 'header open' : 'header'}>
-            <div className="img-wrapper">
-                <img src={AllImages.LogoCPNegro} alt={t("header.alt.img.1")} />
-            </div>
+            <NavLink className="img-wrapper" to='/'>
+                <img src={AllImages.LogoCPNegro} alt="" />
+            </NavLink>
             <div className="menu-btn" onClick={onShowMenu}>
                 <span className={showMenu ? 'menu-btn__burger open' : 'menu-btn__burger'}></span>
             </div>

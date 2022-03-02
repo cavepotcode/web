@@ -30,8 +30,10 @@ function App() {
               <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/web" element={<HomePage />} />
-                <Route path="/contact" element={<ContactPage />} />
-                  <Route path="/contact/:frm" element={<ContactPage />} />
+                <Route path="/how-we-do-it" element={<HomePage />} />
+                <Route path="/contact" element={<ContactPage />} >
+                  <Route path=":frm" element={<ContactPage />} />
+                </Route>
                 <Route path="/aboutus" element={<AboutUsPage />} />
                 <Route path="/projects" element={<ProjectsPage />} />
                 <Route path="*" element={<NotFoundPage/>} />
