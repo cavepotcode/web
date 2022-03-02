@@ -8,7 +8,7 @@ import { NotFoundPage } from './pages/NotFound/NotFound';
 import { AboutUsPage } from './pages/AboutUs/AboutUsPage';
 import { useLayoutEffect } from 'react';
 import { ProjectsPage } from './pages/Projects/ProjectsPage';
-
+import { NotProjectPage } from './pages/Projects/NoProject/NotProject';
 const ToTop = ({children}) => {
   const location = useLocation();
   useLayoutEffect(() => {
@@ -35,7 +35,21 @@ function App() {
                   <Route path=":frm" element={<ContactPage />} />
                 </Route>
                 <Route path="/aboutus" element={<AboutUsPage />} />
-                <Route path="/projects" element={<ProjectsPage />} />
+                <Route path="/projects" element={<ProjectsPage />} >
+                  {/* VER PORQUE NO FUNCIONA ASI */}
+                  {/*<Route path="planet01" element={<NotProjectPage />} ></Route>
+                   <Route path="zanahorario" element={<NotProjectPage />} />
+                  <Route path="fillment" element={<NotProjectPage />} />
+                  <Route path="learnCloud" element={<NotProjectPage />} />
+                  <Route path="nom" element={<NotProjectPage />} />
+                  <Route path="ucm" element={<NotProjectPage />} /> */}
+                </Route>
+                <Route path="/projects/planet01" element={<NotProjectPage />} />
+                <Route path="/projects/zanahorario" element={<NotProjectPage />} />
+                <Route path="/projects/fillment" element={<NotProjectPage />} />
+                <Route path="/projects/learnCloud" element={<NotProjectPage />} />
+                <Route path="/projects/nom" element={<NotProjectPage />} />
+                <Route path="/projects/ucm" element={<NotProjectPage />} />
                 <Route path="*" element={<NotFoundPage/>} />
               </Routes>
               <Footer />

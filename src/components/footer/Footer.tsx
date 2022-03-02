@@ -39,12 +39,12 @@ export const Footer = () => {
                 </div>
                 <div className="column experiences">
                     <label className='title'>{t("footer.column.2.title")}</label>
-                    <label>{t("footer.column.2.text.1")}</label>
-                    <label>{t("footer.column.2.text.2")}</label>
-                    <label>{t("footer.column.2.text.3")}</label>
-                    <label>{t("footer.column.2.text.4")}</label>
-                    <label>{t("footer.column.2.text.5")}</label>
-                    <label>{t("footer.column.2.text.6")}</label>
+                    <NavLink to="/projects/planet01">{t("footer.column.2.text.1")}</NavLink>
+                    <NavLink to="/projects/zanahorario">{t("footer.column.2.text.2")}</NavLink>
+                    <NavLink to="/projects/fillment">{t("footer.column.2.text.3")}</NavLink>
+                    <NavLink to="/projects/learnCloud">{t("footer.column.2.text.4")}</NavLink>
+                    <NavLink to="/projects/nom">{t("footer.column.2.text.5")}</NavLink>
+                    <NavLink to="/projects/ucm">{t("footer.column.2.text.6")}</NavLink>
                 </div>
                 <div className="column connect">
                     <label className='title'>{t("footer.column.3.title")}</label>
