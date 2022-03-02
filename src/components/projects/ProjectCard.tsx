@@ -50,7 +50,7 @@ export function ProjectCard( {img,imgX,imgY,title,text,textX,textY, color, gridA
                     top: imgY}}
             >
                 <img 
-                    src={require(`../../assets/img/projects/${img}.png`).default} alt="" />
+                    src={require(`../../assets/img/projects/${img}.png`).default} alt={`project ${img} card image`} />
             </div>
             <div className='text-wrapper'
                 style={{

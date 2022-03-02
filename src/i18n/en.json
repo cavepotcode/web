@@ -6,11 +6,17 @@
         "about.us":"ABOUT US",
         "contact.us":"CONTACT US",
         "blog":"BLOG",
-        "our.lab":"OUR LAB"
+        "our.lab":"OUR LAB",
+        "alt":{
+            "img.1":"Header cavepot logo"
+        }
     },
     "technologies-changes":{
         "title":"Technology changes constantly, So do we!",
-        "subtitle":"We are a software and app development company keen on pixel perfect solutions that bring your ideas to life!"
+        "subtitle":"We are a software and app development company keen on pixel perfect solutions that bring your ideas to life!",
+        "alt":{
+            "img.1":"Technologies changes banner image"
+        }
     },
     "what-is-cavepot":{
         "title":"What is CavePot",
@@ -44,7 +50,10 @@
         "text1":"Every project we work on is like <strong>entering a cave. </strong>Curious and willing to do our best, we ask ourselves: <strong>what amazing things lie underground?</strong>",
         "text2":"Elements of nature create phenomenons when they are together, <strong>merging to create something great, </strong> such as your needs combined with our skills.",
         "text3":"Your needs work as a compass for us, in a map that guide us into what we will create, pouring all of that into our pot and finally cooking something great for you.",
-        "text4":"<strong>Let us explore your idea, finding the perfect elements for it so we can bring it to life.</strong>"
+        "text4":"<strong>Let us explore your idea, finding the perfect elements for it so we can bring it to life.</strong>",
+        "alt":{
+            "img.1":"How we do it pot image"
+        }
     },
     "technologies-that-we-use":{
         "title":"Technologies that we use",
@@ -58,7 +67,10 @@
         "title":"INVESTIGATION & TRAINING",
         "text.1":"INVESTIGATION & TRAINING esto que nos lleve a cavepot lab Passionate about what we do and willing to learn, we created CavepotLab.",
         "text.2":"We are keen on helping our team members constantly so they can grow technically and professionally. O: so they can grow both technical and professionally",
-        "button":"Visit the CavePot lab"
+        "button":"Visit the CavePot lab",
+        "alt":{
+            "img.1":"Investigation banner image"
+        }
     },
     "footer":{
         "column.1":{
@@ -91,32 +103,45 @@
             "text.1":"Pablo de Maria 1122,",
             "text.2":"Montevideo, Uruguay",
             "text.3":"info@cavepot.com"
+        },
+        "alt":{
+            "img.1":"Footer cavepot logo",
+            "img.2":"Footer cavepot lab logo"
         }
+
     },
     "contact":{
         "title":"How can we help you?",
         "sub-title":"Let us know what you are looking foor so that we can help you find it",
         "option1":{
-            "title":"A new Landing"
+            "title":"A new Landing",
+            "alt.img":"New lading icon image"
         },
         "option2":{
-            "title":" A new  App"
+            "title":" A new  App",
+            "alt.img":"A new  App icon image"
         },
         "option3":{
-            "title":"Re-desing Re-Think my product"
+            "title":"Re-desing Re-Think my product",
+            "alt.img":"Re-desing Re-Think icon image"
         },
         "option4":{
-            "title":"General information"
+            "title":"General information",
+            "alt.img":"General information icon image"
         },
         "option5":{
-            "title":"Staff Augmentation"
+            "title":"Staff Augmentation",
+            "alt.img":"Staff Augmentation icon image"
         }
     },
     "why-do-we-exist": {
         "title":"Why do we exist?",
         "text.part.1":"We had the intention to create a company that gave us the opportunity to grow as entrepreneurs. ",
         "text.part.2":"Together we decided to enter the <strong>cave</strong> -that is now our company- full of passion and uncertainty, willing to find <strong>potential elements</strong> and transform them into something great.  ",
-        "text.part.3":"We digged deep and merged our materials to transform them into what we are now!"
+        "text.part.3":"We digged deep and merged our materials to transform them into what we are now!",
+        "alt":{
+            "img.1":"Why do we exist? image banner"
+        }
     },
     "name-come-from": {
         "title.1":"Where does our name come from?",

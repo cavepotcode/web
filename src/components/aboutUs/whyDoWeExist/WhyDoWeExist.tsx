@@ -16,7 +16,7 @@ export const WhyDoWeExist = () => {
                 </Trans>
             </div>
             <div className="img-wrapper">
-                <img src={AllImages.AboutUsBanner} alt="AboutUsBanner" />
+                <img src={AllImages.AboutUsBanner} alt={t("why-do-we-exist.alt.img.1")} />
             </div>
         </div>
     )

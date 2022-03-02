@@ -22,8 +22,8 @@ export const Footer = () => {
     return (
         <div className="footer">
             <div className="img-wrapper">
-                <img src={AllImages.LogoFooter} alt="cavepot-footer-logo" />
-                <img src={AllImages.CavepotLabLogo} alt="cavepot-lab-logo" />
+                <img src={AllImages.LogoFooter} alt={t("footer.alt.img.1")} />
+                <img src={AllImages.CavepotLabLogo} alt={t("footer.alt.img.2")} />
                 
             </div>
             <div className="text-wrapper">

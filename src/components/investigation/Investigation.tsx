@@ -7,7 +7,7 @@ export const Investigation = () => {
 
     return (
         <div className="investigation">
-            <img src={AllImages.Banner2} alt="" />
+            <img src={AllImages.Banner2} alt={t("investigation.alt.img.1")} />
             <div className="text-wrapper">
                 <div className="main-text-wrapper">
                     <label className="title">{t("investigation.title")}</label>

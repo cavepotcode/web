@@ -50,7 +50,7 @@ export const Contact = () => {
                 <div className="contact-options-wrapper">
                     <div className={activeClasses.generalInfo ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("generalInfo")}>
                         <div className='contact-option-img'>
-                            <img src={AllImages.GeneralInfo} alt="general-info" />
+                            <img src={AllImages.GeneralInfo} alt={t("contact.option4.alt.img")} />
                         </div>
                         <div className='contact-option-title'>
                             <label>{t("contact.option4.title")}</label>
@@ -59,7 +59,7 @@ export const Contact = () => {
 
                     <div className={activeClasses.aNewLanding ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("aNewLanding")}>
                         <div className='contact-option-img'>
-                            <img src={AllImages.ANewLanding} alt="a-new-landing-icon" />
+                            <img src={AllImages.ANewLanding} alt={t("contact.option1.alt.img")} />
                         </div>
                         <div className='contact-option-title'>
                             <label>{t("contact.option1.title")}</label>
@@ -69,7 +69,7 @@ export const Contact = () => {
                     <div className={activeClasses.aNewApp ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("aNewApp")}>
                         <div className='contact-option-img'>
 
-                            <img src={AllImages.ANewApp} alt="a-new-appicon" />
+                            <img src={AllImages.ANewApp} alt={t("contact.option2.alt.img")} />
                         </div>
                         <div className='contact-option-title'>
                             <label>{t("contact.option2.title")}</label>
@@ -78,7 +78,7 @@ export const Contact = () => {
 
                     <div className={activeClasses.redesign ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("redesign")}>
                         <div className='contact-option-img'>
-                            <img src={AllImages.Redesign} alt="redesign" />
+                            <img src={AllImages.Redesign} alt={t("contact.option3.alt.img")} />
                         </div>
                         <div className='contact-option-title'>
                             <label>{t("contact.option3.title")}</label>
@@ -87,7 +87,7 @@ export const Contact = () => {
 
                     <div className={activeClasses.staffAugmentation ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("staffAugmentation")}>
                         <div className='contact-option-img'>
-                            <img src={AllImages.StaffAugmentation} alt="staff-augmentation" />
+                            <img src={AllImages.StaffAugmentation} alt={t("contact.option5.alt.img")} />
                         </div>
                         <div className='contact-option-title'>
                             <label>{t("contact.option5.title")}</label>

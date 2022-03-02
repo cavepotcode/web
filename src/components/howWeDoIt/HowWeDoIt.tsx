@@ -7,7 +7,7 @@ export const HowWeDoIt = () => {
     return (
         <div id="how-we-do-it" className="how-we-do-it">
             <div className="img-how-we-do-it">
-                <img src={AllImages.Olla} alt="angular-logo" />
+                <img src={AllImages.Olla} alt={t("how-we-do-it.alt.img.1")} />
             </div>
             <div className='txt-how-we-do-it'>
                 <label className="title">{t("how-we-do-it.title")}</label>

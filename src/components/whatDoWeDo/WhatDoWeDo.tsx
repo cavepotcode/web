@@ -4,15 +4,19 @@ import { NavLink } from 'react-router-dom';
 
 import './WhatDoWeDo.scss';
 
+var delay = 0;
 export const WhatDoWeDo = () => {
     const [t] = useTranslation("global");
     const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
+        entries.forEach((entry: any) => {
             if (entry.isIntersecting) {
                     entry.target.classList.add('animation');
+                    entry.target.style.animationDelay = delay+'s'
+                    delay = delay + 0.2;
                 return;
             }
         });
+        delay = 0;
     });
     
 

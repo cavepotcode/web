@@ -9,7 +9,7 @@ export function BtnSlider({ direction, moveSlide }) {
       onClick={moveSlide}
       className={direction === "next" ? "btn-slide next" : "btn-slide prev"}
     >
-      <img src={direction === "next" ? AllImages.RightArrow : AllImages.LeftArrow} />
+      <img src={direction === "next" ? AllImages.RightArrow : AllImages.LeftArrow} alt={`Slider text ${direction} direcrion arrow image`}/>
     </button>
   );
 }

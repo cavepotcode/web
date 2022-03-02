@@ -57,7 +57,7 @@ export const Header = () => {
     return (
         <div id="header" className={showMenu ? 'header open' : 'header'}>
             <div className="img-wrapper">
-                <img src={AllImages.LogoCPNegro} alt="" />
+                <img src={AllImages.LogoCPNegro} alt={t("header.alt.img.1")} />
             </div>
             <div className="menu-btn" onClick={onShowMenu}>
                 <span className={showMenu ? 'menu-btn__burger open' : 'menu-btn__burger'}></span>
