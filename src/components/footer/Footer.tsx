@@ -29,11 +29,12 @@ export const Footer = () => {
             <div className="text-wrapper">
                 <div className="column company">
                     <label className='title'>{t("footer.column.1.title")}</label>
-                    <label>{t("footer.column.1.text.1")}</label>
-                    <label>{t("footer.column.1.text.2")}</label>
-                    <label>{t("footer.column.1.text.3")}</label>
-                    <label>{t("footer.column.1.text.4")}</label>
-                    <label>{t("footer.column.1.text.5")}</label>
+                    {/* VER COMO HACER PARA QUE TE LLEVE A LA SECCION Y TE HAGA EL EFECTO SCROLL */}
+                    <NavLink to="/">{t("footer.column.1.text.1")} </NavLink>
+                    <NavLink to="/">{t("footer.column.1.text.2")}</NavLink>
+                    <NavLink to="/"> {t("footer.column.1.text.3")}</NavLink>
+                    <NavLink to="/">{t("footer.column.1.text.4")}</NavLink>
+                    <NavLink to="/">{t("footer.column.1.text.5")}</NavLink>
                 </div>
                 <div className="column experiences">
                     <label className='title'>{t("footer.column.2.title")}</label>
