@@ -61,6 +61,7 @@
         background-repeat: no-repeat;
         background-position: right;
         .textwrapper {
+            border: solid $BorderWidth $BorderBlack;
             background-color: white;
             height: 50%;
             margin: 30px 80px;

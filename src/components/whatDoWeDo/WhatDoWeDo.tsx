@@ -6,23 +6,22 @@ import './WhatDoWeDo.scss';
 
 export const WhatDoWeDo = () => {
     const [t] = useTranslation("global");
-
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-            const cards = entry.target.querySelectorAll('.card');
-            cards.forEach( item => {
-                item.classList.add('animation')
-            });
+                    entry.target.classList.add('animation');
                 return;
             }
-
         });
     });
     
 
+
     useEffect(() => {
-        observer.observe(document.querySelector('.cards-wrapper'));
+        const cards = document.querySelectorAll('.card');
+        cards.forEach( item => {
+            observer.observe(item);
+        });
       }, [])
 
 
