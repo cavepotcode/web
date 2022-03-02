@@ -46,11 +46,11 @@ export const Footer = () => {
                 </div>
                 <div className="column connect">
                     <label className='title'>{t("footer.column.3.title")}</label>
-                    <label>{t("footer.column.3.text.1")}</label>
-                    <label>{t("footer.column.3.text.2")}</label>
-                    <label>{t("footer.column.3.text.3")}</label>
-                    <label>{t("footer.column.3.text.4")}</label>
-                    <label>{t("footer.column.3.text.5")}</label>
+                    <a href="https://www.instagram.com/cavepotuy" target="_blank">{t("footer.column.3.text.1")}</a>
+                    <a href="https://www.facebook.com/Cavepot" target="_blank">{t("footer.column.3.text.2")}</a>
+                    <a href="https://twitter.com/Cavepot" target="_blank">{t("footer.column.3.text.3")}</a>
+                    <a href="https://www.linkedin.com/company/3561578" target="_blank">{t("footer.column.3.text.4")}</a>
+                    <a href="https://github.com/cavepotcode/" target="_blank">{t("footer.column.3.text.5")}</a>
                 </div>
                 <div className="column locate">
                     <div className='main-text'>
