@@ -22,7 +22,6 @@ export const Header = () => {
 
     function HeaderView() {
         const location = useLocation();
-        console.log(location.pathname);
         return location.pathname
       }
     // This function updates the state thus re-render components

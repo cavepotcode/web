@@ -125,7 +125,7 @@ export const FrmNewApp = () => {
                             </div>
 
                         </div>
-                        <button type="submit" disabled={isSubmitting} onClick={() => console.log(JSON.stringify({ values, errors }, null, 4))}>
+                        <button type="submit" disabled={isSubmitting}>
                             Send
                         </button>
                     </form>

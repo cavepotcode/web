@@ -11,7 +11,6 @@ export function WeAre(){
 
     const updateCount = () => {
         index = !index && setInterval(() => {
-            console.log('ticking: ' + count);
             setIndex(prevCount => (prevCount + 1)%lergoArray) // new
         }, 3500)
       }

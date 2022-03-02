@@ -3,7 +3,6 @@ import "./Slider.scss";
 import { AllImages } from '../../helpers';
 
 export function BtnSlider({ direction, moveSlide }) {
-  console.log(direction, moveSlide);
   return (
     <button
       onClick={moveSlide}
