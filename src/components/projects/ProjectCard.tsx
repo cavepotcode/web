@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Size } from '../header/Header';
 import './ProjectCard.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
+import { faPlusSquare } from '@fortawesome/free-regular-svg-icons';
 import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export interface ProjectCardProps{
     img: string;
@@ -18,7 +18,7 @@ export interface ProjectCardProps{
 }
 
 
-const plus = <FontAwesomeIcon icon={faPlusCircle} />
+//const plus = <FontAwesomeIcon icon={faPlusSquare} />
 
 export function ProjectCard( {img,imgX,imgY,title,text,textX,textY, color, gridArea} : ProjectCardProps){
 
@@ -67,7 +67,7 @@ export function ProjectCard( {img,imgX,imgY,title,text,textX,textY, color, gridA
             <div className='card-footer'>
                 <NavLink to={`/projects/${img}`}>
                     <button>
-                        {plus}
+                        +
                     </button>
                 </NavLink>
             </div>
