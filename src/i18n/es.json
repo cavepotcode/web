@@ -6,11 +6,23 @@
         "about.us":"ABOUT US",
         "contact.us":"CONTACT US",
         "blog":"BLOG",
-        "our.lab":"OUR LAB"
+        "our.lab":"OUR LAB",
+        "alt":{
+            "img.1":"Header cavepot logo"
+        }
     },
     "technologies-changes":{
-        "title":"Technology changes constantly, So do we!",
-        "subtitle":"We are a software and app development company keen on pixel perfect solutions that bring your ideas to life!"
+        "title":"Technology changes constantly, so do we!",
+        "subtitle":"We are a software and app development company keen on pixel perfect solutions that bring your ideas to life!",
+        "alt":{
+            "img.1":"Technologies changes banner image"
+        }
+    },
+    "not-found":{
+        "title":"404",
+        "subtitle":"The page that you requested could not be found.",
+        "alt.img":"Not found image page "
+    
     },
     "what-is-cavepot":{
         "title":"What is CavePot",
@@ -44,7 +56,10 @@
         "text1":"Every project we work on is like <strong>entering a cave. </strong>Curious and willing to do our best, we ask ourselves: <strong>what amazing things lie underground?</strong>",
         "text2":"Elements of nature create phenomenons when they are together, <strong>merging to create something great, </strong> such as your needs combined with our skills.",
         "text3":"Your needs work as a compass for us, in a map that guide us into what we will create, pouring all of that into our pot and finally cooking something great for you.",
-        "text4":"<strong>Let us explore your idea, finding the perfect elements for it so we can bring it to life.</strong>"
+        "text4":"<strong>Let us explore your idea, finding the perfect elements for it so we can bring it to life.</strong>",
+        "alt":{
+            "img.1":"How we do it pot image"
+        }
     },
     "technologies-that-we-use":{
         "title":"Technologies that we use",
@@ -58,7 +73,10 @@
         "title":"INVESTIGATION & TRAINING",
         "text.1":"INVESTIGATION & TRAINING esto que nos lleve a cavepot lab Passionate about what we do and willing to learn, we created CavepotLab.",
         "text.2":"We are keen on helping our team members constantly so they can grow technically and professionally. O: so they can grow both technical and professionally",
-        "button":"Visit the CavePot lab"
+        "button":"Visit the CavePot lab",
+        "alt":{
+            "img.1":"Investigation banner image"
+        }
     },
     "footer":{
         "column.1":{
@@ -91,32 +109,45 @@
             "text.1":"Pablo de Maria 1122,",
             "text.2":"Montevideo, Uruguay",
             "text.3":"info@cavepot.com"
+        },
+        "alt":{
+            "img.1":"Footer cavepot logo",
+            "img.2":"Footer cavepot lab logo"
         }
+
     },
     "contact":{
         "title":"How can we help you?",
         "sub-title":"Let us know what you are looking foor so that we can help you find it",
         "option1":{
-            "title":"A new Landing"
+            "title":"A new Landing",
+            "alt.img":"New lading icon image"
         },
         "option2":{
-            "title":" A new  App"
+            "title":" A new  App",
+            "alt.img":"A new  App icon image"
         },
         "option3":{
-            "title":"Re-desing Re-Think my product"
+            "title":"Re-desing Re-Think my product",
+            "alt.img":"Re-desing Re-Think icon image"
         },
         "option4":{
-            "title":"General information"
+            "title":"General information",
+            "alt.img":"General information icon image"
         },
         "option5":{
-            "title":"Staff Augmentation"
+            "title":"Staff Augmentation",
+            "alt.img":"Staff Augmentation icon image"
         }
     },
     "why-do-we-exist": {
         "title":"Why do we exist?",
         "text.part.1":"We had the intention to create a company that gave us the opportunity to grow as entrepreneurs. ",
         "text.part.2":"Together we decided to enter the <strong>cave</strong> -that is now our company- full of passion and uncertainty, willing to find <strong>potential elements</strong> and transform them into something great.  ",
-        "text.part.3":"We digged deep and merged our materials to transform them into what we are now!"
+        "text.part.3":"We digged deep and merged our materials to transform them into what we are now!",
+        "alt":{
+            "img.1":"Why do we exist? image banner"
+        }
     },
     "name-come-from": {
         "title.1":"Where does our name come from?",
@@ -191,8 +222,175 @@
             "subTitle": "",
             "text2":""
         }
-    ]
-
-
+    ],
+    "projects":{
+        "title":"Take a look ar some of our latets projects",
+        "projects":[
+            {
+                "title":"Zanahorario",
+                "text":"Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+                "textX": 0,
+                "textY": 70,
+                "img":"zanahorario",
+                "imgX":-70,
+                "imgY": 50,
+                "color":"#f4ac40",
+                "gridArea":"span 2 / auto"
+            },
+            {
+                "title":"Virtual care",
+                "text":"eClinicas is a web app developed for UCM (a healthcare company by Falck’s Group). It was created to digitize its patients medical records according to certain governmental requirements and regulations. medical records according to certain governmental requirements and regulations.",
+                "textX": 0,
+                "textY": -300,
+                "img":"virtual-care",
+                "imgX": -45,
+                "imgY": 218,
+                "color":"#5bd6db",
+                "gridArea":"span 2 /auto"
+            },
+            {
+                "title":"Dinamize",
+                "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+                "textX": 0,
+                "textY": -220,
+                "img":"dinamize",
+                "imgX": 85,
+                "imgY": 19,
+                "color":"#f4ac40",
+                "gridArea":"span 1/auto"
+            },
+            {
+                "title":"Planet rfid",
+                "text":"Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+                "textX": 0,
+                "textY": 50,
+                "img":"planet-rfid",
+                "imgX": 16,
+                "imgY": 0,
+                "color":"#f2546e",
+                "gridArea":"span 2 / auto"
+            },
+            {
+                "title":"Rcd",
+                "text":"Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+                "textX": 0,
+                "textY": -310,
+                "img":"rcd",
+                "imgX":-55,
+                "imgY": 135,
+                "color":"#f1d83a",
+                "gridArea":"span 2/ auto"
+            },
+            {
+                "title":"EJEMPLO2",
+                "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+                "textX": 0,
+                "textY": -180,
+                "img":"layer-872",
+                "imgX": -5,
+                "imgY": 47,
+                "color":"#5bd6db",
+                "gridArea":"span 1 / auto"
+            },
+            {
+                "title":"EJEMPLO3",
+                "text":"Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+                "textX": 0,
+                "textY": 30,
+                "img":"planet-rfid",
+                "imgX":-7,
+                "imgY": 20,
+                "color":"#f2546e",
+                "gridArea":"span 2 / auto "
+            },
+            {
+                "title":"EJEMPLO4",
+                "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+                "textX": 0,
+                "textY": -160,
+                "img":"layer-870-2",
+                "imgX": -5,
+                "imgY": 69,
+                "color":"#f4ac40",
+                "gridArea":"span 1 / auto"
+            },
+            {
+                "title":"EJEMPLO5",
+                "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+                "textX": 0,
+                "textY": -200,
+                "img":"layer-833",
+                "imgX": 125,
+                "imgY": 34,
+                "color":"#f1d83a",
+                "gridArea":"span 1 / auto"
+            },
+            {
+                "title":"EJEMPLO6",
+                "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+                "textX": 0,
+                "textY": -220,
+                "img":"layer-874",
+                "imgX": 150,
+                "imgY": -53,
+                "color":"#5bd6db",
+                "gridArea":"auto /span 2"
+            }
+        ]
+    },
+    "links":{
+        "header":{
+            "home":{
+                "label":"Home",
+                "link":"/"
+            },
+            "how-we-do-it":{
+                "label":"How we do it",
+                "link":"/how-we-do-it"
+            },
+            "projects":{
+                "label":"Projects",
+                "link":"/projects"
+            },
+            "about-us":{
+                "label":"About us",
+                "link":"/aboutus"
+            },
+            "blog":{
+                "label":"Blog",
+                "link":"/blog"
+            },
+            "our-lab":{
+                "label":"Our lab",
+                "link":"/lab"
+            },
+            "contact-us":{
+                "label":"Contact us",
+                "link":"/contact"
+            }
+        },
+        "redes":{
+            "instagram":{
+                "label":"Instagram",
+                "link":"https://www.instagram.com/cavepotuy/"
+            },
+            "facebook":{
+                "label":"Facebook",
+                "link":"https://www.facebook.com/Cavepot"
+            },
+            "twitter":{
+                "label":"Twitter",
+                "link":"https://twitter.com/Cavepot"
+            },
+            "linkedin":{
+                "label":"Linkedin",
+                "link":"https://www.linkedin.com/company/cavepot"
+            },
+            "github":{
+                "label":"Github",
+                "link":"https://github.com/cavepotcode/"
+            }
+        }
+    }
 }
 

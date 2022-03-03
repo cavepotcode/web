@@ -12,11 +12,17 @@
         }
     },
     "technologies-changes":{
-        "title":"Technology changes constantly, So do we!",
+        "title":"Technology changes constantly, so do we!",
         "subtitle":"We are a software and app development company keen on pixel perfect solutions that bring your ideas to life!",
         "alt":{
             "img.1":"Technologies changes banner image"
         }
+    },
+    "not-found":{
+        "title":"404",
+        "subtitle":"The page that you requested could not be found.",
+        "alt.img":"Not found image page "
+    
     },
     "what-is-cavepot":{
         "title":"What is CavePot",

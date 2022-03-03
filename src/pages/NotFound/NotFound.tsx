@@ -9,9 +9,9 @@ export function NotFoundPage(){
     
     return(
         <div className="not-found">
-            <label>404</label>
-            <label>NOT FOUND</label>
-            <img src={AllImages.Olla} alt={t("how-we-do-it.alt.img.1")} />
+            <label>{t("not-found.title")}</label>
+            <label>{t("not-found.subtitle")}</label>
+            <img src={AllImages.Olla} alt={t("not-found.alt.img")} />
         </div>
     );
 }
