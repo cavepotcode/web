@@ -44,12 +44,15 @@ function App() {
                   <Route path="nom" element={<NotProjectPage />} />
                   <Route path="ucm" element={<NotProjectPage />} /> */}
                 </Route>
-                <Route path="/projects/planet01" element={<NotProjectPage />} />
+                <Route path="/projects/dinamize" element={<NotProjectPage />} />
+                <Route path="/projects/planet-rfid" element={<NotProjectPage />} />
                 <Route path="/projects/zanahorario" element={<NotProjectPage />} />
                 <Route path="/projects/fillment" element={<NotProjectPage />} />
                 <Route path="/projects/learnCloud" element={<NotProjectPage />} />
                 <Route path="/projects/nom" element={<NotProjectPage />} />
-                <Route path="/projects/ucm" element={<NotProjectPage />} />
+                <Route path="/projects/rcd" element={<NotProjectPage />} />
+                <Route path="/projects/virtual-care" element={<NotProjectPage />} />
+                <Route path="/projects/*" element={<NotProjectPage />} />
                 <Route path="*" element={<NotFoundPage/>} />
               </Routes>
               <Footer />
