@@ -1,4 +1,14 @@
 @import "./variables";
+
+
+@mixin textBasisXL($size) {
+    font-size: $size;
+    font-family: Montserrat-ExtraBold;
+    line-height: normal;
+    letter-spacing: 2vw;
+    color: $PineTree;
+}
+
 @mixin textBasis($size) {
     font-size: $size;
     font-weight: normal;

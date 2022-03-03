@@ -1,5 +1,16 @@
-@import "../../styles/variables";
+@import "../../styles/main";
 
 .not-found{
     margin-top: $spaceBetween;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    label:nth-child(1){
+        @include textBasisXL(9rem);
+    }
+    label:nth-child(2){
+
+        @include textBasis(1.5rem);
+    }
 }
