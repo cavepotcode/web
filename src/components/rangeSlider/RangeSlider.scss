@@ -23,7 +23,7 @@
             height: 2px;
             cursor: pointer;
             background: $Black;
-            border-radius: 5px;
+            border-radius: $borderRadiusMain;
         }
         //La Pelotita
         input[type=range]::-webkit-slider-thumb {
@@ -31,7 +31,7 @@
             border: 1px solid $Black;
             height: 18px;
             width: 18px;
-            border-radius: 25px;
+            border-radius: $borderRadiusCircle-25;
             background: $CeriseRed;
             cursor: pointer;
             margin-top: -9px;

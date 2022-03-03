@@ -18,7 +18,7 @@
         justify-content: center;
         align-items: center;
         button{
-            border-radius: 50px;
+            border-radius: $borderRadiusCircle-25;
             border: solid $BorderWidth white;
             height: 30px;
             width: 30px;
