@@ -62,11 +62,11 @@ export function ProjectCard( {img,imgX,imgY,title,text,textX,textY, color, gridA
                 <label>{text}</label>
             </div>
             <div className='card-footer'>
-                <NavLink to={`/projects/${img}`}>
+                <a href={`/projects/${img}`} target="_blank">
                     <button>
                         +
                     </button>
-                </NavLink>
+                </a>
             </div>
         </div>
     );

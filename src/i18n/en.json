@@ -221,7 +221,7 @@
         "title":"Take a look ar some of our latets projects",
         "projects":[
             {
-                "title":"ZANAHORARIO",
+                "title":"Zanahorario",
                 "text":"Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
                 "textY": 70,
@@ -232,7 +232,7 @@
                 "gridArea":"span 2 / auto"
             },
             {
-                "title":"VIRTUAL CARE",
+                "title":"Virtual care",
                 "text":"eClinicas is a web app developed for UCM (a healthcare company by Falck’s Group). It was created to digitize its patients medical records according to certain governmental requirements and regulations. medical records according to certain governmental requirements and regulations.",
                 "textX": 0,
                 "textY": -300,
@@ -243,7 +243,7 @@
                 "gridArea":"span 2 /auto"
             },
             {
-                "title":"DINAMIZE",
+                "title":"Dinamize",
                 "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
                 "textY": -220,
@@ -254,7 +254,7 @@
                 "gridArea":"span 1/auto"
             },
             {
-                "title":"PLANET RFID",
+                "title":"Planet rfid",
                 "text":"Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
                 "textY": 50,
@@ -265,7 +265,7 @@
                 "gridArea":"span 2 / auto"
             },
             {
-                "title":"RCD",
+                "title":"Rcd",
                 "text":"Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
                 "textY": -310,
@@ -330,11 +330,61 @@
                 "color":"#5bd6db",
                 "gridArea":"auto /span 2"
             }
-            
-
         ]
+    },
+    "links":{
+        "header":{
+            "home":{
+                "label":"Home",
+                "link":"/"
+            },
+            "how-we-do-it":{
+                "label":"How we do it",
+                "link":"/how-we-do-it"
+            },
+            "projects":{
+                "label":"Projects",
+                "link":"/projects"
+            },
+            "about-us":{
+                "label":"About us",
+                "link":"/aboutus"
+            },
+            "blog":{
+                "label":"Blog",
+                "link":"/blog"
+            },
+            "our-lab":{
+                "label":"Our lab",
+                "link":"/lab"
+            },
+            "contact-us":{
+                "label":"Contact us",
+                "link":"/contact"
+            }
+        },
+        "redes":{
+            "instagram":{
+                "label":"Instagram",
+                "link":"https://www.instagram.com/cavepotuy/"
+            },
+            "facebook":{
+                "label":"Facebook",
+                "link":"https://www.facebook.com/Cavepot"
+            },
+            "twitter":{
+                "label":"Twitter",
+                "link":"https://twitter.com/Cavepot"
+            },
+            "linkedin":{
+                "label":"Linkedin",
+                "link":"https://www.linkedin.com/company/cavepot"
+            },
+            "github":{
+                "label":"Github",
+                "link":"https://github.com/cavepotcode/"
+            }
+        }
     }
-
-
 }
 

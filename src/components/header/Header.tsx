@@ -17,6 +17,8 @@ export const Header = () => {
     const [size, setSize] = useState<Size>({width: window.innerWidth,height: window.innerHeight});
 
     const [t] = useTranslation("global");
+
+    const links = Object.values(t('links.header', { returnObjects: true }));
     const [showMenu, setShowMenu] = useState(false);
     const onShowMenu = () => setShowMenu((prev) => !prev);
 
@@ -64,7 +66,25 @@ export const Header = () => {
             </div>
             <nav className={showMenu ? 'nav open' : 'nav'}>
                 <ul className={showMenu ? 'menu-nav open' : 'menu-nav'}>
-                    <li className="menu-nav__item">
+                    {
+                        links.map((obj: any,key) => (
+                            //className="menu-nav__link-contact"
+                            <li className="menu-nav__item">
+                                {size.width <= 1024 && 
+                                    <NavLink to={obj.link} className={obj.link.includes("contact") ? "menu-nav__link-contact" : "menu-nav__link"} onClick={onShowMenu}>
+                                            { obj.label }
+                                    </NavLink> 
+                                }
+                                {size.width > 1024 && 
+                                    <NavLink to={obj.link} className={obj.link.includes("contact") ? "menu-nav__link-contact" : "menu-nav__link"}>
+                                            { obj.label }
+                                    </NavLink> 
+                                }
+                            </li>
+                        ))
+                    }
+                    {/* SE BORRARA */}
+                    {/* <li className="menu-nav__item">
                         {HeaderView() === '/' && size.width <= 1024   && 
                             <Link 
                                 className="menu-nav__link"
@@ -192,7 +212,7 @@ export const Header = () => {
                             <NavLink to="/contact" className="menu-nav__link-contact">
                                     {  t("header.contact.us")}
                             </NavLink> }
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
         </div>

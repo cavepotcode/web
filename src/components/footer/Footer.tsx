@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faTwitter,faInstagram,faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faTwitter,faInstagram,faLinkedin,faGithub } from '@fortawesome/free-brands-svg-icons'
 
 
 import './Footer.scss';
@@ -14,11 +14,15 @@ library.add(faFacebook);
 library.add(faTwitter);
 library.add(faInstagram);
 library.add(faLinkedin);
+library.add(faGithub);
 
 
 export const Footer = () => {
     const [t] = useTranslation("global");
 
+    const linksHeader = Object.values(t('links.header', { returnObjects: true }));
+    const linksProjects = Object.values(t('projects.projects', { returnObjects: true }));
+    const linksRedes = Object.values(t('links.redes', { returnObjects: true }))
     return (
         <div className="footer">
             <div className="img-wrapper">
@@ -31,42 +35,45 @@ export const Footer = () => {
                 <div className="column company">
                     <label className='title'>{t("footer.column.1.title")}</label>
                     {/* VER COMO HACER PARA QUE TE LLEVE A LA SECCION Y TE HAGA EL EFECTO SCROLL */}
-                    <NavLink to="/">{t("footer.column.1.text.1")} </NavLink>
-                    <NavLink to="/">{t("footer.column.1.text.2")}</NavLink>
-                    <NavLink to="/"> {t("footer.column.1.text.3")}</NavLink>
-                    <NavLink to="/">{t("footer.column.1.text.4")}</NavLink>
-                    <NavLink to="/">{t("footer.column.1.text.5")}</NavLink>
+                    {linksHeader.map((obj: any,key) => (
+                            <NavLink to={obj.link}>
+                                    { obj.label }
+                            </NavLink> 
+                    ))}
                 </div>
                 <div className="column experiences">
                     <label className='title'>{t("footer.column.2.title")}</label>
-                    <NavLink to="/projects/planet01">{t("footer.column.2.text.1")}</NavLink>
-                    <NavLink to="/projects/zanahorario">{t("footer.column.2.text.2")}</NavLink>
-                    <NavLink to="/projects/fillment">{t("footer.column.2.text.3")}</NavLink>
-                    <NavLink to="/projects/learnCloud">{t("footer.column.2.text.4")}</NavLink>
-                    <NavLink to="/projects/nom">{t("footer.column.2.text.5")}</NavLink>
-                    <NavLink to="/projects/ucm">{t("footer.column.2.text.6")}</NavLink>
+                    {linksProjects.slice(0,4).map((obj: any,key) => (
+                            <a href={"/projects/"+obj.img} target="_blank">
+                                    { obj.title }
+                            </a> 
+                    ))}
+                    <NavLink to="/projects">
+                        +
+                    </NavLink> 
                 </div>
                 <div className="column connect">
                     <label className='title'>{t("footer.column.3.title")}</label>
-                    <a href="https://www.instagram.com/cavepotuy" target="_blank">{t("footer.column.3.text.1")}</a>
-                    <a href="https://www.facebook.com/Cavepot" target="_blank">{t("footer.column.3.text.2")}</a>
-                    <a href="https://twitter.com/Cavepot" target="_blank">{t("footer.column.3.text.3")}</a>
-                    <a href="https://www.linkedin.com/company/3561578" target="_blank">{t("footer.column.3.text.4")}</a>
-                    <a href="https://github.com/cavepotcode/" target="_blank">{t("footer.column.3.text.5")}</a>
+                    {linksRedes.map((obj: any,key) => (
+                            <a href={obj.link} target="_blank">
+                                    { obj.label }
+                            </a> 
+                    ))}
+
                 </div>
                 <div className="column locate">
                     <div className='main-text'>
                         <label className='title' >{t("footer.column.4.title")}</label>
                         <a href='https://goo.gl/maps/wz4pabw7Pg1Q5bog8' target="_blank">{t("footer.column.4.text.1")} {t("footer.column.4.text.2")}</a>
                 
-                        <label>{t("footer.column.4.text.3")}</label>
+                        <a href='mailto:info@cavepot.com' target="_blank">{t("footer.column.4.text.3")}</a>
                     </div>
                     <div className='social-media'>
-                        <a href="https://www.facebook.com/Cavepot" target="_blank"><FontAwesomeIcon icon={['fab', 'facebook']} /></a>
-                        <a href="https://twitter.com/Cavepot" target="_blank"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
-                        <a href="https://www.instagram.com/cavepotuy" target="_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
-                        <a href="https://www.linkedin.com/company/3561578" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
-
+                        {linksRedes.map((obj: any,key) => (
+                                <a href={obj.link} target="_blank">
+                                        <FontAwesomeIcon icon={['fab', obj.label.toLowerCase()]} />
+                                </a> 
+                        ))}
                     </div>
                     <div className="clutch-wrapper">
                         <div className="clutch-widget" data-nofollow="true" data-url="https://widget.clutch.co" data-widget-type="1" data-darkbg="true" data-height="40" data-clutchcompany-id="592393"></div>
