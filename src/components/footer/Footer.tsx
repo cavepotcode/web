@@ -57,7 +57,7 @@ export const Footer = () => {
                 <div className="column locate">
                     <div className='main-text'>
                         <label className='title' >{t("footer.column.4.title")}</label>
-                        <label>{t("footer.column.4.text.1")} {t("footer.column.4.text.2")}</label>
+                        <a href='https://goo.gl/maps/wz4pabw7Pg1Q5bog8' target="_blank">{t("footer.column.4.text.1")} {t("footer.column.4.text.2")}</a>
                 
                         <label>{t("footer.column.4.text.3")}</label>
                     </div>
