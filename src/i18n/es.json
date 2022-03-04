@@ -121,22 +121,27 @@
         "sub-title":"Let us know what you are looking foor so that we can help you find it",
         "option1":{
             "title":"A new Landing",
+            "titlesm":"A new Landing",
             "alt.img":"New lading icon image"
         },
         "option2":{
             "title":" A new  App",
+            "titlesm":" A new  App",
             "alt.img":"A new  App icon image"
         },
         "option3":{
             "title":"Re-desing Re-Think my product",
+            "titlesm":"Re-Think my product",
             "alt.img":"Re-desing Re-Think icon image"
         },
         "option4":{
             "title":"General information",
+            "titlesm":"General info",
             "alt.img":"General information icon image"
         },
         "option5":{
             "title":"Staff Augmentation",
+            "titlesm":"Staff Augmentation",
             "alt.img":"Staff Augmentation icon image"
         }
     },
@@ -339,6 +344,10 @@
         ]
     },
     "links":{
+        "experiences":{
+            "label":"More...",
+            "link":"/projects"
+        },
         "header":{
             "home":{
                 "label":"Home",
@@ -358,11 +367,11 @@
             },
             "blog":{
                 "label":"Blog",
-                "link":"/blog"
+                "link":"https://blog.cavepot.com/"
             },
             "our-lab":{
                 "label":"Our lab",
-                "link":"/lab"
+                "link":"https://www.cavepotlab.com/"
             },
             "contact-us":{
                 "label":"Contact us",
