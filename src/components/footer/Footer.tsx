@@ -57,7 +57,7 @@ export const Footer = () => {
                             </a> 
                     ))}
                     <NavLink to="/projects">
-                        +
+                        Ver mas...
                     </NavLink> 
                 </div>
                 <div className="column connect">

@@ -55,6 +55,7 @@
                         letter-spacing: normal;
                         text-align: center;
                         color: $PineTree;
+                        color: white;
                     }
                 }
                 &.selected{
@@ -63,6 +64,9 @@
                     background-color: $AmarilloBanner;
                     transition: all ease 0.3s;
                     border-bottom: none;
+                    label {  
+                        color: black;
+                    }
                 }
             }
         }
@@ -140,21 +144,23 @@
                 padding-bottom: 23px;
                 .contact-option-card{
                     display: flex;
+                    margin:0;
+                    padding: 0;
                     align-items: center;
                     justify-content: center;
-                    height: 115px;
+                    height: 83px;
                     .contact-option-img{
                         img{
-                            width: 0px;
-                            min-width: 0;
-                            margin-right: 0;
-                            visibility: hidden;
-                            position: absolute;
+                            max-height: 63px;
+                            max-width: 63px;
                         }
                     }
                     .contact-option-title{
+                        max-width: 70px;
+                        max-height: 15px;
                         label{
-                            font-size: 65%;
+                            font-family: Montserrat-Bold;
+                            font-size: 6.5px;;
                         }
                     }
                     &.selected{

@@ -50,7 +50,7 @@
                 height: 55px;
                 margin: 0 0 16px 0;
                 border-radius: $borderRadiusMain;
-                border: solid 2px #181718;
+                border: solid $BorderWidth $BorderBlack;
     
                 font-size: 22px;
                 font-weight: normal;
@@ -75,7 +75,7 @@
                 height: 265px;
                 margin: 0 0 16px 0;
                 border-radius: $borderRadiusMain;
-                border: solid 2px #181718;
+                border: solid $BorderWidth $BorderBlack;
                 resize: vertical;
     
                 font-size: 22px;
@@ -144,7 +144,6 @@
             color: $White;
             width: 103;
             height: 29px;
-            border: none;
         }
     }
 }
@@ -157,7 +156,7 @@
                 input{
                     height: 25px;
                     margin: 0 0 10px 0;
-                    border: solid 2px #181718;
+                    border: solid $BorderWidth $BorderBlack;
         
                     font-size: 11px;
                     padding-left: 10px;
