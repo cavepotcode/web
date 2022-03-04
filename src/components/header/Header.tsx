@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { AllImages } from '../../helpers';
 import { NavLink, useLocation } from 'react-router-dom';
-import { Link, scroll } from 'react-scroll';
 
 import './Header.scss';
 
@@ -13,8 +12,9 @@ export interface Size {
 
 export const Header = () => {
     // The size of the window
-
     const [size, setSize] = useState<Size>({width: window.innerWidth,height: window.innerHeight});
+
+    
 
     const [t] = useTranslation("global");
 
