@@ -47,14 +47,9 @@ export const Header = () => {
             navItems.forEach(item => item.classList.remove('open'))
         }
 
-    }, [showMenu])
-    // Listening for the window resize event
-    useEffect(() => {
         window.onresize = resizeHanlder;
 
-        // You can also use:
-        //window.addEventListener('resize', resizeHanlder);
-    }, []);
+    }, [showMenu])
 
     return (
         <div id="header" className={showMenu ? 'header open' : 'header'}>
@@ -83,136 +78,6 @@ export const Header = () => {
                             </li>
                         ))
                     }
-                    {/* SE BORRARA */}
-                    {/* <li className="menu-nav__item">
-                        {HeaderView() === '/' && size.width <= 1024   && 
-                            <Link 
-                                className="menu-nav__link"
-                                activeClass="active"
-                                to="technologies-changes"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={500}
-                                onClick={onShowMenu}
-                            >
-                                {t("header.home")}
-                            </Link>
-                        } 
-                        {HeaderView() === '/' && size.width > 1024   && 
-                            <Link 
-                                className="menu-nav__link"
-                                activeClass="active"
-                                to="technologies-changes"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={500}
-                            >
-                                {t("header.home")}
-                            </Link>
-                        } 
-                        {HeaderView() != '/' && size.width <= 1024 && 
-                            <NavLink to="/" className="menu-nav__link" onClick={onShowMenu}>
-                                {t("header.home")}
-                            </NavLink>
-                        } 
-                        {HeaderView() != '/' && size.width > 1024 && 
-                            <NavLink to="/" className="menu-nav__link">
-                                {t("header.home")}
-                            </NavLink>
-                        } 
-                    </li>
-                    <li className="menu-nav__item">
-                        {HeaderView() === '/' && size.width <= 1024  && 
-                            <Link 
-                                className="menu-nav__link"
-                                activeClass="active"
-                                to="how-we-do-it"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={500}
-                                onClick={onShowMenu}
-                            >
-                                {t("header.how.we.do.it")}
-                            </Link>
-                        } 
-                        {HeaderView() === '/' && size.width > 1024  && 
-                            <Link 
-                                className="menu-nav__link"
-                                activeClass="active"
-                                to="how-we-do-it"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={500}
-                            >
-                                {t("header.how.we.do.it")}
-                            </Link>
-                        } 
-                        {HeaderView() != '/' && size.width <= 1024 && 
-                            <NavLink to="/" className="menu-nav__link" onClick={onShowMenu}>
-                                {t("header.how.we.do.it")}
-                            </NavLink>
-                        } 
-                        {HeaderView() != '/'  && size.width > 1024 && 
-                            <NavLink to="/" className="menu-nav__link">
-                                {t("header.how.we.do.it")}
-                            </NavLink>
-                        } 
-                    </li>
-                    <li className="menu-nav__item">
-                        {size.width <= 1024 && 
-                            <NavLink to="/projects" className="menu-nav__link" onClick={onShowMenu}>
-                                    {  t("header.projects")}
-                            </NavLink> }
-                        {size.width > 1024 && 
-                            <NavLink to="/projects" className="menu-nav__link">
-                                    {  t("header.projects")}
-                            </NavLink> }
-                    </li>
-                    <li className="menu-nav__item">
-                        {size.width <= 1024 && 
-                            <NavLink to="/aboutus" className="menu-nav__link" onClick={onShowMenu}>
-                                    {  t("header.about.us")}
-                            </NavLink> }
-                        {size.width > 1024 && 
-                            <NavLink to="/aboutus" className="menu-nav__link">
-                                    {  t("header.about.us")}
-                            </NavLink> }
-                    </li>
-                    <li className="menu-nav__item">
-                        {size.width <= 1024 && 
-                            <NavLink to="/blog" className="menu-nav__link" onClick={onShowMenu}>
-                                    {  t("header.blog")}
-                            </NavLink> }
-                        {size.width > 1024 && 
-                            <NavLink to="/blog" className="menu-nav__link">
-                                    {  t("header.blog")}
-                            </NavLink> }
-                    </li>
-                    <li className="menu-nav__item">
-                        {size.width <= 1024 && 
-                            <NavLink to="/lab" className="menu-nav__link" onClick={onShowMenu}>
-                                    {  t("header.our.lab")}
-                            </NavLink> }
-                        {size.width > 1024 && 
-                            <NavLink to="/lab" className="menu-nav__link">
-                                    {  t("header.our.lab")}
-                            </NavLink> }
-                       
-                    </li>
-                    <li className="menu-nav__item">
-                        {size.width <= 1024 && 
-                            <NavLink to="/contact" className="menu-nav__link-contact" onClick={onShowMenu}>
-                                    {  t("header.contact.us")}
-                            </NavLink> }
-                        {size.width > 1024 && 
-                            <NavLink to="/contact" className="menu-nav__link-contact">
-                                    {  t("header.contact.us")}
-                            </NavLink> }
-                    </li> */}
                 </ul>
             </nav>
         </div>
