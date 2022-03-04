@@ -65,13 +65,18 @@ export const Header = () => {
                         links.map((obj: any,key) => (
                             //className="menu-nav__link-contact"
                             <li className="menu-nav__item">
-                                {size.width <= 1024 && 
+                                {obj.link.includes("http") && 
+                                    <a href={obj.link} target='_blank' className='menu-nav__link'>
+                                        { obj.label }
+                                    </a>
+                                }
+                                {!obj.link.includes("http") && size.width <= 1024 && 
                                     <NavLink to={obj.link} className={obj.link.includes("contact") ? "menu-nav__link-contact" : "menu-nav__link"} onClick={onShowMenu}>
                                             { obj.label }
                                     </NavLink> 
                                 }
-                                {size.width > 1024 && 
-                                    <NavLink to={obj.link} className={obj.link.includes("contact") ? "menu-nav__link-contact" : "menu-nav__link"}>
+                                {!obj.link.includes("http") &&  size.width > 1024 && 
+                                    <NavLink to={obj.link} className={obj.link.includes("contact") ? "menu-nav__link-contact" : "menu-nav__link"} >
                                             { obj.label }
                                     </NavLink> 
                                 }

@@ -34,11 +34,19 @@ export const Footer = () => {
             <div className="text-wrapper">
                 <div className="column company">
                     <label className='title'>{t("footer.column.1.title")}</label>
-                    {/* VER COMO HACER PARA QUE TE LLEVE A LA SECCION Y TE HAGA EL EFECTO SCROLL */}
                     {linksHeader.map((obj: any,key) => (
-                            <NavLink to={obj.link}>
+                        <>   
+                            {obj.link.includes("http") && 
+                                <a href={obj.link} target='_blank' className='menu-nav__link'>
                                     { obj.label }
-                            </NavLink> 
+                                </a>
+                            } 
+                           {!obj.link.includes("http") &&  
+                                <NavLink to={obj.link}>
+                                            { obj.label }
+                                </NavLink> 
+                            }
+                        </>
                     ))}
                 </div>
                 <div className="column experiences">

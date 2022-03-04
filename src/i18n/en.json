@@ -358,11 +358,11 @@
             },
             "blog":{
                 "label":"Blog",
-                "link":"/blog"
+                "link":"https://blog.cavepot.com/"
             },
             "our-lab":{
                 "label":"Our lab",
-                "link":"/lab"
+                "link":"https://www.cavepotlab.com/"
             },
             "contact-us":{
                 "label":"Contact us",
