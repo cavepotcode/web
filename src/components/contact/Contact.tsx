@@ -5,13 +5,16 @@ import { FrmNewApp } from './frmContact/FrmNewApp';
 import { FrmReRe } from './frmContact/FrmReRe';
 import { FrmGeneralInfo } from './frmContact/FrmGeneralInfo';
 import { FrmStaffAugmentation } from './frmContact/FrmStaffAugmentation';
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { useParams } from 'react-router-dom';
 
 import './Contact.scss';
+import { Size } from '../header/Header';
 
 export const Contact = () => {
+    // The size of the window
+    const [size, setSize] = useState<Size>({width: window.innerWidth,height: window.innerHeight});
 
     let params = useParams();
     let param ;
@@ -39,6 +42,20 @@ export const Contact = () => {
             [option]: true
         });
     };
+
+    // This function updates the state thus re-render components
+    const resizeHanlder = () => {
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+
+        setSize({
+            width: width,
+            height: height,
+            });
+    };
+    useEffect(() => {
+        window.onresize = resizeHanlder;
+    }, [null])
     
     return (
         <div className="contact">
@@ -53,7 +70,10 @@ export const Contact = () => {
                             <img src={AllImages.GeneralInfo} alt={t("contact.option4.alt.img")} />
                         </div>
                         <div className='contact-option-title'>
-                            <label>{t("contact.option4.title")}</label>
+                            <label>
+                                {size.width <= 1024  ? t("contact.option4.titlesm") : t("contact.option4.title")  }
+                      
+                            </label>
                         </div>
                     </div>
 
@@ -62,7 +82,10 @@ export const Contact = () => {
                             <img src={AllImages.ANewLanding} alt={t("contact.option1.alt.img")} />
                         </div>
                         <div className='contact-option-title'>
-                            <label>{t("contact.option1.title")}</label>
+                            <label>
+                                {size.width <= 1024  ? t("contact.option1.titlesm") : t("contact.option1.title")  }
+                      
+                            </label>
                         </div>
                     </div>
 
@@ -72,7 +95,10 @@ export const Contact = () => {
                             <img src={AllImages.ANewApp} alt={t("contact.option2.alt.img")} />
                         </div>
                         <div className='contact-option-title'>
-                            <label>{t("contact.option2.title")}</label>
+                            <label>
+                                {size.width <= 1024  ? t("contact.option2.titlesm") : t("contact.option2.title")  }
+                      
+                            </label>
                         </div>
                     </div>
 
@@ -81,7 +107,10 @@ export const Contact = () => {
                             <img src={AllImages.Redesign} alt={t("contact.option3.alt.img")} />
                         </div>
                         <div className='contact-option-title'>
-                            <label>{t("contact.option3.title")}</label>
+                            <label>
+                                {size.width <= 1024  ? t("contact.option3.titlesm") : t("contact.option3.title")  }
+                      
+                            </label>
                         </div>
                     </div>
 
@@ -90,7 +119,10 @@ export const Contact = () => {
                             <img src={AllImages.StaffAugmentation} alt={t("contact.option5.alt.img")} />
                         </div>
                         <div className='contact-option-title'>
-                            <label>{t("contact.option5.title")}</label>
+                            <label>
+                                {size.width <= 1024  ? t("contact.option5.titlesm") : t("contact.option5.title")  }
+                      
+                            </label>
                         </div>
                     </div>
                 </div>

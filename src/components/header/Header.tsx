@@ -21,12 +21,7 @@ export const Header = () => {
     const links = Object.values(t('links.header', { returnObjects: true }));
     const [showMenu, setShowMenu] = useState(false);
     const onShowMenu = () => setShowMenu((prev) => !prev);
-
-    function HeaderView() {
-        const location = useLocation();
-        console.log(location.pathname);
-        return location.pathname
-      }
+    
     // This function updates the state thus re-render components
     const resizeHanlder = () => {
         const width = window.innerWidth;

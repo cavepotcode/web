@@ -56,8 +56,8 @@ export const Footer = () => {
                                     { obj.title }
                             </a> 
                     ))}
-                    <NavLink to="/projects">
-                        Ver mas...
+                    <NavLink to={t("links.experiences.link")}>
+                        {t("links.experiences.label")}
                     </NavLink> 
                 </div>
                 <div className="column connect">
