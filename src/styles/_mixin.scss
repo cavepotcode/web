@@ -9,6 +9,13 @@
     color: $PineTree;
 }
 
+@mixin textBasisBold($size) {
+    font-size: $size;
+    font-family: Montserrat-ExtraBold;
+    line-height: normal;
+    color: $PineTree;
+}
+
 @mixin textBasis($size) {
     font-size: $size;
     font-weight: normal;
