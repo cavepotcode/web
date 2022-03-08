@@ -5,20 +5,20 @@
     padding: $spaceBetween 0;
     display: flex;
     justify-content: flex-end;
-    .img-how-we-do-it{
-        position: relative;
-        left: 110px;
-        top:190px;   
-        
+    position: relative;
+    .img-how-we-do-it {
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
-    .txt-how-we-do-it{
+    .txt-how-we-do-it {
         padding: $spaceBetween 0;
         border-top: solid $BorderWidth $BorderBlack;
         border-left: solid $BorderWidth $BorderBlack;
         border-bottom: solid $BorderWidth $BorderBlack;
         border-bottom-left-radius: $borderRadiusMain;
         border-top-left-radius: $borderRadiusMain;
-        background-color: #b3a9ce;
+        background-color: $DarkLavender;
         width: 80%;
         display: flex;
         flex-direction: column;
@@ -28,7 +28,7 @@
             @include textBasis(2.5rem);
             color: $White;
         }
-        .text-wrapper{
+        .text-wrapper {
             margin: $spaceBetween45;
             display: flex;
             flex-direction: row;
@@ -36,28 +36,37 @@
             flex-wrap: wrap;
             justify-content: center;
             text-align: center;
-            .textpart{
+            .textpart {
                 width: 360px;
                 color: $White !important;
                 font-weight: 100 !important;
-                @include textBasis(1.063rem); 
-                
+                @include textBasis(1.063rem);
             }
         }
     }
-  
 }
 
+@include media-lg {
+    .how-we-do-it {
+        .img-how-we-do-it {
+            width: 50%;
+            right: 0;
+            left: unset;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
 
 @include media-md {
     .how-we-do-it {
-        .img-how-we-do-it{
+        .img-how-we-do-it {
             width: 0;
             visibility: hidden;
-            
         }
         padding: unset;
-        .txt-how-we-do-it{
+        .txt-how-we-do-it {
             padding: unset;
             border: unset;
             background-color: $White;
@@ -67,14 +76,14 @@
             background-image: none;
             display: flex;
             flex-direction: column;
-    
-            .title{
+
+            .title {
                 color: $Black;
             }
             .text-wrapper {
                 padding: $spaceBetween45 0;
                 margin: $spaceBetween45 0;
-                position:relative;
+                position: relative;
                 align-items: center;
                 display: flex;
                 flex-direction: column;
@@ -86,29 +95,29 @@
                     color: $Black !important;
                     width: 80%;
                     box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
-                    border: solid $BorderWidth $BorderBlack;;
+                    border: solid $BorderWidth $BorderBlack;
                     border-radius: $borderRadiusMain;
                     @include textBasis(1.406rem);
                     z-index: 1;
-                    span{
+                    span {
                         color: $Black;
                     }
                 }
             }
             .text-wrapper::before {
-                content:'\A';
-                position:absolute;
-                background:#b3a9ce;
-                top:0; bottom:0;
-                left:37%; 
-                width:63%;
+                content: "\A";
+                position: absolute;
+                background: $DarkLavender;
+                top: 0;
+                bottom: 0;
+                left: 37%;
+                width: 63%;
                 border-top-left-radius: 10px;
                 border-bottom-left-radius: 10px;
-                border-top: solid $BorderWidth $BorderBlack;;
-                border-left: solid $BorderWidth $BorderBlack;;
-                border-bottom: solid $BorderWidth $BorderBlack;;
+                border-top: solid $BorderWidth $BorderBlack;
+                border-left: solid $BorderWidth $BorderBlack;
+                border-bottom: solid $BorderWidth $BorderBlack;
             }
         }
     }
-        
 }

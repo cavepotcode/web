@@ -30,6 +30,7 @@ export const AboutUsBanner = require('../assets/img/aboutUsBanner.png').default;
 
 //IMG GENERALES
 export const Olla = require('../assets/img/olla.png').default;
+export const Explore = require('../assets/img/explore.png').default;
 
 
 //CONTACT

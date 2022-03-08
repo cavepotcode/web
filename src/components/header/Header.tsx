@@ -63,8 +63,8 @@ export const Header = () => {
     }, [showMenu])
 
     return (
-        <div id="header" className={showMenu ? 'header open' : 'header'}>
-            <NavLink className={`img-wrapper ${colapse? "colapse": ""}`} to='/'>
+        <div id="header" className={`header ${colapse? "colapse": ""} ${showMenu ? 'open': ''}`}>
+            <NavLink className={`img-wrapper`} to='/'>
                 <div id="c"></div>
                 <div id="a"></div>
                 <div id="v"></div>

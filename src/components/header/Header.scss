@@ -4,9 +4,10 @@
 
 $logoHeight: 40px;
 
-
 .header {
-    &.open{
+    border-bottom: solid $BorderWidth transparent;
+    transition: border-bottom ease 0.3s;
+    &.open {
         opacity: 1;
     }
     display: flex;
@@ -20,74 +21,97 @@ $logoHeight: 40px;
         z-index: 1;
         cursor: pointer;
         position: relative;
-        margin-left: 46px; 
+        margin-left: 46px;
         img {
             height: 42px;
         }
         display: block;
-        width: calc(267/52 * #{$logoHeight});
+        width: calc(267 / 52 * #{$logoHeight});
         height: $logoHeight;
-        #c,#a,#v,#e,#p,#o,#t{
+        #c,
+        #a,
+        #v,
+        #e,
+        #p,
+        #o,
+        #t {
             position: absolute;
             display: block;
             height: $logoHeight;
             background-size: contain;
             background-repeat: no-repeat;
             transition: all ease 1s;
-            top:0;
+            top: 0;
         }
-        #c,#a,#v {
-            width: calc((42/52)*#{$logoHeight});
+        #c,
+        #a,
+        #v {
+            width: calc((42 / 52) *#{$logoHeight});
         }
-        #e,#p{
-            width: calc((27/52)*#{$logoHeight});
+        #e,
+        #p {
+            width: calc((27 / 52) *#{$logoHeight});
         }
-        #c{
+        #c {
             left: 0;
             background-image: url(../../assets/img/logo/c.png);
         }
-        #a{
-            left: calc((42/52)*#{$logoHeight});
+        #a {
+            left: calc((42 / 52) *#{$logoHeight});
             background-image: url(../../assets/img/logo/a.png);
         }
-        #v{
-            left:calc((42/52)*2*#{$logoHeight} - 10px);
+        #v {
+            left: calc((42 / 52) * 2 *#{$logoHeight} - 10px);
             background-image: url(../../assets/img/logo/v.png);
         }
-        #e{
-            left:calc((42/52)*3*#{$logoHeight} - 7px);
+        #e {
+            left: calc((42 / 52) * 3 *#{$logoHeight} - 7px);
             background-image: url(../../assets/img/logo/e.png);
         }
-        #p{
-            left:calc((42/52)*3*#{$logoHeight} + (27/52)*#{$logoHeight} + 2px);
+        #p {
+            left: calc((42 / 52) * 3 *#{$logoHeight} + (27 / 52) *#{$logoHeight} + 2px);
             background-image: url(../../assets/img/logo/p.png);
         }
-        #o{
-            left:calc((42/52)*3*#{$logoHeight} + 2*(27/52)*#{$logoHeight} + 5.6px) ;
+        #o {
+            left: calc((42 / 52) * 3 *#{$logoHeight} + 2 * (27 / 52) *#{$logoHeight} + 5.6px);
             background-image: url(../../assets/img/logo/o.png);
-            width: calc((52/52)*#{$logoHeight});
+            width: calc((52 / 52) *#{$logoHeight});
         }
-        #t{
-            left:calc((42/52)*3*#{$logoHeight} + 2*(27/52)*#{$logoHeight} + (52/52)*#{$logoHeight} + 7.6px);
+        #t {
+            left: calc(
+                (42 / 52) * 3 *#{$logoHeight} + 2 * (27 / 52) *#{$logoHeight} + (52 / 52) *#{$logoHeight} + 7.6px
+            );
             background-image: url(../../assets/img/logo/t.png);
-            width: calc((31/52)*#{$logoHeight});
+            width: calc((31 / 52) *#{$logoHeight});
         }
-        &.colapse{
-            #c,#a,#v,#e,#p,#o,#t {
-                position: absolute;
-                left: 0;
-                
-            }
-            #c,#a,#v,#e,#p,#t{
-                opacity: 0;
-                transition: all ease .3s;
-            }
-            #o{
-                transform: rotate(-360deg);
-                transition: all ease 1s;
-            }
+    }
+
+    &.colapse {
+        border-bottom: solid $BorderWidth $BorderBlack;
+        transition: border-bottom ease 0.3s;
+        #c,
+        #a,
+        #v,
+        #e,
+        #p,
+        #o,
+        #t {
+            position: absolute;
+            left: 0;
         }
-        
+        #c,
+        #a,
+        #v,
+        #e,
+        #p,
+        #t {
+            opacity: 0;
+            transition: all ease 0.3s;
+        }
+        #o {
+            transform: rotate(-360deg);
+            transition: all ease 1s;
+        }
     }
 
     .menu-btn {
@@ -158,15 +182,15 @@ $logoHeight: 40px;
             background-color: $White;
             visibility: hidden;
             .menu-nav {
-                &__item{
-                    a{
+                &__item {
+                    a {
                         font-size: 23px;
                         font-weight: 600;
                     }
                     display: inline;
                     padding-right: 1.5rem;
                 }
-                &.open{
+                &.open {
                     padding: 0 !important;
                 }
             }
@@ -178,15 +202,15 @@ $logoHeight: 40px;
             background: transparent;
             text-align: right;
 
-            &__item{
+            &__item {
                 display: inline;
                 padding-right: 1.5rem;
             }
 
-            &__link{
+            &__link {
                 font-size: 1.5rem;
             }
-           
+
             &__item {
                 transform: translateX(100vw);
                 @include transition-ease;
@@ -218,11 +242,10 @@ $logoHeight: 40px;
                 background-color: $CeriseRed;
                 color: white;
                 font-weight: bold;
-                
             }
 
-            &__link-contact:hover{
-                background-color: darken($CeriseRed, $darkerPorcentaje)
+            &__link-contact:hover {
+                background-color: darken($CeriseRed, $darkerPorcentaje);
             }
         }
     }
@@ -273,9 +296,9 @@ $logoHeight: 40px;
                 &.open {
                     transform: translateY(0);
                 }
-                &__item{
+                &__item {
                 }
-                &__link{
+                &__link {
                     padding: 0;
                 }
             }
