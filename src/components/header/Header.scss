@@ -2,6 +2,9 @@
 @import "../../styles/variables";
 @import "../../styles/mixin";
 
+$logoHeight: 40px;
+
+
 .header {
     &.open{
         opacity: 1;
@@ -16,11 +19,75 @@
     .img-wrapper {
         z-index: 1;
         cursor: pointer;
-        position: fixed;
+        position: relative;
         margin-left: 46px; 
         img {
             height: 42px;
         }
+        display: block;
+        width: calc(267/52 * #{$logoHeight});
+        height: $logoHeight;
+        #c,#a,#v,#e,#p,#o,#t{
+            position: absolute;
+            display: block;
+            height: $logoHeight;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: all ease 1s;
+            top:0;
+        }
+        #c,#a,#v {
+            width: calc((42/52)*#{$logoHeight});
+        }
+        #e,#p{
+            width: calc((27/52)*#{$logoHeight});
+        }
+        #c{
+            left: 0;
+            background-image: url(../../assets/img/logo/c.png);
+        }
+        #a{
+            left: calc((42/52)*#{$logoHeight});
+            background-image: url(../../assets/img/logo/a.png);
+        }
+        #v{
+            left:calc((42/52)*2*#{$logoHeight} - 10px);
+            background-image: url(../../assets/img/logo/v.png);
+        }
+        #e{
+            left:calc((42/52)*3*#{$logoHeight} - 7px);
+            background-image: url(../../assets/img/logo/e.png);
+        }
+        #p{
+            left:calc((42/52)*3*#{$logoHeight} + (27/52)*#{$logoHeight} + 2px);
+            background-image: url(../../assets/img/logo/p.png);
+        }
+        #o{
+            left:calc((42/52)*3*#{$logoHeight} + 2*(27/52)*#{$logoHeight} + 5.6px) ;
+            background-image: url(../../assets/img/logo/o.png);
+            width: calc((52/52)*#{$logoHeight});
+        }
+        #t{
+            left:calc((42/52)*3*#{$logoHeight} + 2*(27/52)*#{$logoHeight} + (52/52)*#{$logoHeight} + 7.6px);
+            background-image: url(../../assets/img/logo/t.png);
+            width: calc((31/52)*#{$logoHeight});
+        }
+        &.colapse{
+            #c,#a,#v,#e,#p,#o,#t {
+                position: absolute;
+                left: 0;
+                
+            }
+            #c,#a,#v,#e,#p,#t{
+                opacity: 0;
+                transition: all ease .3s;
+            }
+            #o{
+                transform: rotate(-360deg);
+                transition: all ease 1s;
+            }
+        }
+        
     }
 
     .menu-btn {

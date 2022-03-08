@@ -1,27 +1,27 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { AllImages } from '../../helpers';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './Header.scss';
 
 export interface Size {
     width: number;
     height: number;
-  }
+}
 
 export const Header = () => {
     // The size of the window
-    const [size, setSize] = useState<Size>({width: window.innerWidth,height: window.innerHeight});
+    const [size, setSize] = useState<Size>({ width: window.innerWidth, height: window.innerHeight });
 
-    
 
     const [t] = useTranslation("global");
 
     const links = Object.values(t('links.header', { returnObjects: true }));
     const [showMenu, setShowMenu] = useState(false);
+    const [colapse, setColapse] = useState(false);
     const onShowMenu = () => setShowMenu((prev) => !prev);
-    
+    const onColapse = (value) => setColapse(value);
+
     // This function updates the state thus re-render components
     const resizeHanlder = () => {
         const width = window.innerWidth;
@@ -30,8 +30,24 @@ export const Header = () => {
         setSize({
             width: width,
             height: height,
-            });
+        });
     };
+
+
+    const handleNavigation = (e) => {
+        const window = e.currentTarget;
+        if (window.pageYOffset > 60) {
+            onColapse(true);
+        } else {
+            onColapse(false);
+        }
+        
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", (e) => handleNavigation(e));
+        
+    }, [colapse]);
 
     useEffect(() => {
         const navItems = document.querySelectorAll('.menu-nav__item');
@@ -48,8 +64,15 @@ export const Header = () => {
 
     return (
         <div id="header" className={showMenu ? 'header open' : 'header'}>
-            <NavLink className="img-wrapper" to='/'>
-                <img src={AllImages.LogoCPNegro} alt="" />
+            <NavLink className={`img-wrapper ${colapse? "colapse": ""}`} to='/'>
+                <div id="c"></div>
+                <div id="a"></div>
+                <div id="v"></div>
+                <div id="e"></div>
+                <div id="p"></div>
+                <div id="o"></div>
+                <div id="t"></div>
+                {/* <img src={AllImages.LogoCPNegro} alt="" /> */}
             </NavLink>
             <div className="menu-btn" onClick={onShowMenu}>
                 <span className={showMenu ? 'menu-btn__burger open' : 'menu-btn__burger'}></span>
@@ -57,23 +80,23 @@ export const Header = () => {
             <nav className={showMenu ? 'nav open' : 'nav'}>
                 <ul className={showMenu ? 'menu-nav open' : 'menu-nav'}>
                     {
-                        links.map((obj: any,key) => (
+                        links.map((obj: any, key) => (
                             //className="menu-nav__link-contact"
                             <li className="menu-nav__item">
-                                {obj.link.includes("http") && 
+                                {obj.link.includes("http") &&
                                     <a href={obj.link} target='_blank' className='menu-nav__link'>
-                                        { obj.label }
+                                        {obj.label}
                                     </a>
                                 }
-                                {!obj.link.includes("http") && size.width <= 1024 && 
+                                {!obj.link.includes("http") && size.width <= 1024 &&
                                     <NavLink to={obj.link} className={obj.link.includes("contact") ? "menu-nav__link-contact" : "menu-nav__link"} onClick={onShowMenu}>
-                                            { obj.label }
-                                    </NavLink> 
+                                        {obj.label}
+                                    </NavLink>
                                 }
-                                {!obj.link.includes("http") &&  size.width > 1024 && 
+                                {!obj.link.includes("http") && size.width > 1024 &&
                                     <NavLink to={obj.link} className={obj.link.includes("contact") ? "menu-nav__link-contact" : "menu-nav__link"} >
-                                            { obj.label }
-                                    </NavLink> 
+                                        {obj.label}
+                                    </NavLink>
                                 }
                             </li>
                         ))
