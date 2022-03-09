@@ -17,6 +17,8 @@ $logoHeight: 40px;
     background-color: white;
     opacity: 0.9;
     z-index: 1000;
+    justify-content: space-between;
+    width: 100%;
     .img-wrapper {
         z-index: 1;
         cursor: pointer;
@@ -175,7 +177,6 @@ $logoHeight: 40px;
         // background-color: white;
         top: 0;
         left: 0;
-        width: 100vw;
         opacity: 0.98;
         visibility: visible;
         &.open {
@@ -305,6 +306,7 @@ $logoHeight: 40px;
             &.open {
                 visibility: visible;
                 position: fixed;
+                width: 100%;
             }
         }
         .img-wrapper {

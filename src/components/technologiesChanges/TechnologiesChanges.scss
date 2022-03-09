@@ -19,7 +19,7 @@
         animation: showUp 0.8s linear forwards;
         
         .title {
-            @include textBasisBold(3.5rem);
+            @include textBasisBold(3.2rem);
             padding-bottom: 18px;
         }
         .subtitle {
@@ -44,7 +44,7 @@
         width: unset;
         .textwrapper{
             width: auto;
-            height: 50%;
+            min-height: 50%;
             align-self: center;
             label{
                 align-self: unset;
@@ -66,7 +66,7 @@
         .textwrapper {
             border: solid $BorderWidth $BorderBlack;
             background-color: white;
-            height: 50%;
+            //height: 50%;
             margin: 30px 80px;
             padding: 30px;
             border-radius: $borderRadiusMain;
@@ -84,7 +84,7 @@
     .technologies-changes{
         align-self: center;
         .textwrapper{
-            height: 60%;
+            min-height: 60%;
             .title{
                 @include textBasis(2.5rem)
             }
