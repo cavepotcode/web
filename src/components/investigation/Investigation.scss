@@ -9,15 +9,14 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-        @include textBasis(1.063rem);
+        @include textBasis($text);
 
         .main-text-wrapper{
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             .title {
-                @include textBasis(2.5rem);
-                font-weight: 500;
+                @include textBasisBold($title);
                 width: 354px;
                 align-self: center;
             }

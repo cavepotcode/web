@@ -7,8 +7,8 @@
     background-color: $aqua;
     justify-content: center;
     align-items: center;
-    gap: $spaceBetween45;
-    height: 250px;
+    gap: $spaceBetween20;
+    height: 200px;
     margin-bottom: $spaceBetween;
    
     border-bottom: solid $BorderWidth $BorderBlack;
@@ -16,7 +16,7 @@
     .label-wrapper {
         display: flex;
         label {
-            @include textBasis(2.5rem);
+            @include textBasisBold($title);
             text-align: center;
             width: 287px;
         }

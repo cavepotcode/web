@@ -2,7 +2,7 @@
 @import "../../styles/variables";
 @import "../../styles/mixin";
 
-$logoHeight: 40px;
+$logoHeight: 35px;
 
 .header {
     border-bottom: solid $BorderWidth transparent;
@@ -63,25 +63,25 @@ $logoHeight: 40px;
             background-image: url(../../assets/img/logo/a.png);
         }
         #v {
-            left: calc((42 / 52) * 2 *#{$logoHeight} - 10px);
+            left: calc((42 / 52) * 2 *#{$logoHeight} - 9px);
             background-image: url(../../assets/img/logo/v.png);
         }
         #e {
-            left: calc((42 / 52) * 3 *#{$logoHeight} - 7px);
+            left: calc((42 / 52) * 3 *#{$logoHeight} - 6px);
             background-image: url(../../assets/img/logo/e.png);
         }
         #p {
-            left: calc((42 / 52) * 3 *#{$logoHeight} + (27 / 52) *#{$logoHeight} + 2px);
+            left: calc((42 / 52) * 3 *#{$logoHeight} + (27 / 52) *#{$logoHeight} );
             background-image: url(../../assets/img/logo/p.png);
         }
         #o {
-            left: calc((42 / 52) * 3 *#{$logoHeight} + 2 * (27 / 52) *#{$logoHeight} + 5.6px);
+            left: calc((42 / 52) * 3 *#{$logoHeight} + 2 * (27 / 52) *#{$logoHeight} + 2.6px);
             background-image: url(../../assets/img/logo/o.png);
             width: calc((52 / 52) *#{$logoHeight});
         }
         #t {
             left: calc(
-                (42 / 52) * 3 *#{$logoHeight} + 2 * (27 / 52) *#{$logoHeight} + (52 / 52) *#{$logoHeight} + 7.6px
+                (42 / 52) * 3 *#{$logoHeight} + 2 * (27 / 52) *#{$logoHeight} + (52 / 52) *#{$logoHeight} + 3.6px
             );
             background-image: url(../../assets/img/logo/t.png);
             width: calc((31 / 52) *#{$logoHeight});

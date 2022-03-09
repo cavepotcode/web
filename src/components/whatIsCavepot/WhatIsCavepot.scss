@@ -3,16 +3,16 @@
 
 .what-is-cavepot {
     grid-row: 2;
-    @include textBasis(1.125rem);
+    @include textBasis(0.875rem);
     .title-wrapper {
         display: flex;
         justify-content: center;
         .title {
-            @include textBasis(2.5rem);
+            @include textBasisBold($title);
         }
     }
     label {
-        @include textBasis(1.125rem);
+        @include textBasis($text);
         text-align: center;
         span {
             font-weight: 600;

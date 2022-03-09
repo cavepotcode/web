@@ -4,11 +4,12 @@
 .technologies-that-we-use {
     display: flex;
     flex-direction: column;
-    gap: $spaceBetween45;
+    gap: $spaceBetween20;
     align-items: center;
     justify-content: center;
     .title {
-        @include textBasis(2.656rem);
+        @include textBasisBold($title);
+        text-align: left;
     }
     .img-wrapper {
         display: flex;
@@ -35,7 +36,7 @@
         }
         label {
             margin-left: 26px;
-            @include textBasis(1.25rem);
+            @include textBasis($title);
             span{
                 font-weight: bold
             };
