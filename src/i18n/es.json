@@ -13,7 +13,7 @@
     },
     "technologies-changes":{
         "title":"Technology changes constantly, so do we!",
-        "subtitle":"We are a software and app development company keen on pixel perfect solutions that bring your ideas to life!",
+        "subtitle":"We are a <strong>software</strong> and app development company keenz on pixel perfect solutions that bring your <strong> ideas </strong> to life!",
         "alt":{
             "img.1":"Technologies changes banner image"
         }
@@ -25,29 +25,33 @@
     
     },
     "what-is-cavepot":{
-        "title":"What is CavePot",
-        "text1":"We are a <strong>software</strong> and app development company keenz on pixel perfect solutions that bring your <strong> ideas </strong> to life!",
-        "text2":"We are <strong>curious</strong> about the world, that’s why we also call ourselves  <strong> developers of ideas. </strong> ",
-        "text3":"We work hand by hand with our clients, with an open minded attitude towards creativity and innovation, <strong>this is the compass that guides us.</strong>",
-        "message":"What's the idea you want to bring to life?"
+        "title":"What is CavePot",        
+        "text1":"We are <strong>curious</strong> about the world, that’s why we also call ourselves  <strong> developers of ideas. </strong><br/> We work hand by hand with our clients, with an open minded attitude towards creativity and innovation, <strong>this is the compass that guides us.</strong> ",        
+        "text2":"We help you <strong>design, validate and build</strong> the products that you you always wanted to create, giving you a fast ROI<br/><strong>Transform</strong> your dreams and needs into <strong>reality.</strong>",
+        "text3":"We provide the <strong>best combination</strong> of passion and skills <strong>for your needs.</strong><br/>What's the <strong>idea</strong> you want to bring to life? Tell us what you need, we’ll <strong>turn it into gold!.</strong>",
+        "message":"START YOUR PROJECT NOW!"
     },
     "what-do-we-do":{
         "title":"What do we do?",
         "sub-title":"We build custom software solutions to help our clients create awesome products",
         "card1":{
-            "title":"I need an app for my business.",
+            "title":"Custom App for my business.",
+            "text":"I need an app for my business.",
             "button":"Tell us more"
         },
         "card2":{
-            "title":"I need a landing website for my company",
+            "title":"Custom product.",
+            "text":"Stable multidisciplinary teams hands on with the client.<br/>We apply agile methodologies.<br/>Full developing teams, PO, Designers, devops and more.",
             "button":"Tell us more"
         },
         "card3":{
-            "title":"I need costume software  to improve comunication and conection within my company",
+            "title":"Re-design Re-think.",
+            "text":"You have dreamy idea but cant bring it down to earth? Let us help you re think or re design it so that you can have the project you always wanted.",
             "button":"Tell us more"
         },
         "card4":{
-            "title":"I need to track my products in real time ",
+            "title":"Staff Augmentation.",
+            "text":"It refers to the use of outside personnel on a temporary basis to augment the capacity of your organization.<br/>It works as an outsourcing strategy",
             "button":"Tell us more"
         }
     },
@@ -230,6 +234,7 @@
     ],
     "projects":{
         "title":"Take a look ar some of our latets projects",
+        "desc":"We see our clients' needs as a <strong>map</strong>, where they show us what they want. Not only does that allow us to see the bigger picture, but also lets us work hand in hand with them but they also show us the path that they would like to take, this allows us to work hand in hand with them.",
         "projects":[
             {
                 "title":"Zanahorario",
