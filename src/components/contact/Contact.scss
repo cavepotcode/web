@@ -6,31 +6,32 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    margin-top: $spaceBetween;
+    //margin-top: $spaceBetween;
     gap: 34px;
+    animation: showUp 0.5s linear;
     .title {
         grid-column: 1 / span 4;
         display: flex;
         flex-direction: column;
         padding-top: 17px;
         text-align: center;
-        @include textBasis(1.156rem);
+        @include textBasis($text);
         :first-child {
             text-align: center;
             margin-bottom: 12px;
-            @include textBasis(2.5rem);
+            @include textBasisBold($title);
         }
     }
-    .form-wrapper{
+    .form-wrapper {
         justify-self: center;
-        grid-column: 1/span 4;
-        .contact-options-wrapper{
-            gap: 30px;
+        grid-column: 1 / span 4;
+        .contact-options-wrapper {
+            gap: 15px;
             display: flex;
             display: flex;
-            padding-bottom: 45px;
+            padding-bottom: 15px;
             align-items: end;
-            .contact-option-card{
+            .contact-option-card {
                 cursor: pointer;
                 display: flex;
                 flex-direction: column;
@@ -38,40 +39,38 @@
                 justify-content: space-around;
                 text-align: center;
                 padding-top: 15px;
-                padding-bottom: 7px;
-                height: 221px;
-                width: 207px;
+                padding-bottom: 10px;
+                height: 172px;
+                width: 172px;
                 background-color: $CeriseRed;
-                border-radius: $borderRadiusMain;
+                border-radius: $btnBorderRadius;
                 border: solid $BorderWidth $BorderBlack;
-                .contact-option-title{
-                    label {  
-                        cursor: pointer;
-                        font-size: 18px;
-                        font-weight: normal;
-                        font-stretch: normal;
-                        font-style: normal;
-                        line-height: normal;
-                        letter-spacing: normal;
-                        text-align: center;
-                        color: $PineTree;
-                        color: white;
+                .contact-option-title {
+                    label {
+                        @include textBasisBold($text);
+                        color: white !important;
                     }
                 }
-                &.selected{
-                    border-radius:  $borderRadiusMain $borderRadiusMain 0 0;
-                    margin-bottom: -47px;
+                &.selected {
+                    border-radius: $btnBorderRadius $btnBorderRadius 0 0;
+                    margin-bottom: -17px;
                     background-color: $AmarilloBanner;
                     transition: all ease 0.3s;
                     border-bottom: none;
-                    label {  
-                        color: black;
+                    label {
+                        color: black !important;
+                    }
+                }
+                .contact-option-img {
+                    height: 70px;
+                    img {
+                        height: 100%;
                     }
                 }
             }
         }
-            
-        .contact-form{
+
+        .contact-form {
             z-index: 998;
             display: grid;
             justify-self: center;
@@ -82,88 +81,85 @@
             width: 100%;
             max-width: 1155px;
             background-color: $AmarilloBanner;
-            border-radius: 0  0 $borderRadiusMain $borderRadiusMain;
+            border-radius: 0 0 $btnBorderRadius $btnBorderRadius;
             margin-top: 35;
             border: solid $BorderWidth $BorderBlack;
         }
     }
-   
 }
 
-@include media-md{
-    .contact{
+@include media-md {
+    .contact {
         padding: 0 $mainMDRightLeftPadding;
-        .form-wrapper{
+        .form-wrapper {
             width: 100%;
-            .contact-form{
-                .option-wrapper{
-                    label{
+            .contact-form {
+                .option-wrapper {
+                    label {
                         width: 0px;
                         min-width: 0;
                         margin-right: 0;
                         visibility: hidden;
                         position: absolute;
                     }
-                   
                 }
             }
 
-            .contact-options-wrapper{
-                gap:15px;
+            .contact-options-wrapper {
+                gap: 15px;
                 padding-bottom: 23px;
-                .contact-option-card{
+                .contact-option-card {
                     height: 176px;
-                    .contact-option-img{
-                        img{
+                    .contact-option-img {
+                        img {
                             width: 90%;
                             height: 90%;
                         }
                     }
-                    .contact-option-title{
-                        label{
+                    .contact-option-title {
+                        label {
                             font-size: 14px;
                         }
                     }
-                    
-                
-                &.selected{
-                    margin-bottom: -25px;
-                }
+
+                    &.selected {
+                        margin-bottom: -25px;
+                    }
                 }
             }
         }
     }
 }
 
-@include media-sm{
-    .contact{
+@include media-sm {
+    .contact {
         padding: 0 $mainSMRightLeftPadding;
-        .form-wrapper{
-            .contact-options-wrapper{
-                gap:7px;
+        .form-wrapper {
+            .contact-options-wrapper {
+                gap: 7px;
                 padding-bottom: 24px;
-                .contact-option-card{
+                .contact-option-card {
                     display: flex;
-                    margin:0;
+                    margin: 0;
                     padding: 0;
                     align-items: center;
                     justify-content: center;
                     height: 83px;
-                    .contact-option-img{
-                        img{
+                    .contact-option-img {
+                        img {
                             max-height: 63px;
                             max-width: 63px;
                         }
                     }
-                    .contact-option-title{
+                    .contact-option-title {
                         max-width: 80px;
                         max-height: 15px;
-                        label{
+                        label {
                             font-family: Montserrat-Bold;
-                            font-size: 6.5px;;
+                            font-size: 6.5px;
                         }
                     }
-                    &.selected{
+                    &.selected {
                         margin-bottom: -26px;
                     }
                 }

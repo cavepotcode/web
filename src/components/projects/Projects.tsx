@@ -1,5 +1,5 @@
 import "./Projects.scss";
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { ProjectCard, ProjectCardProps } from "./ProjectCard";
 
 export function Projects(){
@@ -10,7 +10,7 @@ export function Projects(){
         <div className="projects">
             <div className="textwrapper">
                 <label className="title">{t("projects.title")}</label>
-
+                <p className="desc"><Trans>{t("projects.desc")}</Trans></p>
             </div>
             <div className="project-card-wrapper">
                 {

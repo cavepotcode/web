@@ -231,8 +231,9 @@ $logoHeight: 35px;
                 @include transition-ease;
 
                 &.active {
-                    font-family: Montserrat-Bold;
-                    font-weight: bolder;
+                    // font-family: Montserrat-Bold;
+                    // font-weight: bolder;
+                    @include textBasisBold(0.719rem);
                 }
             }
 

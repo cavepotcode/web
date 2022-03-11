@@ -10,10 +10,19 @@
     gap: $spaceBetween;
     .textwrapper {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
         width: 100%;
         .title {
-            @include textBasis(2.5rem);
+            @include textBasisBold($title);
+        }
+        .desc{
+            @include textBasis($text);
+            margin-top: 10px;
+            max-width: 768px;
+            text-align: center;
+
         }
     }
     .project-card-wrapper{

@@ -234,6 +234,7 @@
     ],
     "projects":{
         "title":"Take a look ar some of our latets projects",
+        "desc":"We see our clients' needs as a <strong>map</strong>, where they show us what they want. Not only does that allow us to see the bigger picture, but also lets us work hand in hand with them but they also show us the path that they would like to take, this allows us to work hand in hand with them.",
         "projects":[
             {
                 "title":"Zanahorario",

@@ -9,13 +9,13 @@ import { AboutUsPage } from './pages/AboutUs/AboutUsPage';
 import { useLayoutEffect } from 'react';
 import { ProjectsPage } from './pages/Projects/ProjectsPage';
 import { NotProjectPage } from './pages/Projects/NoProject/NotProject';
-const ToTop = ({children}) => {
+const ToTop = ({ children }) => {
   const location = useLocation();
   useLayoutEffect(() => {
-    document.documentElement.scrollTo(0,0);
+    document.documentElement.scrollTo(0, 0);
   }, [location.pathname]);
   return children
-} 
+}
 
 function App() {
   return (
@@ -25,8 +25,8 @@ function App() {
 
         <Router>
           <ToTop>
-              <Header />
-
+            <Header />
+            <div id="container">
               <Routes>
                 <Route path="/" element={<HomePage />} >
                   <Route path=":menu" element={<HomePage />} />
@@ -55,9 +55,11 @@ function App() {
                 <Route path="/projects/rcd" element={<NotProjectPage />} />
                 <Route path="/projects/virtual-care" element={<NotProjectPage />} />
                 <Route path="/projects/*" element={<NotProjectPage />} />
-                <Route path="*" element={<NotFoundPage/>} />
+                <Route path="*" element={<NotFoundPage />} />
               </Routes>
-              <Footer />
+            </div>
+
+            <Footer />
 
           </ToTop>
         </Router>

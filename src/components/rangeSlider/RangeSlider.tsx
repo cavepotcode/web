@@ -30,7 +30,7 @@ export function RangeSlider( { name, minValue, maxValue, stepValue }: RangeSlide
                     step={stepValue}
                     value={rangeval}
                     onChange={(event) => setRangeval(event.target.valueAsNumber)} />
-                <span className="slider-value">{rangeval}</span>
+                <span className="slider-value">{rangeval == maxValue? "+"+rangeval: rangeval}</span>
             </div>
         </div>
     );

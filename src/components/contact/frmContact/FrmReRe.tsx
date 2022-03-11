@@ -95,7 +95,7 @@ export const FrmReRe = () => {
                             <label> Budget </label>
 
                             <div className={ !(errors.budget && touched.budget) ? 'wrapper' : 'wrapper error'}>
-                                <RangeSlider name="budget" minValue={0} maxValue={1000} stepValue={10}/>
+                                <RangeSlider name="budget" minValue={5000} maxValue={25000} stepValue={10}/>
                                 {errors.budget && touched.budget}
                             </div>
 

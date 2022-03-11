@@ -5,35 +5,42 @@
     border: solid $BorderWidth $BorderBlack;
     border-radius: $borderRadiusMain;
     position: relative;
-    padding-top: 25px;
-   
+    padding: 25px 10px;
+   a{
+    text-decoration: none;
+   }
     .card-footer{
         position: absolute;
         bottom: 0;
+        left: 0;
         height: 50px;
         width: 100%;
         background:rgba(0,0,0,0.15);
         border-radius: 0  0  5px 5px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;        
         button{
             border-radius: $borderRadiusCircle-25;
             border: solid $BorderWidth white;
             height: 30px;
             width: 30px;
+            padding: 0;            
             color: white;
             background-color: transparent;
             font-weight: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
     .title{
         display: flex;
         justify-content: center;
+        margin-bottom: 10px;
         label{
             text-transform: uppercase;
-            font-family: Montserrat-Medium;
-            @include textBasis(30px);
+            @include textBasisBold($title);
             color: white;
             text-align: center;
         }
@@ -45,8 +52,7 @@
         position: relative;
         text-align: center;
         label{
-            font-family: Montserrat;
-            @include textBasis(11px);
+            @include textBasis($text);
         }
     }
 }
