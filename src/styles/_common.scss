@@ -3,7 +3,7 @@
 }
 
 button {
-    @include textBasis($btnLgTxtSize);
+    @include textBasisBold($text);
     height: $btnLgHeight;
     text-decoration: none;
     border: none;
@@ -11,11 +11,12 @@ button {
     border-radius: $btnBorderRadius;
     color: $White;
     border: solid  $BorderWidth $BorderBlack;
+    padding: 5px 15px;
 }
 
 @include media-md{
     button{
-        @include textBasis($btnMdTxtSize);
+        @include textBasisBold($text);
         height: $btnMdHeight;
         color: $White;
 

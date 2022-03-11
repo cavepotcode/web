@@ -11,16 +11,17 @@
     color: $White;
     gap:$spaceBetween45;
     padding: 30px;
-
+    min-height: 360px;
     .img-wrapper {
-        width: auto;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: flex-end;
         flex-direction: column;
+        grid-gap: 20px;
         gap: 20px;
+        width: 250px;
         img{
-            width: 340px;
+            width: 100%;
         }
     }
     .text-wrapper {
@@ -76,7 +77,9 @@
         gap: 3px;
     }
     .title {
-        font-weight: bold;
+        @include textBasisBold($text);
+        color: white !important;
+        text-transform: uppercase;
     }
 }
 

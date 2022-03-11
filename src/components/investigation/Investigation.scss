@@ -4,17 +4,37 @@
 .investigation {
     display: flex;
     justify-content: center;
+    position: relative;
+    img {
+        position: absolute;
+        top:0;
+        height: 100%;
+        &.banner2{
+            left:-267px;
+            &.animation{
+                animation: leftToRightBanner linear 1s;
+            }
+        }
+        &.banner3{
+            &.animation{
+                animation: rightToLeft linear 1s;
+            }
+            right:-190px;
+            top:-62px
+        }
+    }
     .text-wrapper {
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
         @include textBasis($text);
-
+        position: relative;
+        min-height: 400px;
         .main-text-wrapper{
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            justify-content: center;
             .title {
                 @include textBasisBold($title);
                 width: 354px;
@@ -87,3 +107,24 @@
     }
 }
 
+@keyframes leftToRightBanner {
+    0% {
+        opacity: 0;
+        left:-300px
+    }
+    100% {
+        opacity: 1;
+        left:-267px;
+    }
+}
+
+@keyframes rightToLeft {
+    0% {
+        opacity: 0;
+        right:-300px
+    }
+    100% {
+        opacity: 1;
+        right:-190px;
+    }
+}

@@ -243,6 +243,7 @@ $logoHeight: 35px;
                 background-color: $CeriseRed;
                 color: white;
                 font-weight: bold;
+                border: $BorderWidth $BorderBlack solid;
             }
 
             &__link-contact:hover {

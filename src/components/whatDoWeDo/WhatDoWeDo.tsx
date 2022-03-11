@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
+import { AllImages } from '../../helpers';
 
 import './WhatDoWeDo.scss';
 
@@ -10,23 +11,23 @@ export const WhatDoWeDo = () => {
     const observer = new IntersectionObserver(entries => {
         entries.forEach((entry: any) => {
             if (entry.isIntersecting) {
-                    entry.target.classList.add('animation');
-                    entry.target.style.animationDelay = delay+'s'
-                    delay = delay + 0.2;
+                entry.target.classList.add('animation');
+                entry.target.style.animationDelay = delay + 's'
+                delay = delay + 0.2;
                 return;
             }
         });
         delay = 0;
     });
-    
+
 
 
     useEffect(() => {
         const cards = document.querySelectorAll('.card');
-        cards.forEach( item => {
+        cards.forEach(item => {
             observer.observe(item);
         });
-      }, [])
+    }, [])
 
 
     return (
@@ -36,38 +37,56 @@ export const WhatDoWeDo = () => {
                 <label>{t("what-do-we-do.sub-title")}</label>
             </div>
             <div className="cards-wrapper">
+                {/* <NavLink to="/contact/aNewApp">
+                    <div className='card'>
+                        <div className='img-wrapper'>
+                            <img src={AllImages.ANewApp} />
+                        </div>
+                        <label><Trans>{t("what-do-we-do.card1.title")}</Trans></label>
+                        <p><Trans>{t("what-do-we-do.card1.text")}</Trans></p>
+                    </div>
+                </NavLink> */}
+
                 <div className='card'>
-                    <label>{t("what-do-we-do.card1.title")}</label>
-                    <NavLink to="/contact/aNewApp">
-                        <button>
-                            {t("what-do-we-do.card1.button")}
-                        </button>   
-                    </NavLink>
-                </div>
-                <div className='card'>
-                    <label>{t("what-do-we-do.card2.title")}</label>
+                    <div className='img-wrapper'>
+                        <img src={AllImages.ANewLanding} />
+                    </div>
+                    <label><Trans>{t("what-do-we-do.card2.title")}</Trans></label>
+                    <p><Trans>{t("what-do-we-do.card2.text")}</Trans></p>
                     <NavLink to="/contact/aNewLanding">
                         <button>
                             {t("what-do-we-do.card2.button")}
-                        </button>   
+                        </button>
                     </NavLink>
                 </div>
+
                 <div className='card'>
-                    <label>{t("what-do-we-do.card3.title")}</label>
+                    <div className='img-wrapper'>
+                        <img src={AllImages.Redesign} />
+                    </div>
+                    <label><Trans>{t("what-do-we-do.card3.title")}</Trans></label>
+                    <p><Trans>{t("what-do-we-do.card3.text")}</Trans></p>
                     <NavLink to="/contact/redesign">
                         <button>
                             {t("what-do-we-do.card3.button")}
-                        </button>  
+                        </button>
                     </NavLink>
                 </div>
+
+
                 <div className='card'>
-                    <label>{t("what-do-we-do.card4.title")}</label>
+                    <div className='img-wrapper'>
+                        <img src={AllImages.StaffAugmentation} />
+                    </div>
+                    <label><Trans>{t("what-do-we-do.card4.title")}</Trans></label>
+                    <p><Trans>{t("what-do-we-do.card4.text")}</Trans></p>
                     <NavLink to="/contact/staffAugmentation">
                         <button>
                             {t("what-do-we-do.card4.button")}
-                        </button>  
+                        </button>
                     </NavLink>
                 </div>
+
             </div>
         </div>
     );

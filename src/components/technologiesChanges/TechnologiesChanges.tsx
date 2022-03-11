@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { AllImages } from '../../helpers';
 import './TechnologiesChanges.scss';
 
@@ -9,7 +9,7 @@ export const TechnologiesChanges = () => {
         <div className="technologies-changes">
             <div className="textwrapper">
                 <label className="title">{t("technologies-changes.title")}</label>
-                <label className="subtitle">{t("technologies-changes.subtitle")}</label>
+                <label className="subtitle"><Trans>{t("technologies-changes.subtitle")}</Trans></label>
             </div>
             <div className="img-technologies">
                 <img src={AllImages.Banner} alt={t("technologies-changes.alt.img.1")} />

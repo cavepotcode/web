@@ -7,14 +7,23 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     position: relative;
-    
+    align-items: flex-end;
+    flex-direction: column;
     .img-how-we-do-it {
         position: absolute;
-        right: -2px;
-        bottom: 0;
+        bottom: -5px;
+        &.animation {
+            animation: leftToRight 1s linear forwards;
+        }
+    }
+    .title {
+        align-self: center;
+        justify-self: center;
+        @include textBasisBold($title);
+        margin-bottom: 10px;
     }
     .txt-how-we-do-it {
-        padding: $spaceBetween 0;
+        padding: $spaceBetween45 0;
         border-top: solid $BorderWidth $BorderBlack;
         border-left: solid $BorderWidth $BorderBlack;
         border-bottom: solid $BorderWidth $BorderBlack;
@@ -22,30 +31,32 @@
         border-top-left-radius: $borderRadiusMain;
         background-color: $DarkLavender;
         width: 90%;
-
-        align-items: flex-end;
+        position: relative;
+        align-items: center;
         display: flex;
         flex-direction: column;
-        .title {
-            align-self: center;
-            justify-self: center;
-            @include textBasisBold($title);
-            color:$White
-        }
+        
         .text-wrapper {
             padding: $spaceBetween45;
             display: flex;
             flex-direction: row;
-            gap: 65px;
+            grid-gap: 35px;
+            gap: 35px;
             flex-wrap: wrap;
-            justify-content: flex-end;
-            align-items: flex-end;
+            justify-content: space-around;
             text-align: left;
             max-width: 1227px;
             .textpart {
                 width: 360px;
                 color: $White !important;
-                @include textBasisBold($text);
+                @include textBasis($text);
+                background: rgba($DarkLavender, 0.5);
+                padding: 5px;
+                z-index: 1;
+                strong{
+                    @include textBasisBold($text);
+                    color: $White !important;
+                }
             }
         }
     }
@@ -53,14 +64,7 @@
 
 @include media-lg {
     .how-we-do-it {
-        .img-how-we-do-it {
-            width: 50%;
-            right: 0;
-            left: unset;
-            img {
-                width: 100%;
-            }
-        }
+        
     }
 }
 
@@ -81,10 +85,6 @@
             background-image: none;
             display: flex;
             flex-direction: column;
-
-            .title {
-                color: $Black;
-            }
             .text-wrapper {
                 padding: $spaceBetween45 0;
                 margin: $spaceBetween45 0;
@@ -93,7 +93,8 @@
                 display: flex;
                 flex-direction: column;
                 gap: $spaceBetween45;
-                justify-content: space-around;
+                justify-content: space-evenly;
+                position: relative;
                 .textpart {
                     padding: $paddingCajasSM;
                     background-color: $White;
@@ -102,10 +103,11 @@
                     box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
                     border: solid $BorderWidth $BorderBlack;
                     border-radius: $borderRadiusMain;
-                    @include textBasis(1.406rem);
+                    @include textBasis($text);
                     z-index: 1;
-                    span {
-                        color: $Black;
+                    strong {
+                        @include textBasisBold($text);
+                        color: $Black !important;
                     }
                 }
             }
@@ -125,4 +127,16 @@
             }
         }
     }
+}
+
+
+@keyframes leftToRight {
+    0% {
+        opacity: 0.5;
+        left: -100px;
+	}
+	100% {
+        opacity: 1;
+        left: 0;
+	}
 }

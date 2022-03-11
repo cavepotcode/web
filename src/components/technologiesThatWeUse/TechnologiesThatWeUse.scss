@@ -20,6 +20,12 @@
         img {
             justify-self: center;
         }
+        .logo {
+            opacity: 0;
+            &.animation {
+                animation: showLogo 0.5s linear forwards;
+            }
+        }
     }
     .blue-line-wrapper {
         width: 75%;
@@ -37,20 +43,20 @@
         label {
             margin-left: 26px;
             @include textBasis($title);
-            span{
-                font-weight: bold
-            };
+            span {
+                font-weight: bold;
+            }
         }
     }
 }
 
-@include media-lg{
-    .technologies-that-we-use{
+@include media-lg {
+    .technologies-that-we-use {
         text-align: center;
-        .img-wrapper{
+        .img-wrapper {
             flex-wrap: wrap;
             gap: 30px;
-            img{
+            img {
                 margin: 0 10px;
             }
         }
@@ -61,5 +67,14 @@
                 margin: 7px 50px 0 50px;
             }
         }
+    }
+}
+
+@keyframes showLogo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

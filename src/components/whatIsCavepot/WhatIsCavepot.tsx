@@ -1,4 +1,5 @@
 import { useTranslation, Trans } from 'react-i18next';
+import { NavLink } from 'react-router-dom';
 import './WhatIsCavepot.scss'
 
 export default function WhatIsCavepot() {
@@ -23,7 +24,9 @@ export default function WhatIsCavepot() {
             </div>
             {/* <div id="short-blue-line"></div> */}
             <div className="message-container">
-                <button>{t("what-is-cavepot.message")}</button>
+                <NavLink to="/contact">
+                    <button>{t("what-is-cavepot.message")}</button>
+                </NavLink>
             </div>
         </div>
     )

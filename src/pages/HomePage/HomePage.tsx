@@ -13,34 +13,32 @@ import { useEffect } from "react";
 export function HomePage() {
     let params = useParams();
 
-    if(params.menu){
+    if (params.menu) {
 
         scroller.scrollTo(params.menu, {
             duration: 800,
             delay: 0,
             smooth: 'easeInOutQuart'
-          });
+        });
     }
 
     useEffect(() => {
-        if(params.menu){
+        if (params.menu) {
             scroller.scrollTo(params.menu, {
                 duration: 800,
                 delay: 0,
                 smooth: 'easeInOutQuart'
-              });
+            });
         }
         // code to run after render goes here
     }, []); // <-- empty array means 'run once'
-    
+
     return (
         <div className="home-page">
             <TechnologiesChanges />
             <WhatIsCavepot />
             <WhatDoWeDo />
-            <section id="#how-we-do-it">
-                <HowWeDoIt />
-            </section>
+            <HowWeDoIt />
             <TechnologiesThatWeUse />
             <ClientSay />
             <Investigation />
