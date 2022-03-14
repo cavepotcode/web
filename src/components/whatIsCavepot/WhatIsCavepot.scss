@@ -22,10 +22,10 @@
         display: flex;
         justify-content: center;
         button {
-            background-color: $CeriseRed;
+            background-color: $LilaBanner;
         }
         button:hover{
-            background-color: darken($CeriseRed,$darkerPorcentaje);
+            background-color: darken($LilaBanner,$darkerPorcentaje);
         }
     }
     #short-blue-line {
@@ -95,11 +95,11 @@
         }
         .message-container {
             margin-top: 118px;
-            button {
-                width: 495px;
-                padding: 0px 10px;
-                margin: 0 $mainMDRightLeftPadding;
-            }
+            // button {
+            //     width: 495px;
+            //     padding: 0px 10px;
+            //     margin: 0 $mainMDRightLeftPadding;
+            // }
         }
     }
 }
@@ -109,10 +109,10 @@
     .what-is-cavepot {
         .message-container {
             margin-top: 118px;
-            button {
-                padding: 2px 5px;
-                margin: 0 $mainSMRightLeftPadding;
-            }
+            // button {
+            //     padding: 2px 5px;
+            //     margin: 0 $mainSMRightLeftPadding;
+            // }
         }
     }
 }

@@ -53,11 +53,11 @@
     
     button {
         width: 212px;
-        background-color: $AmarilloBoton;
+        background-color: $MinionYellow;
         color: black;
     }
     button:hover{
-        background-color: darken($AmarilloBoton,$darkerPorcentaje);
+        background-color: darken($MinionYellow,$darkerPorcentaje);
     }
 }
 

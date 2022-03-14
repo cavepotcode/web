@@ -241,14 +241,14 @@ $logoHeight: 35px;
                 text-decoration: none;
                 padding: 7px;
                 border-radius: 5px;
-                background-color: $CeriseRed;
+                background-color: $LilaBanner;
                 color: white;
                 font-weight: bold;
                 border: $BorderWidth $BorderBlack solid;
             }
 
             &__link-contact:hover {
-                background-color: darken($CeriseRed, $darkerPorcentaje);
+                background-color: darken($LilaBanner, $darkerPorcentaje);
             }
         }
     }

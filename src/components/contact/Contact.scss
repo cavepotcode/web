@@ -135,32 +135,41 @@
     .contact {
         padding: 0 $mainSMRightLeftPadding;
         .form-wrapper {
+            margin-top: 10px;
             .contact-options-wrapper {
                 gap: 7px;
-                padding-bottom: 24px;
+                padding-bottom: 10px;
                 .contact-option-card {
                     display: flex;
                     margin: 0;
-                    padding: 0;
+                    padding: 5px;
                     align-items: center;
                     justify-content: center;
-                    height: 83px;
+                    height: 70px;
+                    position: relative;
                     .contact-option-img {
                         img {
-                            max-height: 63px;
-                            max-width: 63px;
+                            max-height: 50px;
+                            max-width: 50px;
                         }
                     }
                     .contact-option-title {
-                        max-width: 80px;
-                        max-height: 15px;
+                        position: absolute;
+                        opacity: 0;
+                        bottom: 70px;
+                        left: 0;
                         label {
-                            font-family: Montserrat-Bold;
-                            font-size: 6.5px;
+                            @include textBasisBold(0.6rem);
+                            line-height: 0.2rem;
+                            // font-family: Montserrat-Bold;
+                            // font-size: 6.5px;
                         }
                     }
                     &.selected {
-                        margin-bottom: -26px;
+                        .contact-option-title{
+                            opacity: 1;
+                        }                        
+                        margin-bottom: -12px;
                     }
                 }
             }

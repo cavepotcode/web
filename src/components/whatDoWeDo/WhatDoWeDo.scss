@@ -61,10 +61,10 @@
             }
             button {
                 margin-top: 5px;
-                background-color: $SeaSerpent;
+                background-color: $LilaBanner;
             }
             button:hover{
-                background-color: darken($SeaSerpent,$darkerPorcentaje);
+                background-color: darken($LilaBanner,$darkerPorcentaje);
             }
             label {
                 width: 216px;
@@ -151,7 +151,7 @@
                 }
                 button {
                     width: 295px;
-                    margin:  0 $paddingCajasSM;;
+                    margin:  10px $paddingCajasSM;;
 
                 }
             }
