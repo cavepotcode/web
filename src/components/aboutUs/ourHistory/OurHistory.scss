@@ -6,14 +6,9 @@
     gap: $spaceBetween45;
     padding: 0 $mainLGRightLeftPadding;
     .title{
-        font-size: 40px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
+        width: 100%;
+        @include textBasisBold($title);
         text-align: center;
-        color: $PineTree;
     }
 
     .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {

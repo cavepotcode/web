@@ -1,7 +1,7 @@
 import './App.scss';
 import { Footer } from './components/footer/Footer';
 import { Header } from './components/header/Header';
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes, useLocation,Navigate} from "react-router-dom"
 import { HomePage } from './pages/HomePage/HomePage';
 import { ContactPage } from './pages/ContactPage/ContactPage';
 import { NotFoundPage } from './pages/NotFound/NotFound';
@@ -28,7 +28,8 @@ function App() {
             <Header />
             <div id="container">
               <Routes>
-                <Route path="/" element={<HomePage />} >
+                <Route path="/" element={<Navigate replace to="/home" />} />
+                <Route path="/home" element={<HomePage />} >
                   <Route path=":menu" element={<HomePage />} />
                 </Route>
                 <Route path="/web" element={<HomePage />} />

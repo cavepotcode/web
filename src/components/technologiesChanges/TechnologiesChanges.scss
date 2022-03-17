@@ -19,11 +19,11 @@
         animation: showUp 0.5s linear forwards;
         
         .title {
-            @include textBasisBold(3.2rem);
+            @include textBasisBold($pageTitle);
             padding-bottom: 18px;
         }
         .subtitle {
-            @include textBasis(1.188rem);
+            @include textBasis($pageSubtitle);
         }
         label{
             align-self: center;

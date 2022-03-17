@@ -34,24 +34,12 @@
         flex-direction: column;
         color: $White;
         .title{
-            font-size: 30px;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            color: #fff;
+            @include textBasisBold($title);
+            color: white;
         }
         .textpart{
-            font-size: 24px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            color: #fff;
+            @include textBasis($text);
+            color: white;
         }
     }
 }

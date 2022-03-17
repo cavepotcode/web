@@ -14,24 +14,23 @@ export function HomePage() {
     let params = useParams();
 
     if (params.menu) {
+        scrollToSection(params.menu)
+    }
 
-        scroller.scrollTo(params.menu, {
+    useEffect(() => {
+        if (params.menu) {
+            scrollToSection(params.menu)
+        }
+        // code to run after render goes here
+    }, []); // <-- empty array means 'run once'
+
+    function scrollToSection(section) {
+        scroller.scrollTo(section + 60, {
             duration: 800,
             delay: 0,
             smooth: 'easeInOutQuart'
         });
     }
-
-    useEffect(() => {
-        if (params.menu) {
-            scroller.scrollTo(params.menu, {
-                duration: 800,
-                delay: 0,
-                smooth: 'easeInOutQuart'
-            });
-        }
-        // code to run after render goes here
-    }, []); // <-- empty array means 'run once'
 
     return (
         <div className="home-page">

@@ -45,6 +45,7 @@
                 background-color: $CeriseRed;
                 border-radius: $btnBorderRadius;
                 border: solid $BorderWidth $BorderBlack;
+                position: relative;
                 .contact-option-title {
                     label {
                         @include textBasisBold($text);
@@ -53,7 +54,7 @@
                 }
                 &.selected {
                     border-radius: $btnBorderRadius $btnBorderRadius 0 0;
-                    margin-bottom: -17px;
+                    bottom: -17px;
                     background-color: $AmarilloBanner;
                     transition: all ease 0.3s;
                     border-bottom: none;
@@ -123,7 +124,7 @@
                     }
 
                     &.selected {
-                        margin-bottom: -25px;
+                        bottom: -25px;
                     }
                 }
             }
@@ -169,7 +170,7 @@
                         .contact-option-title{
                             opacity: 1;
                         }                        
-                        margin-bottom: -12px;
+                        bottom: -12px;
                     }
                 }
             }

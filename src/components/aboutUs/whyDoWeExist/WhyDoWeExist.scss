@@ -13,19 +13,19 @@
         transition: left 0.5s;
         display: flex;
         flex-direction: column;
-        text-align: center;
+        //text-align: center;
         justify-content: center;
         padding: 0 30px 0 30px;
         
         .title {
-            @include textBasis(2.5rem);
+            @include textBasisBold($pageTitle);
             padding-bottom: 18px;
         }
         .textpart{
-            @include textBasis(1.188rem);
+            @include textBasis($pageSubtitle);
         }
         label{
-            align-self: center;
+            //align-self: center;
             max-width: 640px;
         }
         transition-delay: 15s;
@@ -79,10 +79,10 @@
     .why-do-we-exist{
         .textwrapper{
             .title {
-                @include textBasis(2.3rem);
+                @include textBasis($title);
             }
             .textpart{
-                @include textBasis(1.0rem);
+                @include textBasis($text);
             }
         }
     }
