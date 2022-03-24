@@ -28,10 +28,14 @@ export const Banner = require('../assets/img/banner.png').default;
 export const Banner2 = require('../assets/img/banner2.png').default;
 export const Banner3 = require('../assets/img/banner3.png').default;
 export const AboutUsBanner = require('../assets/img/aboutUsBanner.png').default;
+export const AboutUsPot = require('../assets/img/aboutUsPot.png').default;
 
 //IMG GENERALES
 export const Olla = require('../assets/img/olla.png').default;
 export const Explore = require('../assets/img/explore.png').default;
+export const AboutUsRed = require('../assets/img/red.png').default;
+export const AboutUsYellow = require('../assets/img/yellow.png').default;
+export const AboutUsPurple = require('../assets/img/purple.png').default;
 
 
 //CONTACT
