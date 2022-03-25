@@ -44,94 +44,90 @@
             left: 0;
             bottom: 0;
         }
+        .yellow, .red,.purple{
+            opacity: 0;
+            top: var(--currentTop);
+            right: var(--currentRight);
+            animation: showBubble 5s linear infinite ;
+        }
         .yellow {
             --currentTop: 175px;
+            --currentRight: 57px;
             width: 14px;
-            height: 14px;            
-            right: 57px;
-            top: var(--currentTop);
-            animation: showBubble 5s linear infinite ;
+            height: 14px;      
+            animation-delay: 1.5s;     
             &.second {
                 animation-delay: 1s;
                 --currentTop: 120px;
-                right: 88px;
-                top: var(--currentTop);
+                --currentRight: 88px;
             }
             &.third {
                 animation-delay: 2s;
                 --currentTop: 175px;
-                right: 142px;
-                top: var(--currentTop);
+                --currentRight: 142px;
             }
         }
         .purple {
             --currentTop: 106px;
+            --currentRight: 32px;
             width: 36px;
             height: 36px;
-            right: 32px;
-            top: var(--currentTop);
-            animation: showBubble 5s linear infinite ;
+            animation-delay: 1.5s;
             &.second {
+                animation-delay: 3s;
                 --currentTop: 13px;
-                right: 138px;
-                top: var(--currentTop);
-                animation-delay: 1s;
+                --currentRight: 138px;
             }
             &.third {
-                animation-delay: 3s;
+                animation-delay: 4s;
                 --currentTop: -22px;
-                right: 42px;
-                top: var(--currentTop);
-                
+                --currentRight: 42px;                
             }
         }
         .red {
             --currentTop: 169px;
+            --currentRight: 114px;  
             width: 18px;
             height: 18px;
-            right: 114px;
-            top: var(--currentTop);
-            animation: showBubble 5s linear infinite ;
             &.second {
                 animation-delay: 1.5s;
                 --currentTop: 58px;
-                right: 64px;
-                top: var(--currentTop);
+                --currentRight: 64px;  
             }
             &.third {
                 animation-delay: 2.5s;
                 --currentTop: -37px;
-                right: 100px;
-                top:var(--currentTop);
+                --currentRight: 100px;  
             }
         }
     }
 }
 
-@include media-xl {
-    .where-name-come-from {
-        width: unset;
-        .textwrapper {
-            width: auto;
-            label {
-                align-self: unset;
-                max-width: 100%;
-            }
-        }
-    }
-}
+// @include media-xl {
+//     .where-name-come-from {
+//         width: unset;
+//         .textwrapper {
+//             width: auto;
+//             label {
+//                 align-self: unset;
+//                 max-width: 100%;
+//             }
+//         }
+//     }
+// }
 
 @include media-lg {
-    .why-do-we-exist {
-        
-        .textwrapper {
+    .where-name-come-from  {
+        position: relative;
+        .text-wrapper {
             border: solid $BorderWidth $BorderBlack;
-            width: unset;
-            label {
+            width: 100%;
+            min-height: 450px;
+            height: unset;
+            label{
                 max-width: unset;
             }
             background-color: white;
-            height: 100%;
             margin: 30px 30px 30px 30px;
             padding: 30px 30px 30px 30px;
             align-self: center;
@@ -139,24 +135,12 @@
             box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
         }
 
-        .img-wrapper {
-            visibility: hidden;
+        .img-wrapper{
+            position: absolute;
         }
     }
 }
 
-@include media-md {
-    .why-do-we-exist {
-        .textwrapper {
-            .title {
-                @include textBasis($title);
-            }
-            .textpart {
-                @include textBasis($text);
-            }
-        }
-    }
-}
 
 
 @keyframes showBubble {
@@ -164,15 +148,18 @@
         transform: scale(0.9);
         opacity: 0;
         top: calc(var(--currentTop) + 10px);
+        right: calc(var(--currentRight) - #{random(10)}px);
 	}
     50% {
         transform: scale(1);
         opacity: 1;
+        right: calc(var(--currentRight) + #{random(10)}px);
     }
 	100% {
         transform: scale(0.5);
         opacity: 0;
         top: calc(var(--currentTop) - 100px);
+        right: calc(var(--currentRight) - #{random(10)}px);
 	}
 }
 

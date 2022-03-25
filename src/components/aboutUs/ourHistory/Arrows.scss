@@ -1,64 +1,29 @@
 @import "./../../../styles/main";
+@import "./../../../styles/variables";
 
-.left-arrow{  
-    color: black;
+.left-arrow {
+    right: 40px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.left-arrow,
+.right-arrow {    
     position: absolute;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    top: -35px;
+    font-size: 30px;
+    color: $PineTree;
     width: 19px;
     height: 29px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    margin-top: -45px !important;
-    right: 175px;
-    font-size: 30px;
-}
-
-.right-arrow{  
-    color: black;
-    margin-top: -45px !important;
-    right: 150px;
-    position: absolute;
-    float: right;
-    height: 29px;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    font-size: 30px;
-}
-
-
-@include media-lg{
-    .left-arrow{  
-        margin-top: -35px !important;
-        right: 13%;
-    }
-    
-    .right-arrow{  
-        margin-top: -35px !important;
-        right: 10%;
+    &:disabled {
+        opacity: 0.5;
     }
 }
 
-@include media-md{
-    .left-arrow{  
-        margin-top: -35px !important;
-        right: 52%;
-    }
-    
-    .right-arrow{  
-        margin-top: -35px !important;
-        right: 48%;
-    }
-}
 
-@include media-sm{
-    .left-arrow{  
-        margin-top: -35px !important;
-        right: 53%;
-    }
-    
-    .right-arrow{  
-        margin-top: -35px !important;
-        right: 47%;
-    }
-}
+

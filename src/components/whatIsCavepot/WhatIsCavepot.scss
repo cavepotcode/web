@@ -22,10 +22,10 @@
         display: flex;
         justify-content: center;
         button {
-            background-color: $LilaBanner;
+            background-color: $CeriseRed;
         }
         button:hover{
-            background-color: darken($LilaBanner,$darkerPorcentaje);
+            background-color: darken($CeriseRed,$darkerPorcentaje);
         }
     }
     #short-blue-line {

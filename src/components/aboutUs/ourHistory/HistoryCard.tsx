@@ -20,6 +20,7 @@ export function HistoryCard( {
 
     return(
         <div className='single-card no-select'>
+            <div className='card-conect left'></div>
             <div className='history-point'>
                 <div className='card'>
                     <div className='card-header'>
@@ -34,22 +35,22 @@ export function HistoryCard( {
                     </div>
                 </div>
                 {
-                    hitoryPoint.subTitle != '' && (
-                        <div className={visible ? 'sub-card' : 'sub-card-no'}>
-                            <div className='card-sub-conect'></div>
-                            <div className='card'>
-                                <div className='card-text bold'>
-                                    <label>
-                                        { hitoryPoint.subTitle }
-                                    </label>
-                                </div>
-                                <div className='card-text'>
-                                    <label>
-                                        <Trans>{ hitoryPoint.text2 }</Trans>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>)
+                    // hitoryPoint.subTitle != '' && (
+                    //     <div className={visible ? 'sub-card' : 'sub-card-no'}>
+                    //         <div className='card-sub-conect'></div>
+                    //         <div className='card'>
+                    //             <div className='card-text bold'>
+                    //                 <label>
+                    //                     { hitoryPoint.subTitle }
+                    //                 </label>
+                    //             </div>
+                    //             <div className='card-text'>
+                    //                 <label>
+                    //                     <Trans>{ hitoryPoint.text2 }</Trans>
+                    //                 </label>
+                    //             </div>
+                    //         </div>
+                    //     </div>)
                 }
             </div>
             <div className='card-conect'></div>

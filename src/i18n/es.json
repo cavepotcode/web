@@ -185,31 +185,31 @@
     "data-history":[
         {
             "id": 2007,
-            "text":"Two students meet at college and   discover a common passion: software development. They are both curious about the world and its challenges, so they easily became friends.",
+            "text":"Two students meet at college and   discover a common passion: software development.<br/><br/>They are both curious about the world and its challenges, so they easily became friends.",
             "subTitle": "",
             "text2":""
         },
         {
             "id": 2013,
-            "text":"After a few years of working togather they decided to dedicate full time to their dream. This is when CavePot was born.  ",
+            "text":"After a few years of working togather they decided to dedicate full time to their dream.<br/><br/>This is when CavePot was born.  ",
             "subTitle": "",
             "text2":""
         },
         {
             "id": 2015,
-            "text":"The company kept on growing and we needed a place to call the office.  We found the perfect place in carrasco cowork.",
+            "text":"The company kept on growing and we needed a place to call the office.<br/><br/>We found the perfect place in Carrasco cowork.",
             "subTitle": "",
             "text2":""
         },
         {
             "id": 2017,
-            "text":"We became host and sponsor of the Uruguayan <strong>Angular Meetup</strong>. The cowork, began to feel too tight so we moved. to the place that we call home. Pablo de Maria 1122, the perfect place to set up our headquarters.",
+            "text":"We became host and sponsor of the Uruguayan <strong>Angular Meetup</strong>.<br/>The cowork, began to feel too tight so we moved to the place that we call home.<br/>Pablo de Maria 1122, the perfect place to set up our headquarters.",
             "subTitle": "",
             "text2":""
         },
         {
             "id": 2019,
-            "text":"We were able to travel abroad, learn about the international market, meet our international clients, and get new ones. This allowed us to grow exponentially.",
+            "text":"We were able to travel abroad, learn about the international market, meet our international clients, and get new ones.<br/><br/>This allowed us to grow exponentially.",
             "subTitle": "",
             "text2":""
         },
@@ -227,7 +227,7 @@
         },
         {
             "id": 2022,
-            "text":"We keep working on our drem daily.  “Coming together is a beginning. Staying together is progress. Working together is success.'Henry Ford' ",
+            "text":"We keep working on our drem daily.<br/><br/><strong>Coming together is a beginning. Staying together is progress. Working together is success.</strong><br/>'Henry Ford' ",
             "subTitle": "",
             "text2":""
         }

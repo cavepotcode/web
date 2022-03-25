@@ -1,6 +1,8 @@
 @import "../../styles/mixin";
 @import "../../styles/variables";
 
+
+$distance: 17px;
 .contact {
     display: flex;
     flex-direction: column;
@@ -45,7 +47,9 @@
                 background-color: $CeriseRed;
                 border-radius: $btnBorderRadius;
                 border: solid $BorderWidth $BorderBlack;
-                position: relative;
+                position: relative;                
+                animation-delay: 0.3s;
+                animation: showUpOptions 0.3s linear forwards;
                 .contact-option-title {
                     label {
                         @include textBasisBold($text);
@@ -53,13 +57,13 @@
                     }
                 }
                 &.selected {
-                    border-radius: $btnBorderRadius $btnBorderRadius 0 0;
-                    bottom: -17px;
+                    animation:none;
+                    border-radius: $btnBorderRadius $btnBorderRadius 0 0;                    
                     background-color: $AmarilloBanner;
-                    transition: all ease 0.3s;
                     border-bottom: none;
+                    bottom: -17px;
                     label {
-                        color: black !important;
+                        color: $PineTree !important;
                     }
                 }
                 .contact-option-img {
@@ -175,5 +179,15 @@
                 }
             }
         }
+    }
+}
+
+
+@keyframes showUpOptions {
+    0%{
+        bottom: -17px;
+    }
+    100%{
+        bottom: 0;
     }
 }
