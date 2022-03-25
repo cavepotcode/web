@@ -26,7 +26,7 @@ export function WeAre() {
     return (
         <div className="we-tag-wrapper">
             <div id="are" className="are">
-                <Trans> <label className="are-label" >{array[count]} </label> </Trans>
+                <Trans> <label className="are-label animation" >{array[count]} </label> </Trans>
             </div>
             <div className="dig">
 
