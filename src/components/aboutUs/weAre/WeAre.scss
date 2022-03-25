@@ -101,22 +101,22 @@
 
 @keyframes OpeningSequence {
     0% {
-        //text-shadow: 0 0 50px #fff;
-        //letter-spacing:  3vw;
+        text-shadow: 0 0 50px #fff;
+        letter-spacing:  3vw;
         opacity: 0.2;
     }
     20% {
-        // text-shadow: 0 0 1px #fff;
-        // letter-spacing: 2vw;
+        text-shadow: 0 0 1px #fff;
+        letter-spacing: 2vw;
         opacity: 0.6;
     }
     65% {
-        // text-shadow: 0 0 1vw #fff;
+        text-shadow: 0 0 1vw #fff;
         opacity: 0.7;
     }
     75% {
-        // text-shadow: 0 0 0 #fff;
-        // letter-spacing: 0;
+        text-shadow: 0 0 0 #fff;
+        letter-spacing: 0;
         opacity: 0.9;
     }
     100% {
