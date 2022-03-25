@@ -2,6 +2,7 @@ import "./WeAre.scss";
 import { useTranslation, Trans } from "react-i18next";
 import { useEffect, useState } from "react";
 import { AllImages } from "../../../helpers";
+import { NavLink } from "react-router-dom";
 
 export function WeAre() {
     const [t] = useTranslation("global");
@@ -33,9 +34,12 @@ export function WeAre() {
                     <label>
                         {t("we-wanna.text")}
                     </label>
-                    <button>
-                        {t("we-wanna.button")}
-                    </button>
+                    <NavLink to="/contact">
+                        <button>
+                            {t("we-wanna.button")}
+                        </button>
+                    </NavLink>
+
                 </div>
                 <div className="img-wrapper">
                     <img src={AllImages.AboutUsDig} alt={t("why-do-we-exist.alt.img.1")} />
