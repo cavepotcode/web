@@ -14,7 +14,7 @@ export function WeAre() {
     const updateCount = () => {
         index = !index && setInterval(() => {
             setIndex(prevCount => (prevCount + 1) % lergoArray) // new     
-        }, 2000)
+        }, 3000)
     }
 
     useEffect(() => {
