@@ -21,13 +21,14 @@ export const HowWeDoIt = () => {
     return (
         <div id="how-we-do-it">
             <div className="how-we-do-it">
-                <label className="title">{t("how-we-do-it.title")}</label>
+
                 <div className='txt-how-we-do-it'>
                     <div className="img-how-we-do-it">
                         <img src={AllImages.Explore} alt={t("how-we-do-it.alt.img.1")} />
                     </div>
 
                     <div className="text-wrapper">
+                        <label className="title">{t("how-we-do-it.title")}</label>
                         <label className='textpart'>
                             <Trans>{t("how-we-do-it.text1")}</Trans>
                         </label>
