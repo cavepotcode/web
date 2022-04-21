@@ -25,7 +25,10 @@ export function HomePage() {
     }, []); // <-- empty array means 'run once'
 
     function scrollToSection(section) {
-        scroller.scrollTo(section + 60, {
+        section = `#${section}`;
+        const element = document.querySelector(section);
+        console.log(element)
+        scroller.scrollTo(300, {
             duration: 800,
             delay: 0,
             smooth: 'easeInOutQuart'

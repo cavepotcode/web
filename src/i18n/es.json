@@ -235,8 +235,8 @@
     "projects":{
         "title":"Take a look ar some of our latets projects",
         "desc":"We see our clients' needs as a <strong>map</strong>, where they show us what they want. Not only does that allow us to see the bigger picture, but also lets us work hand in hand with them but they also show us the path that they would like to take, this allows us to work hand in hand with them.",
-        "projects":[
-            {
+        "projects":{
+            "zanahorario": {
                 "title":"Zanahorario",
                 "text":"Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
@@ -247,7 +247,7 @@
                 "color":"#f4ac40",
                 "gridArea":"span 2 / auto"
             },
-            {
+            "virtual-care":{
                 "title":"Virtual care",
                 "text":"eClinicas is a web app developed for UCM (a healthcare company by Falck’s Group). It was created to digitize its patients medical records according to certain governmental requirements and regulations. medical records according to certain governmental requirements and regulations.",
                 "textX": 0,
@@ -258,7 +258,7 @@
                 "color":"#5bd6db",
                 "gridArea":"span 2 /auto"
             },
-            {
+            "dinamize":{
                 "title":"Dinamize",
                 "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
@@ -269,7 +269,7 @@
                 "color":"#f4ac40",
                 "gridArea":"span 1/auto"
             },
-            {
+            "planet-rfid":{
                 "title":"Planet rfid",
                 "text":"Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
@@ -280,7 +280,7 @@
                 "color":"#f2546e",
                 "gridArea":"span 2 / auto"
             },
-            {
+            "rcd":{
                 "title":"Rcd",
                 "text":"Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
@@ -291,7 +291,7 @@
                 "color":"#f1d83a",
                 "gridArea":"span 2/ auto"
             },
-            {
+            "layer-872":{
                 "title":"EJEMPLO2",
                 "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
@@ -302,18 +302,18 @@
                 "color":"#5bd6db",
                 "gridArea":"span 1 / auto"
             },
-            {
+            "ejemplo3":{
                 "title":"EJEMPLO3",
                 "text":"Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
                 "textY": 30,
-                "img":"planet-rfid",
+                "img":"ejemplo3",
                 "imgX":-7,
                 "imgY": 20,
                 "color":"#f2546e",
                 "gridArea":"span 2 / auto "
             },
-            {
+            "layer-870-2":{
                 "title":"EJEMPLO4",
                 "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
@@ -324,7 +324,7 @@
                 "color":"#f4ac40",
                 "gridArea":"span 1 / auto"
             },
-            {
+            "layer-833":{
                 "title":"EJEMPLO5",
                 "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
@@ -335,7 +335,7 @@
                 "color":"#f1d83a",
                 "gridArea":"span 1 / auto"
             },
-            {
+            "layer-874": {
                 "title":"EJEMPLO6",
                 "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
@@ -346,7 +346,7 @@
                 "color":"#5bd6db",
                 "gridArea":"auto /span 2"
             }
-        ]
+        }
     },
     "links":{
         "experiences":{

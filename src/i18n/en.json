@@ -1,174 +1,171 @@
 {
-    "header":{
-        "home":"HOME",
-        "how.we.do.it":"HOW WE DO IT",
-        "projects":"PROJECTS",
-        "about.us":"ABOUT US",
-        "contact.us":"CONTACT US",
-        "blog":"BLOG",
-        "our.lab":"OUR LAB",
-        "alt":{
-            "img.1":"Header cavepot logo"
+    "header": {
+        "home": "HOME",
+        "how.we.do.it": "HOW WE DO IT",
+        "projects": "PROJECTS",
+        "about.us": "ABOUT US",
+        "contact.us": "CONTACT US",
+        "blog": "BLOG",
+        "our.lab": "OUR LAB",
+        "alt": {
+            "img.1": "Header cavepot logo"
         }
     },
-    "technologies-changes":{
-        "title":"Technology changes constantly, so do we!",
-        "subtitle":"We are a <strong>software</strong> and app development company keenz on pixel perfect solutions that bring your <strong> ideas </strong> to life!",
-        "alt":{
-            "img.1":"Technologies changes banner image"
+    "technologies-changes": {
+        "title": "Technology changes constantly, so do we!",
+        "subtitle": "We are a <strong>software</strong> and app development company keenz on pixel perfect solutions that bring your <strong> ideas </strong> to life!",
+        "alt": {
+            "img.1": "Technologies changes banner image"
         }
     },
-    "not-found":{
-        "title":"404",
-        "subtitle":"The page that you requested could not be found.",
-        "alt.img":"Not found image page "
-    
+    "not-found": {
+        "title": "404",
+        "subtitle": "The page that you requested could not be found.",
+        "alt.img": "Not found image page "
     },
-    "what-is-cavepot":{
-        "title":"What is CavePot",        
-        "text1":"We are <strong>curious</strong> about the world, that’s why we also call ourselves  <strong> developers of ideas. </strong><br/> We work hand by hand with our clients, with an open minded attitude towards creativity and innovation, <strong>this is the compass that guides us.</strong> ",        
-        "text2":"We help you <strong>design, validate and build</strong> the products that you you always wanted to create, giving you a fast ROI<br/><strong>Transform</strong> your dreams and needs into <strong>reality.</strong>",
-        "text3":"We provide the <strong>best combination</strong> of passion and skills <strong>for your needs.</strong><br/>What's the <strong>idea</strong> you want to bring to life? Tell us what you need, we’ll <strong>turn it into gold!.</strong>",
-        "message":"START YOUR PROJECT NOW!"
+    "what-is-cavepot": {
+        "title": "What is CavePot",
+        "text1": "We are <strong>curious</strong> about the world, that’s why we also call ourselves  <strong> developers of ideas. </strong><br/> We work hand by hand with our clients, with an open minded attitude towards creativity and innovation, <strong>this is the compass that guides us.</strong> ",
+        "text2": "We help you <strong>design, validate and build</strong> the products that you you always wanted to create, giving you a fast ROI<br/><strong>Transform</strong> your dreams and needs into <strong>reality.</strong>",
+        "text3": "We provide the <strong>best combination</strong> of passion and skills <strong>for your needs.</strong><br/>What's the <strong>idea</strong> you want to bring to life? Tell us what you need, we’ll <strong>turn it into gold!.</strong>",
+        "message": "START YOUR PROJECT NOW!"
     },
-    "what-do-we-do":{
-        "title":"What do we do?",
-        "sub-title":"We build custom software solutions to help our clients create awesome products",
-        "card1":{
-            "title":"Custom App for my business.",
-            "text":"I need an app for my business.",
-            "button":"Tell us more"
+    "what-do-we-do": {
+        "title": "What do we do?",
+        "sub-title": "We build custom software solutions to help our clients create awesome products",
+        "card1": {
+            "title": "Custom App for my business.",
+            "text": "I need an app for my business.",
+            "button": "Tell us more"
         },
-        "card2":{
-            "title":"Custom product.",
-            "text":"Stable multidisciplinary teams hands on with the client.<br/>We apply agile methodologies.<br/>Full developing teams, PO, Designers, devops and more.",
-            "button":"Tell us more"
+        "card2": {
+            "title": "Custom product.",
+            "text": "Stable multidisciplinary teams hands on with the client.<br/>We apply agile methodologies.<br/>Full developing teams, PO, Designers, devops and more.",
+            "button": "Tell us more"
         },
-        "card3":{
-            "title":"Re-design Re-think.",
-            "text":"You have dreamy idea but cant bring it down to earth? Let us help you re think or re design it so that you can have the project you always wanted.",
-            "button":"Tell us more"
+        "card3": {
+            "title": "Re-design Re-think.",
+            "text": "You have dreamy idea but cant bring it down to earth? Let us help you re think or re design it so that you can have the project you always wanted.",
+            "button": "Tell us more"
         },
-        "card4":{
-            "title":"Staff Augmentation.",
-            "text":"It refers to the use of outside personnel on a temporary basis to augment the capacity of your organization.<br/>It works as an outsourcing strategy",
-            "button":"Tell us more"
+        "card4": {
+            "title": "Staff Augmentation.",
+            "text": "It refers to the use of outside personnel on a temporary basis to augment the capacity of your organization.<br/>It works as an outsourcing strategy",
+            "button": "Tell us more"
         }
     },
-    "how-we-do-it":{
-        "title":"How we do it",
-        "text1":"Every project we work on is like <strong>entering a cave. </strong>Curious and willing to do our best, we ask ourselves: <strong>what amazing things lie underground?</strong>",
-        "text2":"Elements of nature create phenomenons when they are together, <strong>merging to create something great, </strong> such as your needs combined with our skills.",
-        "text3":"Your needs work as a compass for us, in a map that guide us into what we will create, pouring all of that into our pot and finally cooking something great for you.",
-        "text4":"<strong>Let us explore your idea, finding the perfect elements for it so we can bring it to life.</strong>",
-        "alt":{
-            "img.1":"How we do it pot image"
+    "how-we-do-it": {
+        "title": "How we do it",
+        "text1": "Every project we work on is like <strong>entering a cave. </strong>Curious and willing to do our best, we ask ourselves: <strong>what amazing things lie underground?</strong>",
+        "text2": "Elements of nature create phenomenons when they are together, <strong>merging to create something great, </strong> such as your needs combined with our skills.",
+        "text3": "Your needs work as a compass for us, in a map that guide us into what we will create, pouring all of that into our pot and finally cooking something great for you.",
+        "text4": "<strong>Let us explore your idea, finding the perfect elements for it so we can bring it to life.</strong>",
+        "alt": {
+            "img.1": "How we do it pot image"
         }
     },
-    "technologies-that-we-use":{
-        "title":"Technologies that we use",
-        "text":"Over 50 startups trusted us to build their ideas. <strong>Want to be the next one?</strong>"
+    "technologies-that-we-use": {
+        "title": "Technologies that we use",
+        "text": "Over 50 startups trusted us to build their ideas. <strong>Want to be the next one?</strong>"
     },
-    "clients-says":{
-        "title":"This is what our clients say"
-        
+    "clients-says": {
+        "title": "This is what our clients say"
     },
-    "investigation":{
-        "title":"Investigation & Training",
-        "text.1":"Passionate about what we do and willing to learn, we created CavepotLab.",
-        "text.2":"We are keen on helping our team members constantly so they can grow technically and professionally. O: so they can grow both technical and professionally",
-        "button":"Visit the CavePot lab",
-        "alt":{
-            "img.1":"Investigation banner image"
+    "investigation": {
+        "title": "Investigation & Training",
+        "text.1": "Passionate about what we do and willing to learn, we created CavepotLab.",
+        "text.2": "We are keen on helping our team members constantly so they can grow technically and professionally. O: so they can grow both technical and professionally",
+        "button": "Visit the CavePot lab",
+        "alt": {
+            "img.1": "Investigation banner image"
         }
     },
-    "footer":{
-        "column.1":{
-            "title":"COMPANY",
-            "text.1":"Home",
-            "text.2":"What is Cavepot",
-            "text.3":"What do we do",
-            "text.4":"How we do it",
-            "text.5":"What our clints say"
+    "footer": {
+        "column.1": {
+            "title": "COMPANY",
+            "text.1": "Home",
+            "text.2": "What is Cavepot",
+            "text.3": "What do we do",
+            "text.4": "How we do it",
+            "text.5": "What our clints say"
         },
-        "column.2":{
-            "title":"Experiences",
-            "text.1":"Planet01",
-            "text.2":"Zanahorario",
-            "text.3":"Fillment",
-            "text.4":"LearnCloud",
-            "text.5":"NOM",
-            "text.6":"UCM"
+        "column.2": {
+            "title": "Experiences",
+            "text.1": "Planet01",
+            "text.2": "Zanahorario",
+            "text.3": "Fillment",
+            "text.4": "LearnCloud",
+            "text.5": "NOM",
+            "text.6": "UCM"
         },
-        "column.3":{
-            "title":"Connect with us",
-            "text.1":"Instagram",
-            "text.2":"Facebook",
-            "text.3":"Twitter",
-            "text.4":"Linkedin",
-            "text.5":"Github"
+        "column.3": {
+            "title": "Connect with us",
+            "text.1": "Instagram",
+            "text.2": "Facebook",
+            "text.3": "Twitter",
+            "text.4": "Linkedin",
+            "text.5": "Github"
         },
-        "column.4":{
-            "title":"Locate us",
-            "text.1":"Pablo de Maria 1122,",
-            "text.2":"Montevideo, Uruguay",
-            "text.3":"info@cavepot.com"
+        "column.4": {
+            "title": "Locate us",
+            "text.1": "Pablo de Maria 1122,",
+            "text.2": "Montevideo, Uruguay",
+            "text.3": "info@cavepot.com"
         },
-        "alt":{
-            "img.1":"Footer cavepot logo",
-            "img.2":"Footer cavepot lab logo"
+        "alt": {
+            "img.1": "Footer cavepot logo",
+            "img.2": "Footer cavepot lab logo"
         }
-
     },
-    "contact":{
-        "title":"How can we help you?",
-        "sub-title":"Let us know what you are looking foor so that we can help you find it",
-        "option1":{
-            "title":"A new Landing",
-            "titlesm":"A new Landing",
-            "alt.img":"New lading icon image"
+    "contact": {
+        "title": "How can we help you?",
+        "sub-title": "Let us know what you are looking foor so that we can help you find it",
+        "option1": {
+            "title": "A new Landing",
+            "titlesm": "A new Landing",
+            "alt.img": "New lading icon image"
         },
-        "option2":{
-            "title":" A new  App",
-            "titlesm":" A new  App",
-            "alt.img":"A new  App icon image"
+        "option2": {
+            "title": " A new  App",
+            "titlesm": " A new  App",
+            "alt.img": "A new  App icon image"
         },
-        "option3":{
-            "title":"Re-desing Re-Think my product",
-            "titlesm":"Re-Think my product",
-            "alt.img":"Re-desing Re-Think icon image"
+        "option3": {
+            "title": "Re-desing Re-Think my product",
+            "titlesm": "Re-Think my product",
+            "alt.img": "Re-desing Re-Think icon image"
         },
-        "option4":{
-            "title":"General information",
-            "titlesm":"General info",
-            "alt.img":"General information icon image"
+        "option4": {
+            "title": "General information",
+            "titlesm": "General info",
+            "alt.img": "General information icon image"
         },
-        "option5":{
-            "title":"Staff Augmentation",
-            "titlesm":"Staff Augmentation",
-            "alt.img":"Staff Augmentation icon image"
+        "option5": {
+            "title": "Staff Augmentation",
+            "titlesm": "Staff Augmentation",
+            "alt.img": "Staff Augmentation icon image"
         }
     },
     "why-do-we-exist": {
-        "title":"Why do we exist?",
-        "text.part.1":"We had the intention to create a company that gave us the opportunity to grow as entrepreneurs. ",
-        "text.part.2":"Together we decided to enter the <strong>cave</strong> -that is now our company- full of passion and uncertainty, willing to find <strong>potential elements</strong> and transform them into something great.  ",
-        "text.part.3":"We digged deep and merged our materials to transform them into what we are now!",
-        "alt":{
-            "img.1":"Why do we exist? image banner"
+        "title": "Why do we exist?",
+        "text.part.1": "We had the intention to create a company that gave us the opportunity to grow as entrepreneurs. ",
+        "text.part.2": "Together we decided to enter the <strong>cave</strong> -that is now our company- full of passion and uncertainty, willing to find <strong>potential elements</strong> and transform them into something great.  ",
+        "text.part.3": "We digged deep and merged our materials to transform them into what we are now!",
+        "alt": {
+            "img.1": "Why do we exist? image banner"
         }
     },
     "name-come-from": {
-        "title.1":"Where does our name come from?",
-        "text.part.1":"Our name has its origins in our two founders' nicknames- Cuevas, which in spanish means cave, and Olla, which is pot.",
-        "title.2":"Coincidence?",
-        "text.part.2":"Not only our name comes from our two founders' nicknames but also from the idea that, in order to get results, we gotta dig deeper to find the material that works best for you. We consider ourselves a melting pot of knowledge and skills. Every project we work on is like a cave. What amazing things lie underground?"
+        "title.1": "Where does our name come from?",
+        "text.part.1": "Our name has its origins in our two founders' nicknames- Cuevas, which in spanish means cave, and Olla, which is pot.",
+        "title.2": "Coincidence?",
+        "text.part.2": "Not only our name comes from our two founders' nicknames but also from the idea that, in order to get results, we gotta dig deeper to find the material that works best for you. We consider ourselves a melting pot of knowledge and skills. Every project we work on is like a cave. What amazing things lie underground?"
     },
-    "we-wanna":{
-        "text":"We wanna dig deeper, explore the cave, see what lies underground and bring it to life. Come dig with us! ",
-        "button":"Learn More"
+    "we-wanna": {
+        "text": "We wanna dig deeper, explore the cave, see what lies underground and bring it to life. Come dig with us! ",
+        "button": "Learn More"
     },
-    "we-tags":[
+    "we-tags": [
         "We are <strong>curious</strong>",
         "We love to <strong>develop</strong>",
         "<strong>We care about</strong> the world",
@@ -182,229 +179,239 @@
         "<strong>We adapt</strong> to changes",
         "<strong>We love</strong> challenging projects"
     ],
-    "data-history":[
+    "data-history": [
         {
             "id": 2007,
-            "text":"Two students meet at college and   discover a common passion: software development.<br/><br/>They are both curious about the world and its challenges, so they easily became friends.",
+            "text": "Two students meet at college and   discover a common passion: software development.<br/><br/>They are both curious about the world and its challenges, so they easily became friends.",
             "subTitle": "",
-            "text2":""
+            "text2": ""
         },
         {
             "id": 2013,
-            "text":"After a few years of working togather they decided to dedicate full time to their dream.<br/><br/>This is when CavePot was born.  ",
+            "text": "After a few years of working togather they decided to dedicate full time to their dream.<br/><br/>This is when CavePot was born.  ",
             "subTitle": "",
-            "text2":""
+            "text2": ""
         },
         {
             "id": 2015,
-            "text":"The company kept on growing and we needed a place to call the office.<br/><br/>We found the perfect place in Carrasco cowork.",
+            "text": "The company kept on growing and we needed a place to call the office.<br/><br/>We found the perfect place in Carrasco cowork.",
             "subTitle": "",
-            "text2":""
+            "text2": ""
         },
         {
             "id": 2017,
-            "text":"We became host and sponsor of the Uruguayan <strong>Angular Meetup</strong>.<br/>The cowork, began to feel too tight so we moved to the place that we call home.<br/>Pablo de Maria 1122, the perfect place to set up our headquarters.",
+            "text": "We became host and sponsor of the Uruguayan <strong>Angular Meetup</strong>.<br/>The cowork, began to feel too tight so we moved to the place that we call home.<br/>Pablo de Maria 1122, the perfect place to set up our headquarters.",
             "subTitle": "",
-            "text2":""
+            "text2": ""
         },
         {
             "id": 2019,
-            "text":"We were able to travel abroad, learn about the international market, meet our international clients, and get new ones.<br/><br/>This allowed us to grow exponentially.",
+            "text": "We were able to travel abroad, learn about the international market, meet our international clients, and get new ones.<br/><br/>This allowed us to grow exponentially.",
             "subTitle": "",
-            "text2":""
+            "text2": ""
         },
         {
             "id": 2020,
-            "text":"Clutch Awards the Best B2B Companies in Latin America for 2020.",
+            "text": "Clutch Awards the Best B2B Companies in Latin America for 2020.",
             "subTitle": "",
-            "text2":""
+            "text2": ""
         },
         {
             "id": 2021,
-            "text":"When we started  we where 2 dreamers.  Now  we are a family of 25, working together sharing a common passion and an unique look towards innovation, creativity and professionalism",
+            "text": "When we started  we where 2 dreamers.  Now  we are a family of 25, working together sharing a common passion and an unique look towards innovation, creativity and professionalism",
             "subTitle": "Why do we see ourselves as a family?",
-            "text2":"We see ourselves as a family, focusing on each one of us' development and professional growth, taking into account the goals and objectives both within the company and each one of us' personal lives."
+            "text2": "We see ourselves as a family, focusing on each one of us' development and professional growth, taking into account the goals and objectives both within the company and each one of us' personal lives."
         },
         {
             "id": 2022,
-            "text":"We keep working on our drem daily.<br/><br/><strong>Coming together is a beginning. Staying together is progress. Working together is success.</strong><br/>'Henry Ford' ",
+            "text": "We keep working on our drem daily.<br/><br/><strong>Coming together is a beginning. Staying together is progress. Working together is success.</strong><br/>'Henry Ford' ",
             "subTitle": "",
-            "text2":""
+            "text2": ""
         }
     ],
-    "projects":{
-        "title":"Take a look ar some of our latets projects",
-        "desc":"We see our clients' needs as a <strong>map</strong>, where they show us what they want. Not only does that allow us to see the bigger picture, but also lets us work hand in hand with them but they also show us the path that they would like to take, this allows us to work hand in hand with them.",
-        "projects":[
-            {
-                "title":"Zanahorario",
-                "text":"Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+    "projects": {
+        "title": "Take a look ar some of our latets projects",
+        "desc": "We see our clients' needs as a <strong>map</strong>, where they show us what they want. Not only does that allow us to see the bigger picture, but also lets us work hand in hand with them but they also show us the path that they would like to take, this allows us to work hand in hand with them.",
+        "projects": {
+            "zanahorario": {
+                "title": "Zanahorario",
+                "text": "Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
                 "textY": 70,
-                "img":"zanahorario",
-                "imgX":-70,
+                "img": "zanahorario",
+                "imgX": -70,
                 "imgY": 50,
-                "color":"#f4ac40",
-                "gridArea":"span 2 / auto"
+                "color": "#f4ac40",
+                "gridArea": "span 2 / auto",
+                "description": [
+                    {
+                        "title": "What is Zanahorario?",
+                        "desc": "Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in."
+                    },
+                    {
+                        "title": "Why did we create it?",
+                        "desc": "We are a very diverse company always working on several projects at the same time. This made it very difficult to keep track on the hours worker on and what we use them for. Therefore we needed a tool in which we could write down the hours we invested on different tasks and so on."
+                    }
+
+                ]
             },
-            {
-                "title":"Virtual care",
-                "text":"eClinicas is a web app developed for UCM (a healthcare company by Falck’s Group). It was created to digitize its patients medical records according to certain governmental requirements and regulations. medical records according to certain governmental requirements and regulations.",
+            "virtual-care": {
+                "title": "Virtual care",
+                "text": "eClinicas is a web app developed for UCM (a healthcare company by Falck’s Group). It was created to digitize its patients medical records according to certain governmental requirements and regulations. medical records according to certain governmental requirements and regulations.",
                 "textX": 0,
                 "textY": -300,
-                "img":"virtual-care",
+                "img": "virtual-care",
                 "imgX": -45,
                 "imgY": 218,
-                "color":"#5bd6db",
-                "gridArea":"span 2 /auto"
+                "color": "#5bd6db",
+                "gridArea": "span 2 /auto"
             },
-            {
-                "title":"Dinamize",
-                "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+            "dinamize": {
+                "title": "Dinamize",
+                "text": "Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
                 "textY": -220,
-                "img":"dinamize",
+                "img": "dinamize",
                 "imgX": 85,
                 "imgY": 19,
-                "color":"#f4ac40",
-                "gridArea":"span 1/auto"
+                "color": "#f4ac40",
+                "gridArea": "span 1/auto"
             },
-            {
-                "title":"Planet rfid",
-                "text":"Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+            "planet-rfid": {
+                "title": "Planet rfid",
+                "text": "Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
                 "textY": 50,
-                "img":"planet-rfid",
+                "img": "planet-rfid",
                 "imgX": 16,
                 "imgY": 0,
-                "color":"#f2546e",
-                "gridArea":"span 2 / auto"
+                "color": "#f2546e",
+                "gridArea": "span 2 / auto"
             },
-            {
-                "title":"Rcd",
-                "text":"Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+            "rcd": {
+                "title": "Rcd",
+                "text": "Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
                 "textY": -310,
-                "img":"rcd",
-                "imgX":-55,
+                "img": "rcd",
+                "imgX": -55,
                 "imgY": 135,
-                "color":"#f1d83a",
-                "gridArea":"span 2/ auto"
+                "color": "#f1d83a",
+                "gridArea": "span 2/ auto"
             },
-            {
-                "title":"EJEMPLO2",
-                "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+            "layer-872": {
+                "title": "EJEMPLO2",
+                "text": "Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
                 "textY": -180,
-                "img":"layer-872",
+                "img": "layer-872",
                 "imgX": -5,
                 "imgY": 47,
-                "color":"#5bd6db",
-                "gridArea":"span 1 / auto"
+                "color": "#5bd6db",
+                "gridArea": "span 1 / auto"
             },
-            {
-                "title":"EJEMPLO3",
-                "text":"Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+            "ejemplo3": {
+                "title": "EJEMPLO3",
+                "text": "Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
                 "textY": 30,
-                "img":"planet-rfid",
-                "imgX":-7,
+                "img": "virtual-care",
+                "imgX": -7,
                 "imgY": 20,
-                "color":"#f2546e",
-                "gridArea":"span 2 / auto "
+                "color": "#f2546e",
+                "gridArea": "span 2 / auto "
             },
-            {
-                "title":"EJEMPLO4",
-                "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+            "layer-870-2": {
+                "title": "EJEMPLO4",
+                "text": "Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
                 "textY": -160,
-                "img":"layer-870-2",
+                "img": "layer-870-2",
                 "imgX": -5,
                 "imgY": 69,
-                "color":"#f4ac40",
-                "gridArea":"span 1 / auto"
+                "color": "#f4ac40",
+                "gridArea": "span 1 / auto"
             },
-            {
-                "title":"EJEMPLO5",
-                "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+            "layer-833": {
+                "title": "EJEMPLO5",
+                "text": "Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
                 "textY": -200,
-                "img":"layer-833",
+                "img": "layer-833",
                 "imgX": 125,
                 "imgY": 34,
-                "color":"#f1d83a",
-                "gridArea":"span 1 / auto"
+                "color": "#f1d83a",
+                "gridArea": "span 1 / auto"
             },
-            {
-                "title":"EJEMPLO6",
-                "text":"Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+            "layer-874": {
+                "title": "EJEMPLO6",
+                "text": "Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
                 "textY": -220,
-                "img":"layer-874",
+                "img": "layer-874",
                 "imgX": 150,
                 "imgY": -53,
-                "color":"#5bd6db",
-                "gridArea":"auto /span 2"
+                "color": "#5bd6db",
+                "gridArea": "auto /span 2"
             }
-        ]
+        }
     },
-    "links":{
-        "experiences":{
-            "label":"More...",
-            "link":"/projects"
+    "links": {
+        "experiences": {
+            "label": "More...",
+            "link": "/projects"
         },
-        "header":{
-            "home":{
-                "label":"Home",
-                "link":"/"
+        "header": {
+            "home": {
+                "label": "Home",
+                "link": "/"
             },
-            "how-we-do-it":{
-                "label":"How we do it",
-                "link":"/home/how-we-do-it"
+            "how-we-do-it": {
+                "label": "How we do it",
+                "link": "/home/how-we-do-it"
             },
-            "projects":{
-                "label":"Projects",
-                "link":"/projects"
+            "projects": {
+                "label": "Projects",
+                "link": "/projects"
             },
-            "about-us":{
-                "label":"About us",
-                "link":"/aboutus"
+            "about-us": {
+                "label": "About us",
+                "link": "/aboutus"
             },
-            "blog":{
-                "label":"Blog",
-                "link":"https://blog.cavepot.com/"
+            "blog": {
+                "label": "Blog",
+                "link": "https://blog.cavepot.com/"
             },
-            "our-lab":{
-                "label":"Our lab",
-                "link":"https://www.cavepotlab.com/"
+            "our-lab": {
+                "label": "Our lab",
+                "link": "https://www.cavepotlab.com/"
             },
-            "contact-us":{
-                "label":"Contact us",
-                "link":"/contact"
+            "contact-us": {
+                "label": "Contact us",
+                "link": "/contact"
             }
         },
-        "redes":{
-            "instagram":{
-                "label":"Instagram",
-                "link":"https://www.instagram.com/cavepotuy/"
+        "redes": {
+            "instagram": {
+                "label": "Instagram",
+                "link": "https://www.instagram.com/cavepotuy/"
             },
-            "facebook":{
-                "label":"Facebook",
-                "link":"https://www.facebook.com/Cavepot"
+            "facebook": {
+                "label": "Facebook",
+                "link": "https://www.facebook.com/Cavepot"
             },
-            "twitter":{
-                "label":"Twitter",
-                "link":"https://twitter.com/Cavepot"
+            "twitter": {
+                "label": "Twitter",
+                "link": "https://twitter.com/Cavepot"
             },
-            "linkedin":{
-                "label":"Linkedin",
-                "link":"https://www.linkedin.com/company/cavepot"
+            "linkedin": {
+                "label": "Linkedin",
+                "link": "https://www.linkedin.com/company/cavepot"
             },
-            "github":{
-                "label":"Github",
-                "link":"https://github.com/cavepotcode/"
+            "github": {
+                "label": "Github",
+                "link": "https://github.com/cavepotcode/"
             }
         }
     }
 }
-

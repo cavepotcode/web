@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+#project {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    .half {
+        min-height: 100%;
+        width: 100%;
+        flex: 1 1 auto;
+        &.zanahorario {
+            background-color: $Orange;
+        }
+    }
+}

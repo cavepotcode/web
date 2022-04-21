@@ -4,7 +4,8 @@ import { ProjectCard, ProjectCardProps } from "./ProjectCard";
 
 export function Projects(){
     const [t] = useTranslation("global");
-    const projects = Object.values(t('projects.projects', { returnObjects: true }));
+    const projects = t('projects.projects', { returnObjects: true });
+    const keys = Object.keys(projects);
 
     return(
         <div className="projects">
@@ -14,8 +15,9 @@ export function Projects(){
             </div>
             <div className="project-card-wrapper">
                 {
-                    projects.map((obj : ProjectCardProps,key) => (
-                        <ProjectCard img={obj.img}
+                    keys.map((id : string,key) => {
+                        let obj = projects[id]
+                        return (<ProjectCard img={obj.img}
                                     imgX={obj.imgX}
                                     imgY={obj.imgY}
                                     title={obj.title}
@@ -23,8 +25,8 @@ export function Projects(){
                                     textX={obj.textX}
                                     textY={obj.textY}
                                     color={obj.color}
-                                    gridArea={obj.gridArea}></ProjectCard>
-                    ))
+                                    gridArea={obj.gridArea}></ProjectCard>)
+                    })
                 }
             </div>
         </div>

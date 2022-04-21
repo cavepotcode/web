@@ -1,14 +1,14 @@
 import './App.scss';
 import { Footer } from './components/footer/Footer';
 import { Header } from './components/header/Header';
-import { BrowserRouter as Router, Route, Routes, useLocation,Navigate} from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes, useLocation, Navigate } from "react-router-dom"
 import { HomePage } from './pages/HomePage/HomePage';
 import { ContactPage } from './pages/ContactPage/ContactPage';
 import { NotFoundPage } from './pages/NotFound/NotFound';
 import { AboutUsPage } from './pages/AboutUs/AboutUsPage';
 import { useLayoutEffect } from 'react';
 import { ProjectsPage } from './pages/Projects/ProjectsPage';
-import { NotProjectPage } from './pages/Projects/NoProject/NotProject';
+import { Project } from './pages/Project/Project';
 const ToTop = ({ children }) => {
   const location = useLocation();
   useLayoutEffect(() => {
@@ -47,7 +47,9 @@ function App() {
                   <Route path="nom" element={<NotProjectPage />} />
                   <Route path="ucm" element={<NotProjectPage />} /> */}
                 </Route>
-                <Route path="/projects/dinamize" element={<NotProjectPage />} />
+                <Route path="/project/:id" element={<Project />} >
+                </Route>
+                {/* <Route path="/projects/dinamize" element={<NotProjectPage />} />
                 <Route path="/projects/planet-rfid" element={<NotProjectPage />} />
                 <Route path="/projects/zanahorario" element={<NotProjectPage />} />
                 <Route path="/projects/fillment" element={<NotProjectPage />} />
@@ -55,7 +57,7 @@ function App() {
                 <Route path="/projects/nom" element={<NotProjectPage />} />
                 <Route path="/projects/rcd" element={<NotProjectPage />} />
                 <Route path="/projects/virtual-care" element={<NotProjectPage />} />
-                <Route path="/projects/*" element={<NotProjectPage />} />
+                <Route path="/projects/*" element={<NotProjectPage />} /> */}
                 <Route path="*" element={<NotFoundPage />} />
               </Routes>
             </div>

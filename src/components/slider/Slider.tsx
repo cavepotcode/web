@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function Slider() {
 
-    const [t] = useTranslation("global");
+    // const [t] = useTranslation("global");
 
     const [slideIndex, setSlideIndex] = useState(1)
 

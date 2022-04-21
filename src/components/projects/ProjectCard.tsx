@@ -62,7 +62,7 @@ export function ProjectCard( {img,imgX,imgY,title,text,textX,textY, color, gridA
                 <label>{text}</label>
             </div>
             <div className='card-footer'>
-                <a href={`/projects/${img}`} target="_blank">
+                <a href={`/project/${img}`} target="_blank">
                     <button>
                         +
                     </button>
