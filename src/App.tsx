@@ -23,7 +23,7 @@ function App() {
 
       <div className="grid">
 
-        <Router>
+        
           <ToTop>
             <Header />
             <div id="container">
@@ -66,7 +66,7 @@ function App() {
             <Footer />
 
           </ToTop>
-        </Router>
+        
       </div>
     </div>
   );
