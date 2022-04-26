@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/web/static/css/main.5e886232.chunk.css",
+    "main.js": "/web/static/js/main.cc87a124.chunk.js",
+    "main.js.map": "/web/static/js/main.cc87a124.chunk.js.map",
+    "runtime-main.js": "/web/static/js/runtime-main.b866cb0c.js",
+    "runtime-main.js.map": "/web/static/js/runtime-main.b866cb0c.js.map",
+    "static/js/2.cb69b1d2.chunk.js": "/web/static/js/2.cb69b1d2.chunk.js",
+    "static/js/2.cb69b1d2.chunk.js.map": "/web/static/js/2.cb69b1d2.chunk.js.map",
+    "static/js/3.15bde27e.chunk.js": "/web/static/js/3.15bde27e.chunk.js",
+    "static/js/3.15bde27e.chunk.js.map": "/web/static/js/3.15bde27e.chunk.js.map",
+    "index.html": "/web/index.html",
+    "static/css/main.5e886232.chunk.css.map": "/web/static/css/main.5e886232.chunk.css.map",
+    "static/js/2.cb69b1d2.chunk.js.LICENSE.txt": "/web/static/js/2.cb69b1d2.chunk.js.LICENSE.txt",
+    "static/media/1.png": "/web/static/media/1.c23dbc34.png",
+    "static/media/2.png": "/web/static/media/2.ca4acf06.png",
+    "static/media/3.png": "/web/static/media/3.bc35a737.png",
+    "static/media/4.png": "/web/static/media/4.70c9da7e.png",
+    "static/media/index.scss": "/web/static/media/Montserrat-Regular.3cd78665.ttf",
+    "static/media/WhyDoWeExist.scss": "/web/static/media/aboutUsBanner.a86e188d.png",
+    "static/media/WeAre.scss": "/web/static/media/aboutUsDig.2d4ee94f.png",
+    "static/media/aboutUsPot.png": "/web/static/media/aboutUsPot.09eb76d6.png",
+    "static/media/TechnologiesChanges.scss": "/web/static/media/banner.6107a8d8.png",
+    "static/media/Investigation.scss": "/web/static/media/banner2.3fef1d20.png",
+    "static/media/banner3.png": "/web/static/media/banner3.b17f5748.png",
+    "static/media/explore.png": "/web/static/media/explore.5e4a3c0a.png",
+    "static/media/logoCPBlanco.png": "/web/static/media/logoCPBlanco.d085eb3f.png",
+    "static/media/logoCPNegro.png": "/web/static/media/logoCPNegro.fa3c6996.png",
+    "static/media/logoblancoColor.png": "/web/static/media/logoblancoColor.2eff2d06.png",
+    "static/media/olla.png": "/web/static/media/olla.b5921593.png",
+    "static/media/pythonLinea.png": "/web/static/media/pythonLinea.1c3a6ee8.png",
+    "static/media/reactLinea.png": "/web/static/media/reactLinea.92d51332.png",
+    "static/media/virtual-care.png": "/web/static/media/virtual-care.3ba9d4b4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b866cb0c.js",
+    "static/js/2.cb69b1d2.chunk.js",
+    "static/css/main.5e886232.chunk.css",
+    "static/js/main.cc87a124.chunk.js"
+  ]
+}
