@@ -1,15 +1,59 @@
 @import "../../styles/variables";
+@import "../../styles/mixin";
 
 #project {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
     .half {
+        position: relative;
         min-height: 100%;
         width: 100%;
         flex: 1 1 auto;
-        &.zanahorario {
-            background-color: $Orange;
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+            @include textBasisBold($text);
+            margin-bottom: 10px;
         }
+        p {
+            @include textBasis($text);
+            margin-bottom: 15px;
+        }
+        button {
+            margin-top: 15px;
+        }
+        .square {
+            width: 70%;
+            height: 40%;
+            position: absolute;
+            display: block;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            &:nth-child(odd) {
+                left: 30px;
+            }
+            &:nth-child(even) {
+                left: -30px;
+            }
+        }
+    }
+    .zanahorario,
+    .dinamize,
+    .rcd,
+    .learn-cloud {
+        background-color: $MinionYellow;
+        color: $Black;
+    }
+    .virtual-care, .fillment {
+        background-color: $SeaSerpent;
+        color: $White;
+    }
+    .planet-rfid,.nom {
+        background-color: $CeriseRed;
+        color: $White;
     }
 }

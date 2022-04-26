@@ -47,6 +47,11 @@
     }
     .img-wrapper{
         position: relative;
+        height: 310px;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
     .text-wrapper{
         position: relative;

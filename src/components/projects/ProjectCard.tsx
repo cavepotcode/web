@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Size } from '../header/Header';
 import './ProjectCard.scss';
 import { NavLink } from 'react-router-dom';
+import { url } from 'inspector';
 
 export interface ProjectCardProps{
     img: string;
@@ -12,12 +13,14 @@ export interface ProjectCardProps{
     textX: number;
     textY: number;
     color: string;
+    w: string;
     gridArea: string;
+    link?: string
 }
 
 
 
-export function ProjectCard( {img,imgX,imgY,title,text,textX,textY, color, gridArea} : ProjectCardProps){
+export function ProjectCard( {img,imgX,imgY,title,text,textX,textY, color,w, gridArea, link} : ProjectCardProps){
 
      const [size, setSize] = useState<Size>({width: window.innerWidth,height: window.innerHeight});
 
@@ -49,10 +52,14 @@ export function ProjectCard( {img,imgX,imgY,title,text,textX,textY, color, gridA
             <div className='img-wrapper'
                 style={{
                     left: imgX,
-                    top: imgY}}
+                    top: imgY,
+                    width: `${w}%`,
+                    backgroundImage: `url(${require(`../../assets/img/projects/${img}.png`).default})`
+                    
+                }
+                }
             >
-                <img 
-                    src={require(`../../assets/img/projects/${img}.png`).default} alt={`project ${img} card image`} />
+             
             </div>
             <div className='text-wrapper'
                 style={{
@@ -62,7 +69,7 @@ export function ProjectCard( {img,imgX,imgY,title,text,textX,textY, color, gridA
                 <label>{text}</label>
             </div>
             <div className='card-footer'>
-                <a href={`/project/${img}`} target="_blank">
+                <a href={link? link: `/project/${img}`} target="_blank">
                     <button>
                         +
                     </button>

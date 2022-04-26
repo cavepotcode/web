@@ -232,17 +232,20 @@
     "projects": {
         "title": "Take a look ar some of our latets projects",
         "desc": "We see our clients' needs as a <strong>map</strong>, where they show us what they want. Not only does that allow us to see the bigger picture, but also lets us work hand in hand with them but they also show us the path that they would like to take, this allows us to work hand in hand with them.",
+        "button": "Wanna know more?",
         "projects": {
             "zanahorario": {
                 "title": "Zanahorario",
                 "text": "Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
                 "textX": 0,
-                "textY": 70,
+                "textY": 0,
                 "img": "zanahorario",
-                "imgX": -70,
-                "imgY": 50,
+                "imgX": 0,
+                "imgY": -20,
+                "w": 110,
                 "color": "#f4ac40",
                 "gridArea": "span 2 / auto",
+                "imgs": ["1","2"],
                 "description": [
                     {
                         "title": "What is Zanahorario?",
@@ -255,28 +258,80 @@
 
                 ]
             },
+            "fillment": {
+                "title": "Fillment",
+                "text": "Fillment helps retailers curate and order wholesale merchandise by removing the friction of b2b transactions. The company is on a mission to transform the way retailers shop and pay for products.",
+                "textX": 0,
+                "textY": -310,
+                "img": "fillment",
+                "imgX": 0,
+                "imgY": 0,
+                "w": 50,
+                "color": "#5bd6db",
+                "imgs": ["1","2"],
+                "gridArea": "span 1 / auto ",
+                "description": [
+                    {
+                        "title": "Fillment",
+                        "desc": "Fillment helps retailers curate and order wholesale merchandise by removing the friction of b2b transactions. The company is on a mission to transform the way retailers shop and pay for products. Fillment removes all the pain out of buying for store owners/content publishers and provides brands the tools and data to sell more efficiently within it's fin-tech enabled marketplace."
+                    },
+                    {
+                        "title": "How does it work?",
+                        "desc": "Fillment tracks and analyses how your products are performing in real-time by giving you personalized insights and recommendations. This gives you a better understanding of how your products are viewed and purchased to help make pricing or discount decisions. Dynamic brands and products pages give you the ability to grow, track, and manage how retailers and publishers interact and order your products."
+                    },
+                    {
+                        "title": "Why is it so cool?",
+                        "desc": "Fillment lets your customers create orders with ease, while giving you options to accept payment, give terms, review orders and draft them yourselves. You can review orders before sale. Create personalized orders for your new or existing customers. Receive orders in real-time and negotiate quantity and price discounts for a more personalized ordering experience."
+                    }
+                ]
+            },
             "virtual-care": {
                 "title": "Virtual care",
                 "text": "eClinicas is a web app developed for UCM (a healthcare company by Falck’s Group). It was created to digitize its patients medical records according to certain governmental requirements and regulations. medical records according to certain governmental requirements and regulations.",
                 "textX": 0,
                 "textY": -300,
                 "img": "virtual-care",
-                "imgX": -45,
+                "imgX": 0,
                 "imgY": 218,
+                "w": 110,
+                "imgs": ["1","2","3"],
                 "color": "#5bd6db",
-                "gridArea": "span 2 /auto"
+                "gridArea": "span 2 /auto",
+                "description": [
+                    {
+                        "title": "UCM",
+                        "desc": "VirtualCare is a web app developed for UCM (a healthcare company by Falck’s Group). It was created to digitize its patients medical records according to certain governmental requirements and regulations. On top of this we added a management service to connect every aspect of the company. So nowadays appointments, analysis, new affiliations and much more can all be done through this tool."
+                    },
+                    {
+                        "title": "Why did we create it?",
+                        "desc": "VirtualCare centralizes all the information in one unique system, this enables patients to know their appointments. It allows doctors to know which patient will be the next and also have immediate access to his clinical records. Other employees can sign up new clients to the system and create new clinical history. Also, the web app enables nurses to add all the meds, medical tools and equipments that they used for each appointment. Depending on the profile of the user they are given specific tools."
+                    }
+
+                ]
             },
-            "dinamize": {
-                "title": "Dinamize",
-                "text": "Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+            "nom": {
+                "title": "NOM",
+                "text": "NOM, originally Not Ordinary Media, named after their plan to distribute video advertising with greater precision and transparency than ever before.",
                 "textX": 0,
-                "textY": -220,
-                "img": "dinamize",
-                "imgX": 85,
-                "imgY": 19,
-                "color": "#f4ac40",
-                "gridArea": "span 1/auto"
-            },
+                "textY": -310,
+                "img": "nom",
+                "imgX": 0,
+                "imgY": 0,
+                "w": 50,
+                "color": "#f2546e",
+                "gridArea": "span 1 / auto",
+                "imgs": ["1","2"],
+                "description": [
+                    {
+                        "title": "NOM",
+                        "desc": "NOM, originally Not Ordinary Media, named after their plan to distribute video advertising with greater precision and transparency than ever before. We worked as part of NOM development team, bringing solutions on frontend development, and QA test automation."
+                    },
+                    {
+                        "title": "Why is it so cool?",
+                        "desc": "NOM deliver real-time, accurate, intelligent and easy to understand insights about your campaign. It's hard to find solutions if you don't know what the problems are. With a proprietary platform, NOM collects and stores data to give you instant insights on your campaign."
+                    }
+                ]
+            },            
             "planet-rfid": {
                 "title": "Planet rfid",
                 "text": "Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
@@ -285,74 +340,91 @@
                 "img": "planet-rfid",
                 "imgX": 16,
                 "imgY": 0,
+                "imgs": ["1","2","4"],
                 "color": "#f2546e",
-                "gridArea": "span 2 / auto"
+                "gridArea": "span 2 / auto",
+                "description": [
+                    {
+                        "title": "Planet RFID",
+                        "desc": "We created an application that facilitates organizing and monitoring student traveling groups. This application was created in order to keep track of the students traveling and the activities they attend to. The bracelets are assigned to each student, with the information previously loaded in their profile. They can keep track of all the activities and the attendants."
+                    },
+                    {
+                        "title": "How does it work?",
+                        "desc": "The application keeps a list of students their information and the groups. On the other side, the parents fill in a form with sensitive medical and personal information that is saved in the system, and can only be seen by doctors if need be."
+                    },
+                    {
+                        "title": "Everyone gets a bracelet?",
+                        "desc": "The application keeps a list of students their information and the groups. Moreover, if the student is feeling under the weather or has been involved in any kind of accident, by reading their bracelet the doctor gets immediate access to the student’s medical information."
+                    },
+                    {
+                        "title": "Why is it so cool?",
+                        "desc": "They can have the passengers information with only a bracelet scan! At the end of the day the leaders will know who went to the activities and who skipped them. Gathering all this information they will able to validate the performance of each day, and the trip."
+                    }
+
+                ]
             },
+            "learn-cloud": {
+                "title": "LearnCloud",
+                "text": "The AI Company's App Store offers an extensive collection of “auto-learning” applications for multiple enterprise requirements across several industries",
+                "textX": 0,
+                "textY": -310,
+                "img": "learn-cloud",
+                "imgX": 0,
+                "imgY": 0,
+                "w": 50,
+                "color": "#f1d83a",
+                "imgs": ["1","2"],
+                "gridArea": "span 1/ auto",
+                "description": [
+                    {
+                        "title": "LearnCloud",
+                        "desc": "The AI Company's App Store offers an extensive collection of “auto-learning” applications for multiple enterprise requirements across several industries. We work on differents areas such architecture, UX/UI, AI, Backend and Frontend development. It's an end to end product, development by Cavepot."
+                    },
+                    {
+                        "title": "Why is it so cool?",
+                        "desc": "AI is a marketplace with a variety of AI applications that analyze different events. Autolearn AI enables the user to detect a security vulnerability. This is done by scanning different sources like server logs and emails, detecting malicious behaviors. Moreover you can get an app for scanning documents and getting the info from them. In addition to that if for example, you get company's feedback from your customers you can analyze and classify it in Jira tickets."
+                    }
+                ]
+            },
+            
+           
             "rcd": {
-                "title": "Rcd",
-                "text": "Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+                "title": "RCD",
+                "text": "RCD is a national reference for recycling construction materials in an environmentally friendly cycle.",
                 "textX": 0,
                 "textY": -310,
                 "img": "rcd",
-                "imgX": -55,
-                "imgY": 135,
-                "color": "#f1d83a",
-                "gridArea": "span 2/ auto"
-            },
-            "layer-872": {
-                "title": "EJEMPLO2",
-                "text": "Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
-                "textX": 0,
-                "textY": -180,
-                "img": "layer-872",
-                "imgX": -5,
-                "imgY": 47,
-                "color": "#5bd6db",
-                "gridArea": "span 1 / auto"
-            },
-            "ejemplo3": {
-                "title": "EJEMPLO3",
-                "text": "Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
-                "textX": 0,
-                "textY": 30,
-                "img": "virtual-care",
-                "imgX": -7,
-                "imgY": 20,
-                "color": "#f2546e",
-                "gridArea": "span 2 / auto "
-            },
-            "layer-870-2": {
-                "title": "EJEMPLO4",
-                "text": "Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
-                "textX": 0,
-                "textY": -160,
-                "img": "layer-870-2",
-                "imgX": -5,
-                "imgY": 69,
+                "imgX": 0,
+                "imgY": 0,
+                "w": 50,
                 "color": "#f4ac40",
-                "gridArea": "span 1 / auto"
+                "imgs": ["1","2"],
+                "gridArea": "span 1 / auto",
+                "description": [
+                    {
+                        "title": "RCD",
+                        "desc": "RCD is a national reference for recycling construction materials in an environmentally friendly cycle."
+                    },
+                    {
+                        "desc": "They can achieve this by being an active part in the construction insutry, providing modern services with high added value. With a very high skilled team of professionals, they are constantly innovating in the industry.  We redesigned the RCD website to help the company have better display of their products, services and to showcase their recycling process. In addition to that, they redesign the users flow on the site improving communication with future clients."
+                    },
+                    {
+                        "desc": "Moreover, we created an administrator  to upload/download and manage the products that are showcased on the site. This helps the company have an organized work flow, track the contacts that users made through their site and to create a data base of future leads."
+                    }
+                ]
             },
-            "layer-833": {
-                "title": "EJEMPLO5",
-                "text": "Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
-                "textX": 0,
-                "textY": -200,
-                "img": "layer-833",
-                "imgX": 125,
-                "imgY": 34,
-                "color": "#f1d83a",
-                "gridArea": "span 1 / auto"
-            },
-            "layer-874": {
-                "title": "EJEMPLO6",
-                "text": "Its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
+            "contact": {
+                "title":"THIS COULD BE YOR PROJECT",
+                "text":"Just contact us to start yout new idea!",
                 "textX": 0,
                 "textY": -220,
-                "img": "layer-874",
+                "img":"you",
                 "imgX": 150,
                 "imgY": -53,
-                "color": "#5bd6db",
-                "gridArea": "auto /span 2"
+                "w":50,
+                "color":"#5bd6db",
+                "link": "/contact",
+                "gridArea":"auto /span 2"
             }
         }
     },

@@ -25,7 +25,9 @@ export function Projects(){
                                     textX={obj.textX}
                                     textY={obj.textY}
                                     color={obj.color}
-                                    gridArea={obj.gridArea}></ProjectCard>)
+                                    w = {obj.w}
+                                    gridArea={obj.gridArea}
+                                    link={obj.link}></ProjectCard>)
                     })
                 }
             </div>

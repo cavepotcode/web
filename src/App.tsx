@@ -58,6 +58,7 @@ function App() {
                 <Route path="/projects/rcd" element={<NotProjectPage />} />
                 <Route path="/projects/virtual-care" element={<NotProjectPage />} />
                 <Route path="/projects/*" element={<NotProjectPage />} /> */}
+                <Route path="/404" element={<NotFoundPage />} />
                 <Route path="*" element={<NotFoundPage />} />
               </Routes>
             </div>
