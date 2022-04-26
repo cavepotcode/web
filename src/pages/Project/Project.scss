@@ -26,15 +26,16 @@
             margin-top: 15px;
         }
         .square {
-            width: 70%;
-            height: 40%;
+            width: 90%;
+            height: 50%;
             position: absolute;
             display: block;
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
             &:nth-child(odd) {
-                left: 30px;
+                right: 15px;
+                
             }
             &:nth-child(even) {
                 left: -30px;
@@ -42,17 +43,16 @@
         }
     }
     .zanahorario,
-    .dinamize,
     .rcd,
-    .learn-cloud {
+    .nom {
         background-color: $MinionYellow;
         color: $Black;
     }
-    .virtual-care, .fillment {
+    .learn-cloud, .fillment {
         background-color: $SeaSerpent;
         color: $White;
     }
-    .planet-rfid,.nom {
+    .planet-rfid, .virtual-care {
         background-color: $CeriseRed;
         color: $White;
     }
