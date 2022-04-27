@@ -10,13 +10,17 @@ export function Project() {
     const navigate = useNavigate();
     const [project, setProject] = useState(params.id);
     const [projects, setProjects] = useState(t('projects.projects', { returnObjects: true }));
-    useEffect(()=>{
+    let cant = 1;
+    useEffect(() => {
         if (!projects[project]) {
             console.log('no hay nadie')
             navigate('/404')
+        } else {
+            cant = projects[project]?.imgs?.length;
+            console.log(cant);
         }
     })
-    
+
     return (
         <div id="project">
             <div className="half">
@@ -35,14 +39,16 @@ export function Project() {
                 </a>
             </div>
             <div className={`half ${project}`}>
-            {
-                        projects[project]?.imgs?.map((imgName: any, key) => {
-                            return <div className="square" style={{
-                                backgroundImage: `url(${require(`../../assets/img/projects/${projects[project].img}/${imgName}.png`).default})`,
-                                top: `calc(${key*175}px + 10%)`
-                            }}></div>                                                            
-                        })
-                    }
+                {
+                    
+                    projects[project]?.imgs?.map((imgName: any, key, imgs) => {
+                        
+                        return <div className="square" style={{
+                            backgroundImage: `url(${require(`../../assets/img/projects/${projects[project].img}/${imgName}.png`).default})`,
+                            top: `calc(${key/(imgs.length - 1) * 40 + 10}%)`
+                        }}></div>
+                    })
+                }
             </div>
         </div>
     );
