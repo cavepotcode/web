@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/web/static/css/main.fa2fa730.chunk.css",
-    "main.js": "/web/static/js/main.b5d5c0dc.chunk.js",
-    "main.js.map": "/web/static/js/main.b5d5c0dc.chunk.js.map",
-    "runtime-main.js": "/web/static/js/runtime-main.16061414.js",
-    "runtime-main.js.map": "/web/static/js/runtime-main.16061414.js.map",
-    "static/js/2.aec0ec4d.chunk.js": "/web/static/js/2.aec0ec4d.chunk.js",
-    "static/js/2.aec0ec4d.chunk.js.map": "/web/static/js/2.aec0ec4d.chunk.js.map",
-    "static/js/3.47e512a9.chunk.js": "/web/static/js/3.47e512a9.chunk.js",
-    "static/js/3.47e512a9.chunk.js.map": "/web/static/js/3.47e512a9.chunk.js.map",
+    "main.css": "/web/static/css/main.423d2b04.chunk.css",
+    "main.js": "/web/static/js/main.78aacb48.chunk.js",
+    "main.js.map": "/web/static/js/main.78aacb48.chunk.js.map",
+    "runtime-main.js": "/web/static/js/runtime-main.07f38b21.js",
+    "runtime-main.js.map": "/web/static/js/runtime-main.07f38b21.js.map",
+    "static/js/2.3b817dce.chunk.js": "/web/static/js/2.3b817dce.chunk.js",
+    "static/js/2.3b817dce.chunk.js.map": "/web/static/js/2.3b817dce.chunk.js.map",
+    "static/js/3.cd51d7a6.chunk.js": "/web/static/js/3.cd51d7a6.chunk.js",
+    "static/js/3.cd51d7a6.chunk.js.map": "/web/static/js/3.cd51d7a6.chunk.js.map",
     "index.html": "/web/index.html",
-    "static/css/main.fa2fa730.chunk.css.map": "/web/static/css/main.fa2fa730.chunk.css.map",
-    "static/js/2.aec0ec4d.chunk.js.LICENSE.txt": "/web/static/js/2.aec0ec4d.chunk.js.LICENSE.txt",
+    "static/css/main.423d2b04.chunk.css.map": "/web/static/css/main.423d2b04.chunk.css.map",
+    "static/js/2.3b817dce.chunk.js.LICENSE.txt": "/web/static/js/2.3b817dce.chunk.js.LICENSE.txt",
     "static/media/1.png": "/web/static/media/1.c23dbc34.png",
     "static/media/2.png": "/web/static/media/2.ca4acf06.png",
     "static/media/3.png": "/web/static/media/3.bc35a737.png",
@@ -24,6 +24,7 @@
     "static/media/Investigation.scss": "/web/static/media/banner2.3fef1d20.png",
     "static/media/banner3.png": "/web/static/media/banner3.b17f5748.png",
     "static/media/explore.png": "/web/static/media/explore.5e4a3c0a.png",
+    "static/media/loading.gif": "/web/static/media/loading.4334c9cc.gif",
     "static/media/logoCPBlanco.png": "/web/static/media/logoCPBlanco.d085eb3f.png",
     "static/media/logoCPNegro.png": "/web/static/media/logoCPNegro.fa3c6996.png",
     "static/media/logoblancoColor.png": "/web/static/media/logoblancoColor.2eff2d06.png",
@@ -33,9 +34,9 @@
     "static/media/virtual-care.png": "/web/static/media/virtual-care.3ba9d4b4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.16061414.js",
-    "static/js/2.aec0ec4d.chunk.js",
-    "static/css/main.fa2fa730.chunk.css",
-    "static/js/main.b5d5c0dc.chunk.js"
+    "static/js/runtime-main.07f38b21.js",
+    "static/js/2.3b817dce.chunk.js",
+    "static/css/main.423d2b04.chunk.css",
+    "static/js/main.78aacb48.chunk.js"
   ]
 }
