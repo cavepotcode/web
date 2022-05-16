@@ -6,33 +6,22 @@ import { TechnologiesChanges } from "../../components/technologiesChanges/Techno
 import { TechnologiesThatWeUse } from "../../components/technologiesThatWeUse/TechnologiesThatWeUse";
 import { WhatDoWeDo } from "../../components/whatDoWeDo/WhatDoWeDo";
 import WhatIsCavepot from "../../components/whatIsCavepot/WhatIsCavepot";
-import { Link, scroller } from 'react-scroll';
+import { Link, scroller, animateScroll as scroll } from 'react-scroll';
 
 import './HomePage.scss';
 import { useEffect } from "react";
 export function HomePage() {
     let params = useParams();
-
-    if (params.menu) {
-        scrollToSection(params.menu)
-    }
-
     useEffect(() => {
         if (params.menu) {
             scrollToSection(params.menu)
         }
-        // code to run after render goes here
-    }, []); // <-- empty array means 'run once'
+    }, [params.menu]); 
 
     function scrollToSection(section) {
         section = `#${section}`;
         const element = document.querySelector(section);
-        console.log(element)
-        scroller.scrollTo(300, {
-            duration: 800,
-            delay: 0,
-            smooth: 'easeInOutQuart'
-        });
+        scroll.scrollTo(element.offsetTop);
     }
 
     return (

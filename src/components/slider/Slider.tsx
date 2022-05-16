@@ -34,26 +34,32 @@ export default function Slider() {
 
     return (
         <div className="container-slider">
-            {dataSlider.map((obj, index) => {
-                return (
-                    <div key={obj.id} className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
-                        <label className="text-say">"{obj.text}"</label>
-                        <div className="firm">
-                            <label>{obj.firm}</label>
-                        </div>
-                        <div className="container-dots">
-                            {Array.from({ length: 2 }).map((item, index) => (
-                                <div
-                                    onClick={() => moveDot(index + 1)}
-                                    className={slideIndex === index + 1 ? "dot active" : "dot"}
-                                ></div>
-                            ))}
-                        </div>
-                    </div>
-                )
-            })}
-            <BtnSlider moveSlide={nextSlide} direction={"next"} />
+
             <BtnSlider moveSlide={prevSlide} direction={"prev"} />
+
+            <div  className={"slide"}>
+                {dataSlider.map((obj, index) => {
+                    return (
+                        <div key={obj.id} className={slideIndex === index + 1 ? "text active-anim" : "text"}>
+                            <label className="text-say">"{obj.text}"</label>
+                            <div className="firm">
+                                <label>{obj.firm}</label>
+                            </div>
+                        </div>
+                    )
+                })}
+            </div>
+
+            <div className="container-dots">
+                {dataSlider.map((item, index) => (
+                    <div
+                        onClick={() => moveDot(index + 1)}
+                        className={slideIndex === index + 1 ? "dot active" : "dot"}
+                    ></div>
+                ))}
+            </div>
+            <BtnSlider moveSlide={nextSlide} direction={"next"} />
+
 
 
         </div>

@@ -32,8 +32,6 @@ function App() {
                 <Route path="/home" element={<HomePage />} >
                   <Route path=":menu" element={<HomePage />} />
                 </Route>
-                <Route path="/web" element={<HomePage />} />
-                {/* <Route path="/how-we-do-it" element={<HomePage />} /> */}
                 <Route path="/contact" element={<ContactPage />} >
                   <Route path=":frm" element={<ContactPage />} />
                 </Route>

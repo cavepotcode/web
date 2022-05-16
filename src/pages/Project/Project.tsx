@@ -27,7 +27,7 @@ export function Project() {
                 <div className="text">
                     {
                         projects[project]?.description?.map((paragraph: any, key) => {
-                            return <div className="paragraph">
+                            return <div className="paragraph" key={`projectDesc_${key}`}>
                                 <h2>{paragraph.title}</h2>
                                 <p>{paragraph.desc}</p>
                             </div>
@@ -43,7 +43,7 @@ export function Project() {
                     
                     projects[project]?.imgs?.map((imgName: any, key, imgs) => {
                         
-                        return <div className="square" style={{
+                        return <div className="square" key={`projectImg_${key}`} style={{
                             backgroundImage: `url(${require(`../../assets/img/projects/${projects[project].img}/${imgName}.png`).default})`,
                             top: `calc(${key/(imgs.length - 1) * 40 + 10}%)`
                         }}></div>

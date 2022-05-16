@@ -26,9 +26,12 @@
             width: 25px;
             border-radius: $borderRadiusCircle-25;
             color: $White;
-            background-color: $Red;
+            background-color: $CeriseRed;
             font-size: 15px;
             margin-left: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
         .load-wait{
@@ -40,7 +43,7 @@
         }
 
         .load-error{
-            color: $Red;
+            color: $CeriseRed;
         }
 
         align-items: center;
@@ -52,7 +55,7 @@
     .error-detail{
         margin-top: -7px;
         margin-bottom: 7px;
-        color: $Red;
+        color: $CeriseRed;
     }
 
     

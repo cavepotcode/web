@@ -1,20 +1,17 @@
-import { useTranslation } from 'react-i18next';
 import { Formik, Field } from "formik";
-import { AllImages } from '../../../helpers';
 import './Frm.scss';
 import { MultipleFileUploadField } from '../../dragNDrop/MultipleFileUploadField';
 import { RangeSlider } from '../../rangeSlider/RangeSlider';
 //import { array, object, string } from 'yup';
 
-export const FrmReRe = () => {
-    const [t] = useTranslation("global");
+export const FrmReRe = ({ submitFunction, ...props }) => {
 
     return (
         <div className="Frm">
             <Formik
                 initialValues={{ name: '', email: '', phone: '', budget: '', designer: '', files: [], subject: '', message: '' }}
                 validate={values => {
-                    const errors = { name: '', email: '', phone: '', budget: '', designer: '', files: [], subject: '', message: '' };
+                    const errors: any = {};
 
                     if (!values.name)
                         errors.name = 'Required';
@@ -32,11 +29,10 @@ export const FrmReRe = () => {
 
                     return errors;
                 }}
-                onSubmit={(values, { setSubmitting }) => {
-                    setTimeout(() => {
-                        alert(JSON.stringify(values, null, 2));
-                        setSubmitting(false);
-                    }, 400);
+                onSubmit={(values, { setSubmitting, resetForm }) => {
+                    submitFunction(values);
+                    resetForm();
+                    setSubmitting(false);
                 }}
             >
                 {({
@@ -51,7 +47,7 @@ export const FrmReRe = () => {
                     <form onSubmit={handleSubmit}>
                         <div className='option-wrapper'>
                             <label> Name </label>
-                            <div className={ !(errors.name && touched.name) ? 'wrapper' : 'wrapper error'}>
+                            <div className={!(errors.name && touched.name) ? 'wrapper' : 'wrapper error'}>
                                 <input
                                     name="name"
                                     placeholder="Full name"
@@ -66,10 +62,11 @@ export const FrmReRe = () => {
 
                             <label> e-mail </label>
 
-                            <div className={ !(errors.email && touched.email) ? 'wrapper' : 'wrapper error'}>
+                            <div className={!(errors.email && touched.email) ? 'wrapper' : 'wrapper error'}>
                                 <input
                                     type="email"
                                     name="email"
+                                    value={values.email}
                                     placeholder="forexample@mail.com"
                                     onChange={handleChange}
                                     onBlur={handleBlur}
@@ -80,9 +77,10 @@ export const FrmReRe = () => {
                         <div className='option-wrapper'>
                             <label> Phone </label>
 
-                            <div className={ !(errors.phone && touched.phone) ? 'wrapper' : 'wrapper error'}>
+                            <div className={!(errors.phone && touched.phone) ? 'wrapper' : 'wrapper error'}>
                                 <input
                                     name="phone"
+                                    value={values.phone}
                                     placeholder="### #### ####"
                                     onChange={handleChange}
                                     onBlur={handleBlur}
@@ -94,8 +92,8 @@ export const FrmReRe = () => {
                         <div className='option-wrapper'>
                             <label> Budget </label>
 
-                            <div className={ !(errors.budget && touched.budget) ? 'wrapper' : 'wrapper error'}>
-                                <RangeSlider name="budget" minValue={5000} maxValue={25000} stepValue={10}/>
+                            <div className={!(errors.budget && touched.budget) ? 'wrapper' : 'wrapper error'}>
+                                <RangeSlider name="budget" minValue={5000} maxValue={25000} stepValue={10} />
                                 {errors.budget && touched.budget}
                             </div>
 
@@ -103,7 +101,7 @@ export const FrmReRe = () => {
                         <div className='option-wrapper'>
                             <label> I need a designer </label>
 
-                            <div className={ !(errors.designer && touched.designer) ? 'wrapper' : 'wrapper error'}>
+                            <div className={!(errors.designer && touched.designer) ? 'wrapper' : 'wrapper error'}>
                                 <div className='radiobutton-group' role="group" aria-labelledby="my-radio-group">
                                     <label>
                                         <Field className='radiobutton' type="radio" name="designer" value="1" />
@@ -121,7 +119,7 @@ export const FrmReRe = () => {
                         <div className='option-wrapper'>
                             <label> Reference images </label>
 
-                            <div className={ !(errors.files && touched.files) ? 'wrapper' : 'wrapper error'}>
+                            <div className={!(errors.files && touched.files) ? 'wrapper' : 'wrapper error'}>
                                 <MultipleFileUploadField name='files' />
                                 {errors.files && touched.files}
                             </div>
@@ -130,10 +128,11 @@ export const FrmReRe = () => {
                         <div className='option-wrapper'>
                             <label> Subjet </label>
 
-                            <div className={ !(errors.subject && touched.subject) ? 'wrapper' : 'wrapper error'}>
+                            <div className={!(errors.subject && touched.subject) ? 'wrapper' : 'wrapper error'}>
                                 <input
                                     name="subject"
                                     placeholder="Other"
+                                    value={values.subject}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                 />
@@ -144,9 +143,10 @@ export const FrmReRe = () => {
                         <div className='option-wrapper'>
                             <label> Message </label>
 
-                            <div className={ !(errors.message && touched.message) ? 'wrapper' : 'wrapper error'}>
+                            <div className={!(errors.message && touched.message) ? 'wrapper' : 'wrapper error'}>
                                 <textarea
                                     name="message"
+                                    value={values.message}
                                     onChange={handleChange}
                                     onBlur={handleBlur}
                                 ></textarea>

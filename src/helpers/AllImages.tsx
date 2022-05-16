@@ -45,5 +45,5 @@ export const Redesign = require('../assets/img/redesign.png').default;
 export const ANewApp = require('../assets/img/a-new-appicon.png').default;
 export const GeneralInfo = require('../assets/img/general-info.png').default;
 export const StaffAugmentation = require('../assets/img/staff-augmentation.png').default;
-
+export const Loading = require('../assets/img/loading.gif').default;
 

@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { AllImages } from '../../helpers';
-import { FrmNewLanding } from './frmContact/FrmNewLanding';
 import { FrmNewApp } from './frmContact/FrmNewApp';
 import { FrmReRe } from './frmContact/FrmReRe';
 import { FrmGeneralInfo } from './frmContact/FrmGeneralInfo';
@@ -14,16 +13,17 @@ import { Size } from '../header/Header';
 
 export const Contact = () => {
     // The size of the window
-    const [size, setSize] = useState<Size>({width: window.innerWidth,height: window.innerHeight});
-
+    const [size, setSize] = useState<Size>({ width: window.innerWidth, height: window.innerHeight });
+    const [modal, setModal] = useState(false);
+    const [message, setMessage] = useState(undefined);
     let params = useParams();
-    let param ;
-    if(params.frm)
+    let param;
+    if (params.frm)
         param = params.frm;
     else
         param = 'generalInfo';
 
-    
+
     var options: any = {
         aNewLanding: param === 'aNewLanding' ? true : false,
         aNewApp: param === 'aNewApp' ? true : false,
@@ -51,12 +51,38 @@ export const Contact = () => {
         setSize({
             width: width,
             height: height,
-            });
+        });
     };
+
     useEffect(() => {
         window.onresize = resizeHanlder;
     }, [null])
-    
+
+    const submitFunction = async (values) => {
+        try {
+            showModal();
+            const response: any = await fetch(`http://localhost:8087/contact/send`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(values)
+            })
+            const data = await response.json();
+            setMessage(data.Message);
+            return data;
+        } catch (e) {
+            setMessage('Something went wrong, please try again')
+        }
+
+    }
+
+    const showModal = () => {
+        setModal(true);
+    }
+
+    const closeModal = () => {
+        setModal(false);
+        setMessage(undefined);
+    }
     return (
         <div className="contact">
             <div className="title">
@@ -71,8 +97,8 @@ export const Contact = () => {
                         </div>
                         <div className='contact-option-title'>
                             <label>
-                                {size.width <= 1024  ? t("contact.option4.titlesm") : t("contact.option4.title")  }
-                      
+                                {size.width <= 1024 ? t("contact.option4.titlesm") : t("contact.option4.title")}
+
                             </label>
                         </div>
                     </div>
@@ -83,8 +109,8 @@ export const Contact = () => {
                         </div>
                         <div className='contact-option-title'>
                             <label>
-                                {size.width <= 1024  ? t("contact.option1.titlesm") : t("contact.option1.title")  }
-                      
+                                {size.width <= 1024 ? t("contact.option1.titlesm") : t("contact.option1.title")}
+
                             </label>
                         </div>
                     </div>
@@ -96,8 +122,8 @@ export const Contact = () => {
                         </div>
                         <div className='contact-option-title'>
                             <label>
-                                {size.width <= 1024  ? t("contact.option2.titlesm") : t("contact.option2.title")  }
-                      
+                                {size.width <= 1024 ? t("contact.option2.titlesm") : t("contact.option2.title")}
+
                             </label>
                         </div>
                     </div>
@@ -108,8 +134,8 @@ export const Contact = () => {
                         </div>
                         <div className='contact-option-title'>
                             <label>
-                                {size.width <= 1024  ? t("contact.option3.titlesm") : t("contact.option3.title")  }
-                      
+                                {size.width <= 1024 ? t("contact.option3.titlesm") : t("contact.option3.title")}
+
                             </label>
                         </div>
                     </div>
@@ -120,22 +146,35 @@ export const Contact = () => {
                         </div>
                         <div className='contact-option-title'>
                             <label>
-                                {size.width <= 1024  ? t("contact.option5.titlesm") : t("contact.option5.title")  }
-                      
+                                {size.width <= 1024 ? t("contact.option5.titlesm") : t("contact.option5.title")}
+
                             </label>
                         </div>
                     </div>
                 </div>
 
                 <div className='contact-form'>
-                    {activeClasses.aNewLanding && <FrmNewLanding />}
-                    {activeClasses.aNewApp && <FrmNewApp />}
-                    {activeClasses.redesign && <FrmReRe />}
-                    {activeClasses.generalInfo && <FrmGeneralInfo />}
-                    {activeClasses.staffAugmentation && <FrmStaffAugmentation />}
+                    {activeClasses.aNewLanding && <FrmNewApp submitFunction={submitFunction} />}
+                    {activeClasses.aNewApp && <FrmNewApp submitFunction={submitFunction} />}
+                    {activeClasses.redesign && <FrmReRe submitFunction={submitFunction} />}
+                    {activeClasses.generalInfo && <FrmGeneralInfo submitFunction={submitFunction} />}
+                    {activeClasses.staffAugmentation && <FrmStaffAugmentation submitFunction={submitFunction} />}
                 </div>
             </div>
+            {modal && <div className="modal">
 
+                <div className="dialog">
+                    {message && <div>
+                        <div className="close" onClick={closeModal}>
+                            x
+                        </div>
+                        <p>
+                            {message}
+                        </p></div>}
+                    {!message && <img src={AllImages.Loading} />}
+                </div>
+            </div>}
         </div>
+
     )
 }

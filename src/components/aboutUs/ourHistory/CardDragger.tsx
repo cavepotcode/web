@@ -69,14 +69,11 @@ export function CardDragger() {
                     onInit={centerOnInit}
                 >    
                     {items.map(( obj, key ) => (
-                        <HistoryCard    hitoryPoint={obj.data} 
+                        <HistoryCard  key={`year_${key}`}  hitoryPoint={obj.data} 
                                         itemId={obj.id} />
                     ))}   
 
                 </ScrollMenu>
-                {/* <div className='card-conect-end'></div>
-                <div className='card-conect-end'></div>
-                <div className='card-conect-end'></div> */}
         </div>
     );
 }

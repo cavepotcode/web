@@ -1,23 +1,22 @@
 @import "../../styles/variables";
 @import "../../styles/mixin";
 .container-slider {
-    height: 250px;
+    //height: 250px;
     width: 900px;
     position: relative;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     .slide {
         border: solid  $BorderWidth $BorderBlack;
         display: flex;
         flex-direction: column;
         width: 740px;
         height: 170px;
-        position: absolute;
         align-self: center;
-        opacity: 0;
+        opacity: 1;
         transition: opacity ease-in-out 0.2s;
-        gap: 12px;
         background-color: $White;
         border-radius: $borderRadiusMain;
         padding: $paddingCajasSM;
@@ -33,30 +32,26 @@
         }
         .text-say,.firm{
             
+        }
+        .text {
+            display: none;
+            opacity:  0;
+            &.active-anim {
+                opacity: 1;
+                display: block;
+            }
         } 
+        
     }
     
-    .active-anim {
-        opacity: 1;
-    }
+    
         
     .btn-slide {
         width: 19px;
         height: 29px;
         background-color: transparent;
         border: none;
-        position: absolute;
         cursor: pointer;
-    }
-    .prev {
-        top: 30%;
-        left: 20px;
-        //transform: translateY(-60%);
-    }
-    .next {
-        top: 30%;
-        right: 20px;
-        //transform: translateY(-60%);
     }
 
     .container-dots {
@@ -73,6 +68,9 @@
             border: 3px solid #f1f1f1;
             margin: 0 5px;
             background: #f1f1f1;
+            transition: all ease 0.3s;
+
+        cursor: pointer;
         }
         .dot.active {
             background: rgb(32, 32, 32);
@@ -101,7 +99,7 @@
   @include media-sm {
       
     .container-slider{
-        height: 220%;
+        padding-top: 10px;
         .slide{
             height: auto;
             max-height: 370px;

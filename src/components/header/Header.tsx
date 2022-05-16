@@ -45,8 +45,7 @@ export const Header = () => {
     };
 
     useEffect(() => {
-        window.addEventListener("scroll", (e) => handleNavigation(e));
-        
+        window.addEventListener("scroll", (e) => handleNavigation(e));        
     }, [colapse]);
 
     useEffect(() => {
@@ -72,7 +71,6 @@ export const Header = () => {
                 <div id="p"></div>
                 <div id="o"></div>
                 <div id="t"></div>
-                {/* <img src={AllImages.LogoCPNegro} alt="" /> */}
             </NavLink>
             <div className="menu-btn" onClick={onShowMenu}>
                 <span className={showMenu ? 'menu-btn__burger open' : 'menu-btn__burger'}></span>
@@ -81,8 +79,7 @@ export const Header = () => {
                 <ul className={showMenu ? 'menu-nav open' : 'menu-nav'}>
                     {
                         links.map((obj: any, key) => (
-                            //className="menu-nav__link-contact"
-                            <li className="menu-nav__item">
+                            <li className="menu-nav__item" key={`headerLinks__${key}`}>
                                 {obj.link.includes("http") &&
                                     <a href={obj.link} target='_blank' className='menu-nav__link'>
                                         {obj.label}

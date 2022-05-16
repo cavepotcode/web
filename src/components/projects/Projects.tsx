@@ -27,7 +27,7 @@ export function Projects(){
                                     color={obj.color}
                                     w = {obj.w}
                                     gridArea={obj.gridArea}
-                                    link={obj.link}></ProjectCard>)
+                                    link={obj.link} key={`projectKey_${key}`}></ProjectCard>)
                     })
                 }
             </div>
