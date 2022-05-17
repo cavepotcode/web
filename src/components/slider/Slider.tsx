@@ -41,7 +41,7 @@ export default function Slider() {
                 {dataSlider.map((obj, index) => {
                     return (
                         <div key={obj.id} className={slideIndex === index + 1 ? "text active-anim" : "text"}>
-                            <label className="text-say">"{obj.text}"</label>
+                            <p className="text-say">"{obj.text}"</p>
                             <div className="firm">
                                 <label>{obj.firm}</label>
                             </div>

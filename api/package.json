@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@sendgrid/mail": "^6.5.3",
+    "dotenv": "^16.0.1",
     "kiwi-server": "^1.3.9",
     "nodemailer": "^6.4.2"
   },

@@ -40,7 +40,7 @@
 @include media-xl{
     .projects{
         .project-card-wrapper{
-            grid-template-rows: 277px 277px 277px 277px; 
+            grid-template-rows: 277px 277px 277px; 
             grid-template-columns: 282px 282px 282px 282px; 
         }
     }
@@ -50,7 +50,7 @@
 @include media-lg{
     .projects{
         .project-card-wrapper{
-            grid-template-rows: 277px 277px 277px 277px 277px; 
+            grid-template-rows: 277px 277px 277px 277px; 
             grid-template-columns: 282px 282px 282px; 
         }
     }
@@ -59,7 +59,7 @@
 @include media-md{
     .projects{
         .project-card-wrapper{
-            grid-template-rows: 277px 277px 277px 277px 277px 277px 277px 277px; 
+            grid-template-rows: 277px 277px 277px 277px  ; 
             grid-template-columns: 282px 282px; 
         }
     }
@@ -67,7 +67,7 @@
 @include media-sm{
     .projects{
         .project-card-wrapper{
-            grid-template-rows: 277px 277px 277px 277px 277px 277px 277px 277px 277px 277px 277px 277px 277px 277px 277px; 
+            grid-template-rows: 277px 277px 277px 277px 277px 277px 277px 277px 277px 277px 277px ; 
             grid-template-columns: 282px; 
         }
     }

@@ -35,6 +35,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            
             .title {
                 @include textBasisBold($title);
                 width: 354px;
@@ -66,6 +67,7 @@
     .investigation{
         background-image: url("../../assets/img/banner2.png");    
         background-repeat: no-repeat;
+        background-size: contain;
         .main-text-wrapper{
 
             align-self: center;
@@ -91,13 +93,15 @@
 @include media-sm{
     .investigation{
         margin-top: $spaceBetween;
+        margin-bottom: $spaceBetween;
         .text-wrapper{
             width: 100%;
             .main-text-wrapper{    
-                border-radius: unset;
-                border-left: unset;
-                border-right: unset;
-                width: 100%;
+                margin: $marginCajasMD;
+                width: unset;
+                .title {
+                    width: unset;
+                }
             }
         }
         button{

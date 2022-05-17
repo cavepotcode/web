@@ -1,10 +1,11 @@
+
+require('dotenv').config()
 export const environment = {
   name: "",
   sendgrid: {
-    apiKey:
-      "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",
-    from: "Cavepot Web <contact@cavepot.com>",
-    to: "info@cavepot.com",
-    subject: "Contact from Web"
+    apiKey: process.env.SENDGRID_APIKEY,
+    from: process.env.SENDGRID_FROM,
+    to: process.env.SENDGRID_TO,
+    subject: process.env.SENDGRID_SUBJECT
   }
 };

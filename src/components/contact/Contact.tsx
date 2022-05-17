@@ -17,6 +17,7 @@ export const Contact = () => {
     const [modal, setModal] = useState(false);
     const [message, setMessage] = useState(undefined);
     let params = useParams();
+    console.log(window.location.protocol);
     let param;
     if (params.frm)
         param = params.frm;
@@ -61,7 +62,8 @@ export const Contact = () => {
     const submitFunction = async (values) => {
         try {
             showModal();
-            const response: any = await fetch(`http://localhost:8087/contact/send`, {
+            const host = `${window.location.protocol}://${window.location.host}`; 
+            const response: any = await fetch(`/api/contact/send`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(values)

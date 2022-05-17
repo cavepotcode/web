@@ -243,7 +243,7 @@
                 "imgX": 0,
                 "imgY": -20,
                 "w": 110,
-                "color": "#f4ac40",
+                "color": "#FAD352",
                 "gridArea": "span 2 / auto",
                 "imgs": ["1","2"],
                 "description": [
@@ -267,7 +267,7 @@
                 "imgX": 0,
                 "imgY": 0,
                 "w": 50,
-                "color": "#5bd6db",
+                "color": "#4ac1c6",
                 "imgs": ["1","2"],
                 "gridArea": "span 1 / auto ",
                 "description": [
@@ -295,7 +295,7 @@
                 "imgY": 218,
                 "w": 110,
                 "imgs": ["1","2","3"],
-                "color": "#5bd6db",
+                "color": "#e5405d",
                 "gridArea": "span 2 /auto",
                 "description": [
                     {
@@ -318,7 +318,7 @@
                 "imgX": 0,
                 "imgY": 0,
                 "w": 50,
-                "color": "#f2546e",
+                "color": "#FAD352",
                 "gridArea": "span 1 / auto",
                 "imgs": ["1","2"],
                 "description": [
@@ -341,7 +341,7 @@
                 "imgX": 16,
                 "imgY": 0,
                 "imgs": ["1","2","4"],
-                "color": "#f2546e",
+                "color": "#e5405d",
                 "gridArea": "span 2 / auto",
                 "description": [
                     {
@@ -372,7 +372,7 @@
                 "imgX": 0,
                 "imgY": 0,
                 "w": 50,
-                "color": "#f1d83a",
+                "color": "#4ac1c6",
                 "imgs": ["1","2"],
                 "gridArea": "span 1/ auto",
                 "description": [
@@ -385,9 +385,7 @@
                         "desc": "AI is a marketplace with a variety of AI applications that analyze different events. Autolearn AI enables the user to detect a security vulnerability. This is done by scanning different sources like server logs and emails, detecting malicious behaviors. Moreover you can get an app for scanning documents and getting the info from them. In addition to that if for example, you get company's feedback from your customers you can analyze and classify it in Jira tickets."
                     }
                 ]
-            },
-            
-           
+            },           
             "rcd": {
                 "title": "RCD",
                 "text": "RCD is a national reference for recycling construction materials in an environmentally friendly cycle.",
@@ -397,7 +395,7 @@
                 "imgX": 0,
                 "imgY": 0,
                 "w": 50,
-                "color": "#f4ac40",
+                "color": "#FAD352",
                 "imgs": ["1","2"],
                 "gridArea": "span 1 / auto",
                 "description": [
