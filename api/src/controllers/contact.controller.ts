@@ -13,7 +13,7 @@ export class ContactController {
       const req = body;
       response = await this.service.send(req);
     } catch (err) {
-      console.log(err.Message);
+      console.log(err);
       response = {
         Result: false,
         Message: "Ups! can't send the email. Please try again"

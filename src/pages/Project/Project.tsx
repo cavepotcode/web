@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate, useParams } from "react-router-dom";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import { callbackify } from "util";
 import "./Project.scss"
 
@@ -34,9 +34,9 @@ export function Project() {
                         })
                     }
                 </div>
-                <a href={t("links.header.contact-us.link")}>
+                <NavLink to={t("links.header.contact-us.link")}>
                     <button className={project}>{t('projects.button')}</button>
-                </a>
+                </NavLink>
             </div>
             <div className={`half ${project}`}>
                 {
