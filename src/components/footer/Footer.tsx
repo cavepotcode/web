@@ -28,7 +28,7 @@ export const Footer = () => {
             <div className="img-wrapper">
 
                 <NavLink to="/"><img src={AllImages.LogoFooter} alt={t("footer.alt.img.1")} /></NavLink>
-                <a href="https://www.cavepotlab.com/" target="_blank"><img src={AllImages.CavepotLabLogo} alt={t("footer.alt.img.2")} /></a>
+                {/* <a href="https://www.cavepotlab.com/" target="_blank"><img src={AllImages.CavepotLabLogo} alt={t("footer.alt.img.2")} /></a> */}
 
             </div>
             <div className="text-wrapper">
@@ -60,7 +60,7 @@ export const Footer = () => {
                         {t("links.experiences.label")}
                     </NavLink>
                 </div>
-                <div className="column connect">
+                {/* <div className="column connect">
                     <label className='title'>{t("footer.column.3.title")}</label>
                     {linksRedes.map((obj: any, key) => {
                        return <a href={obj.link} target="_blank" key={`social_${key}`}>
@@ -68,7 +68,7 @@ export const Footer = () => {
                         </a>
                     })} 
 
-                </div>
+                </div> */}
                 <div className="column locate">
                     <div className='main-text'>
                         <label className='title' >{t("footer.column.4.title")}</label>
@@ -87,8 +87,9 @@ export const Footer = () => {
                         <div className="clutch-widget" data-nofollow="true" data-url="https://widget.clutch.co" data-widget-type="1" data-darkbg="true" data-height="40" data-clutchcompany-id="592393"></div>
                     </div>
                 </div>
+                
             </div>
-
+            <p className='date-footer'>© {(new Date()).getFullYear()} Cavepot. All rights reserved</p>
         </div>
     )
 }

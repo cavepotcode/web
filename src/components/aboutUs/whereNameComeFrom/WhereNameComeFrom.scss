@@ -6,7 +6,7 @@
     display: flex;
     gap: 16px;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 417px;
     .text-wrapper {
         width: 50%;
@@ -30,7 +30,8 @@
         }
     }
     .img-wrapper {
-        width: 482px;
+        max-width: 30rem;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -40,7 +41,7 @@
             position: absolute;
         }
         .pot {
-            height: 100%;
+            width:  100%;
             left: 0;
             bottom: 0;
         }

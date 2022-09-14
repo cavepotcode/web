@@ -22,8 +22,12 @@
         }
         .logo {
             opacity: 0;
+            height: 65px;
             &.animation {
                 animation: showLogo 0.5s linear forwards;
+            }
+            &.bigger {
+                height: 95px;
             }
         }
     }
@@ -34,8 +38,8 @@
 
         #blue-line {
             grid-row: 3;
-            height: 8px;
-            background-color: $SeaSerpent;
+            height: 2px;
+            //background-color: $SeaSerpent;
             opacity: 0.6;
             border-top-left-radius: 10px 10px;
             border-bottom-left-radius: 10px 10px;

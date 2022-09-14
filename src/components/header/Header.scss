@@ -5,7 +5,7 @@
 $logoHeight: 35px;
 
 .header {
-    border-bottom: solid $BorderWidth transparent;
+    //border-bottom: solid $BorderWidth transparent;
     transition: border-bottom ease 0.3s;
     &.open {
         opacity: 1;
@@ -14,11 +14,12 @@ $logoHeight: 35px;
     align-items: center;
     height: $spaceBetween;
     position: fixed;
-    background-color: white;
+    background-color: transparent;
     opacity: 0.9;
     z-index: 1000;
     justify-content: space-between;
     width: 100%;
+    transition: background-color ease 0.3s;
     .img-wrapper {
         z-index: 1;
         cursor: pointer;
@@ -89,8 +90,10 @@ $logoHeight: 35px;
     }
 
     &.colapse {
-        border-bottom: solid $BorderWidth $BorderBlack;
-        transition: border-bottom ease 0.3s;
+        //border-bottom: solid $BorderWidth $BorderBlack;
+        transition: background-color ease 0.3s;
+        background-color: rgba($DarkLavender,.9);
+        color: white;
         #c,
         #a,
         #v,
@@ -113,6 +116,19 @@ $logoHeight: 35px;
         #o {
             transform: rotate(-360deg);
             transition: all ease 1s;
+            filter: invert(1);
+        }
+
+        .nav{
+            .menu-nav{
+                &__link {
+                    color:white;
+                    font-weight: 500;
+                    &.active{
+                        color: white;
+                    }
+                }
+            }
         }
     }
 
@@ -206,10 +222,6 @@ $logoHeight: 35px;
             &__item {
                 display: inline;
                 padding-right: 1.5rem;
-            }
-
-            &__link {
-                font-size: 1.5rem;
             }
 
             &__item {

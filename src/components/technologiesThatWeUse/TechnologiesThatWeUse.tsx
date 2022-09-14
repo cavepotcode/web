@@ -29,10 +29,10 @@ export const TechnologiesThatWeUse = () => {
         <div className="technologies-that-we-use">
             <label className="title">{t("technologies-that-we-use.title")}</label>
             <div className="img-wrapper">
-                <img className='logo' src={AllImages.PhytonLogoLinea} alt="phyton-logo" />
+                <img className='logo bigger' src={AllImages.PhytonLogoLinea} alt="phyton-logo" />
                 <img className='logo' src={AllImages.AngularLogoLinea} alt="angular-logo" />
                 <img className='logo' src={AllImages.MicrosoftNetLogoLinea} alt="microsoft-net-logo" />
-                <img className='logo' src={AllImages.ReactLogoLinea} alt="react-logo" />
+                <img className='logo bigger' src={AllImages.ReactLogoLinea} alt="react-logo" />
                 <img className='logo' src={AllImages.NodeLogoLinea} alt="node-logo" />
                 <img className='logo' src={AllImages.NetCoreLogoLinea} alt="net-core-logo" />
             </div>

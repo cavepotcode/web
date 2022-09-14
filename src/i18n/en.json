@@ -24,10 +24,10 @@
         "alt.img": "Not found image page "
     },
     "what-is-cavepot": {
-        "title": "What is CavePot",
-        "text1": "We are <strong>curious</strong> about the world, that’s why we also call ourselves  <strong> developers of ideas. </strong><br/> We work hand by hand with our clients, with an open minded attitude towards creativity and innovation, <strong>this is the compass that guides us.</strong> ",
-        "text2": "We help you <strong>design, validate and build</strong> the products that you always wanted to create, giving you a fast ROI<br/><strong>Transform</strong> your dreams and needs into <strong>reality.</strong>",
-        "text3": "We provide the <strong>best combination</strong> of passion and skills <strong>for your needs.</strong><br/>What's the <strong>idea</strong> you want to bring to life? Tell us what you need, we’ll <strong>turn it into gold!.</strong>",
+        "title": "We are Cavepot",
+        "text1": "We are <strong>curious</strong> about the world, that’s why we also call ourselves  <strong> developers of ideas. </strong><br/> ",
+        "text2": "We work hand by hand with our clients, with an open minded attitude towards creativity and innovation, <strong>this is the compass that guides us.</strong>",
+        "text3": "We provide the <strong>best combination</strong> of passion and skills <strong>for your needs.</strong>",
         "message": "START YOUR PROJECT NOW!"
     },
     "what-do-we-do": {
@@ -66,7 +66,7 @@
     },
     "technologies-that-we-use": {
         "title": "Technologies that we use",
-        "text": "Over 50 startups trusted us to build their ideas. <strong>Want to be the next one?</strong>"
+        "text": "Imagine this technologies on your project. <strong>Do you want to try them?</strong>"
     },
     "clients-says": {
         "title": "This is what our clients say"
@@ -74,7 +74,7 @@
     "investigation": {
         "title": "Investigation & Training",
         "text.1": "Passionate about what we do and willing to learn, we created CavepotLab.",
-        "text.2": "We are keen on helping our team members constantly so they can grow technically and professionally. O: so they can grow both technical and professionally",
+        "text.2": "We are keen on helping our team members constantly so they can grow technically and professionally.",
         "button": "Visit the CavePot lab",
         "alt": {
             "img.1": "Investigation banner image"
@@ -90,9 +90,8 @@
             "text.5": "What our clints say"
         },
         "column.2": {
-            "title": "Experiences",
+            "title": "Projects",
             "text.1": "Planet01",
-            "text.2": "Zanahorario",
             "text.3": "Fillment",
             "text.4": "LearnCloud",
             "text.5": "NOM",
@@ -162,7 +161,7 @@
         "text.part.2": "Not only our name comes from our two founders' nicknames but also from the idea that, in order to get results, we gotta dig deeper to find the material that works best for you. We consider ourselves a melting pot of knowledge and skills. Every project we work on is like a cave. What amazing things lie underground?"
     },
     "we-wanna": {
-        "text": "We wanna dig deeper, explore the cave, see what lies underground and bring it to life. Come dig with us! ",
+        "text": "We want to dig deeper, explore the cave, see what lies underground and bring it to life. Come dig with us! ",
         "button": "Learn More"
     },
     "we-tags": [
@@ -182,13 +181,13 @@
     "data-history": [
         {
             "id": 2007,
-            "text": "Two students meet at college and   discover a common passion: software development.<br/><br/>They are both curious about the world and its challenges, so they easily became friends.",
+            "text": "Two students meet at college and discover a common passion: software development.<br/><br/>They are both curious about the world and its challenges, so they easily became friends.",
             "subTitle": "",
             "text2": ""
         },
         {
             "id": 2013,
-            "text": "After a few years of working togather they decided to dedicate full time to their dream.<br/><br/>This is when CavePot was born.  ",
+            "text": "After a few years of working together they decided to dedicate full time to their dream.<br/><br/>This is when CavePot was born.  ",
             "subTitle": "",
             "text2": ""
         },
@@ -230,34 +229,10 @@
         }
     ],
     "projects": {
-        "title": "Take a look ar some of our latets projects",
-        "desc": "We see our clients' needs as a <strong>map</strong>, where they show us what they want. Not only does that allow us to see the bigger picture, but also lets us work hand in hand with them but they also show us the path that they would like to take, this allows us to work hand in hand with them.",
-        "button": "Wanna know more?",
+        "title": "Take a look at some of our latest projects",
+        "desc": "We see our clients' needs as a <strong>map that guides us</strong>,  this allows us to work hand in hand with them and see the bigger picture!",
+        "button": "Contact us",
         "projects": {
-            "zanahorario": {
-                "title": "Zanahorario",
-                "text": "Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
-                "textX": 0,
-                "textY": 0,
-                "img": "zanahorario",
-                "imgX": 0,
-                "imgY": -20,
-                "w": 110,
-                "color": "#FAD352",
-                "gridArea": "span 2 / auto",
-                "imgs": ["1","2"],
-                "description": [
-                    {
-                        "title": "What is Zanahorario?",
-                        "desc": "Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in."
-                    },
-                    {
-                        "title": "Why did we create it?",
-                        "desc": "We are a very diverse company always working on several projects at the same time. This made it very difficult to keep track on the hours worker on and what we use them for. Therefore we needed a tool in which we could write down the hours we invested on different tasks and so on."
-                    }
-
-                ]
-            },
             "fillment": {
                 "title": "Fillment",
                 "text": "Fillment helps retailers curate and order wholesale merchandise by removing the friction of b2b transactions. The company is on a mission to transform the way retailers shop and pay for products.",
@@ -286,8 +261,8 @@
                 ]
             },
             "virtual-care": {
-                "title": "Virtual care",
-                "text": "eClinicas is a web app developed for UCM (a healthcare company by Falck’s Group). It was created to digitize its patients medical records according to certain governmental requirements and regulations. medical records according to certain governmental requirements and regulations.",
+                "title": "Falck's Group",
+                "text": "Virtual Care is a web app developed for Falck's Group. It was created to digitize its patients medical records according to certain governmental requirements and regulations. medical records according to certain governmental requirements and regulations.",
                 "textX": 0,
                 "textY": -300,
                 "img": "virtual-care",
@@ -299,8 +274,8 @@
                 "gridArea": "span 2 /auto",
                 "description": [
                     {
-                        "title": "UCM",
-                        "desc": "VirtualCare is a web app developed for UCM (a healthcare company by Falck’s Group). It was created to digitize its patients medical records according to certain governmental requirements and regulations. On top of this we added a management service to connect every aspect of the company. So nowadays appointments, analysis, new affiliations and much more can all be done through this tool."
+                        "title": "Flack's Group",
+                        "desc": "VirtualCare is a web app developed for Flack's Group. It was created to digitize its patients medical records according to certain governmental requirements and regulations. On top of this we added a management service to connect every aspect of the company. So nowadays appointments, analysis, new affiliations and much more can all be done through this tool."
                     },
                     {
                         "title": "Why did we create it?",

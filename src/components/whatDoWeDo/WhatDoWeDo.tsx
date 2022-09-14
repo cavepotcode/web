@@ -53,11 +53,11 @@ export const WhatDoWeDo = () => {
                     </div>
                     <label><Trans>{t("what-do-we-do.card2.title")}</Trans></label>
                     <p><Trans>{t("what-do-we-do.card2.text")}</Trans></p>
-                    <NavLink to="/contact/aNewLanding">
+                    {/* <NavLink to="/contact/aNewLanding">
                         <button>
                             {t("what-do-we-do.card2.button")}
                         </button>
-                    </NavLink>
+                    </NavLink> */}
                 </div>
 
                 <div className='card'>
@@ -66,11 +66,11 @@ export const WhatDoWeDo = () => {
                     </div>
                     <label><Trans>{t("what-do-we-do.card3.title")}</Trans></label>
                     <p><Trans>{t("what-do-we-do.card3.text")}</Trans></p>
-                    <NavLink to="/contact/redesign">
+                    {/* <NavLink to="/contact/redesign">
                         <button>
                             {t("what-do-we-do.card3.button")}
                         </button>
-                    </NavLink>
+                    </NavLink> */}
                 </div>
 
 
@@ -80,11 +80,11 @@ export const WhatDoWeDo = () => {
                     </div>
                     <label><Trans>{t("what-do-we-do.card4.title")}</Trans></label>
                     <p><Trans>{t("what-do-we-do.card4.text")}</Trans></p>
-                    <NavLink to="/contact/staffAugmentation">
+                    {/* <NavLink to="/contact/staffAugmentation">
                         <button>
                             {t("what-do-we-do.card4.button")}
                         </button>
-                    </NavLink>
+                    </NavLink> */}
                 </div>
 
             </div>

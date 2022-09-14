@@ -5,8 +5,8 @@
     display: flex;
     gap: 16px;
     width: 100%;
-    justify-content: space-evenly;
-    height: 628px;
+    justify-content: center;
+    min-height: 628px;
 
     .textwrapper {
         max-width: 45rem;
@@ -32,8 +32,8 @@
         transition-delay: 15s;
     }
     .img-technologies {
-        max-width: 45rem;
-        min-width: 35rem;
+        max-width: 35rem;
+        //min-width: 35rem;
         display: flex;
         justify-content: center;
         align-items: center;

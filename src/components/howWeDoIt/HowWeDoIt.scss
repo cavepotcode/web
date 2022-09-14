@@ -20,14 +20,14 @@
         flex-direction: row;
         .img-how-we-do-it {
             bottom: -5px;
-            max-width: 45rem;
+            max-width: 30rem;
             display: flex;
             justify-content: center;
             align-items: center;
             img{
                 animation: showLeft 0.8s linear forwards;
                 justify-content: flex-end;
-                height: 100%;
+                width: 100%;
             }   
             &.animation {
                 animation: leftToRight 1s linear forwards;

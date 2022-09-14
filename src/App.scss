@@ -8,7 +8,7 @@
 .app {
   height: 100%;
   background-color: $White;
-  
+  background: linear-gradient(180deg, rgba($DarkLavender,.3) 0, rgba(255,255,255,1) 15% 100%);
   .grid {
     //padding-top: 93px;
     display: flex;

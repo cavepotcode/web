@@ -21,7 +21,7 @@ export const FrmStaffAugmentation = ({ submitFunction, ...props }) => {
                     !values.name && (errors.name = 'Required');
                     !values.email && (errors.email = 'Required');
                     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email) && (errors.email = 'Invalid email address');
-                    !values.subject && (errors.subject = 'Required');
+                    // !values.subject && (errors.subject = 'Required');
                     !values.message && (errors.message = 'Required');
 
                     return errors;
@@ -71,7 +71,7 @@ export const FrmStaffAugmentation = ({ submitFunction, ...props }) => {
                                 {errors.email && touched.email && <div className='error'> {errors.email} </div>}
                             </div>
                         </div>
-                        <div className='option-wrapper'>
+                        {/* <div className='option-wrapper'>
                             <label> Phone </label>
 
                             <div className={!(errors.phone && touched.phone) ? 'wrapper' : 'wrapper error'}>
@@ -85,8 +85,8 @@ export const FrmStaffAugmentation = ({ submitFunction, ...props }) => {
                                 {errors.phone && touched.phone}
                             </div>
 
-                        </div>
-                        <div className='option-wrapper'>
+                        </div> */}
+                         <div className='option-wrapper'>
                             <label> What tech? </label>
 
                             <div className={!(errors.techs && touched.techs) ? 'wrapper' : 'wrapper error'}>
@@ -94,8 +94,8 @@ export const FrmStaffAugmentation = ({ submitFunction, ...props }) => {
                                 {errors.techs && touched.techs}
                             </div>
 
-                        </div>
-                        <div className='option-wrapper'>
+                        </div> 
+                        {/* <div className='option-wrapper'>
                             <label> How many talents </label>
 
                             <div className={!(errors.talents && touched.talents) ? 'wrapper' : 'wrapper error'}>
@@ -123,9 +123,9 @@ export const FrmStaffAugmentation = ({ submitFunction, ...props }) => {
                                 {errors.month && touched.month && <div className='error'> {errors.month} </div>}
                             </div>
 
-                        </div>
-                        <div className='option-wrapper'>
-                            <label> Subjet </label>
+                        </div> */}
+                        {/* <div className='option-wrapper'>
+                            <label> Subject </label>
 
                             <div className={!(errors.subject && touched.subject) ? 'wrapper' : 'wrapper error'}>
                                 <input
@@ -138,7 +138,7 @@ export const FrmStaffAugmentation = ({ submitFunction, ...props }) => {
                                 {errors.subject && touched.subject && <div className='error'> {errors.subject} </div>}
                             </div>
 
-                        </div>
+                        </div> */}
                         <div className='option-wrapper'>
                             <label> Message </label>
 

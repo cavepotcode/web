@@ -18,8 +18,8 @@ export const FrmGeneralInfo = ({submitFunction,...props}) => {
                     else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email))
                         errors.email = 'Invalid email address';
 
-                    if (!values.subject)
-                        errors.subject = 'Required';
+                    // if (!values.subject)
+                    //     errors.subject = 'Required';
 
                     if (!values.message)
                         errors.message = 'Required';
@@ -72,7 +72,7 @@ export const FrmGeneralInfo = ({submitFunction,...props}) => {
                                 {errors.email && touched.email && <div className='error'> {errors.email} </div>}
                             </div>
                         </div>
-                        <div className='option-wrapper'>
+                        {/* <div className='option-wrapper'>
                             <label> Phone </label>
 
                             <div className={!(errors.phone && touched.phone) ? 'wrapper' : 'wrapper error'}>
@@ -86,9 +86,9 @@ export const FrmGeneralInfo = ({submitFunction,...props}) => {
                                 {errors.phone && touched.phone}
                             </div>
 
-                        </div>
-                        <div className='option-wrapper'>
-                            <label> Subjet </label>
+                        </div> */}
+                        {/* <div className='option-wrapper'>
+                            <label> Subject </label>
 
                             <div className={!(errors.subject && touched.subject) ? 'wrapper' : 'wrapper error'}>
                                 <input
@@ -101,7 +101,7 @@ export const FrmGeneralInfo = ({submitFunction,...props}) => {
                                 {errors.subject && touched.subject && <div className='error'> {errors.subject} </div>}
                             </div>
 
-                        </div>
+                        </div> */}
                         <div className='option-wrapper'>
                             <label> Message </label>
 

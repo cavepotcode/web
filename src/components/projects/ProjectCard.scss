@@ -6,6 +6,10 @@
     border-radius: $borderRadiusMain;
     position: relative;
     padding: 25px 10px;
+    text-decoration: none;
+    *{
+        cursor: pointer;
+    }
    a{
     text-decoration: none;
    }

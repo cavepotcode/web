@@ -21,8 +21,8 @@ export const FrmReRe = ({ submitFunction, ...props }) => {
                     else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email))
                         errors.email = 'Invalid email address';
 
-                    if (!values.subject)
-                        errors.subject = 'Required';
+                    // if (!values.subject)
+                    //     errors.subject = 'Required';
 
                     if (!values.message)
                         errors.message = 'Required';
@@ -74,7 +74,7 @@ export const FrmReRe = ({ submitFunction, ...props }) => {
                                 {errors.email && touched.email && <div className='error'> {errors.email} </div>}
                             </div>
                         </div>
-                        <div className='option-wrapper'>
+                        {/* <div className='option-wrapper'>
                             <label> Phone </label>
 
                             <div className={!(errors.phone && touched.phone) ? 'wrapper' : 'wrapper error'}>
@@ -88,7 +88,7 @@ export const FrmReRe = ({ submitFunction, ...props }) => {
                                 {errors.phone && touched.phone}
                             </div>
 
-                        </div>
+                        </div> */}
                         <div className='option-wrapper'>
                             <label> Budget </label>
 
@@ -98,7 +98,7 @@ export const FrmReRe = ({ submitFunction, ...props }) => {
                             </div>
 
                         </div>
-                        <div className='option-wrapper'>
+                        {/* <div className='option-wrapper'>
                             <label> I need a designer </label>
 
                             <div className={!(errors.designer && touched.designer) ? 'wrapper' : 'wrapper error'}>
@@ -115,7 +115,7 @@ export const FrmReRe = ({ submitFunction, ...props }) => {
                                 {errors.designer && touched.designer}
                             </div>
 
-                        </div>
+                        </div> */}
                         <div className='option-wrapper'>
                             <label> Reference images </label>
 
@@ -125,8 +125,8 @@ export const FrmReRe = ({ submitFunction, ...props }) => {
                             </div>
 
                         </div>
-                        <div className='option-wrapper'>
-                            <label> Subjet </label>
+                        {/* <div className='option-wrapper'>
+                            <label> Subject </label>
 
                             <div className={!(errors.subject && touched.subject) ? 'wrapper' : 'wrapper error'}>
                                 <input
@@ -139,7 +139,7 @@ export const FrmReRe = ({ submitFunction, ...props }) => {
                                 {errors.subject && touched.subject && <div className='error'> {errors.subject} </div>}
                             </div>
 
-                        </div>
+                        </div> */}
                         <div className='option-wrapper'>
                             <label> Message </label>
 

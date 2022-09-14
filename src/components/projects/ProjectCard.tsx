@@ -41,42 +41,42 @@ export function ProjectCard({ img, imgX, imgY, title, text, textX, textY, color,
 
 
     return (
-        <div className="project-card"
-            style={{
-                gridArea: size.width <= 480 && gridArea === 'auto /span 2' ? "auto /span 1" : gridArea,
-                backgroundColor: color
-            }}
-        >
-            <div className='title'>
-                <label>{title}</label>
-            </div>
-            <div className='img-wrapper'
+        <NavLink to={link ? link : `/project/${img}`} target="_blank" className="project-card"
                 style={{
-                    left: imgX,
-                    top: imgY,
-                    width: `${w}%`,
-                    backgroundImage: `url(${require(`../../assets/img/projects/${img}.png`).default})`
-
-                }
-                }
-            >
-
-            </div>
-            <div className='text-wrapper'
-                style={{
-                    left: textX,
-                    top: textY
+                    gridArea: size.width <= 480 && gridArea === 'auto /span 2' ? "auto /span 1" : gridArea,
+                    backgroundColor: color
                 }}
             >
-                <label>{text}</label>
-            </div>
-            <div className='card-footer'>
-                <NavLink to={link ? link : `/project/${img}`} target="_blank">
+                <div className='title'>
+                    <label>{title}</label>
+                </div>
+                <div className='img-wrapper'
+                    style={{
+                        left: imgX,
+                        top: imgY,
+                        width: `${w}%`,
+                        backgroundImage: `url(${require(`../../assets/img/projects/${img}.png`).default})`
+
+                    }
+                    }
+                >
+
+                </div>
+                <div className='text-wrapper'
+                    style={{
+                        left: textX,
+                        top: textY
+                    }}
+                >
+                    <label>{text}</label>
+                </div>
+                {/* <div className='card-footer'>
+                
                     <button>
                         +
                     </button>
                 </NavLink>
-            </div>
-        </div>
+            </div> */}
+        </NavLink>
     );
 }

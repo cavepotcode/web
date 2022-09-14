@@ -105,7 +105,7 @@ export const Contact = () => {
                         </div>
                     </div>
 
-                    <div className={activeClasses.aNewLanding ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("aNewLanding")}>
+                    {/* <div className={activeClasses.aNewLanding ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("aNewLanding")}>
                         <div className='contact-option-img'>
                             <img src={AllImages.ANewLanding} alt={t("contact.option1.alt.img")} />
                         </div>
@@ -115,7 +115,7 @@ export const Contact = () => {
 
                             </label>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className={activeClasses.aNewApp ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("aNewApp")}>
                         <div className='contact-option-img'>
