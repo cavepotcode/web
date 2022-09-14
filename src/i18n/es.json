@@ -39,7 +39,7 @@
             "button": "Tell us more"
         },
         "card2": {
-            "title": "Custom product.",
+            "title": "End to End product.",
             "text": "Stable multidisciplinary teams hands on with the client.<br/>We apply agile methodologies.<br/>Full developing teams, PO, Designers, devops and more.",
             "button": "Tell us more"
         },
@@ -49,8 +49,8 @@
             "button": "Tell us more"
         },
         "card4": {
-            "title": "Staff Augmentation.",
-            "text": "It refers to the use of outside personnel on a temporary basis to augment the capacity of your organization.<br/>It works as an outsourcing strategy",
+            "title": "Grow up your team.",
+            "text": "You need to boost your in-house development capacity.<br/>It's time to scale your team to accomplish all the tasks in your backlog.",
             "button": "Tell us more"
         }
     },
@@ -233,6 +233,30 @@
         "desc": "We see our clients' needs as a <strong>map that guides us</strong>,  this allows us to work hand in hand with them and see the bigger picture!",
         "button": "Contact us",
         "projects": {
+            "virtual-care": {
+                "title": "Falck Group",
+                "text": "Virtual Care is a web app developed for Falck Group. It was created to digitize its patients medical records according to certain governmental requirements and regulations. medical records according to certain governmental requirements and regulations.",
+                "textX": 0,
+                "textY": -300,
+                "img": "virtual-care",
+                "imgX": 0,
+                "imgY": 218,
+                "w": 110,
+                "imgs": ["1","2","3"],
+                "color": "#e5405d",
+                "gridArea": "span 2 /auto",
+                "description": [
+                    {
+                        "title": "Falck Group",
+                        "desc": "VirtualCare is a web app developed for Falck Group. It was created to digitize its patients medical records according to certain governmental requirements and regulations. On top of this we added a management service to connect every aspect of the company. So nowadays appointments, analysis, new affiliations and much more can all be done through this tool."
+                    },
+                    {
+                        "title": "Why did we create it?",
+                        "desc": "VirtualCare centralizes all the information in one unique system, this enables patients to know their appointments. It allows doctors to know which patient will be the next and also have immediate access to his clinical records. Other employees can sign up new clients to the system and create new clinical history. Also, the web app enables nurses to add all the meds, medical tools and equipments that they used for each appointment. Depending on the profile of the user they are given specific tools."
+                    }
+
+                ]
+            },
             "fillment": {
                 "title": "Fillment",
                 "text": "Fillment helps retailers curate and order wholesale merchandise by removing the friction of b2b transactions. The company is on a mission to transform the way retailers shop and pay for products.",
@@ -260,53 +284,6 @@
                     }
                 ]
             },
-            "virtual-care": {
-                "title": "Falck Group",
-                "text": "Virtual Care is a web app developed for Falck Group. It was created to digitize its patients medical records according to certain governmental requirements and regulations. medical records according to certain governmental requirements and regulations.",
-                "textX": 0,
-                "textY": -300,
-                "img": "virtual-care",
-                "imgX": 0,
-                "imgY": 218,
-                "w": 110,
-                "imgs": ["1","2","3"],
-                "color": "#e5405d",
-                "gridArea": "span 2 /auto",
-                "description": [
-                    {
-                        "title": "Falck Group",
-                        "desc": "VirtualCare is a web app developed for Falck Group. It was created to digitize its patients medical records according to certain governmental requirements and regulations. On top of this we added a management service to connect every aspect of the company. So nowadays appointments, analysis, new affiliations and much more can all be done through this tool."
-                    },
-                    {
-                        "title": "Why did we create it?",
-                        "desc": "VirtualCare centralizes all the information in one unique system, this enables patients to know their appointments. It allows doctors to know which patient will be the next and also have immediate access to his clinical records. Other employees can sign up new clients to the system and create new clinical history. Also, the web app enables nurses to add all the meds, medical tools and equipments that they used for each appointment. Depending on the profile of the user they are given specific tools."
-                    }
-
-                ]
-            },
-            "nom": {
-                "title": "NOM",
-                "text": "NOM, originally Not Ordinary Media, named after their plan to distribute video advertising with greater precision and transparency than ever before.",
-                "textX": 0,
-                "textY": -310,
-                "img": "nom",
-                "imgX": 0,
-                "imgY": 0,
-                "w": 50,
-                "color": "#FAD352",
-                "gridArea": "span 1 / auto",
-                "imgs": ["1","2"],
-                "description": [
-                    {
-                        "title": "NOM",
-                        "desc": "NOM, originally Not Ordinary Media, named after their plan to distribute video advertising with greater precision and transparency than ever before. We worked as part of NOM development team, bringing solutions on frontend development, and QA test automation."
-                    },
-                    {
-                        "title": "Why is it so cool?",
-                        "desc": "NOM deliver real-time, accurate, intelligent and easy to understand insights about your campaign. It's hard to find solutions if you don't know what the problems are. With a proprietary platform, NOM collects and stores data to give you instant insights on your campaign."
-                    }
-                ]
-            },            
             "planet-rfid": {
                 "title": "Planet rfid",
                 "text": "Zanahorario is a time tracking product. Designed specifically for companies internal use. This tool will allow its users to have a neat track of all the hours worked. Moreover they will be able to specify what those hours were invested in.",
@@ -338,6 +315,30 @@
 
                 ]
             },
+            "nom": {
+                "title": "NOM",
+                "text": "NOM, originally Not Ordinary Media, named after their plan to distribute video advertising with greater precision and transparency than ever before.",
+                "textX": 0,
+                "textY": -310,
+                "img": "nom",
+                "imgX": 0,
+                "imgY": 0,
+                "w": 50,
+                "color": "#FAD352",
+                "gridArea": "span 1 / auto",
+                "imgs": ["1","2"],
+                "description": [
+                    {
+                        "title": "NOM",
+                        "desc": "NOM, originally Not Ordinary Media, named after their plan to distribute video advertising with greater precision and transparency than ever before. We worked as part of NOM development team, bringing solutions on frontend development, and QA test automation."
+                    },
+                    {
+                        "title": "Why is it so cool?",
+                        "desc": "NOM deliver real-time, accurate, intelligent and easy to understand insights about your campaign. It's hard to find solutions if you don't know what the problems are. With a proprietary platform, NOM collects and stores data to give you instant insights on your campaign."
+                    }
+                ]
+            },            
+            
             "learn-cloud": {
                 "title": "LearnCloud",
                 "text": "The AI Company's App Store offers an extensive collection of “auto-learning” applications for multiple enterprise requirements across several industries",
