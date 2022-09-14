@@ -261,8 +261,8 @@
                 ]
             },
             "virtual-care": {
-                "title": "Falck's Group",
-                "text": "Virtual Care is a web app developed for Falck's Group. It was created to digitize its patients medical records according to certain governmental requirements and regulations. medical records according to certain governmental requirements and regulations.",
+                "title": "Falck Group",
+                "text": "Virtual Care is a web app developed for Falck Group. It was created to digitize its patients medical records according to certain governmental requirements and regulations. medical records according to certain governmental requirements and regulations.",
                 "textX": 0,
                 "textY": -300,
                 "img": "virtual-care",
@@ -274,8 +274,8 @@
                 "gridArea": "span 2 /auto",
                 "description": [
                     {
-                        "title": "Flack's Group",
-                        "desc": "VirtualCare is a web app developed for Flack's Group. It was created to digitize its patients medical records according to certain governmental requirements and regulations. On top of this we added a management service to connect every aspect of the company. So nowadays appointments, analysis, new affiliations and much more can all be done through this tool."
+                        "title": "Falck Group",
+                        "desc": "VirtualCare is a web app developed for Falck Group. It was created to digitize its patients medical records according to certain governmental requirements and regulations. On top of this we added a management service to connect every aspect of the company. So nowadays appointments, analysis, new affiliations and much more can all be done through this tool."
                     },
                     {
                         "title": "Why did we create it?",

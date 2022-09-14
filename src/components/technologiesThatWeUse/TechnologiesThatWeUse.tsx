@@ -38,7 +38,7 @@ export const TechnologiesThatWeUse = () => {
             </div>
             <div className="blue-line-wrapper">
                 <label><Trans>{t("technologies-that-we-use.text")}</Trans></label>
-                <div id="blue-line"></div>
+                {/* <div id="blue-line"></div> */}
             </div>
         </div>
     )

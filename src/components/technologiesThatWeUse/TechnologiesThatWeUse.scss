@@ -32,10 +32,11 @@
         }
     }
     .blue-line-wrapper {
-        width: 75%;
+        width: 100%;
         align-self: flex-end;
         justify-self: flex-end;
-
+        justify-content: center;
+        text-align: center;
         #blue-line {
             grid-row: 3;
             height: 2px;

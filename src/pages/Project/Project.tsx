@@ -38,7 +38,7 @@ export function Project() {
                     <button className={project}>{t('projects.button')}</button>
                 </NavLink>
             </div>
-            <div className={`half ${project}`}>
+            <div className={`half`}>
                 {
                     
                     projects[project]?.imgs?.map((imgName: any, key, imgs) => {
