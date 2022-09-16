@@ -2,9 +2,9 @@
 @import "../../styles/mixin";
 
 .footer {
-    border-top: solid $BorderWidth $BorderBlack;
+    //border-top: solid $BorderWidth $BorderBlack;
     padding-top: $spaceBetween;
-    background-color: $DarkLavender;
+    background: linear-gradient(180deg, $DarkLavender 0, $BorderBlack 240%);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;

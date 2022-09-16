@@ -2,7 +2,7 @@
 @import "../../styles/variables";
 
 .what-do-we-do {
-    background-color: $AmarilloBanner;
+    background: linear-gradient(180deg, transparent, $AmarilloBanner 100%);
     display: flex;
     flex-direction: column;
     grid-row: 3;
@@ -10,8 +10,8 @@
     margin-bottom: $spaceBetween45;
     height: 360px;
 
-    border-bottom: solid $BorderWidth $BorderBlack;;
-    border-top: solid $BorderWidth $BorderBlack;;
+    // border-bottom: solid $BorderWidth $BorderBlack;;
+    // border-top: solid $BorderWidth $BorderBlack;;
     .title {
         display: flex;
         flex-direction: column;
