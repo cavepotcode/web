@@ -6,6 +6,7 @@ export const CavepotLabLogo2 = require('../assets/img/cavepot-lab-logo2.png').de
 export const LogoCPBlanco = require('../assets/img/logoCPBlanco.png').default;
 export const LogoCPNegro = require('../assets/img/logoCPNegro.png').default;
 export const LogoblancoColor = require('../assets/img/logoblancoColor.png').default;
+//export const LogoAngular = require("../assets/img/angular.svg").default;
 
 //LOGOS Tecnologias
 export const AngularLogoLinea = require('../assets/img/tecs-logo/angularLinea.png').default;
@@ -25,15 +26,18 @@ export const Redes = require('../assets/img/redessociales.png').default;
 
 //BANNERS
 export const Banner = require('../assets/img/banner.png').default;
-export const Banner2 = require('../assets/img/banner2.png').default;
+export const Banner2 = require('../assets/img/laboratory.png').default;
 export const Banner3 = require('../assets/img/banner3.png').default;
+export const Learn = require('../assets/img/learn.png').default;
+export const Create = require('../assets/img/create.png').default;
+export const Disrupt = require('../assets/img/disrupt.png').default;
 export const AboutUsBanner = require('../assets/img/aboutUsBanner.png').default;
 export const AboutUsPot = require('../assets/img/aboutUsPot.png').default;
 export const AboutUsDig = require('../assets/img/aboutUsDig.png').default;
 
 //IMG GENERALES
 export const Olla = require('../assets/img/olla.png').default;
-export const Explore = require('../assets/img/explore.png').default;
+export const Explore = require('../assets/img/mapamarillo.svg').default;
 export const AboutUsRed = require('../assets/img/red.png').default;
 export const AboutUsYellow = require('../assets/img/yellow.png').default;
 export const AboutUsPurple = require('../assets/img/purple.png').default;

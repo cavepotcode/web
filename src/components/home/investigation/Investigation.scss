@@ -1,0 +1,157 @@
+@import "../../../styles/mixin";
+@import "../../../styles/variables";
+#investigation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: $spaceBetween45;
+    &::before {
+        position: absolute;
+        @include backgroundPattern($AmarilloBanner, 0.6, $OH-orange);
+        content: " ";
+        height: 100%;
+        top: 0;
+        width: 100%;
+        transform: skew(0,2deg);
+    }
+    .investigation {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            align-items: flex-start;
+            @include textBasis($text);
+            position: relative;
+            min-height: 300px;
+            flex: 4;
+            .main-text-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .title {
+                    @include textBasisBold($title);
+                    width: 354px;
+                    align-self: flex-start;
+                }
+                margin-top: $marginCajasLG;
+                margin-bottom: $marginCajasLG;
+                width: 549px;
+                align-self: center;
+                :first-child {
+                    display: block;
+                    margin-bottom: $marginCajasLG;
+                }
+                
+            }
+            .button-container{
+                a {
+                    background-color: transparent;
+                    text-decoration: none;
+                    position: relative;
+                    color: white;
+                    z-index: 1;
+                }
+            }
+        }
+
+        .img-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex: 6;
+            .card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                padding: $spaceBetween45;
+                border-radius: $borderRadiusMain;
+                background-color: white;                
+                box-shadow: 0px 23px 35.7px 2.3px rgba($BorderBlack, 0.15);
+                .img-card{
+                    width: 100px;
+                    margin-bottom: 15px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .title {
+                    @include textBasisBold($text);
+                }
+                p{
+                    @include textBasis($text);
+                }
+            }
+        }
+
+        button {
+            width: 212px;
+            background-color: $MinionYellow;
+            color: black;
+        }
+        button:hover {
+            background-color: darken($MinionYellow, $darkerPorcentaje);
+        }
+    }
+}
+
+@include media-md {
+    #investigation {
+        
+        .investigation {
+            
+    
+            .text-wrapper {
+                
+                .main-text-wrapper {
+                    width: 100%;
+                    .title {
+                        @include textBasisBold($title);
+                        width: unset;
+                        align-self: flex-start;
+                    }
+                    
+                    
+                }
+                
+            }
+    
+            .img-container {
+                display: none;
+                
+            }
+    
+        }
+    }
+}
+@include media-sm {
+    
+}
+
+@keyframes leftToRightBanner {
+    0% {
+        opacity: 0;
+        left: -300px;
+    }
+    100% {
+        opacity: 1;
+        left: -267px;
+    }
+}
+
+@keyframes rightToLeft {
+    0% {
+        opacity: 0;
+        right: -300px;
+    }
+    100% {
+        opacity: 1;
+        right: -190px;
+    }
+}

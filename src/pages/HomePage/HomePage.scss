@@ -1,7 +1,10 @@
 @import "../../styles/variables";
 
-.home-page{
+.home-page {
     display: flex;
     flex-direction: column;
     gap: $spaceBetween;
+    align-items: center;
+    width: 100%;
+    position: relative;
 }

@@ -41,11 +41,11 @@ export const Header = () => {
         } else {
             onColapse(false);
         }
-        
+
     };
 
     useEffect(() => {
-        window.addEventListener("scroll", (e) => handleNavigation(e));        
+        window.addEventListener("scroll", (e) => handleNavigation(e));
     }, [colapse]);
 
     useEffect(() => {
@@ -62,44 +62,47 @@ export const Header = () => {
     }, [showMenu])
 
     return (
-        <div id="header" className={`header ${colapse? "colapse": ""} ${showMenu ? 'open': ''}`}>
-            <NavLink className={`img-wrapper`} to='/'>
-                <div id="c"></div>
-                <div id="a"></div>
-                <div id="v"></div>
-                <div id="e"></div>
-                <div id="p"></div>
-                <div id="o"></div>
-                <div id="t"></div>
-            </NavLink>
-            <div className="menu-btn" onClick={onShowMenu}>
-                <span className={showMenu ? 'menu-btn__burger open' : 'menu-btn__burger'}></span>
+        <div id="header" className={`header ${colapse ? "colapse" : ""} ${showMenu ? 'open' : ''}`}>
+            <div className='max-container'>
+                <NavLink className={`img-wrapper`} to='/'>
+                    <div id="c"></div>
+                    <div id="a"></div>
+                    <div id="v"></div>
+                    <div id="e"></div>
+                    <div id="p"></div>
+                    <div id="o"></div>
+                    <div id="t"></div>
+                </NavLink>
+                <div className="menu-btn" onClick={onShowMenu}>
+                    <span className={showMenu ? 'menu-btn__burger open' : 'menu-btn__burger'}></span>
+                </div>
+                <nav className={showMenu ? 'nav open' : 'nav'}>
+                    <ul className={showMenu ? 'menu-nav open' : 'menu-nav'}>
+                        {
+                            links.map((obj: any, key) => (
+                                <li className="menu-nav__item" key={`headerLinks__${key}`}>
+                                    {obj.link.includes("http") &&
+                                        <a href={obj.link} target='_blank' className='menu-nav__link'>
+                                            {obj.label}
+                                        </a>
+                                    }
+                                    {!obj.link.includes("http") && size.width <= 1024 &&
+                                        <NavLink to={obj.link} className={obj.link.includes("contact") ? "menu-nav__link-contact" : "menu-nav__link"} onClick={onShowMenu}>
+                                            {obj.label}
+                                        </NavLink>
+                                    }
+                                    {!obj.link.includes("http") && size.width > 1024 &&
+                                        <NavLink to={obj.link} className={obj.link.includes("contact") ? "menu-nav__link-contact" : "menu-nav__link"} >
+                                            {obj.label}
+                                        </NavLink>
+                                    }
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </nav>
             </div>
-            <nav className={showMenu ? 'nav open' : 'nav'}>
-                <ul className={showMenu ? 'menu-nav open' : 'menu-nav'}>
-                    {
-                        links.map((obj: any, key) => (
-                            <li className="menu-nav__item" key={`headerLinks__${key}`}>
-                                {obj.link.includes("http") &&
-                                    <a href={obj.link} target='_blank' className='menu-nav__link'>
-                                        {obj.label}
-                                    </a>
-                                }
-                                {!obj.link.includes("http") && size.width <= 1024 &&
-                                    <NavLink to={obj.link} className={obj.link.includes("contact") ? "menu-nav__link-contact" : "menu-nav__link"} onClick={onShowMenu}>
-                                        {obj.label}
-                                    </NavLink>
-                                }
-                                {!obj.link.includes("http") && size.width > 1024 &&
-                                    <NavLink to={obj.link} className={obj.link.includes("contact") ? "menu-nav__link-contact" : "menu-nav__link"} >
-                                        {obj.label}
-                                    </NavLink>
-                                }
-                            </li>
-                        ))
-                    }
-                </ul>
-            </nav>
+
         </div>
     )
 }

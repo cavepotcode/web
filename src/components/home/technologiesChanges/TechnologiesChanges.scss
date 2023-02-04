@@ -1,0 +1,142 @@
+@import "../../../styles/main";
+//@import "../../styles/mixin";
+
+.technologies-changes {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+    min-height: 100vh;
+
+    position: relative;
+    .max-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        .textwrapper {
+            max-width: 45rem;
+            transition: left 0.5s;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            justify-content: center;
+            color: white;
+
+            .title {
+                @include textBasisBold($pageTitle);
+                color: white;
+                padding-bottom: 18px;
+            }
+            .subtitle {
+                @include textBasis($pageSubtitle);
+                color: white;
+            }
+            label {
+                //align-self: center;
+                max-width: 100%;
+            }
+            transition-delay: 15s;
+            .button-container {
+                a {
+                    background-color: transparent;
+                    text-decoration: none;
+                    position: relative;
+                    color: white;
+                    z-index: 1;
+                }
+                &::after {
+                    background-color: $MinionYellow;
+                }
+                &:hover {
+                    a {
+                        color: $DarkLavender;
+                    }
+                }
+            }
+        }
+        .img-technologies {
+            max-width: 43rem;
+            width: 100%;
+            min-width: 35rem;
+            position: relative;
+            img {
+                position: absolute;
+                left: 0;
+                top: 20%;
+                justify-content: flex-end;
+                width: 100%;
+            }
+        }
+    }
+    &::before {
+        position: absolute;
+        top: -10%;
+        content: " ";
+        width: 100%;
+        height: 100%;
+        // background: linear-gradient(180deg, rgba($DarkLavender, 1) 0 50%, darken($DarkLavender, 10) 100%);
+        // background: -webkit-linear-gradient(top, rgba($DarkLavender, 1) 0 50%, darken($DarkLavender, 10) 100%);
+        @include backgroundPattern($DarkLavender,1.5);
+        -webkit-transform: skew(0,-184deg);
+        -moz-transform: skew(0, -184deg);
+        -ms-transform: skew(0, -184deg);
+        transform: skew(0, -184deg);
+    }
+
+}
+
+@include media-xl {
+    .technologies-changes {
+        
+        .textwrapper {
+            width: auto;
+            min-height: 50%;
+            align-self: center;
+            label {
+                align-self: unset;
+                max-width: 100%;
+            }
+        }
+        .img-wrapper {
+            max-width: 45rem;
+            min-width: 35rem;
+            width: auto;
+        }
+    }
+}
+
+//max-width:768px
+@include media-lg {
+    .technologies-changes {
+        .max-container{
+            .textwrapper {
+                .title {
+                    @include textBasis(2.5rem);
+                    color: white;
+                }         
+                
+            }
+    
+            .img-technologies {
+                width: 0;
+                max-width: 0;
+                min-width: 0;
+                visibility: hidden;
+            }
+        }
+        
+    }
+}
+
+@include media-md {
+    .technologies-changes {
+        align-self: center;
+        .textwrapper {
+            min-height: 60%;
+            .title {
+                @include textBasis(2.5rem);
+            }
+        }
+    }
+}
+

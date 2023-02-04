@@ -1,5 +1,5 @@
-@import "../../styles/_mixin";
-@import "../../styles/_variables";
+@import "../../../styles/_mixin";
+@import "../../../styles/_variables";
 
 .technologies-that-we-use {
     display: flex;
@@ -7,30 +7,43 @@
     gap: $spaceBetween20;
     align-items: center;
     justify-content: center;
+    .max-container{
+        flex-direction: column;
+        align-items: center;
+        display: flex
+    }
     .title {
         @include textBasisBold($title);
         text-align: left;
     }
-    .img-wrapper {
-        display: flex;
-        flex-direction: row;
-        column-gap: 42px;
-        justify-content: center;
-        align-items: center;
-        img {
-            justify-self: center;
-        }
-        .logo {
-            opacity: 0;
-            height: 65px;
-            &.animation {
-                animation: showLogo 0.5s linear forwards;
+    .logo-container {
+        width: 100%;
+        position: relative;
+        min-height: 100px;
+        .img-wrapper {
+            width: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            column-gap: 42px;
+            justify-content: center;
+            align-items: center;
+            img {
+                justify-self: center;
             }
-            &.bigger {
-                height: 95px;
+            .logo {
+                opacity: 0;
+                height: 65px;
+                &.animation {
+                    animation: showUp 0.5s linear forwards;
+                }
+                &.bigger {
+                    height: 95px;
+                }
             }
         }
     }
+    
     .blue-line-wrapper {
         width: 100%;
         align-self: flex-end;
@@ -59,6 +72,7 @@
     .technologies-that-we-use {
         text-align: center;
         .img-wrapper {
+            position: relative;
             flex-wrap: wrap;
             gap: 30px;
             img {

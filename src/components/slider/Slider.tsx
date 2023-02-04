@@ -18,6 +18,7 @@ export default function Slider() {
             setSlideIndex(1)
         }
     }
+    //setInterval(()=> nextSlide(), 3000)
 
     const prevSlide = () => {
         if (slideIndex !== 1) {
@@ -35,7 +36,7 @@ export default function Slider() {
     return (
         <div className="container-slider">
 
-            <BtnSlider moveSlide={prevSlide} direction={"prev"} />
+            {/* <BtnSlider moveSlide={prevSlide} direction={"prev"} /> */}
 
             <div  className={"slide"}>
                 {dataSlider.map((obj, index) => {
@@ -50,15 +51,15 @@ export default function Slider() {
                 })}
             </div>
 
-            <div className="container-dots">
+            {/* <div className="container-dots">
                 {dataSlider.map((item, index) => (
                     <div
                         onClick={() => moveDot(index + 1)}
                         className={slideIndex === index + 1 ? "dot active" : "dot"}
                     ></div>
                 ))}
-            </div>
-            <BtnSlider moveSlide={nextSlide} direction={"next"} />
+            </div> */}
+            {/* <BtnSlider moveSlide={nextSlide} direction={"next"} /> */}
 
 
 

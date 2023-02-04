@@ -9,18 +9,18 @@
     justify-content: space-between;
     align-items: center;
     .slide {
-        border: solid  $BorderWidth $BorderBlack;
+        //border: solid  $BorderWidth $BorderBlack;
         display: flex;
         flex-direction: column;
         width: 740px;
-        height: 170px;
+        min-height: 170px;
         align-self: center;
         opacity: 1;
         transition: opacity ease-in-out 0.2s;
         background-color: $White;
-        border-radius: $borderRadiusMain;
+        border-radius: 0 0 $borderRadiusMain $borderRadiusMain;
         padding: $paddingCajasSM;
-        box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
+        box-shadow: 0px 16px 41.7px 3.3px rgb(57 58 57 / 15%);
         @include textBasis($text);
         font-style: italic;
         text-align: center;
@@ -63,8 +63,8 @@
         display: flex;
         
         .dot {
-            width: 20px;
-            height: 20px;
+            width: 15px;
+            height: 15px;
             border-radius: $borderRadiusCircle-25;
             border: 3px solid #f1f1f1;
             margin: 0 5px;

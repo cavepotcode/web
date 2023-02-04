@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
-import { AllImages } from '../../helpers';
+import { AllImages } from '../../../helpers';
 import './HowWeDoIt.scss';
 export const HowWeDoIt = () => {
     const [t] = useTranslation("global");
@@ -13,33 +13,38 @@ export const HowWeDoIt = () => {
         });
     });
     useEffect(() => {
-        const img = document.querySelectorAll('.img-how-we-do-it');
+        const img = document.querySelectorAll('#how-we-do-it .img-how-we-do-it');
         img.forEach(item => {
             observer.observe(item);
         });
     }, [])
     return (
-        <div id="how-we-do-it">
-            <div className="how-we-do-it">
-
+        <div id="how-we-do-it" className=''>
+            <div className="how-we-do-it max-container">
+                <label className="title">{t("how-we-do-it.title")}</label>
                 <div className='txt-how-we-do-it'>
+
                     <div className="img-how-we-do-it">
                         <img src={AllImages.Explore} alt={t("how-we-do-it.alt.img.1")} />
                     </div>
 
                     <div className="text-wrapper">
-                        <label className="title">{t("how-we-do-it.title")}</label>
+                       
                         <label className='textpart'>
-                            <Trans>{t("how-we-do-it.text1")}</Trans>
+                            <label className='subtitle'> Culture </label>
+                            <p><Trans>{t("how-we-do-it.text1")}</Trans></p>
                         </label>
                         <label className='textpart'>
-                            <Trans>{t("how-we-do-it.text2")}</Trans>
+                            <label className='subtitle'> Communication </label>
+                            <p><Trans>{t("how-we-do-it.text2")}</Trans></p>
                         </label>
                         <label className='textpart'>
-                            <Trans>{t("how-we-do-it.text3")}</Trans>
+                            <label className='subtitle'> Team </label>
+                            <p><Trans>{t("how-we-do-it.text3")}</Trans></p>
                         </label>
                         <label className='textpart'>
-                            <Trans>{t("how-we-do-it.text4")}</Trans>
+                            <label className='subtitle'> Commitment </label>
+                            <p><Trans>{t("how-we-do-it.text4")}</Trans></p>
                         </label>
                     </div>
                 </div>

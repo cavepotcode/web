@@ -1,0 +1,87 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixin";
+
+.client-say {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: " ";
+        transform: skew(0, -2deg);
+        @include backgroundPattern($SeaSerpent, 0.8);
+        background-size: 100% 100%;
+        min-height: 95%;
+        width: 100%;
+        display: block;
+    }
+    .max-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+        .label-wrapper,
+        .title {
+            display: flex;
+            label {
+                @include textBasisBold($title);
+                text-align: center;
+            }
+        }
+        .title {
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+        &.reviews {
+            flex-direction: row;
+            position: relative;
+            .label-wrapper {
+                width: 40%;
+                height: 300px;
+                position: relative;
+                flex-direction: column;
+                justify-content: center;
+                label {
+                    @include textBasisBold($pageSubtitle);
+                    text-align: center;
+                }
+                .faicon {
+                    position: absolute;
+                    top: 0;
+                    left:0;
+                    opacity: 0.3;
+                    @include textBasisBold($pageTitle);
+                }
+            }
+            .right-container {
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+                width: 60%;
+
+                .clutch-widget {
+                    box-shadow: 0px 23px 35.7px 2.3px rgba($BorderBlack, 0.15);
+                    border-radius: $borderRadiusMain;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+@include media-md {
+    .client-say {
+        .max-container {            
+            &.reviews {
+                .label-wrapper {
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+}

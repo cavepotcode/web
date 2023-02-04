@@ -1,8 +1,13 @@
-.no-select{
-    user-select: none;   
+.no-select {
+    user-select: none;
 }
-
-button {
+.max-container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 1.5rem;
+}
+button,
+.button-container {
     @include textBasisBold($text);
     height: $btnLgHeight;
     text-decoration: none;
@@ -10,26 +15,104 @@ button {
     cursor: pointer;
     border-radius: $btnBorderRadius;
     color: $White;
-    border: solid  $BorderWidth $BorderBlack;
+    //border: solid  $BorderWidth $BorderBlack;
     padding: 5px 15px;
+    transition: all ease 0.3s;
 }
 
-@include media-md{
-    button{
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    align-items: center;
+    position: relative;
+    background-color: $CeriseRed;
+    overflow: hidden;
+    margin-top: 1rem;
+    &::after {
+        content: " ";
+        height: 100%;
+        width: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        transition: width ease 0.3s;
+    }
+    &:hover {
+        &::after {
+            width: 100%;
+            background-color: darken($DarkLavender, 0);
+        }
+    }
+}
+
+@include media-md {
+    button {
         @include textBasisBold($text);
         height: $btnMdHeight;
         color: $White;
-
     }
+}
+
+.animation-showdown {
+    margin-bottom: 6000px;
+    animation: showDown 1s ease forwards;
+    animation-delay: 0;
+}
+
+.animation-showup {
+    margin-top: 6000px;
+    animation: showUp 1s ease forwards;
+    animation-delay: 0;
+}
+
+.animation-showleft {
+    margin-left: 6000px;
+    animation: showLeft 1s ease forwards;
+    animation-delay: 0;
 }
 
 @keyframes showUp {
     0% {
         opacity: 0;
-        margin-top: 80px;
-	}
-	100% {
+        margin-top: 600px;
+    }
+    100% {
         opacity: 1;
         margin-top: 0;
-	}
+    }
+}
+
+@keyframes showLeft {
+    0% {
+        opacity: 0;
+        margin-left: 800px;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+@keyframes rightToLeft {
+    0% {
+        opacity: 0.5;
+        margin-right: -500px;
+    }
+    100% {
+        opacity: 1;
+        margin-right: 0;
+    }
+}
+
+@keyframes showDown {
+    0% {
+        opacity: 0;
+        margin-bottom: 600px;
+    }
+    100% {
+        opacity: 1;
+        margin-bottom: 0;
+    }
 }

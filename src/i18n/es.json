@@ -12,8 +12,11 @@
         }
     },
     "technologies-changes": {
+        
+        "claim": "",
         "title": "Technology changes constantly, so do we!",
-        "subtitle": "We are a <strong>software</strong> development company with focus on <strong> high quality </strong> solutions that bring your <strong> ideas </strong> to life!",
+        "title": "Unlocking your team's full potential with boutique software solutions",
+        "subtitle": "Empowering your team's growth with specialized software solutions",
         "alt": {
             "img.1": "Technologies changes banner image"
         }
@@ -31,7 +34,7 @@
         "message": "TELL US YOUR NEEDS"
     },
     "what-do-we-do": {
-        "title": "What do we do?",
+        "title": "Services",
         "sub-title": "We build custom software solutions to help our clients create awesome products",
         "card1": {
             "title": "Custom App for my business.",
@@ -39,18 +42,18 @@
             "button": "Tell us more"
         },
         "card2": {
-            "title": "End to End product.",
-            "text": "Stable multidisciplinary teams hands on with the client.<br/>We apply agile methodologies.<br/>Full developing teams, PO, Designers, devops and more.",
+            "title": "End to End product",
+            "text": "Realizing your vision, one step at a time: from ideation to production with our hands-on multidisciplinary teams.",
             "button": "Tell us more"
         },
         "card3": {
-            "title": "Re-design Re-think.",
-            "text": "You have dreamy idea but cant bring it down to earth? Let us help you re think or re design it so that you can have the project you always wanted.",
+            "title": "Re-design Re-think",
+            "text": "Bringing your dreams to reality: Let us help you re-think and re-design your idea to make it a successful project.",
             "button": "Tell us more"
         },
         "card4": {
-            "title": "Grow up your team.",
-            "text": "You need to boost your in-house development capacity.<br/>It's time to scale your team to accomplish all the tasks in your backlog.",
+            "title": "Grow your team",
+            "text": "Unlock the potential of your in-house development team. Scale up and tackle your backlog with ease.",
             "button": "Tell us more"
         }
     },
@@ -60,6 +63,10 @@
         "text2": "Elements of nature create phenomenons when they are together, <strong>merging to create something great, </strong> such as your needs combined with our skills.",
         "text3": "Your needs work as a compass for us, in a map that guides us into what we will create, pouring all of that into our pot and finally cooking something great for you.",
         "text4": "<strong>Let us explore your idea, finding the perfect elements for it so we can bring it to life.</strong>",
+        "text1": "We believe that successful partnerships are built on trust and shared values. That's why we prioritize aligning our culture and time zones with our clients, to ensure a smooth and seamless integration.", 
+        "text2": "Our transparent communication style ensures that our clients are always aware of the progress of their projects, and our commitment to delivering results guarantees their satisfaction.", 
+        "text3": "We also specialize in providing \"rescue teams\" to quickly resolve any issues that may arise with existing developments, ensuring that our clients' operations are always running smoothly.",
+        "text4": "With our focus on personalization and our ability to deliver immediate solutions, we are confident in our ability to improve the performance of our clients' projects.",
         "alt": {
             "img.1": "How we do it pot image"
         }
@@ -69,12 +76,13 @@
         "text": "Imagine this technologies on your project. <strong>Do you want to try them?</strong>"
     },
     "clients-says": {
-        "title": "This is what our clients say"
+        "title": "This is what our clients say",
+        "title": "Let the clients speak for themselves"
     },
     "investigation": {
         "title": "Investigation & Training",
-        "text.1": "Passionate about what we do and willing to learn, we created CavepotLab.",
-        "text.2": "We are keen on helping our team members constantly so they can grow technically and professionally.",
+        "text.1": "We are driven by our passion for creating and disrupting the status quo. Our eagerness to learn and discover new ideas drives us to constantly push boundaries and innovate. ",
+        "text.2": "The main goal is to support and guide our team members in their own growth and development, both technically and professionally..",
         "button": "Visit the CavePot lab",
         "alt": {
             "img.1": "Investigation banner image"
@@ -106,7 +114,7 @@
             "text.5": "Github"
         },
         "column.4": {
-            "title": "Locate us",
+            "title": "Contact us",
             "text.1": "Pablo de Maria 1122,",
             "text.2": "Montevideo, Uruguay",
             "text.3": "info@cavepot.com"
@@ -140,9 +148,9 @@
             "alt.img": "General information icon image"
         },
         "option5": {
-            "title": "Staff Augmentation",
-            "titlesm": "Staff Augmentation",
-            "alt.img": "Staff Augmentation icon image"
+            "title": "Grow your team",
+            "titlesm": "Grow your team",
+            "alt.img": "Grow your team icon image"
         }
     },
     "why-do-we-exist": {

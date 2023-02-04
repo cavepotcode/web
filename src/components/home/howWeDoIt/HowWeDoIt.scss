@@ -1,0 +1,162 @@
+@import "../../../styles/mixin";
+@import "../../../styles/variables";
+#how-we-do-it {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        @include backgroundPattern($CeriseRed, 1.4, $CeriseRed, $MinionYellow, $DarkLavender, $CeriseRed);
+        transform: skew(0, 1deg);
+    }
+    .how-we-do-it {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        position: relative;
+        flex-direction: column;
+        .title {
+            display: block;
+            align-self: center;
+            justify-self: center;
+            @include textBasisBold($title);
+            text-align: center;
+            width: 100%;
+            color: white;
+        }
+        .txt-how-we-do-it {
+            width: 100%;
+            min-height: 500px;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            .img-how-we-do-it {
+                bottom: -5px;
+                height: 100%;
+                padding: $spaceBetween45;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    animation: showLeft 0.8s linear forwards;
+                    justify-content: flex-end;
+                    height: 100%;
+                }
+                &.animation {
+                    animation: leftToRight 1s linear forwards;
+                }
+            }
+            .text-wrapper {
+                padding: $spaceBetween45;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                text-align: left;
+                max-width: 45rem;
+                .title {
+                    align-self: center;
+                    justify-self: center;
+                    @include textBasisBold($title);
+                    margin-bottom: 2rem;
+                    text-align: left;
+                    width: 100%;
+                    padding: 5px;
+                    color: white;
+                }
+                .textpart {
+                    width: 100%;
+                    padding: 5px;
+                    margin-bottom: $spaceBetween45;
+                    .subtitle {
+                        @include textBasisBold($subtitle);
+                        //color: $DarkLavender;
+                        color: white;
+                        border-left: 4px solid $MinionYellow;
+                        padding-left: 5px;
+                    }
+                    p {
+                        margin-top: 1rem;
+                        @include textBasis($text);
+                        color: white;
+                    }
+
+                    strong {
+                        @include textBasisBold($text);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-lg {
+    .how-we-do-it {
+    }
+}
+
+@include media-md {
+    #how-we-do-it {
+        .how-we-do-it {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .txt-how-we-do-it {
+                margin-top: $spaceBetween;
+                width: 100%;
+                padding: unset;
+                border: unset;
+                min-height: unset;
+                display: flex;
+                flex-direction: column;
+
+                .img-how-we-do-it {
+                    padding: 0;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                        height: unset;
+                    }
+                    
+                }
+                .text-wrapper {
+                    position: relative;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    padding: unset;
+                    .title {
+                        display: none;
+                    }
+                    .textpart {
+                        @include textBasis($text);
+                        strong {
+                            @include textBasisBold($text);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes leftToRight {
+    0% {
+        opacity: 0.5;
+        left: -100px;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}

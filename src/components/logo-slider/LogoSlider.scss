@@ -1,0 +1,141 @@
+@import "../../styles/variables";
+@import "../../styles/mixin";
+$numClients: 7;
+#logo-slider {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 20px 0 30px 0;
+    width: 100%;
+    section {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        div.container {
+            transition: all 0.3s ease;
+            h1 {
+                margin: 15px 0 0 0;
+            }
+            h3 {
+                margin: 0 0 25px 0;
+            }
+        }
+        @media (max-width: 992px) {
+            padding: 0 20px 0 20px;
+        }
+    }
+    section.slide-option {
+        //margin: 0 0 50px 0;
+        .no-marg {
+            margin: 0 0 0 0;
+        }
+    }
+
+    div.highway-slider {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 150px;
+    }
+
+    #infinite div.highway-barrier {
+        background: transparent;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        
+        ul.highway-lane {
+            
+            width: 200%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 100%;
+            li.highway-car {
+                // min-width: 180px;
+                width: 100%;
+                max-width: 100%;
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: transparent;
+                
+                animation: translateinfinite 25s linear infinite;
+                span.fab {
+                    font-size: 65px;
+                }
+            }
+        }
+    }
+    .logo {
+        display: block;
+        width: 130px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        filter: grayscale(1);
+        //border: 1px solid black;
+    }
+    .logo-arkano {
+        background-image: url(../../assets/img/clients/arkano-logo.png);
+    }
+    .logo-falck {
+        background-image: url(../../assets/img/clients/falck-logo.png);
+    }
+    .logo-hx {
+        background-image: url(../../assets/img/clients/hx-logo.svg);
+        width: 180px;
+    }
+    .logo-planet {
+        background-image: url(../../assets/img/clients/planet-logo.png);
+        width: 110px;
+    }
+    .logo-pp {
+        background-image: url(../../assets/img/clients/pp-logo.png);
+        width: 110px;
+    }
+    .logo-repremar {
+        background-image: url(../../assets/img/clients/repremar-logo.png);
+    }
+    .logo-soulmax {
+        background-image: url(../../assets/img/clients/soulmax-logo.png);
+        height: 50px;
+    }
+}
+
+@include media-sm {
+    $width:250px;
+    #infinite div.highway-barrier {
+        
+        ul.highway-lane {
+            
+            width: $width*$numClients*2;
+            height: 100%;
+            li.highway-car {
+                min-width: $width;                
+            }
+        }
+        .logo-hx {
+            width: $width*0.9;
+        }
+        .logo-planet {
+            width: $width*0.8;
+        }
+        .logo-pp {
+            width: $width*0.8;
+        }
+        .logo-soulmax {
+            height: 100%;
+        }
+    }
+    
+}
+
+@keyframes translateinfinite {
+    100% {
+        transform: translateX(calc(-100% * #{$numClients}));
+        //transform: translateX(-100%);
+    }
+}

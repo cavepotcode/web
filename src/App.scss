@@ -8,12 +8,19 @@
 .app {
   height: 100%;
   background-color: $White;
-  background: linear-gradient(180deg, rgba($DarkLavender,.3) 0, rgba(255,255,255,1) 15% 100%);
+  //background: linear-gradient(180deg, rgba($DarkLavender,1) 0 50%, rgba(255,255,255,1) 50% 100%);
+  //background: -webkit-linear-gradient(top, rgba($DarkLavender,1) 0 50%, rgba(255,255,255,1) 50% 100%);
   .grid {
     //padding-top: 93px;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: hidden;
+    align-items: center;
   }
+}
+
+#container{
+  width: 100%;
+  //margin-top: 60px;
 }

@@ -2,9 +2,8 @@
 @import "../../styles/mixin";
 
 .footer {
-    //border-top: solid $BorderWidth $BorderBlack;
     padding-top: $spaceBetween;
-    background: linear-gradient(180deg, $DarkLavender 0, $BorderBlack 240%);
+    @include backgroundPattern($DarkLavender,1.8);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -12,6 +11,7 @@
     gap:$spaceBetween45;
     padding: 30px;
     min-height: 360px;
+    width: 100%;
     .img-wrapper {
         display: flex;
         align-items: center;
@@ -86,6 +86,11 @@
         padding-top: 10px;
         width: 100%;
         text-align: center;
+    }
+    .max-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
 

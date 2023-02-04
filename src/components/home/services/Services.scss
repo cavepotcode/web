@@ -1,24 +1,38 @@
-@import "../../styles/mixin";
-@import "../../styles/variables";
+@import "../../../styles/mixin";
+@import "../../../styles/variables";
 
 .what-do-we-do {
-    background: linear-gradient(180deg, transparent, $AmarilloBanner 100%);
     display: flex;
     flex-direction: column;
     grid-row: 3;
     gap: 34px;
     margin-bottom: $spaceBetween45;
     height: 360px;
-
-    // border-bottom: solid $BorderWidth $BorderBlack;;
-    // border-top: solid $BorderWidth $BorderBlack;;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    
+    &::before{
+        position: absolute;
+        @include backgroundPattern($AmarilloBanner,0.6,$OH-orange);
+        content: " ";
+        height: 100%;
+        top: 0;
+        width: 100%;
+    }
+    .max-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+    }
     .title {
         display: flex;
         flex-direction: column;
         padding-top: 17px;
         text-align: center;
 
-        margin-bottom: 12px;
+        margin-bottom: 3em;
         @include textBasis($text);
         :first-child {
             text-align: center;
@@ -26,16 +40,15 @@
         }
     }
     .cards-wrapper {
-        position: absolute;
-        margin-top: 90px;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
+        justify-content: space-around;
         margin-bottom: -50px;
+        padding-bottom: 50px;
+        overflow: hidden;
         .card {
-            height: 340px;
+            height: 307px;
             width: 275px;
             background-color: #ffffff;
             box-shadow: 0px 23px 35.7px 2.3px rgba($BorderBlack, 0.15);
@@ -48,23 +61,18 @@
             text-align: center;
             opacity: 0;
             margin-top: 80px;
-            border: solid $BorderWidth $BorderBlack;
             text-decoration: none;
             transition: all ease 0.3s;
-            &.animation{
-                animation: UpSequence 0.4s linear forwards;
-            }
-            &:hover{
+            
+            &:hover {
                 transition: all ease 0.3s;
-                transform: scale(1.02);
-                box-shadow: 0px 23px 35.7px 2.3px rgba($BorderBlack, 0.30);
             }
             button {
                 margin-top: 5px;
                 background-color: $CeriseRed;
             }
-            button:hover{
-                background-color: darken($CeriseRed,$darkerPorcentaje);
+            button:hover {
+                background-color: darken($CeriseRed, $darkerPorcentaje);
             }
             label {
                 width: 216px;
@@ -74,10 +82,10 @@
                 width: 216px;
                 @include textBasis($text);
             }
-            .img-wrapper{
+            .img-wrapper {
                 height: 70px;
                 width: 100%;
-                img{
+                img {
                     height: 100%;
                 }
             }
@@ -87,14 +95,13 @@
 
 @include media-max-lg {
     .what-do-we-do {
-        height: 700px; // Para alineacion 3-1
+        //height: 700px; // Para alineacion 3-1
     }
 }
 @include media-md {
     .what-do-we-do {
         border-bottom: unset;
         border-top: unset;
-        height: 1227px;
         background-color: $White;
         .title {
             :nth-child(2) {
@@ -104,25 +111,28 @@
             }
         }
         .cards-wrapper {
-            border-bottom: solid $BorderWidth $BorderBlack;;
-            border-top: solid $BorderWidth $BorderBlack;;
             flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
             align-items: center;
-            background-color: $AmarilloBanner;
-            padding-top: $mainSMRightLeftPadding;
             padding-bottom: 61px;
             width: 100%;
+            overflow-x: scroll;
             .card {
                 justify-content: space-around;
-                width: 382px;
-                height: 350px;
-                padding: 43px;
+                width: 242px;
+                height: 307px;
+                margin: 0 15px;
+                box-shadow: 0px 10px 10px 2.3px rgba($BorderBlack, 0.15);
                 label {
                     width: 100%;
                     font-size: 1.5rem;
                 }
                 button {
                     width: 295px;
+                }
+                &.animation-showup{
+                    animation: showLeft 1s ease forwards;
                 }
             }
         }
@@ -131,41 +141,25 @@
 
 @include media-sm {
     .what-do-we-do {
-
         .cards-wrapper {
-            margin-top: 190px;
             flex-direction: row;
+            flex-wrap: nowrap;
             align-items: center;
-            background-color: $AmarilloBanner;
-            padding-top: $paddingCajasSM;
-            padding-bottom: $paddingCajasSM;
             width: 100%;
             .card {
-                max-width: 382px;
-                width: 100%;
-                margin:  0 $paddingCajasSM;
-                height: 350px;
+                //max-width: 382px;
+                width: 242px;
+                margin: 0 15px;
+                height: 307px;
                 label {
-                    width: 295px;
+                    //width: 295px;
                     font-size: 1.5rem;
                 }
                 button {
                     width: 295px;
-                    margin:  10px $paddingCajasSM;;
-
+                    margin: 10px $paddingCajasSM;
                 }
             }
         }
     }
-}
-
-@keyframes UpSequence {
-    0% {
-        opacity: 0;
-        margin-top: 80px;
-	}
-	100% {
-        opacity: 1;
-        margin-top: 0;
-	}
 }
