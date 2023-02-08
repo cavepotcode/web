@@ -2,7 +2,6 @@
     "header": {
         "home": "HOME",
         "how.we.do.it": "HOW WE DO IT",
-        "projects": "PROJECTS",
         "about.us": "ABOUT US",
         "contact.us": "CONTACT US",
         "blog": "BLOG",
@@ -154,23 +153,24 @@
         }
     },
     "why-do-we-exist": {
-        "title": "Why do we exist?",
-        "text.part.1": "We had the intention to create a company that gave us the opportunity to grow as entrepreneurs. ",
-        "text.part.2": "Together we decided to enter the <strong>cave</strong> -that is now our company- full of passion and uncertainty, willing to find <strong>potential elements</strong> and transform them into something great.  ",
-        "text.part.3": "We digged deep and merged our materials to transform them into what we are now!",
+        "title": "Pepole United by a Passion for Excellence",
+        "text.part.1": "Our development team is a tight-knit group of individuals who believe in the power of collaboration and hard work",
+        "text.part.2": "",
+        "text.part.3": "",
         "alt": {
             "img.1": "Why do we exist? image banner"
         }
     },
     "name-come-from": {
-        "title.1": "Where does our name come from?",
-        "text.part.1": "Our name has its origins in our two founders' nicknames- Cuevas, which in spanish means cave, and Olla, which is pot.",
-        "title.2": "Coincidence?",
-        "text.part.2": "Not only our name comes from our two founders' nicknames but also from the idea that, in order to get results, we gotta dig deeper to find the material that works best for you. We consider ourselves a melting pot of knowledge and skills. Every project we work on is like a cave. What amazing things lie underground?"
+        "title.1": "Our Team",
+        "text.part.1": "We see ourselves as a family, bound together by a shared passion for creating innovative and impactful solutions for our clients.",
+        "title.2": "",
+        "text.part.2": "With a strong focus on building lasting relationships and delivering top-quality results, we are committed to empowering our clients and helping them achieve their goals.",
+        "text.part.3": " Whether you're looking for a partner to bring your vision to life, or simply someone to lend a helping hand, our team is here to support you every step of the way."
     },
     "we-wanna": {
-        "text": "We want to dig deeper, explore the cave, see what lies underground and bring it to life. Come dig with us! ",
-        "button": "Learn More"
+        "text": "Reach out to us to experience the difference.",
+        "button": "Contact us"
     },
     "we-tags": [
         "We are <strong>curious</strong>",
@@ -413,58 +413,71 @@
     "links": {
         "experiences": {
             "label": "More...",
-            "link": "/projects"
+            "link": "/projects",
+            "enable": true
         },
         "header": {
             "home": {
                 "label": "Home",
-                "link": "/"
+                "link": "/",
+                "enable": true
             },
             "how-we-do-it": {
                 "label": "How we do it",
-                "link": "/home/how-we-do-it"
+                "link": "/home/how-we-do-it",
+                "enable": true
             },
             "projects": {
                 "label": "Projects",
-                "link": "/projects"
+                "link": "/projects",
+                "enable": false
             },
             "about-us": {
                 "label": "About us",
-                "link": "/aboutus"
+                "link": "/aboutus",
+                "enable": true
             },
             "blog": {
                 "label": "Blog",
-                "link": "https://blog.cavepot.com/"
+                "link": "https://blog.cavepot.com/",
+                "enable": true
             },
             "our-lab": {
                 "label": "Our lab",
-                "link": "https://www.cavepotlab.com/"
+                "link": "https://www.cavepotlab.com/",
+                "enable": true
             },
             "contact-us": {
                 "label": "Contact us",
-                "link": "/contact"
+                "link": "/contact",
+                "enable": true
             }
         },
         "redes": {
             "instagram": {
                 "label": "Instagram",
-                "link": "https://www.instagram.com/cavepotuy/"
+                "link": "https://www.instagram.com/cavepotuy/",
+                "enable": true
             },
             "facebook": {
                 "label": "Facebook",
-                "link": "https://www.facebook.com/Cavepot"
+                "link": "https://www.facebook.com/Cavepot",
+                "enable": true
             },
             "twitter": {
                 "label": "Twitter",
-                "link": "https://twitter.com/Cavepot"
+                "link": "https://twitter.com/Cavepot",
+                "enable": true
             },
             "linkedin": {
                 "label": "Linkedin",
-                "link": "https://www.linkedin.com/company/cavepot"
+                "link": "https://www.linkedin.com/company/cavepot",
+                "enable": true
             },
             "github": {
                 "label": "Github",
-                "link": "https://github.com/cavepotcode/"
+                "link": "https://github.com/cavepotcode/",
+                "enable": true
             }
         }
     }

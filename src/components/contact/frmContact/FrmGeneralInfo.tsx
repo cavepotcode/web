@@ -1,14 +1,14 @@
 import { Formik } from "formik";
 import './Frm.scss';
 
-export const FrmGeneralInfo = ({submitFunction,...props}) => {
+export const FrmGeneralInfo = ({ submitFunction, ...props }) => {
 
     return (
         <div className="Frm">
             <Formik
                 initialValues={{ name: '', email: '', phone: '', subject: '', message: '' }}
                 validate={values => {
-                    const errors:any = {};
+                    const errors: any = {};
 
                     if (!values.name)
                         errors.name = 'Required';
@@ -31,7 +31,7 @@ export const FrmGeneralInfo = ({submitFunction,...props}) => {
                     resetForm();
                     setSubmitting(false);
                 }}
-                
+
             >
                 {({
                     values,
@@ -72,36 +72,7 @@ export const FrmGeneralInfo = ({submitFunction,...props}) => {
                                 {errors.email && touched.email && <div className='error'> {errors.email} </div>}
                             </div>
                         </div>
-                        {/* <div className='option-wrapper'>
-                            <label> Phone </label>
 
-                            <div className={!(errors.phone && touched.phone) ? 'wrapper' : 'wrapper error'}>
-                                <input
-                                    name="phone"
-                                    placeholder="### #### ####"
-                                    value={values.phone}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                />
-                                {errors.phone && touched.phone}
-                            </div>
-
-                        </div> */}
-                        {/* <div className='option-wrapper'>
-                            <label> Subject </label>
-
-                            <div className={!(errors.subject && touched.subject) ? 'wrapper' : 'wrapper error'}>
-                                <input
-                                    name="subject"
-                                    placeholder="Other"
-                                    value={values.subject}
-                                    onChange={handleChange}
-                                    onBlur={handleBlur}
-                                />
-                                {errors.subject && touched.subject && <div className='error'> {errors.subject} </div>}
-                            </div>
-
-                        </div> */}
                         <div className='option-wrapper'>
                             <label> Message </label>
 
@@ -116,7 +87,8 @@ export const FrmGeneralInfo = ({submitFunction,...props}) => {
                             </div>
 
                         </div>
-                        <button type="submit" disabled={isSubmitting}>
+                        
+                        <button type="submit" disabled={isSubmitting} >
                             Send
                         </button>
                     </form>

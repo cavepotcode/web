@@ -17,9 +17,10 @@
     background-color: transparent;
     top: -35px;
     font-size: 30px;
-    color: $PineTree;
+    color: white;
     width: 19px;
     height: 29px;
+    z-index: 1;
     &:disabled {
         opacity: 0.5;
     }

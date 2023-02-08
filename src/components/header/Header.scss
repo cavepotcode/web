@@ -216,16 +216,17 @@ $logoHeight: 35px;
                 text-decoration: none;
                 padding: 7px;
                 border-radius: 5px;
-                background-color: $CeriseRed;
+                background-color: transparent;
                 color: white;
                 font-weight: bold;
-                border: $BorderWidth $BorderBlack solid;
+                border: $BorderWidth white solid;
                 @include transition-ease;
             }
 
             &__link-contact:hover {
-                background-color: darken($DarkLavender, 0);
-                border: $BorderWidth white solid;
+                background-color: darken(white, 0);
+                border: $DarkLavender white solid;
+                color: $DarkLavender;
             }
         }
     }

@@ -1,20 +1,39 @@
 @import "./../../../styles/main";
-
-.our-history{
+#our-history{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: $spaceBetween45;
-    margin-bottom: 76px;
-    .title{
+    justify-content: center;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
         width: 100%;
-        @include textBasisBold($title);
-        text-align: center;
+        @include backgroundPattern($CeriseRed, 1.4, $CeriseRed, $MinionYellow, $DarkLavender, $CeriseRed);
+        transform: skew(0, -1deg);
     }
-
-    .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
-        display: none;
+    .our-history{
+        display: flex;
+        flex-direction: column;
+        padding-top: $spaceBetween45;
+        max-width: 100%;
+        margin-bottom: 76px;
+        .title{
+            width: 100%;
+            @include textBasisBold($title);
+            color: white;
+            text-align: center;
+            z-index: 1;
+        }
+    
+        .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+            display: none;
+        }
     }
 }
+
 
 @include media-md{
     .our-history{

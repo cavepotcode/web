@@ -1,6 +1,6 @@
 import { Formik } from "formik";
 import './Frm.scss';
-import { RangeSlider } from '../../rangeSlider/RangeSlider';
+import { RangeSlider } from './rangeSlider/RangeSlider';
 
 export const FrmNewApp = ({submitFunction, ...props}) => {
     const initValues = { name: '', email: '', phone: '', budget: '', subject: '', message: '' }

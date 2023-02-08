@@ -7,11 +7,9 @@
     padding: 43px 55px 33px 68px;
     display: flex;
     flex-direction: row;
-    background-color: $White;
-
-    border-style: solid;
-    border-width: 2px;
-    border-color: $Black;
+   // @include backgroundPattern($SeaSerpent, .8);
+    @include backgroundPattern($AmarilloBanner,0.6,$OH-orange);
+    box-shadow: 0px 10px 10px 2.3px rgba($BorderBlack, 0.15);
     border-radius: $btnBorderRadius;
 
     form{
@@ -22,7 +20,8 @@
     .option-wrapper{
         display: flex;
         flex-direction: row;
-        margin: 0;
+        align-items: flex-start;
+        margin: 15px 0;
         width: 100%;
         max-width: 1024px;
         
@@ -30,9 +29,9 @@
             white-space: wrap;
             min-width: 100px;
             height: 55px;
-            margin: 0 25px 16px 0;
+            margin: 0 25px 0 0;
             @include textBasisBold($text);
-            align-items: center;
+            align-items: flex-start;
             display: flex;
         }
 
@@ -44,14 +43,21 @@
             position: relative;
             align-items: center;
             justify-content: center;
-            input{
-                width: 100%;
+            padding-bottom: 25px;
+            input{                
                 height: 35px;
-                margin: 0 0 16px 0;
-                border-radius: $btnBorderRadius;
-                border: solid $BorderWidth $BorderBlack;
-                padding-left: 18px;
+            }
+            textarea{
+                height: 265px;
+                resize: vertical;
+            }
+            input, textarea {
+                width: 100%;
+                margin: 0;
+                border-radius: $borderRadiusMain;
+                border: solid $BorderWidth rgba($BorderBlack,0.5);                
                 @include textBasis($text);
+                padding-left: 18px;
             }
             &.error{
                 
@@ -66,21 +72,11 @@
                     @include textBasis($text);
                     color: $CeriseRed;
                     position: absolute;
-                    bottom: 0;
+                    bottom: 5px;
                     right: 0;
                 }
             }
-            textarea{
-                width: 100%;
-                padding-top: 10px;
-                height: 265px;
-                margin: 0 0 16px 0;
-                border-radius: $borderRadiusMain;
-                border: solid $BorderWidth $BorderBlack;
-                resize: vertical;
-                @include textBasis($text);
-                padding-left: 18px;
-            }
+            
 
             .radiobutton-group{
                 display: flex;
@@ -112,10 +108,11 @@
         margin: 20px 20px 23px 22px;
         padding: 21px 27px 16px 34px;
         .option-wrapper{
+            margin: 5px 0;
             .wrapper{
                 input{
                     height: 35px;
-                    margin: 0 0 10px 0;
+                    //margin: 0 0 10px 0;
         
                     font-size: 17px;
                     font-weight: lighter;
@@ -123,14 +120,14 @@
                     font-style: lighter;
                     letter-spacing: lighter;
                     text-align: left;
-                    padding-left: 18px;
+                    //padding-left: 18px;
                 }
             }
         }
         
         button{
             color: $White;
-            width: 103;
+            width: 103px;
             height: 29px;
         }
     }
@@ -143,12 +140,12 @@
             .wrapper{
                 input{
                     height: 25px;
-                    margin: 0 0 10px 0;
-                    border: solid $BorderWidth $BorderBlack;
-        
+                   // margin: 0 0 10px 0;
                     font-size: 11px;
-                    padding-left: 10px;
+                    //padding-left: 10px;
+                    
                 }
+                padding-bottom: 0;
             }
         }
     }

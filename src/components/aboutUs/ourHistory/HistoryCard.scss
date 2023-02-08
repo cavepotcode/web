@@ -10,18 +10,17 @@
         display: flex;
         flex-direction: column;
         .card{
-            border: solid $BorderWidth $BorderBlack;
             display: flex;
             flex-direction: column;
             width: 225px;
             height: 268px;
-            box-shadow: 0px 7px 7px 7px $Shadow;
+            box-shadow: 0px 0px 8px 4px rgba($BorderBlack,0.6);
             border-radius: $borderRadiusMain;
+            background-color: white;
             z-index: 1;
             padding: 13px;
             transition: height ease-in 1s;
             .card-header{  
-                border: solid $BorderWidth $BorderBlack;
                 display: flex;
                 flex-direction: column;
                 margin-top: -37px;
@@ -71,7 +70,7 @@
                 height: 60px;
                 width: 10px;
                 background-color: $OH-orange;
-                box-shadow: 0px 13px 7px 0px $Shadow;
+                box-shadow: 0px 13px 7px 0px $BorderBlack;
                 border-radius: $borderRadiusMain;
                 z-index: 2;
                 margin: -8px 0;

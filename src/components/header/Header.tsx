@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
 import './Header.scss';
+import { HeaderItem } from './HeaderItem';
 
 export interface Size {
     width: number;
@@ -79,25 +80,11 @@ export const Header = () => {
                 <nav className={showMenu ? 'nav open' : 'nav'}>
                     <ul className={showMenu ? 'menu-nav open' : 'menu-nav'}>
                         {
-                            links.map((obj: any, key) => (
-                                <li className="menu-nav__item" key={`headerLinks__${key}`}>
-                                    {obj.link.includes("http") &&
-                                        <a href={obj.link} target='_blank' className='menu-nav__link'>
-                                            {obj.label}
-                                        </a>
-                                    }
-                                    {!obj.link.includes("http") && size.width <= 1024 &&
-                                        <NavLink to={obj.link} className={obj.link.includes("contact") ? "menu-nav__link-contact" : "menu-nav__link"} onClick={onShowMenu}>
-                                            {obj.label}
-                                        </NavLink>
-                                    }
-                                    {!obj.link.includes("http") && size.width > 1024 &&
-                                        <NavLink to={obj.link} className={obj.link.includes("contact") ? "menu-nav__link-contact" : "menu-nav__link"} >
-                                            {obj.label}
-                                        </NavLink>
-                                    }
-                                </li>
-                            ))
+                            links.map((obj:any, key) => {
+                                return (
+                                    obj.enable && <HeaderItem item={obj} key={key} onShowMenu={onShowMenu} size={size}/>
+                                )
+                            })
                         }
                     </ul>
                 </nav>

@@ -3,230 +3,265 @@
 
 
 $distance: 17px;
-.contact {
+#contact {
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    gap: 34px;
-    animation: showUp 0.5s linear;
-    .title {
-        grid-column: 1 / span 4;
+    min-height:100vh;
+    padding-top: $spaceBetween;
+    &::before {
+        content: '';
+        position: absolute;
+        top: -10%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include backgroundPattern($CeriseRed, 1.4, $CeriseRed, $MinionYellow, $DarkLavender, $CeriseRed);
+        -webkit-transform: skew(0,-184deg);
+        -moz-transform: skew(0, -184deg);
+        -ms-transform: skew(0, -184deg);
+        transform: skew(0, -184deg);
+    }
+    .contact {
         display: flex;
         flex-direction: column;
-        padding-top: 17px;
-        text-align: center;
-        @include textBasis($text);
-        :first-child {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+        z-index: 1;
+        .title {
+            display: flex;
+            flex-direction: column;
+            padding-top: 17px;
+            margin-bottom: $distance;
             text-align: center;
-            margin-bottom: 12px;
-            @include textBasisBold($title);
-        }
-    }
-    .form-wrapper {
-        justify-self: center;
-        grid-column: 1 / span 4;
-        .contact-options-wrapper {
-            gap: 15px;
-            display: flex;
-            display: flex;
-            padding-bottom: 15px;
-            align-items: end;
-            justify-content: center;
-            .contact-option-card {
-                cursor: pointer;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-around;
+            @include textBasis($subtitle);
+            color: white;
+            :first-child {
                 text-align: center;
-                padding-top: 15px;
-                padding-bottom: 10px;
-                height: 172px;
-                width: 172px;
-                background-color: $CeriseRed;
-                border-radius: $btnBorderRadius;
-                border: solid $BorderWidth $BorderBlack;
-                position: relative;                
-                animation-delay: 0.3s;
-                animation: showUpOptions 0.3s linear forwards;
-                .contact-option-title {
-                    label {
-                        @include textBasisBold($text);
-                        color: white !important;
+                margin-bottom: 12px;
+                @include textBasisBold($pageTitle);
+                color:white
+            }
+        }
+        .form-wrapper {
+            justify-content: center;
+            width: 100%;
+            .contact-options-wrapper {
+                display: flex;
+                width: 100%;
+                padding-bottom: 15px;
+                align-items: end;
+                justify-content: space-between;
+                .contact-option-card {
+                    cursor: pointer;
+                    display: flex;
+                    flex: 1 1;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    text-align: center;
+                    padding-top: 15px;
+                    padding-bottom: 10px;
+                    height: 172px;
+                    max-width: 300px;
+                    background-color: $DarkLavender;
+                    @include backgroundPattern($AmarilloBanner,0.6,$OH-orange);
+                    border-radius: $btnBorderRadius;
+                    box-shadow: 0px 10px 10px 2.3px rgba($BorderBlack, 0.15);
+                    position: relative;                
+                    margin-bottom: 0;
+                    transition: all ease 0.3s;
+                    .contact-option-title {
+                        label {
+                            @include textBasisBold($text);
+                        }
                     }
-                }
-                &.selected {
-                    animation:none;
-                    border-radius: $btnBorderRadius $btnBorderRadius 0 0;                    
-                    background-color: $AmarilloBanner;
-                    border-bottom: none;
-                    bottom: -17px;
-                    label {
-                        color: $PineTree !important;
+                    &.selected {
+                        border-radius: $btnBorderRadius $btnBorderRadius 0 0; 
+                        box-shadow: 0px -10px 10px 2.3px rgba($BorderBlack, 0.15);
+                        margin-bottom: -15px;
                     }
-                }
-                .contact-option-img {
-                    height: 70px;
-                    img {
-                        height: 100%;
+                    .contact-option-img {
+                        height: 70px;
+                        img {
+                            height: 100%;
+                        }
                     }
                 }
             }
-        }
+    
+            .contact-form {
+                justify-self: center;
+                flex-wrap: wrap;
+                justify-content: center;
+                display: flex;
+                width: 100%;
+                border-radius: $btnBorderRadius;
+                box-shadow: 0px 10px 10px 2.3px rgba($BorderBlack, 0.15);
+                margin-top: 35;
+                &.border-radius-left {
+                    border-radius: 0  $btnBorderRadius $btnBorderRadius $btnBorderRadius;
+                }
 
-        .contact-form {
-            z-index: 998;
-            display: grid;
-            justify-self: center;
-            flex-wrap: wrap;
-            justify-content: center;
-            grid-column: 1 / span 4;
-            display: flex;
-            width: 100%;
-            max-width: 1155px;
-            background-color: $AmarilloBanner;
-            border-radius: 0 0 $btnBorderRadius $btnBorderRadius;
-            margin-top: 35;
-            border: solid $BorderWidth $BorderBlack;
+                &.border-radius-right {
+                    border-radius: $btnBorderRadius   0 $btnBorderRadius $btnBorderRadius;
+                }
+            }
+            .contact-form, .contact-options-wrapper .contact-option-card.selected {
+                background: rgba($White,1);
+            }
         }
-    }
-    .modal {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #00000082;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 0;
-        left: 0;
-        z-index: 9999;
-        .dialog{
-            position: relative;
-            width: 300px;
-            height: 300px;
-            background-color: white;
+        .modal {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: #00000082;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: $btnBorderRadius;
-            border: solid $BorderWidth $BorderBlack;
-            padding: 15px;
-            text-align: center;
-            box-sizing: content-box;
-            @include textBasis($text);
-            .close {
-                position: absolute;
-                right: 10px;
-                top:10px;
-                font-size: 1.5rem;
-                cursor: pointer;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            .dialog{
+                position: relative;
+                width: 300px;
+                height: 300px;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: $btnBorderRadius;
+                border: solid $BorderWidth $BorderBlack;
+                padding: 15px;
+                text-align: center;
+                box-sizing: content-box;
+                @include textBasis($text);
+                .close {
+                    position: absolute;
+                    right: 10px;
+                    top:10px;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
             }
+            img {
+                width: 300px;
+            }
+            
         }
-        img {
-            width: 300px;
-        }
-        
     }
+    
 }
 
+@include media-lg {
+    #contact {
+        .contact {
+            padding: 0 $mainMDRightLeftPadding;
+            .form-wrapper {
+                .contact-form {
+                    .option-wrapper {
+                        label {
+                            width: 0px;
+                            min-width: 0;
+                            margin-right: 0;
+                            visibility: hidden;
+                            position: absolute;
+                        }
+                    }
+                }
+    
+                .contact-options-wrapper {
+                    .contact-option-card {
+                        height: 176px;
+                        max-width: 190px;
+                       
+                    }
+                }
+            }
+        }
+    }
+    
+}
 @include media-md {
-    .contact {
-        padding: 0 $mainMDRightLeftPadding;
-        .form-wrapper {
-            width: 100%;
-            .contact-form {
-                .option-wrapper {
-                    label {
-                        width: 0px;
-                        min-width: 0;
-                        margin-right: 0;
-                        visibility: hidden;
-                        position: absolute;
+    #contact {
+        .contact {
+            padding: 0 $mainMDRightLeftPadding;
+            .form-wrapper {
+                .contact-form {
+                    .option-wrapper {
+                        label {
+                            width: 0px;
+                            min-width: 0;
+                            margin-right: 0;
+                            visibility: hidden;
+                            position: absolute;
+                        }
                     }
                 }
-            }
-
-            .contact-options-wrapper {
-                gap: 15px;
-                padding-bottom: 23px;
-                .contact-option-card {
-                    height: 176px;
-                    .contact-option-img {
-                        img {
-                            width: 90%;
-                            height: 90%;
+    
+                .contact-options-wrapper {
+                    .contact-option-card {
+                        height: 176px;
+                        max-width: 160px;
+                        .contact-option-img {
+                            img {
+                                width: 90%;
+                                height: 90%;
+                            }
                         }
-                    }
-                    .contact-option-title {
-                        label {
-                            font-size: 14px;
+                        .contact-option-title {
+                            label {
+                                font-size: 14px;
+                            }
                         }
-                    }
-
-                    &.selected {
-                        bottom: -25px;
                     }
                 }
             }
         }
     }
+    
 }
-
 @include media-sm {
-    .contact {
-        padding: 0 $mainSMRightLeftPadding;
-        .form-wrapper {
-            margin-top: 10px;
-            .contact-options-wrapper {
-                gap: 7px;
-                padding-bottom: 10px;
-                .contact-option-card {
-                    display: flex;
-                    margin: 0;
-                    padding: 5px;
-                    align-items: center;
-                    justify-content: center;
-                    height: 70px;
-                    position: relative;
-                    .contact-option-img {
-                        img {
-                            max-height: 50px;
-                            max-width: 50px;
+    #contact {
+        .contact {
+            .form-wrapper {
+                .contact-options-wrapper {
+                    .contact-option-card {
+                        height: 70px;
+                        max-width: 70px;
+                        position: relative;
+                        .contact-option-img {
+                            img {
+                                max-height: 50px;
+                                max-width: 50px;
+                            }
                         }
-                    }
-                    .contact-option-title {
-                        position: absolute;
-                        opacity: 0;
-                        bottom: 70px;
-                        left: 0;
-                        label {
-                            @include textBasisBold(0.6rem);
-                            line-height: 0.2rem;
-                            // font-family: Montserrat-Bold;
-                            // font-size: 6.5px;
+                        .contact-option-title {
+                            position: absolute;
+                            opacity: 0;
+                            bottom: 70px;
+                            left: 0;
+                            label {
+                                @include textBasisBold(0.6rem);
+                                line-height: 0.2rem;
+                                color: white;
+                                font-family: Montserrat-Bold;
+                            }
                         }
-                    }
-                    &.selected {
-                        .contact-option-title{
-                            opacity: 1;
-                        }                        
-                        bottom: -12px;
+                        &.selected {
+                            .contact-option-title{
+                                opacity: 1;
+                            }                    
+                        }
                     }
                 }
             }
         }
     }
+    
 }
 
-
-@keyframes showUpOptions {
-    0%{
-        bottom: -17px;
-    }
-    100%{
-        bottom: 0;
-    }
-}

@@ -24,28 +24,30 @@ export function WeAre() {
     }, [])
 
     return (
-        <div className="we-tag-wrapper">
-            {/* <div id="are" className="are">
-                <Trans> <label className="are-label animation" >{array[count]} </label> </Trans>
-            </div> */}
-            <div className="dig">
+        <div id="we-tag-wrapper">
+            <div className="we-tag-wrapper max-container">
 
-                <div className="text-wrapper">
-                    <label>
-                        {t("we-wanna.text")}
-                    </label>
-                    <NavLink to="/contact">
-                        <button>
+                <div className="dig">
+
+                    <div className="text-wrapper">
+                        <label>
+                            {t("we-wanna.text")}
+                        </label>
+
+
+
+                    </div>
+                    <div className="button-container">
+                        <NavLink to="/contact">
+
                             {t("we-wanna.button")}
-                        </button>
-                    </NavLink>
 
+                        </NavLink>
+                    </div>
                 </div>
-                <div className="img-wrapper">
-                    <img src={AllImages.AboutUsDig} alt={t("why-do-we-exist.alt.img.1")} />
-                </div>
+
             </div>
-
         </div>
+
     );
 }

@@ -1,166 +1,109 @@
 @import "./../../../styles/main";
 @import "./../../../styles/variables";
 
-
-.where-name-come-from {
+#where-name-come-from {
     display: flex;
-    gap: 16px;
-    width: 100%;
     justify-content: center;
-    height: 417px;
-    .text-wrapper {
-        width: 50%;
-        max-width: 45rem;
-        transition: left 0.5s;
+    .where-name-come-from {
         display: flex;
-        flex-direction: column;
-        //text-align: center;
-        justify-content: center;
-        padding: 0 30px 0 30px;
-
-        .title {
-            @include textBasisBold($title);
-        }
-        .textpart {
-            @include textBasis($text);
-        }
-        label {
-            //align-self: center;
-            max-width: 640px;
-        }
-    }
-    .img-wrapper {
-        max-width: 30rem;
+        gap: 5%;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        img {
-            justify-content: flex-end;
-            position: absolute;
+        justify-content: space-between;
+        padding-bottom: $spaceBetween45;
+
+        .text-wrapper,
+        .img-wrapper {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            border-radius: $borderRadiusMain;
+            box-shadow: 0px 6px 22.7px -2.7px rgb(24 23 24 / 15%);
         }
-        .pot {
-            width:  100%;
-            left: 0;
-            bottom: 0;
-        }
-        .yellow, .red,.purple{
-            opacity: 0;
-            top: var(--currentTop);
-            right: var(--currentRight);
-            animation: showBubble 5s linear infinite ;
-        }
-        .yellow {
-            --currentTop: 175px;
-            --currentRight: 57px;
-            width: 14px;
-            height: 14px;      
-            animation-delay: 1.5s;     
-            &.second {
-                animation-delay: 1s;
-                --currentTop: 120px;
-                --currentRight: 88px;
+
+        .text-wrapper {
+            width: 60%;
+            //max-width: 45rem;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: $spaceBetween45;
+            background: white;
+
+            .title {
+                @include textBasisBold($title);
             }
-            &.third {
-                animation-delay: 2s;
-                --currentTop: 175px;
-                --currentRight: 142px;
+            .textpart {
+                @include textBasis($text);
+            }
+            label {
+                max-width: 640px;
             }
         }
-        .purple {
-            --currentTop: 106px;
-            --currentRight: 32px;
-            width: 36px;
-            height: 36px;
-            animation-delay: 1.5s;
-            &.second {
-                animation-delay: 3s;
-                --currentTop: 13px;
-                --currentRight: 138px;
+
+        .img-wrapper {
+            width: 35%;
+            align-items: center;
+            overflow: hidden;
+            height: 300px;
+            position: relative;
+            img {
+                position: absolute;
+                justify-content: flex-end;
+                width: 100%;
+                animation: hideImg linear infinite 15s;
+                opacity: 0;
+                &:first-child {
+                    opacity: 1;
+                    animation: none;
+                }
             }
-            &.third {
-                animation-delay: 4s;
-                --currentTop: -22px;
-                --currentRight: 42px;                
-            }
-        }
-        .red {
-            --currentTop: 169px;
-            --currentRight: 114px;  
-            width: 18px;
-            height: 18px;
-            &.second {
-                animation-delay: 1.5s;
-                --currentTop: 58px;
-                --currentRight: 64px;  
-            }
-            &.third {
-                animation-delay: 2.5s;
-                --currentTop: -37px;
-                --currentRight: 100px;  
-            }
+            //
         }
     }
 }
-
-// @include media-xl {
-//     .where-name-come-from {
-//         width: unset;
-//         .textwrapper {
-//             width: auto;
-//             label {
-//                 align-self: unset;
-//                 max-width: 100%;
-//             }
-//         }
-//     }
-// }
 
 @include media-lg {
-    .where-name-come-from  {
-        position: relative;
-        .text-wrapper {
-            border: solid $BorderWidth $BorderBlack;
-            width: 100%;
-            min-height: 450px;
-            height: unset;
-            label{
-                max-width: unset;
+    #where-name-come-from {
+        .where-name-come-from {
+            position: relative;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            .text-wrapper {
+                width: 100%;
+                min-height: 450px;
+                height: unset;
+                label {
+                    max-width: unset;
+                }
             }
-            background-color: white;
-            margin: 30px 30px 30px 30px;
-            padding: 30px 30px 30px 30px;
-            align-self: center;
-            border-radius: $borderRadiusMain;
-            box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
-        }
-
-        .img-wrapper{
-            position: absolute;
+    
+            .img-wrapper {
+                width: 100%;
+                max-height: 270px;
+                border: 1px solid white;
+            }
         }
     }
+    
 }
 
 
-
-@keyframes showBubble {
+@keyframes hideImg {
     0% {
-        transform: scale(0.9);
         opacity: 0;
-        top: calc(var(--currentTop) + 10px);
-        right: calc(var(--currentRight) - #{random(10)}px);
-	}
-    50% {
-        transform: scale(1);
-        opacity: 1;
-        right: calc(var(--currentRight) + #{random(10)}px);
     }
-	100% {
-        transform: scale(0.5);
+    15% {
         opacity: 0;
-        top: calc(var(--currentTop) - 100px);
-        right: calc(var(--currentRight) - #{random(10)}px);
-	}
+    }
+    25% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 1;
+    }
+    65%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
-

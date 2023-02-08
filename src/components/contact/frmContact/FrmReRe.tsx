@@ -1,7 +1,7 @@
 import { Formik, Field } from "formik";
 import './Frm.scss';
 import { MultipleFileUploadField } from '../../dragNDrop/MultipleFileUploadField';
-import { RangeSlider } from '../../rangeSlider/RangeSlider';
+import { RangeSlider } from './rangeSlider/RangeSlider';
 //import { array, object, string } from 'yup';
 
 export const FrmReRe = ({ submitFunction, ...props }) => {

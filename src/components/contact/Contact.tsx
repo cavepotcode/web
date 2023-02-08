@@ -62,7 +62,7 @@ export const Contact = () => {
     const submitFunction = async (values) => {
         try {
             showModal();
-            const host = `${window.location.protocol}://${window.location.host}`; 
+            const host = `${window.location.protocol}://${window.location.host}`;
             const response: any = await fetch(`/api/contact/send`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -86,97 +86,88 @@ export const Contact = () => {
         setMessage(undefined);
     }
     return (
-        <div className="contact">
-            <div className="title">
-                <label>{t("contact.title")}</label>
-                <label>{t("contact.sub-title")}</label>
+        <div id="contact">
+            <div className="contact max-container">
+                <div className="title">
+                    <label>{t("contact.title")}</label>
+                    <label>{t("contact.sub-title")}</label>
+                </div>
+                <div className='form-wrapper'>
+                    <div className="contact-options-wrapper">
+                        <div className={activeClasses.generalInfo ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("generalInfo")}>
+                            <div className='contact-option-img'>
+                                <img src={AllImages.GeneralInfo} alt={t("contact.option4.alt.img")} />
+                            </div>
+                            <div className='contact-option-title'>
+                                <label>
+                                    {size.width <= 1024 ? t("contact.option4.titlesm") : t("contact.option4.title")}
+
+                                </label>
+                            </div>
+                        </div>
+
+                        <div className={activeClasses.aNewApp ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("aNewApp")}>
+                            <div className='contact-option-img'>
+
+                                <img src={AllImages.ANewApp} alt={t("contact.option2.alt.img")} />
+                            </div>
+                            <div className='contact-option-title'>
+                                <label>
+                                    {/* {size.width <= 1024 ? t("contact.option2.titlesm") : t("contact.option2.title")} */}
+                                    {t("what-do-we-do.card2.title")}
+                                </label>
+                            </div>
+                        </div>
+
+                        <div className={activeClasses.redesign ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("redesign")}>
+                            <div className='contact-option-img'>
+                                <img src={AllImages.Redesign} alt={t("contact.option3.alt.img")} />
+                            </div>
+                            <div className='contact-option-title'>
+                                <label>
+                                    {/* {size.width <= 1024 ? t("contact.option3.titlesm") : t("contact.option3.title")} */}
+                                    {t("what-do-we-do.card3.title")}
+                                </label>
+                            </div>
+                        </div>
+
+                        <div className={activeClasses.staffAugmentation ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("staffAugmentation")}>
+                            <div className='contact-option-img'>
+                                <img src={AllImages.StaffAugmentation} alt={t("contact.option5.alt.img")} />
+                            </div>
+                            <div className='contact-option-title'>
+                                <label>
+                                    {/* {size.width <= 1024 ? t("contact.option5.titlesm") : t("contact.option5.title")} */}
+                                    {t("what-do-we-do.card4.title")}
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={activeClasses.generalInfo ? 'contact-form border-radius-left' : activeClasses.staffAugmentation ? 'contact-form border-radius-right' : 'contact-form'}>
+                        {activeClasses.aNewLanding && <FrmNewApp submitFunction={submitFunction} />}
+                        {activeClasses.aNewApp && <FrmNewApp submitFunction={submitFunction} />}
+                        {activeClasses.redesign && <FrmReRe submitFunction={submitFunction} />}
+                        {activeClasses.generalInfo && <FrmGeneralInfo submitFunction={submitFunction} />}
+                        {activeClasses.staffAugmentation && <FrmStaffAugmentation submitFunction={submitFunction} />}
+                    </div>
+                </div>
+                {modal && <div className="modal">
+
+                    <div className="dialog">
+                        {message && <div>
+                            <div className="close" onClick={closeModal}>
+                                x
+                            </div>
+                            <p>
+                                {message}
+                            </p></div>}
+                        {!message && <img src={AllImages.Loading} />}
+                    </div>
+                </div>}
             </div>
-            <div className='form-wrapper'>
-                <div className="contact-options-wrapper">
-                    <div className={activeClasses.generalInfo ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("generalInfo")}>
-                        <div className='contact-option-img'>
-                            <img src={AllImages.GeneralInfo} alt={t("contact.option4.alt.img")} />
-                        </div>
-                        <div className='contact-option-title'>
-                            <label>
-                                {size.width <= 1024 ? t("contact.option4.titlesm") : t("contact.option4.title")}
-
-                            </label>
-                        </div>
-                    </div>
-
-                    {/* <div className={activeClasses.aNewLanding ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("aNewLanding")}>
-                        <div className='contact-option-img'>
-                            <img src={AllImages.ANewLanding} alt={t("contact.option1.alt.img")} />
-                        </div>
-                        <div className='contact-option-title'>
-                            <label>
-                                {size.width <= 1024 ? t("contact.option1.titlesm") : t("contact.option1.title")}
-
-                            </label>
-                        </div>
-                    </div> */}
-
-                    <div className={activeClasses.aNewApp ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("aNewApp")}>
-                        <div className='contact-option-img'>
-
-                            <img src={AllImages.ANewApp} alt={t("contact.option2.alt.img")} />
-                        </div>
-                        <div className='contact-option-title'>
-                            <label>
-                                {size.width <= 1024 ? t("contact.option2.titlesm") : t("contact.option2.title")}
-
-                            </label>
-                        </div>
-                    </div>
-
-                    <div className={activeClasses.redesign ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("redesign")}>
-                        <div className='contact-option-img'>
-                            <img src={AllImages.Redesign} alt={t("contact.option3.alt.img")} />
-                        </div>
-                        <div className='contact-option-title'>
-                            <label>
-                                {size.width <= 1024 ? t("contact.option3.titlesm") : t("contact.option3.title")}
-
-                            </label>
-                        </div>
-                    </div>
-
-                    <div className={activeClasses.staffAugmentation ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("staffAugmentation")}>
-                        <div className='contact-option-img'>
-                            <img src={AllImages.StaffAugmentation} alt={t("contact.option5.alt.img")} />
-                        </div>
-                        <div className='contact-option-title'>
-                            <label>
-                                {size.width <= 1024 ? t("contact.option5.titlesm") : t("contact.option5.title")}
-
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='contact-form'>
-                    {activeClasses.aNewLanding && <FrmNewApp submitFunction={submitFunction} />}
-                    {activeClasses.aNewApp && <FrmNewApp submitFunction={submitFunction} />}
-                    {activeClasses.redesign && <FrmReRe submitFunction={submitFunction} />}
-                    {activeClasses.generalInfo && <FrmGeneralInfo submitFunction={submitFunction} />}
-                    {activeClasses.staffAugmentation && <FrmStaffAugmentation submitFunction={submitFunction} />}
-                </div>
-            </div>
-            {modal && <div className="modal">
-
-                <div className="dialog">
-                    {message && <div>
-                        <div className="close" onClick={closeModal}>
-                            x
-                        </div>
-                        <p>
-                            {message}
-                        </p></div>}
-                    {!message && <img src={AllImages.Loading} />}
-                </div>
-            </div>}
         </div>
+
 
     )
 }

@@ -1,125 +1,59 @@
 @import "./../../../styles/variables";
 @import "./../../../styles/mixin";
-
-.we-tag-wrapper {
+#we-tag-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: $spaceBetween;
-
-    .are {
-        border-top: solid $BorderWidth $BorderBlack;
-        border-bottom: solid $BorderWidth $BorderBlack;
+    flex-direction: row;
+    justify-content: center;
+    margin: $spaceBetween45 0;
+    .we-tag-wrapper {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        height: 250px;
-        width: 100%;
-        font-size: $title;
-        background-color: $CeriseRed;
-        color: #fff;
-        margin-bottom: 30px;
-        .are-label {
-            &.animation {
-                animation: OpeningSequence 3s linear infinite;
-            }
-        }
-    }
+        flex-direction: column;
+        gap: $spaceBetween;
 
-    .dig {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        .text-wrapper {
-            width: 100%;
-            max-width: 45rem;
+        
+        .dig {
             display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding: 0 30px 0 30px;
-            button {
-                width: 211px;
-                background-color: $AmarilloBanner;
-                align-self: flex-end;
-                color: $PineTree;
-            }
-            button:hover {
-                background-color: darken($AmarilloBoton, $darkerPorcentaje);
-            }
-            label {
-                @include textBasisBold($title);
-            }
-        }
-        .img-wrapper {
-            max-width: 35rem;
-            width: 100%;
-            display: flex;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
-            img {
-                animation: showUp 0.5s linear forwards;
-                justify-content: flex-end;
-                width: 100%;
-            }
-        }
-    }
-}
-
-@include media-lg {
-    .we-tag-wrapper{
-        .dig  {
-            position: relative;
-            background-image: url("../../../assets/img/aboutUsDig.png");    
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            min-height: 292px;
             .text-wrapper {
-                border: solid $BorderWidth $BorderBlack;
                 width: 100%;
-                max-width: unset;
-                height: unset;
-                label{
-                    max-width: unset;
+                max-width: 45rem;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 0 30px 0 30px;
+
+                label {
+                    @include textBasis($title);
                 }
-                background-color: white;
-                margin: 30px 30px 30px 30px;
-                padding: 30px 30px 30px 30px;
-                align-self: center;
-                border-radius: $borderRadiusMain;
-                box-shadow: 0px 23px 35.7px 2.3px rgba(57, 58, 57, 0.15);
             }
-            .img-wrapper{
-                width: 0;
-                display: none;
+            .button-container {
+                a {
+                    text-decoration: none;
+                    color: white;
+                    z-index: 1;
+                }
             }
         }
+        
     }
-    
 }
 
-
-@keyframes OpeningSequence {
-    0% {
-        text-shadow: 0 0 50px #fff;
-        letter-spacing:  3vw;
-        opacity: 0.2;
-    }
-    20% {
-        text-shadow: 0 0 1px #fff;
-        letter-spacing: 2vw;
-        opacity: 0.6;
-    }
-    65% {
-        text-shadow: 0 0 1vw #fff;
-        opacity: 0.7;
-    }
-    75% {
-        text-shadow: 0 0 0 #fff;
-        letter-spacing: 0;
-        opacity: 0.9;
-    }
-    100% {
-        opacity: 0;
+@include media-md {
+    #we-tag-wrapper {
+        .we-tag-wrapper {
+            
+            .dig {
+                flex-wrap: wrap;
+                .text-wrapper {
+                    
+                    label {
+                        @include textBasis($title);
+                        text-align: center;
+                    }
+                }            
+            }            
+        }
     }
 }

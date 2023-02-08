@@ -36,7 +36,7 @@ export const Footer = () => {
                     <div className="column company">
                         <label className='title'>{t("footer.column.1.title")}</label>
                         {linksHeader.map((obj: any, key) => {
-                            return <div key={`pages_${key}`}>
+                            return obj.enable && <div key={`pages_${key}`}>
                                 {obj.link.includes("http") &&
                                     <a href={obj.link} target='_blank' className='menu-nav__link'>
                                         {obj.label}
@@ -50,7 +50,7 @@ export const Footer = () => {
                             </div>
                         })}
                     </div>
-                    <div className="column experiences">
+                    {/* <div className="column experiences">
                         <label className='title'>{t("footer.column.2.title")}</label>
                         {Object.keys(linksProjects).slice(0, 4).map((it: string, key) => {
                             return <NavLink to={"/project/" + linksProjects[it].img} target="_blank" key={`project_${key}`}>
@@ -60,7 +60,7 @@ export const Footer = () => {
                         <NavLink to={t("links.experiences.link")}>
                             {t("links.experiences.label")}
                         </NavLink>
-                    </div>
+                    </div> */}
                     <div className="column locate">
                         <div className='main-text'>
                             <label className='title' >{t("footer.column.4.title")}</label>
