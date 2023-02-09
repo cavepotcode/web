@@ -21,6 +21,8 @@ export function HomePage() {
         }
     }, [params.menu]); 
 
+    
+
     function scrollToSection(section) {
         section = `#${section}`;
         const element = document.querySelector(section);
