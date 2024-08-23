@@ -2,6 +2,7 @@
     "header": {
         "home": "HOME",
         "how.we.do.it": "HOW WE DO IT",
+        "projects": "PROJECTS",
         "about.us": "ABOUT US",
         "contact.us": "CONTACT US",
         "blog": "BLOG",
@@ -239,7 +240,7 @@
     "projects": {
         "title": "Take a look at some of our latest projects",
         "desc": "We see our clients' needs as a <strong>map that guides us</strong>,  this allows us to work hand in hand with them and see the bigger picture!",
-        "button": "Contact us",
+        "button": "Wanna know more?",
         "projects": {
             "virtual-care": {
                 "title": "Falck Group",
@@ -250,7 +251,7 @@
                 "imgX": 0,
                 "imgY": 218,
                 "w": 110,
-                "imgs": ["1","2","3"],
+                "imgs": ["1","2"],
                 "color": "#e5405d",
                 "gridArea": "span 2 /auto",
                 "description": [
@@ -263,7 +264,12 @@
                         "desc": "VirtualCare centralizes all the information in one unique system, this enables patients to know their appointments. It allows doctors to know which patient will be the next and also have immediate access to his clinical records. Other employees can sign up new clients to the system and create new clinical history. Also, the web app enables nurses to add all the meds, medical tools and equipments that they used for each appointment. Depending on the profile of the user they are given specific tools."
                     }
 
-                ]
+                ],
+                "countries": 2,
+                "users": 2000,
+                "titleData": "Flack Group, a global market leader in emergency response and healthcare services. https://www.falck.com",
+                "technologies": ["python", "angular", "net-core"],
+                "textbox": "<p>This also allowed the following: </p> Integration with pharmacies and other clinics Integration with BPS for a medical license Background integration."
             },
             "fillment": {
                 "title": "Fillment",
@@ -300,7 +306,7 @@
                 "img": "planet-rfid",
                 "imgX": 16,
                 "imgY": 0,
-                "imgs": ["1","2","4"],
+                "imgs": ["1","2"],
                 "color": "#e5405d",
                 "gridArea": "span 2 / auto",
                 "description": [
@@ -430,7 +436,7 @@
             "projects": {
                 "label": "Projects",
                 "link": "/projects",
-                "enable": false
+                "enable": true
             },
             "about-us": {
                 "label": "About us",
