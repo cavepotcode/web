@@ -4,6 +4,7 @@ import { NavLink, useNavigate, useParams } from "react-router-dom";
 import "./Project.scss";
 import { AllImages } from "../../helpers";
 import clsx from "clsx";
+import { useFetch } from "../../hooks/useFetch";
 
 const technologyImages: { [key: string]: string } = {
   python: AllImages.PhytonLogoLinea,
@@ -15,29 +16,28 @@ const technologyImages: { [key: string]: string } = {
 };
 
 export function Project() {
+  
   let params = useParams();
   const [t] = useTranslation("global");
   const navigate = useNavigate();
   const [project, setProject] = useState(params.id);
-  const [projects, setProjects] = useState(
-    t("projects.projects", { returnObjects: true })
-  );
-  const currentProject = projects[project];
-  let cant = 1;
+
+  const apiBaseUrl = process.env.REACT_APP_API_BASE_URL
+
+  const { data, isLoading } = useFetch(`${apiBaseUrl}/project/${project}`);
+
   useEffect(() => {
-    if (!projects[project]) {
+    if (!isLoading && !data) {
       navigate("/404");
-    } else {
-      cant = projects[project]?.imgs?.length;
-    }
-  });
+    } 
+  }, [data, isLoading]);
 
   return (
     <div id="project">
       <div className="half">
-        <h1>{currentProject.title}</h1>
+        <h1>{data?.title}</h1>
         <div className="text">
-          {currentProject.description?.map((paragraph: any, key) => {
+          {data?.description?.map((paragraph: any, key) => {
             return (
               <div className="paragraph" key={`projectDesc_${key}`}>
                 <h2>{paragraph.title}</h2>
@@ -51,14 +51,14 @@ export function Project() {
       <div className="img-container">
         <div className="left">
           <div className="square-container">
-            {currentProject.imgs?.map((imgName: any, key) => {
+            {data?.imgs?.map((imgName: any, key) => {
               return (
                 <div
                   className="square"
                   key={`projectImg_${key}`}
                   style={{
                     backgroundImage: `url(${
-                      require(`../../assets/img/projects/${currentProject.img}/${imgName}.png`)
+                      require(`../../assets/img/projects/${data.img}/${imgName}.png`)
                         .default
                     })`,
                     backgroundSize: "contain",
@@ -68,10 +68,10 @@ export function Project() {
                 ></div>
               );
             })}
-            {currentProject.textbox && (
+            {data?.textbox && (
               <div
                 className="textbox"
-                dangerouslySetInnerHTML={{ __html: currentProject.textbox }}
+                dangerouslySetInnerHTML={{ __html: data.textbox }}
               ></div>
             )}
           </div>
@@ -79,13 +79,13 @@ export function Project() {
         <div className="right">
           <div className="contact-button">
             <NavLink to="/contact">
-              <button className={project}>{t("projects.button")}</button>
+              <button className={project}>Wanna know more?</button>
             </NavLink>
           </div>
-          {currentProject.technologies && (
+          {data?.technologies && (
             <div className="logo-container">
               <p>Techologies that we used:</p>
-              {currentProject.technologies.map((tech) => (
+              {data.technologies.map((tech) => (
                 <img
                   key={tech}
                   className={clsx({
@@ -100,12 +100,12 @@ export function Project() {
           )}
         </div>
       </div>
-      {(currentProject.titleData ||
-        currentProject.users ||
-        currentProject.countries) && (
+      {(data?.titleData ||
+        data?.users ||
+        data?.countries) && (
           <div className="data-container">
             <div className="title-container">
-              <p className="title">{currentProject.titleData}</p>
+              <p className="title">{data.titleData}</p>
             </div>
             <div className="num-container">
               <div>
@@ -113,15 +113,15 @@ export function Project() {
                 <p>MORE EFFICIENT</p>
               </div>
               <div>
-                <p className="num">{currentProject.users}+</p>
+                <p className="num">{data.users}+</p>
                 <p>USERS</p>
               </div>
               <div>
-                <p className="num">{currentProject.users}+</p>
+                <p className="num">{data.users}+</p>
                 <p>USERS</p>
               </div>
               <div id="num">
-                <p className="num">{currentProject.countries}+</p>
+                <p className="num">{data.countries}+</p>
                 <p>COUNTRIES</p>
                 {/* <NumberElement element={{ number: 2, title: "COUNTRIES", text: "", plus: false}}/> */}
               </div>
