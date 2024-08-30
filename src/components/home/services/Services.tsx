@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
-import { Trans, useTranslation } from 'react-i18next';
+import data from '../../../data/data-web.json'
 import { AllImages } from '../../../helpers';
 
 import './Services.scss';
 
 var delay = 0;
 export const Services = () => {
-    const [t] = useTranslation("global");
+    const whatDoWeDo = data["what-do-we-do"]
     const observer = new IntersectionObserver(entries => {
         entries.forEach((entry: any) => {
             if (entry.isIntersecting) {
@@ -33,8 +33,8 @@ export const Services = () => {
         <div className="what-do-we-do" >
             <div className='max-container'>
                 <div className="title">
-                    <label>{t("what-do-we-do.title")}</label>
-                    <label>{t("what-do-we-do.sub-title")}</label>
+                    <label>{whatDoWeDo.title}</label>
+                    <label>{whatDoWeDo['sub-title']}</label>
                 </div>
                 <div className="cards-wrapper">
                     {/* <NavLink to="/contact/aNewApp">
@@ -50,11 +50,11 @@ export const Services = () => {
                         <div className='img-wrapper'>
                             <img src={AllImages.StaffAugmentation} />
                         </div>
-                        <label><Trans>{t("what-do-we-do.card4.title")}</Trans></label>
-                        <p><Trans>{t("what-do-we-do.card4.text")}</Trans></p>
+                        <label>{whatDoWeDo.card4.title}</label>
+                        <p>{whatDoWeDo.card4.text}</p>
                         {/* <NavLink to="/contact/staffAugmentation">
                         <button>
-                            {t("what-do-we-do.card4.button")}
+                            {whatDoWeDo.card4.button}
                         </button>
                     </NavLink> */}
                     </div>
@@ -63,8 +63,8 @@ export const Services = () => {
                         <div className='img-wrapper'>
                             <img src={AllImages.ANewLanding} />
                         </div>
-                        <label><Trans>{t("what-do-we-do.card2.title")}</Trans></label>
-                        <p><Trans>{t("what-do-we-do.card2.text")}</Trans></p>
+                        <label>{whatDoWeDo.card2.title}</label>
+                        <p>{whatDoWeDo.card2.text}</p>
                         {/* <NavLink to="/contact/aNewLanding">
                         <button>
                             {t("what-do-we-do.card2.button")}
@@ -76,8 +76,8 @@ export const Services = () => {
                         <div className='img-wrapper'>
                             <img src={AllImages.Redesign} />
                         </div>
-                        <label><Trans>{t("what-do-we-do.card3.title")}</Trans></label>
-                        <p><Trans>{t("what-do-we-do.card3.text")}</Trans></p>
+                        <label>{whatDoWeDo.card3.title}</label>
+                        <p>{whatDoWeDo.card3.text}</p>
                         {/* <NavLink to="/contact/redesign">
                         <button>
                             {t("what-do-we-do.card3.button")}

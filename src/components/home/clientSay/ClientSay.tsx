@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
-import { initReactI18next, useTranslation } from 'react-i18next';
+import data from '../../../data/data-web.json';
 import { AllImages } from '../../../helpers';
 import LogoSlider from '../../logo-slider/LogoSlider';
 import './ClientSay.scss';
@@ -9,7 +9,7 @@ import { createEmitAndSemanticDiagnosticsBuilderProgram } from 'typescript';
 
 
 export const ClientSay = () => {
-    const [t] = useTranslation("global");
+    const clientsSays = data["clients-says"]
     const [estado, setEstado] = useState(false);
 
     useEffect(() => {
@@ -40,7 +40,7 @@ export const ClientSay = () => {
 
                 <div className="label-wrapper">
                     <FontAwesomeIcon className="faicon" icon={faQuoteLeft} />
-                    <label>{t("clients-says.title")}</label>
+                    <label>{clientsSays.title}</label>
                 </div>
                 <div className="right-container">
                     <div className="clutch-widget" data-url="https://widget.clutch.co"

@@ -1,29 +1,26 @@
-
 import React from "react";
 
 import { HistoryCard } from './HistoryCard';
-import { useTranslation,Trans } from "react-i18next";
 import { ScrollMenu, VisibilityContext,getItemsPos } from "react-horizontal-scrolling-menu";
 
 import { LeftArrow, RightArrow } from "./Arrows";
 
 import './CardDragger.scss';
 import useDrag from '../../dragger/useDrag';
+import data from '../../../data/data-web.json';
 
 type scrollVisibilityApiType = React.ContextType<typeof VisibilityContext>;
-
-
   
 export function CardDragger() {
 
-    const [t] = useTranslation("global");
+    const dataHistory = data["data-history"];
+    const HistoryList = Object.values(dataHistory);
 
     const elemPrefix = "test";
     const getId = (index: number) => `${elemPrefix}${index}`;
 
     const getItems = () =>
-    Object.values(t('data-history', { returnObjects: true }))
-    .map((obj, ind) => ({ data: obj,id: getId(ind) }));
+    HistoryList.map((obj, ind) => ({ data: obj,id: getId(ind) }));
 
 
     const [items] = React.useState(getItems);
@@ -69,7 +66,7 @@ export function CardDragger() {
                     onInit={centerOnInit}
                 >    
                     {items.map(( obj, key ) => (
-                        <HistoryCard  key={`year_${key}`}  hitoryPoint={obj.data} 
+                        <HistoryCard  key={`year_${key}`}  historyPoint={obj.data} 
                                         itemId={obj.id} />
                     ))}   
 

@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Slider.scss';
 import { BtnSlider } from './BtnSlider';
 import dataSlider from './dataSlider';
-import { useTranslation } from 'react-i18next';
 
 export default function Slider() {
 

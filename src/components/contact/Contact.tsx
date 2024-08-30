@@ -1,10 +1,10 @@
-import { useTranslation } from 'react-i18next';
 import { AllImages } from '../../helpers';
 import { FrmNewApp } from './frmContact/FrmNewApp';
 import { FrmReRe } from './frmContact/FrmReRe';
 import { FrmGeneralInfo } from './frmContact/FrmGeneralInfo';
 import { FrmStaffAugmentation } from './frmContact/FrmStaffAugmentation';
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import data from '../../data/data-web.json';
 
 import { useParams } from 'react-router-dom';
 
@@ -34,7 +34,8 @@ export const Contact = () => {
     }
     const [activeClasses, setActiveClasses] = useState<any>(options);
 
-    const [t] = useTranslation("global");
+    const contactData = data.contact;
+    const whatDoWeDo = data['what-do-we-do'];
 
     const toggleClass = (option: any) => {
 
@@ -89,19 +90,18 @@ export const Contact = () => {
         <div id="contact">
             <div className="contact max-container">
                 <div className="title">
-                    <label>{t("contact.title")}</label>
-                    <label>{t("contact.sub-title")}</label>
+                    <label>{contactData.title}</label>
+                    <label>{contactData['sub-title']}</label>
                 </div>
                 <div className='form-wrapper'>
                     <div className="contact-options-wrapper">
                         <div className={activeClasses.generalInfo ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("generalInfo")}>
                             <div className='contact-option-img'>
-                                <img src={AllImages.GeneralInfo} alt={t("contact.option4.alt.img")} />
+                                <img src={AllImages.GeneralInfo} alt={contactData.option4['alt.img']} />
                             </div>
                             <div className='contact-option-title'>
                                 <label>
-                                    {size.width <= 1024 ? t("contact.option4.titlesm") : t("contact.option4.title")}
-
+                                    {size.width <= 1024 ? contactData.option4.titlesm : contactData.option4.title}
                                 </label>
                             </div>
                         </div>
@@ -109,36 +109,36 @@ export const Contact = () => {
                         <div className={activeClasses.aNewApp ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("aNewApp")}>
                             <div className='contact-option-img'>
 
-                                <img src={AllImages.ANewApp} alt={t("contact.option2.alt.img")} />
+                                <img src={AllImages.ANewApp} alt={contactData.option2['alt.img']} />
                             </div>
                             <div className='contact-option-title'>
                                 <label>
                                     {/* {size.width <= 1024 ? t("contact.option2.titlesm") : t("contact.option2.title")} */}
-                                    {t("what-do-we-do.card2.title")}
+                                    {whatDoWeDo.card2.title}
                                 </label>
                             </div>
                         </div>
 
                         <div className={activeClasses.redesign ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("redesign")}>
                             <div className='contact-option-img'>
-                                <img src={AllImages.Redesign} alt={t("contact.option3.alt.img")} />
+                                <img src={AllImages.Redesign} alt={contactData.option3['alt.img']} />
                             </div>
                             <div className='contact-option-title'>
                                 <label>
                                     {/* {size.width <= 1024 ? t("contact.option3.titlesm") : t("contact.option3.title")} */}
-                                    {t("what-do-we-do.card3.title")}
+                                    {whatDoWeDo.card3.title}
                                 </label>
                             </div>
                         </div>
 
                         <div className={activeClasses.staffAugmentation ? 'contact-option-card selected' : 'contact-option-card'} onClick={() => toggleClass("staffAugmentation")}>
                             <div className='contact-option-img'>
-                                <img src={AllImages.StaffAugmentation} alt={t("contact.option5.alt.img")} />
+                                <img src={AllImages.StaffAugmentation} alt={contactData.option5['alt.img']} />
                             </div>
                             <div className='contact-option-title'>
                                 <label>
                                     {/* {size.width <= 1024 ? t("contact.option5.titlesm") : t("contact.option5.title")} */}
-                                    {t("what-do-we-do.card4.title")}
+                                    {whatDoWeDo.card4.title}
                                 </label>
                             </div>
                         </div>

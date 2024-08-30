@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
+import { links } from '../../data/data-web.json';
 import './Header.scss';
 import { HeaderItem } from './HeaderItem';
 
@@ -14,10 +14,9 @@ export const Header = () => {
     // The size of the window
     const [size, setSize] = useState<Size>({ width: window.innerWidth, height: window.innerHeight });
 
-
-    const [t] = useTranslation("global");
-
-    const links = Object.values(t('links.header', { returnObjects: true }));
+    const linksHeader = links.header;
+    const keys = Object.keys(linksHeader)
+    
     const [showMenu, setShowMenu] = useState(false);
     const [colapse, setColapse] = useState(false);
     const onShowMenu = () => setShowMenu((prev) => !prev);
@@ -80,7 +79,8 @@ export const Header = () => {
                 <nav className={showMenu ? 'nav open' : 'nav'}>
                     <ul className={showMenu ? 'menu-nav open' : 'menu-nav'}>
                         {
-                            links.map((obj:any, key) => {
+                            keys.map((key) => {
+                                const obj = linksHeader[key]
                                 return (
                                     obj.enable && <HeaderItem item={obj} key={key} onShowMenu={onShowMenu} size={size}/>
                                 )

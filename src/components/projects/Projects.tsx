@@ -1,5 +1,4 @@
 import "./Projects.scss";
-import { Trans, useTranslation } from 'react-i18next';
 import { ProjectCard, ProjectCardProps } from "./ProjectCard";
 import { useFetch } from "../../hooks";
 
