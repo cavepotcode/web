@@ -30,7 +30,7 @@ export function NumberElement({ element }) {
         if (count < max) {
             setCount(count + 1);
         }
-        }, 1*max);
+        }, 1/max);
     }
 
         return (

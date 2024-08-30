@@ -1,6 +1,7 @@
 import { createKiwiServer, IKiwiOptions, AuthorizeResponse } from "kiwi-server";
 import * as http from "http";
 import { ContactController } from "./controllers/contact.controller";
+import {projectController} from './controllers/project.controller'
 
 async function validateAuthentication(
   request: http.IncomingMessage,
@@ -11,7 +12,7 @@ async function validateAuthentication(
 }
 
 const options: IKiwiOptions = {
-  controllers: [ContactController],
+  controllers: [ContactController, projectController],
   authorization: validateAuthentication,
   middlewares: [],
   cors: {
@@ -23,6 +24,7 @@ const options: IKiwiOptions = {
     path: "/apidoc"
   },
   log: true,
-  port: 8087
+  port: 8087,
+  prefix: '/v1'
 };
 const server = createKiwiServer(options);

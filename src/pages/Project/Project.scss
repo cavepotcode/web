@@ -2,58 +2,237 @@
 @import "../../styles/mixin";
 
 #project {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 60px;
+  .half {
     display: flex;
-    flex-direction: row;
-    min-height: 100vh;
-    .half {
-        position: relative;
-        min-height: 100%;
-        width: 100%;
-        flex: 1 1 auto;
-        padding: 80px;
+    width: 100%;
+    flex: 1 1 auto;
+    padding: 30px 80px;
+    flex-wrap: wrap;
+    h1 {
+      @include textBasisBold($title);
+      padding: $paddinCajas;
+    }
+    .text {
+      display: flex;
+      .paragraph {
+        padding: $paddinCajas;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        width: 100%;
         h2 {
-            @include textBasisBold($text);
-            margin-bottom: 10px;
+          @include textBasisBold($text);
+          margin-bottom: 10px;
         }
         p {
-            @include textBasis($text);
-            margin-bottom: 15px;
+          @include textBasis($text);
+          margin-bottom: 15px;
         }
-        button {
-            margin-top: 15px;
-        }
+      }
+    }
+  }
+  .img-container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    padding: 0px 80px;
+    margin-bottom: 2em;
+    .left {
+      width: 60%;
+      .square-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
         .square {
-            width: 90%;
-            height: 40%;
-            position: absolute;
-            display: block;
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          &:nth-child(odd) {
+            height: 100%;
+            width: 100%;
+          }
+          &:nth-child(even) {
+            top: 15%;
+            left: 60%;
+            height: 60%;
+            width: 100%;
+          }
+        }
+        .textbox {
+          position: absolute;
+          width: 50%;
+          border: solid $BorderWidth $CeriseRed;
+          border-radius: 20px;
+          background-color: $White;
+          padding: 1.5em;
+          bottom: 0;
+          left: 10%;
+          container-type: inline-size;
+          @include textBasis($text);
+          p {
+            @include textBasisBold($text);
+          }
+        }
+      }
+    }
+    .right {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      .contact-button {
+        button {
+          border-radius: $btnBorderRadius;
+          border: $BorderWidth solid $BorderBlack;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+      .logo-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1.5rem;
+        .logo {
+          height: 3rem;
+          &.bigger {
+            height: 4rem;
+          }
+        }
+        p {
+          @include textBasisBold($text);
+        }
+      }
+    }
+  }
+  .zanahorario,
+  .rcd,
+  .nom {
+    background-color: $MinionYellow;
+    color: $Black;
+  }
+  .learn-cloud,
+  .fillment {
+    background-color: $SeaSerpent;
+    color: $White;
+  }
+  .planet-rfid,
+  .virtual-care {
+    background-color: $CeriseRed;
+    color: $White;
+  }
+
+  .data-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3em 1em;
+    justify-content: center;
+    align-items: center;
+    @include textBasis($text);
+    background-color: $CeriseRed;
+    color: $White;
+    .title-container {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1em;
+      @include textBasisBold($subtitle);
+      color: $White;
+    }
+    .num-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: center;
+      @include textBasis($text);
+      color: $White;
+      .num {
+        @include textBasis(2 * $title);
+        color: $White;
+        &::before{
+          background-color: $CeriseRed;
+          @include backgroundPattern($CeriseRed, 0);
+        }
+      }
+    }
+  }
+}
+
+@include media-sm {
+  #project {
+    .half {
+      padding: 0;
+      .text {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    .img-container {
+      padding: 0;
+      flex-direction: column;
+      height: 1000px;
+      .left {
+        height: 70%;
+        width: 100%;
+        .square-container {
+          display: flex;
+          flex-direction: column;
+          .square {
+            position: unset;
+            width: 100%;
+            height: 100%;
             &:nth-child(odd) {
-                right: 15px;
-                
+              height: 70%;
+              width: 100%;
             }
             &:nth-child(even) {
-                left: -30px;
+              height: 70%;
+              width: 100%;
             }
+          }
+          .textbox {
+            position: unset;
+            width: 100%;
+            border: solid $BorderWidth $CeriseRed;
+            border-radius: 20px;
+            background-color: $White;
+            padding: 1.5em;
+            container-type: inline-size;
+            @include textBasis($text);
+            p {
+              @include textBasisBold($text);
+            }
+          }
         }
+      }
+      .right {
+        height: 30%;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        .contact-button {
+          align-self: center;
+        }
+        .logo-container {
+          padding: 0px 5px;
+        }
+      }
     }
-    .zanahorario,
-    .rcd,
-    .nom {
-        background-color: $MinionYellow;
-        color: $Black;
+    .data-container {
+      .num-container {
+        flex-direction: column;
+        gap: 3em;
+      }
     }
-    .learn-cloud, .fillment {
-        background-color: $SeaSerpent;
-        color: $White;
-    }
-    .planet-rfid, .virtual-care {
-        background-color: $CeriseRed;
-        color: $White;
-    }
+  }
+
 }
