@@ -45,8 +45,6 @@ export const useFetch = (url) => {
     });
   };
 
-  console.log(state)
-
   return {
     data: state.data,
     isLoading: state.isLoading,

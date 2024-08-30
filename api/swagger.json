@@ -51,6 +51,20 @@
                     "project"
                 ]
             }
+        },
+        "/v1/projects": {
+            "get": {
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [],
+                "tags": [
+                    "projects"
+                ]
+            }
         }
     },
     "openapi": "3.0.0",

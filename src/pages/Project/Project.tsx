@@ -4,7 +4,7 @@ import { NavLink, useNavigate, useParams } from "react-router-dom";
 import "./Project.scss";
 import { AllImages } from "../../helpers";
 import clsx from "clsx";
-import { useFetch } from "../../hooks/useFetch";
+import { useFetch } from "../../hooks";
 
 const technologyImages: { [key: string]: string } = {
   python: AllImages.PhytonLogoLinea,
@@ -18,7 +18,6 @@ const technologyImages: { [key: string]: string } = {
 export function Project() {
   
   let params = useParams();
-  const [t] = useTranslation("global");
   const navigate = useNavigate();
   const [project, setProject] = useState(params.id);
 
