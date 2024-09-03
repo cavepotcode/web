@@ -1,11 +1,10 @@
-import { useTranslation, Trans } from 'react-i18next';
+import data from '../../../data/data-web.json'
 import { AllImages } from '../../../helpers';
 import { NavLink } from 'react-router-dom';
 import './Meetup.scss'
 
 export default function Meetup() {
-    const [t] = useTranslation("global");
-
+    
     return (
         <div id="meetup">
             {/* <div className='ng-logo w-border'>

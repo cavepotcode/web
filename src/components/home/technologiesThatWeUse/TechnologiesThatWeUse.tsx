@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
-import { useTranslation, Trans } from 'react-i18next';
+import data from '../../../data/data-web.json'
 import { AllImages } from '../../../helpers';
 import './TechnologiesThatWeUse.scss';
 let delay = 3
 export const TechnologiesThatWeUse = () => {
-    const [t] = useTranslation("global");
+    const technologiesThatWeUse = data["technologies-that-we-use"];
     const observer = new IntersectionObserver(entries => {
         entries.forEach((entry: any) => {
             if (entry.isIntersecting) {
@@ -28,7 +28,7 @@ export const TechnologiesThatWeUse = () => {
     return (
         <div className="technologies-that-we-use">
             <div className='max-container'>
-                <label className="title">{t("technologies-that-we-use.title")}</label>
+                <label className="title">{technologiesThatWeUse.title}</label>
                 <div className="logo-container">
                     <div className="img-wrapper">
                         <img className='logo bigger' src={AllImages.PhytonLogoLinea} alt="phyton-logo" />
@@ -43,7 +43,7 @@ export const TechnologiesThatWeUse = () => {
 
 
             <div className="blue-line-wrapper">
-                <label><Trans>{t("technologies-that-we-use.text")}</Trans></label>
+                <label>{technologiesThatWeUse.text}</label>
                 {/* <div id="blue-line"></div> */}
             </div>
         </div>

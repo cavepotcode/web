@@ -1,6 +1,6 @@
 import { queryHelpers } from "@testing-library/react";
 import { useField } from "formik";
-import React, { useCallback, useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 import { FileError, FileRejection, useDropzone } from "react-dropzone"
 import { SingleFileUpload } from "./SingleFileUpload";
 import { UploadValidation } from "./UploadValidation";
@@ -51,7 +51,7 @@ export function MultipleFileUploadField({ name }: { name: string }) {
     }
 
     return (
-        <React.Fragment>
+        <>
             <div {...getRootProps()}>
                 <input {...getInputProps()} />
 
@@ -76,6 +76,6 @@ export function MultipleFileUploadField({ name }: { name: string }) {
                     />)
                
             ))}
-        </React.Fragment> 
+        </> 
     )
 }

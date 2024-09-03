@@ -1,12 +1,12 @@
 import "./WeAre.scss";
-import { useTranslation, Trans } from "react-i18next";
 import { useEffect, useState } from "react";
-import { AllImages } from "../../../helpers";
+import data from '../../../data/data-web.json';
 import { NavLink } from "react-router-dom";
 
 export function WeAre() {
-    const [t] = useTranslation("global");
-    const array = Object.values(t('we-tags', { returnObjects: true }));
+    const weWanna = data["we-wanna"]
+    const weTags = data["we-tags"];
+    const array = Object.values(weTags);
     let index;
     let lergoArray = array.length;
     const [count, setIndex] = useState(0);
@@ -31,7 +31,7 @@ export function WeAre() {
 
                     <div className="text-wrapper">
                         <label>
-                            {t("we-wanna.text")}
+                            {weWanna.text}
                         </label>
 
 
@@ -40,7 +40,7 @@ export function WeAre() {
                     <div className="button-container">
                         <NavLink to="/contact">
 
-                            {t("we-wanna.button")}
+                            {weWanna.button}
 
                         </NavLink>
                     </div>
