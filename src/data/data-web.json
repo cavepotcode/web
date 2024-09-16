@@ -87,42 +87,6 @@
       "img.1": "Investigation banner image"
     }
   },
-  "footer": {
-    "column.1": {
-      "title": "COMPANY",
-      "text.1": "Home",
-      "text.2": "What is Cavepot",
-      "text.3": "What do we do",
-      "text.4": "How we do it",
-      "text.5": "What our clints say"
-    },
-    "column.2": {
-      "title": "Projects",
-      "text.1": "Planet01",
-      "text.3": "Fillment",
-      "text.4": "LearnCloud",
-      "text.5": "NOM",
-      "text.6": "UCM"
-    },
-    "column.3": {
-      "title": "Connect with us",
-      "text.1": "Instagram",
-      "text.2": "Facebook",
-      "text.3": "Twitter",
-      "text.4": "Linkedin",
-      "text.5": "Github"
-    },
-    "column.4": {
-      "title": "Contact us",
-      "text.1": "Pablo de Maria 1122,",
-      "text.2": "Montevideo, Uruguay",
-      "text.3": "info@cavepot.com"
-    },
-    "alt": {
-      "img.1": "Footer cavepot logo",
-      "img.2": "Footer cavepot lab logo"
-    }
-  },
   "contact": {
     "title": "How can we help you?",
     "sub-title": "Let us know what you are looking foor so that we can help you find it",
@@ -241,70 +205,6 @@
       "label": "More...",
       "link": "/projects",
       "enable": true
-    },
-    "header": {
-      "home": {
-        "label": "Home",
-        "link": "/",
-        "enable": true
-      },
-      "how-we-do-it": {
-        "label": "How we do it",
-        "link": "/home/how-we-do-it",
-        "enable": true
-      },
-      "projects": {
-        "label": "Projects",
-        "link": "/projects",
-        "enable": true
-      },
-      "about-us": {
-        "label": "About us",
-        "link": "/aboutus",
-        "enable": true
-      },
-      "blog": {
-        "label": "Blog",
-        "link": "https://blog.cavepot.com/",
-        "enable": true
-      },
-      "our-lab": {
-        "label": "Our lab",
-        "link": "https://www.cavepotlab.com/",
-        "enable": true
-      },
-      "contact-us": {
-        "label": "Contact us",
-        "link": "/contact",
-        "enable": true
-      }
-    },
-    "redes": {
-      "instagram": {
-        "label": "Instagram",
-        "link": "https://www.instagram.com/cavepotuy/",
-        "enable": true
-      },
-      "facebook": {
-        "label": "Facebook",
-        "link": "https://www.facebook.com/Cavepot",
-        "enable": true
-      },
-      "twitter": {
-        "label": "Twitter",
-        "link": "https://twitter.com/Cavepot",
-        "enable": true
-      },
-      "linkedin": {
-        "label": "Linkedin",
-        "link": "https://www.linkedin.com/company/cavepot",
-        "enable": true
-      },
-      "github": {
-        "label": "Github",
-        "link": "https://github.com/cavepotcode/",
-        "enable": true
-      }
     }
   }
 }

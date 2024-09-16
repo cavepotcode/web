@@ -1,83 +1,161 @@
+@import "../../styles/main";
 
-@import '../../styles/main';
-
-.project-card{
-    border: solid $BorderWidth $BorderBlack;
-    border-radius: $borderRadiusMain;
+.project-card {
+  border: solid $BorderWidth $BorderBlack;
+  border-radius: $borderRadiusMain;
+  position: relative;
+  padding: 25px 10px;
+  text-decoration: none;
+  * {
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+  .card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      border-radius: $borderRadiusCircle-25;
+      border: solid $BorderWidth white;
+      height: 30px;
+      width: 30px;
+      padding: 0;
+      color: white;
+      background-color: transparent;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    label {
+      text-transform: uppercase;
+      @include textBasisBold($title);
+      color: white;
+      text-align: center;
+    }
+  }
+  .img-wrapper {
     position: relative;
-    padding: 25px 10px;
-    text-decoration: none;
-    *{
-        cursor: pointer;
+    height: 310px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .text-wrapper {
+    position: relative;
+    text-align: center;
+    label {
+      @include textBasis($text);
     }
-   a{
-    text-decoration: none;
-   }
-    .card-footer{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 50px;
-        width: 100%;
-        background:rgba(0,0,0,0.15);
-        border-radius: 0  0  5px 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;        
-        button{
-            border-radius: $borderRadiusCircle-25;
-            border: solid $BorderWidth white;
-            height: 30px;
-            width: 30px;
-            padding: 0;            
-            color: white;
-            background-color: transparent;
-            font-weight: 900;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-    .title{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-        label{
-            text-transform: uppercase;
-            @include textBasisBold($title);
-            color: white;
-            text-align: center;
-        }
-    }
-    .img-wrapper{
-        position: relative;
-        height: 310px;
-        display: block;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-    .text-wrapper{
-        position: relative;
-        text-align: center;
-        label{
-            @include textBasis($text);
-        }
-    }
+  }
 }
 
-.project-card:hover{
-    animation: ZoomIn 0.3s linear forwards;
+.project-card:hover {
+  animation: ZoomIn 0.3s linear forwards;
 }
 
+.project-card-contact {
+  border: solid $BorderWidth $BorderBlack;
+  border-radius: $borderRadiusMain;
+  position: relative;
+  padding: 25px 10px;
+  text-decoration: none;
+  * {
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+  .card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      border-radius: $borderRadiusCircle-25;
+      border: solid $BorderWidth white;
+      height: 30px;
+      width: 30px;
+      padding: 0;
+      color: white;
+      background-color: transparent;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .title {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+    label {
+      text-transform: uppercase;
+      @include textBasisBold($title);
+      color: white;
+      text-align: center;
+    }
+  }
+  .img-wrapper {
+    position: relative;
+    height: 310px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .text-wrapper {
+    position: relative;
+    text-align: center;
+    label {
+      display: flex;
+      width: 50%;
+      @include textBasis($text);
+    }
+  }
+}
 
 @keyframes ZoomIn {
-    0% {
-        z-index: 100;
-        transform: scale(1, 1);
-	}
-	100% {
-        z-index: 100;
-        transform: scale(1.1, 1.1);
-	}
+  0% {
+    z-index: 100;
+    transform: scale(1, 1);
+  }
+  100% {
+    z-index: 100;
+    transform: scale(1.1, 1.1);
+  }
+}
+
+@include media-md {
+  .project-card-contact {
+    .text-wrapper {
+      label {
+        width: 100%;
+      }
+    }
+    .img-wrapper{     
+        position: sticky;
+    }
+  }
 }

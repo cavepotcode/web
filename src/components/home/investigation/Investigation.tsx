@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { investigation, links } from '../../../data/data-web.json'
 import { NavLink } from 'react-router-dom';
 import { AllImages } from '../../../helpers';
+import { headerWeb } from '../../../helpers/header';
 import './Investigation.scss';
 
 export const Investigation = () => {
@@ -15,7 +16,7 @@ export const Investigation = () => {
         });
     });
 
-
+    const ourLabLink = headerWeb.links.find(link => link.label === "Our Lab");
 
     useEffect(() => {
         const cards = document.querySelectorAll('#investigation .card');
@@ -38,7 +39,7 @@ export const Investigation = () => {
                     </div>
 
                     <div className='button-container'>
-                        <a href={links.header['our-lab'].link} target="_blank">
+                        <a href={ourLabLink.link} target="_blank">
                             <a className='button'>{investigation.button}</a>
                         </a>
                     </div>
