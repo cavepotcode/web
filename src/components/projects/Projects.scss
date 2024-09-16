@@ -15,8 +15,9 @@
         align-items: center;
         justify-content: center;
         width: 100%;
+        margin-top: $spaceBetween;
         .title {
-            @include textBasisBold($title);
+            @include textBasis($title);
         }
         .desc{
             @include textBasis($text);

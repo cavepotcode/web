@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import { Size } from '../header/Header';
 import './ProjectCard.scss';
 import { NavLink } from 'react-router-dom';
 import { url } from 'inspector';
 
 export interface ProjectCardProps {
+    id: string;
     img: string;
     imgX: number;
     imgY: number;
@@ -18,9 +18,12 @@ export interface ProjectCardProps {
     link?: string
 }
 
+export interface Size {
+  width: number;
+  height: number;
+}
 
-
-export function ProjectCard({ img, imgX, imgY, title, text, textX, textY, color, w, gridArea, link }: ProjectCardProps) {
+export function ProjectCard({ id, img, imgX, imgY, title, text, textX, textY, color, w, gridArea, link }: ProjectCardProps) {
 
     const [size, setSize] = useState<Size>({ width: window.innerWidth, height: window.innerHeight });
 
@@ -41,7 +44,7 @@ export function ProjectCard({ img, imgX, imgY, title, text, textX, textY, color,
 
 
     return (
-        <NavLink to={link ? link : `/project/${img}`} target="_blank" className="project-card"
+        <NavLink to={link ? link : `/project/${id}`} target="_blank" className={id ==='contact' ? "project-card-contact" : "project-card"}
                 style={{
                     gridArea: size.width <= 480 && gridArea === 'auto /span 2' ? "auto /span 1" : gridArea,
                     backgroundColor: color
@@ -70,13 +73,6 @@ export function ProjectCard({ img, imgX, imgY, title, text, textX, textY, color,
                 >
                     <label>{text}</label>
                 </div>
-                {/* <div className='card-footer'>
-                
-                    <button>
-                        +
-                    </button>
-                </NavLink>
-            </div> */}
         </NavLink>
     );
 }

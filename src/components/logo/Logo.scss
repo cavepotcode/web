@@ -1,0 +1,150 @@
+@import "../../styles/main";
+@import "../../styles/variables";
+@import "../../styles/mixin";
+
+$logoHeight: 35px;
+
+.img-wrapper-header {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-left: 23px;
+  img {
+    height: 42px;
+  }
+  display: block;
+  width: calc(267 / 52 * #{$logoHeight});
+  height: $logoHeight;
+  filter: invert(1);
+  #c,
+  #a,
+  #v,
+  #e,
+  #p,
+  #o,
+  #t {
+    position: absolute;
+    display: block;
+    height: $logoHeight;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all ease 1s;
+    top: 0;
+  }
+  #c,
+  #a,
+  #v {
+    width: calc((42 / 52) *#{$logoHeight});
+  }
+  #e,
+  #p {
+    width: calc((27 / 52) *#{$logoHeight});
+  }
+  #c {
+    left: 0;
+    background-image: url(../../assets/img/logo/c.png);
+  }
+  #a {
+    left: calc((42 / 52) *#{$logoHeight});
+    background-image: url(../../assets/img/logo/a.png);
+  }
+  #v {
+    left: calc((42 / 52) * 2 *#{$logoHeight} - 9px);
+    background-image: url(../../assets/img/logo/v.png);
+  }
+  #e {
+    left: calc((42 / 52) * 3 *#{$logoHeight} - 6px);
+    background-image: url(../../assets/img/logo/e.png);
+  }
+  #p {
+    left: calc((42 / 52) * 3 *#{$logoHeight} + (27 / 52) *#{$logoHeight});
+    background-image: url(../../assets/img/logo/p.png);
+  }
+  #o {
+    left: calc(
+      (42 / 52) * 3 *#{$logoHeight} + 2 * (27 / 52) *#{$logoHeight} + 2.6px
+    );
+    background-image: url(../../assets/img/logo/o.png);
+    width: calc((52 / 52) *#{$logoHeight});
+  }
+  #t {
+    left: calc(
+      (42 / 52) * 3 *#{$logoHeight} + 2 * (27 / 52) *#{$logoHeight} + (52 / 52) *#{$logoHeight} +
+        3.6px
+    );
+    background-image: url(../../assets/img/logo/t.png);
+    width: calc((31 / 52) *#{$logoHeight});
+  }
+}
+.colapse {
+  transition: border-bottom ease 0.3s;
+  #c,
+  #a,
+  #v,
+  #e,
+  #p,
+  #o,
+  #t {
+    position: absolute;
+    left: 0;
+  }
+  #c,
+  #a,
+  #v,
+  #e,
+  #p,
+  #t {
+    opacity: 0;
+    transition: all ease 0.3s;
+  }
+  #o {
+    transform: rotate(-360deg);
+    transition: all ease 1s;
+  }
+  .text-header {
+    transition: all ease 1s;
+    left: calc(
+      (42 / 52) * 4 *#{$logoHeight} + 2 * (27 / 52) *#{$logoHeight} + 3.6px
+    );
+  }
+}
+.text-header {
+  position: absolute;
+  left: calc(
+    (42 / 52) * 7 *#{$logoHeight} + 2 * (27 / 52) *#{$logoHeight} + (52 / 52) *#{$logoHeight} +
+      3.6px
+  );
+  transition: all ease 1s;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4ac1c6;
+}
+
+@include media-sm {
+  .text-header {
+    display: none;
+  }
+  .img-wrapper-header {
+    padding-left: 36px;
+    img {
+      width: 150px;
+      height: 30px;
+    }
+  }
+}
+
+// maximo 1024px
+@include media-lg {
+  .text-header {
+    display: none;
+  }
+  .img-wrapper-header {
+    z-index: 0;
+  }
+}
