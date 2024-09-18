@@ -1,8 +1,6 @@
 import "./HistoryCard.scss";
-import { useContext } from "react";
 import DOMPurify from 'dompurify';
 
-import { VisibilityContext } from "react-horizontal-scrolling-menu";
 
 export function HistoryCard({
   historyPoint,
@@ -11,9 +9,9 @@ export function HistoryCard({
   historyPoint: any;
   itemId: string;
 }) {
-  const visibility = useContext(VisibilityContext);
+  // const visibility = useContext(VisibilityContext);
 
-  const visible = visibility.isItemVisible(itemId);
+  // const visible = visibility.isItemVisible(itemId);
 
   const historyText = DOMPurify.sanitize(historyPoint.text);
 

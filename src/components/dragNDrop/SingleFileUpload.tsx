@@ -16,7 +16,7 @@ export function SingleFileUpload({ file, onDelete, onUpload }: SingleFileUploadP
         }
 
         upload()
-    }, []);
+    }, [file, onUpload]);
 
     return (
         <FileHeader file={file} onDelete={onDelete} progress={progress}/>

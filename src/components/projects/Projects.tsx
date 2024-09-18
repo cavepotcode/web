@@ -1,5 +1,5 @@
 import "./Projects.scss";
-import { ProjectCard, ProjectCardProps } from "./ProjectCard";
+import { ProjectCard } from "./ProjectCard";
 import { useFetch } from "../../hooks";
 
 export function Projects() {

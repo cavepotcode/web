@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
-import { investigation, links } from '../../../data/data-web.json'
-import { NavLink } from 'react-router-dom';
+import { investigation } from '../../../data/data-web.json';
 import { AllImages } from '../../../helpers';
 import { headerWeb } from '../../../helpers/header';
 import './Investigation.scss';
@@ -23,7 +22,7 @@ export const Investigation = () => {
         cards.forEach(item => {
             observer.observe(item);
         });
-    }, [])
+    }, [observer])
     return (
         <div id="investigation">
             <div className="investigation max-container">
@@ -39,8 +38,8 @@ export const Investigation = () => {
                     </div>
 
                     <div className='button-container'>
-                        <a href={ourLabLink.link} target="_blank">
-                            <a className='button'>{investigation.button}</a>
+                        <a href={ourLabLink.link} target="_blank" rel="noreferrer" className='button'>
+                            {investigation.button}
                         </a>
                     </div>
                 </div>

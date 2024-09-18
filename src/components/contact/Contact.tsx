@@ -61,12 +61,11 @@ export const Contact = () => {
 
   useEffect(() => {
     window.onresize = resizeHanlder;
-  }, [null]);
+  }, []);
 
   const submitFunction = async (values) => {
     try {
       showModal();
-      const host = `${window.location.protocol}://${window.location.host}`;
       const response: any = await fetch(`/api/contact/send`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -224,7 +223,7 @@ export const Contact = () => {
                   <p>{message}</p>
                 </div>
               )}
-              {!message && <img src={AllImages.Loading} />}
+              {!message && <img src={AllImages.Loading} alt={AllImages.Loading}/>}
             </div>
           </div>
         )}

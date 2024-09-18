@@ -18,8 +18,8 @@ export const TechnologiesChanges = () => {
                     <label className="title">{technologiesChanges.title}</label>
                     <label className="subtitle">{technologiesChanges.subtitle}</label>
                     <div className='button-container'>
-                        <NavLink to={contactLink?.link || "/contact"}>
-                            <a className='button'>{contactLink?.label}</a>
+                        <NavLink to={contactLink?.link || "/contact"} className='button'>
+                            {contactLink?.label}
                         </NavLink>
                     </div>
 

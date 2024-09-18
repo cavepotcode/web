@@ -18,7 +18,7 @@ export const HowWeDoIt = () => {
         img.forEach(item => {
             observer.observe(item);
         });
-    }, [])
+    }, [observer])
     return (
         <div id="how-we-do-it" className=''>
             <div className="how-we-do-it max-container">
