@@ -1,4 +1,4 @@
-import { Formik, Field } from "formik";
+import { Formik } from "formik";
 import './Frm.scss';
 import { MultipleFileUploadField } from '../../dragNDrop/MultipleFileUploadField';
 import { RangeSlider } from './rangeSlider/RangeSlider';

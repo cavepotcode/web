@@ -12,12 +12,12 @@ export interface RangeSliderPorps {
 
 export function RangeSlider( { name, minValue, maxValue, stepValue }: RangeSliderPorps) {
     
-    const [_,__,helpers] = useField(name);
+    const [,,helpers] = useField(name);
     const [rangeval, setRangeval] = useState(minValue);
 
     useEffect( () => {
         helpers.setValue(rangeval);
-    },[rangeval]);
+    },[rangeval, helpers]);
     
     return (
         <div className="slider-wrapper">
@@ -30,7 +30,7 @@ export function RangeSlider( { name, minValue, maxValue, stepValue }: RangeSlide
                     step={stepValue}
                     value={rangeval}
                     onChange={(event) => setRangeval(event.target.valueAsNumber)} />
-                <span className="slider-value">{rangeval == maxValue? "+"+rangeval: rangeval}</span>
+                <span className="slider-value">{rangeval === maxValue? "+"+rangeval: rangeval}</span>
             </div>
         </div>
     );

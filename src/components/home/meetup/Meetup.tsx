@@ -1,6 +1,3 @@
-import data from '../../../data/data-web.json'
-import { AllImages } from '../../../helpers';
-import { NavLink } from 'react-router-dom';
 import './Meetup.scss'
 
 export default function Meetup() {

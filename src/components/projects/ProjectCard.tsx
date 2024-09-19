@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import './ProjectCard.scss';
 import { NavLink } from 'react-router-dom';
-import { url } from 'inspector';
 
 export interface ProjectCardProps {
     id: string;

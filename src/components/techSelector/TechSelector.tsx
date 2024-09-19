@@ -8,7 +8,7 @@ export interface TechSelectosPorps {
 }
 
 export function TechSelector({ name, techs }: TechSelectosPorps) {
-    const [_,__,helpers] = useField(name);
+    const [,,helpers] = useField(name);
     const [activeClasses, setActiveClasses] = useState(techs);
 
     const toggleClass = (option: any) => {
@@ -19,7 +19,7 @@ export function TechSelector({ name, techs }: TechSelectosPorps) {
 
     useEffect( () => {
         helpers.setValue(activeClasses);
-    },[activeClasses]);
+    },[activeClasses, helpers]);
 
     return (
         <div className="img-tech-wrapper">

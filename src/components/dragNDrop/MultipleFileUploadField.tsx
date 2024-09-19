@@ -1,4 +1,3 @@
-import { queryHelpers } from "@testing-library/react";
 import { useField } from "formik";
 import { useCallback, useEffect, useState } from "react"
 import { FileError, FileRejection, useDropzone } from "react-dropzone"
@@ -13,7 +12,7 @@ export interface UpleadableFile {
 }
 
 export function MultipleFileUploadField({ name }: { name: string }) {
-    const [_, __, helpers] = useField(name);
+    const [,, helpers] = useField(name);
 
     const [files, setFiles] = useState<UpleadableFile[]>([]);
 
@@ -31,7 +30,7 @@ export function MultipleFileUploadField({ name }: { name: string }) {
     useEffect(() => {
         helpers.setValue(files);
         helpers.setTouched(true);
-    }, [files])
+    }, [files, helpers])
 
     function onDelete(file: File) {
         // setFiles(curr => {

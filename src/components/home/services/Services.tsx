@@ -48,7 +48,7 @@ export const Services = () => {
                 </NavLink> */}
                     <div className='card'>
                         <div className='img-wrapper'>
-                            <img src={AllImages.StaffAugmentation} />
+                            <img src={AllImages.StaffAugmentation} alt={AllImages.StaffAugmentation}/>
                         </div>
                         <label>{whatDoWeDo.card4.title}</label>
                         <p>{whatDoWeDo.card4.text}</p>
@@ -61,7 +61,7 @@ export const Services = () => {
 
                     <div className='card'>
                         <div className='img-wrapper'>
-                            <img src={AllImages.ANewLanding} />
+                            <img src={AllImages.ANewLanding} alt={AllImages.ANewLanding}/>
                         </div>
                         <label>{whatDoWeDo.card2.title}</label>
                         <p>{whatDoWeDo.card2.text}</p>
@@ -74,7 +74,7 @@ export const Services = () => {
 
                     <div className='card'>
                         <div className='img-wrapper'>
-                            <img src={AllImages.Redesign} />
+                            <img src={AllImages.Redesign} alt={AllImages.Redesign}/>
                         </div>
                         <label>{whatDoWeDo.card3.title}</label>
                         <p>{whatDoWeDo.card3.text}</p>

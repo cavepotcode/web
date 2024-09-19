@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
 import "./Project.scss";
 import { AllImages } from "../../helpers";
@@ -29,7 +28,7 @@ export function Project() {
     if (!isLoading && !data) {
       navigate("/404");
     } 
-  }, [data, isLoading]);
+  }, [data, isLoading, navigate]);
 
   return (
     <div id="project">

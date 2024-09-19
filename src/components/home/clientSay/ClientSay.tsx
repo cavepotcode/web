@@ -1,16 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import data from '../../../data/data-web.json';
-import { AllImages } from '../../../helpers';
 import LogoSlider from '../../logo-slider/LogoSlider';
 import './ClientSay.scss';
-import { useEffect, useState } from 'react';
-import { createEmitAndSemanticDiagnosticsBuilderProgram } from 'typescript';
+import { useEffect } from 'react';
 
 
 export const ClientSay = () => {
     const clientsSays = data["clients-says"]
-    const [estado, setEstado] = useState(false);
 
     useEffect(() => {
         const head = document.querySelector("head");

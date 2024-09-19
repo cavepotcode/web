@@ -21,7 +21,7 @@ export function WeAre() {
         updateCount()
 
         return () => clearInterval(index)
-    }, [])
+    }, [index, updateCount])
 
     return (
         <div id="we-tag-wrapper">

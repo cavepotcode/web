@@ -7,11 +7,7 @@ export const useFetch = (url) => {
     hasError: false,
     error: null,
   });
-
-  useEffect(() => {
-    getFetch();
-  }, [url]);
-
+  
   const setLoadingState = () => {
     setState({
       data: null,
@@ -44,6 +40,9 @@ export const useFetch = (url) => {
       error: null,
     });
   };
+  useEffect(() => {
+    getFetch();
+  }, [url]);
 
   return {
     data: state.data,
